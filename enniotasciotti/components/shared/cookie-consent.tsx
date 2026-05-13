@@ -15,14 +15,14 @@ export function CookieConsent() {
   }, []);
 
   const accept = () => {
-    const consent = { analytics_storage: 'granted', ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted' } as const;
+    const consent = { analytics: 'granted' as const, marketing: 'granted' as const };
     updateGtagConsent(consent);
     storeConsent(consent);
     setVisible(false);
   };
 
   const decline = () => {
-    const consent = { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' } as const;
+    const consent = { analytics: 'denied' as const, marketing: 'denied' as const };
     updateGtagConsent(consent);
     storeConsent(consent);
     setVisible(false);

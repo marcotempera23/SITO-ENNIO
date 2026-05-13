@@ -1,4 +1,5 @@
 interface SectionHeadingProps {
+  id?: string;
   eyebrow?: string;
   title: string;
   subtitle?: string;
@@ -7,6 +8,7 @@ interface SectionHeadingProps {
 }
 
 export function SectionHeading({
+  id,
   eyebrow,
   title,
   subtitle,
@@ -26,6 +28,7 @@ export function SectionHeading({
         </p>
       )}
       <h2
+        id={id}
         className="font-display text-step-4 font-light leading-tight"
         style={{ color: 'var(--color-text)' }}
       >

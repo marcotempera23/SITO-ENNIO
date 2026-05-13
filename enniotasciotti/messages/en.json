@@ -66,15 +66,34 @@
   },
   "about": {
     "title": "About",
+    "eyebrow": "Biography",
+    "subtitle": "Scientist, entrepreneur and clinician bridging basic research and applied medicine.",
     "metaTitle": "About — Prof. Ennio Tasciotti",
     "metaDesc": "Full professor, Director of the Human Longevity Program, founder of biotech startups. A career spanning Houston, Rome and the world.",
-    "bioIntro": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — first at the Scuola Normale di Pisa, then at Houston Methodist Research Institute, today at IRCCS San Raffaele in Rome.",
-    "downloadCV": "Download Curriculum Vitae (PDF)",
+    "bio": {
+      "title": "Biography",
+      "p1": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — first at the Scuola Normale di Pisa, then at Houston Methodist Research Institute, today at IRCCS San Raffaele in Rome.",
+      "p2": "My work sits at the intersection of nanomedicine, biomimetic materials and longevity medicine. I have directed two major research institutes and authored over 200 peer-reviewed publications.",
+      "p3": "Alongside research, I have co-founded multiple startups and sit on the scientific advisory boards of pharmaceutical and biotech companies globally."
+    },
     "timeline": {
       "title": "Career timeline",
       "education": "Education",
-      "career": "Career"
+      "career": "Career",
+      "items": [
+        { "year": "2023–present", "role": "Director, Human Longevity Program", "place": "IRCCS San Raffaele, Rome" },
+        { "year": "2016–2023", "role": "Full Professor & Research Director", "place": "Houston Methodist Research Institute" },
+        { "year": "2008–2016", "role": "Associate Professor", "place": "Houston Methodist Research Institute" },
+        { "year": "2003–2008", "role": "Postdoctoral Fellow", "place": "Rice University / UT Houston" },
+        { "year": "1997–2003", "role": "PhD, Molecular Biology", "place": "Scuola Normale Superiore, Pisa" }
+      ]
     },
+    "teaching": {
+      "title": "Teaching",
+      "body": "Full professor at UniCamillus International Medical University, Rome. Courses in translational medicine, nanomedicine and longevity medicine at graduate level. Mentor to over 30 PhD students."
+    },
+    "bioIntro": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — first at the Scuola Normale di Pisa, then at Houston Methodist Research Institute, today at IRCCS San Raffaele in Rome.",
+    "downloadCV": "Download Curriculum Vitae (PDF)",
     "numbers": {
       "title": "By the numbers",
       "publications": "Peer-reviewed articles",
@@ -87,22 +106,43 @@
   },
   "science": {
     "title": "Science",
+    "eyebrow": "Research",
+    "subtitle": "Nanomedicine, biomimetic materials and longevity medicine — three research areas, 200+ publications, 15 international patents.",
+    "viewPublications": "View all publications",
+    "kpi": {
+      "papers": "Peer-reviewed articles",
+      "citations": "Citations (Google Scholar)",
+      "hIndex": "H-index",
+      "patents": "International patents"
+    },
     "metaTitle": "Research — Prof. Ennio Tasciotti",
     "metaDesc": "Nanomedicine, biomimetic materials, longevity medicine: three research areas, 200+ publications, 15 international patents.",
     "heroManifesto": "My research has merged engineering, biology and medicine to overcome biological barriers in cancer, inflammatory disease and tissue regeneration.",
     "areas": {
       "title": "Research areas",
+      "nano": {
+        "title": "Nanomedicine",
+        "body": "Nanoscale delivery systems engineered to bypass biological barriers and deliver therapeutics with precision into diseased tissue. The Multistage Vector (Nature Nanotechnology, 2008) and the Leukosome (Nature Materials, 2016) are among the most cited outcomes."
+      },
+      "regen": {
+        "title": "Biomimetic Materials",
+        "body": "Extracellular matrix scaffolds and engineered materials that guide bone, cartilage and cardiac tissue regeneration by modulating local immune response without toxicity."
+      },
+      "longevity": {
+        "title": "Longevity Medicine",
+        "body": "Study of the molecular mechanisms of aging, chronic inflammation and organ function loss. Clinical direction of the Human Longevity Program at IRCCS San Raffaele.",
+        "name": "Longevity Medicine",
+        "desc": "Study of the molecular mechanisms of aging, chronic inflammation and organ function loss. Clinical direction of the Human Longevity Program at IRCCS San Raffaele."
+      },
       "nanomedicine": {
         "name": "Nanomedicine",
-        "desc": "Nanoscale delivery systems engineered to bypass biological barriers and deliver therapeutics with precision into diseased tissue. The Multistage Vector (Nature Nanotechnology, 2008) and the Leukosome (Nature Materials, 2016) are among the most cited outcomes."
+        "desc": "Nanoscale delivery systems engineered to bypass biological barriers and deliver therapeutics with precision into diseased tissue.",
+        "body": "Nanoscale delivery systems engineered to bypass biological barriers and deliver therapeutics with precision into diseased tissue."
       },
       "biomimetic": {
         "name": "Biomimetic Materials",
-        "desc": "Extracellular matrix scaffolds and engineered materials that guide bone, cartilage and cardiac tissue regeneration by modulating local immune response without toxicity."
-      },
-      "longevity": {
-        "name": "Longevity Medicine",
-        "desc": "Study of the molecular mechanisms of aging, chronic inflammation and organ function loss. Clinical direction of the Human Longevity Program at IRCCS San Raffaele."
+        "desc": "Extracellular matrix scaffolds and engineered materials that guide bone, cartilage and cardiac tissue regeneration.",
+        "body": "Extracellular matrix scaffolds and engineered materials that guide bone, cartilage and cardiac tissue regeneration."
       }
     },
     "funding": {
@@ -121,6 +161,11 @@
   },
   "publications": {
     "title": "Publications",
+    "eyebrow": "Peer-Reviewed Science",
+    "subtitle": "Over 200 articles in nanomedicine, biomaterials and longevity medicine.",
+    "viewScholar": "View full list on Google Scholar",
+    "highlights": "Featured publications",
+    "selected": "Selected publications",
     "metaTitle": "Scientific Publications — Prof. Ennio Tasciotti",
     "metaDesc": "Over 200 peer-reviewed articles in nanomedicine, biomaterials and longevity. Filter by year, topic area or contribution type.",
     "filterYear": "Year",
@@ -150,10 +195,17 @@
   },
   "ventures": {
     "title": "Ventures",
+    "eyebrow": "Entrepreneurship & Innovation",
     "metaTitle": "Ventures & Consulting — Prof. Ennio Tasciotti",
     "metaDesc": "Startups founded, advisory boards, strategic consulting for Roche, Novartis, Gilead and other pharmaceutical and health sector leaders.",
     "founded": "Startups founded",
     "advisory": "Strategic advisory",
+    "subtitle": "Startups founded, advisory boards and strategic partnerships in deeptech and health.",
+    "cta": {
+      "title": "Work together",
+      "body": "Available for advisory boards, strategic consulting and research partnerships.",
+      "button": "Get in touch"
+    },
     "corporate": {
       "title": "Corporate consulting",
       "pharma": "Pharma & Nutrition",
@@ -163,23 +215,30 @@
   },
   "longevity": {
     "title": "Longevity",
+    "eyebrow": "Longevity Medicine",
+    "subtitle": "Science, analysis and clinical practice for a longer, better life.",
     "metaTitle": "Longevity — Prof. Ennio Tasciotti",
     "metaDesc": "Articles, research and analysis on longevity medicine, healthy aging and the reform of primary healthcare.",
     "heroTagline": "Living longer is not the goal. Living better, longer, is.",
     "readTime": "{{min}} min read",
+    "readMore": "Read more",
     "readPaper": "Read the full peer-reviewed paper →",
     "newsletter": "Stay updated",
     "allArticles": "All articles",
     "authorNote": "Prof. Ennio Tasciotti, IRCCS San Raffaele, Rome"
   },
   "speaking": {
-    "title": "Speaking",
+    "title": "Speaking & Keynotes",
+    "eyebrow": "Speaking",
+    "subtitle": "Keynote speaker on longevity, nanomedicine and biomedical innovation.",
     "metaTitle": "Speaking & Keynotes — Prof. Ennio Tasciotti",
     "metaDesc": "Keynote speaker on longevity, nanomedicine and biomedical innovation. Available for international conferences, workshops and advisory.",
     "positioning": "Keynote speaker on longevity, nanomedicine and the future of personalized medicine.",
     "topics": "Proposed talks",
     "venues": "Past venues",
     "booking": {
+      "cta": "Request availability →",
+      "body": "Complete the form with event details and we will respond within 48 business hours.",
       "title": "Request availability",
       "name": "Full name",
       "org": "Organisation",
@@ -214,7 +273,15 @@
     }
   },
   "press": {
-    "title": "Press kit",
+    "title": "Press & Awards",
+    "eyebrow": "Press",
+    "subtitle": "Media coverage, awards and recognition.",
+    "awardsTitle": "Awards & Recognition",
+    "pressTitle2": "Press Coverage",
+    "watch": "Watch / Read",
+    "kitTitle": "Press Kit",
+    "kitBody": "High-resolution photographs, official biography and institutional logos ready to download.",
+    "kitCta": "Download Press Kit (PDF)",
     "metaTitle": "Press Kit — Prof. Ennio Tasciotti",
     "metaDesc": "Official bio, high-resolution photographs, logos and press mentions. Ready-to-use materials for journalists and press offices.",
     "bios": {
@@ -251,6 +318,33 @@
   },
   "consultancy": {
     "title": "Consultancy",
+    "eyebrow": "Advisory & Consulting",
+    "subtitle": "Strategic scientific leadership for deeptech, biotech and health innovation.",
+    "orgsTitle": "Collaborating organisations",
+    "orgsBody": "Past and present collaborations include pharmaceutical multinationals, biotech startups, venture capital funds, hospital networks and government health agencies.",
+    "cta": {
+      "title": "Start a conversation",
+      "body": "Every engagement begins with a focused conversation. Tell me about your challenge.",
+      "button": "Get in touch"
+    },
+    "services": {
+      "scientific-advisory": {
+        "title": "Scientific Advisory Board",
+        "body": "Credibility and network at leadership level for biotech and medtech companies."
+      },
+      "clinical-translation": {
+        "title": "Clinical Translation Strategy",
+        "body": "From discovery to clinical trial: regulatory, scientific and commercial strategy."
+      },
+      "longevity-protocol": {
+        "title": "Longevity Programme Design",
+        "body": "Evidence-based longevity protocols for clinics, wellness brands and health insurers."
+      },
+      "speaking-corporate": {
+        "title": "Corporate Speaking & Workshops",
+        "body": "Bespoke keynotes and workshops for boards, executive teams and investor events."
+      }
+    },
     "metaTitle": "Consultancy — Prof. Ennio Tasciotti",
     "metaDesc": "Scientific advisory board, fractional CSO and workshops for deeptech startups, venture capital funds and pharmaceutical companies.",
     "intro": "Over twenty years of experience in research, entrepreneurship and global consulting. Available for focused engagements with selected companies and investors.",
@@ -291,19 +385,35 @@
   },
   "contact": {
     "title": "Contact",
+    "eyebrow": "Get in touch",
+    "subtitle": "For speaking, consultancy, press or academic collaboration enquiries.",
     "metaTitle": "Contact — Prof. Ennio Tasciotti",
     "metaDesc": "Write for speaking, consultancy, press or academic collaboration enquiries.",
     "intro": "For speaking, consultancy, press or academic collaboration enquiries, complete the form. We respond within 48 business hours.",
     "fallback": "Alternatively, write directly to",
+    "info": {
+      "email": "Institutional email",
+      "institution": "Institution",
+      "profiles": "Scholarly profiles"
+    },
     "form": {
+      "ariaLabel": "Contact form",
       "name": "Full name",
       "email": "Email",
+      "subject": "Subject",
       "org": "Organisation",
       "reason": "Reason for contact",
       "message": "Message",
       "privacy": "I have read and accept the",
       "privacyLink": "privacy policy",
       "submit": "Send message",
+      "loading": "Sending…",
+      "successMessage": "Message sent. We will be in touch shortly.",
+      "errorMessage": "Error sending message. Please try again or write directly to the institutional email.",
+      "nameError": "Please enter your full name (at least 2 characters).",
+      "emailError": "Please enter a valid email address.",
+      "subjectError": "Please enter a subject.",
+      "messageError": "Message must be at least 10 characters.",
       "success": "Message sent. We will be in touch shortly.",
       "error": "Error sending message. Please try again or write directly to the institutional email.",
       "reasons": {
@@ -318,12 +428,51 @@
   "privacy": {
     "title": "Privacy Policy",
     "metaTitle": "Privacy Policy — enniotasciotti.com",
-    "metaDesc": "Full statement on personal data processing in compliance with GDPR."
+    "metaDesc": "Full statement on personal data processing in compliance with GDPR.",
+    "lastUpdated": "Last updated: {date}",
+    "intro": "This site is operated by Prof. Ennio Tasciotti. We are committed to protecting your personal data in compliance with GDPR (EU) 2016/679.",
+    "controller": {
+      "title": "Data Controller",
+      "body": "Prof. Ennio Tasciotti, IRCCS Ospedale San Raffaele, Via Olgettina 60, 20132 Milan, Italy. Email: ennio.tasciotti@sanraffaele.it"
+    },
+    "data": {
+      "title": "Data We Collect",
+      "body": "We collect only the data you voluntarily provide via the contact or newsletter forms (name, email, message). We do not sell your data. Data is processed via Resend for transactional emails only."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "body": "Under GDPR you have the right to access, rectify, erase, restrict or object to processing of your personal data, and the right to data portability."
+    },
+    "contact": {
+      "title": "Exercise Your Rights"
+    }
   },
   "cookies": {
     "title": "Cookie Policy",
     "metaTitle": "Cookie Policy — enniotasciotti.com",
-    "metaDesc": "Statement on the use of cookies on enniotasciotti.com."
+    "metaDesc": "Statement on the use of cookies on enniotasciotti.com.",
+    "lastUpdated": "Last updated: {date}",
+    "intro": "This website uses cookies to improve your experience and for analytics purposes.",
+    "whatAre": {
+      "title": "What Are Cookies",
+      "body": "Cookies are small text files stored on your device by your browser. They help us understand how visitors use the site."
+    },
+    "types": {
+      "title": "Types of Cookies",
+      "necessary": "Necessary cookies: essential for the site to function correctly (e.g. language preference, theme).",
+      "analytics": "Analytics cookies: optional, used to understand site traffic via Google Analytics (with your consent)."
+    },
+    "manage": {
+      "title": "Managing Cookies",
+      "body": "You can withdraw consent at any time by clicking the cookie settings button in the site footer. You can also disable cookies via your browser settings."
+    },
+    "banner": {
+      "ariaLabel": "Cookie consent",
+      "body": "This site uses analytics cookies (Google Analytics). By clicking Accept you consent to their use.",
+      "learnMore": "Learn more",
+      "accept": "Accept",
+      "decline": "Decline"
+    }
   },
   "footer": {
     "rights": "© {{year}} Ennio Tasciotti. All rights reserved.",
@@ -335,10 +484,35 @@
     "linkedin": "LinkedIn"
   },
   "seo": {
+    "homeTitle": "Prof. Ennio Tasciotti — Scientist, Entrepreneur, Longevity Expert",
+    "homeDescription": "Full professor, Director of the Human Longevity Program at IRCCS San Raffaele. Top 1% of the world's most influential scientists (Stanford, 2023). 200+ publications, 15 patents.",
+    "aboutTitle": "About — Prof. Ennio Tasciotti",
+    "aboutDescription": "Full professor, Director of the Human Longevity Program, founder of biotech startups.",
+    "scienceTitle": "Research — Prof. Ennio Tasciotti",
+    "scienceDescription": "Nanomedicine, biomimetic materials, longevity medicine: 200+ publications, 15 patents.",
+    "publicationsTitle": "Publications — Prof. Ennio Tasciotti",
+    "publicationsDescription": "Over 200 peer-reviewed articles in nanomedicine, biomaterials and longevity.",
+    "venturesTitle": "Ventures — Prof. Ennio Tasciotti",
+    "venturesDescription": "Startups founded, advisory boards and strategic consulting.",
+    "longevityTitle": "Longevity — Prof. Ennio Tasciotti",
+    "longevityDescription": "Articles on longevity medicine, healthy aging and primary care reform.",
+    "speakingTitle": "Speaking — Prof. Ennio Tasciotti",
+    "speakingDescription": "Keynote speaker on longevity, nanomedicine and biomedical innovation.",
+    "pressTitle": "Press — Prof. Ennio Tasciotti",
+    "pressDescription": "Media coverage, awards and press resources.",
+    "consultancyTitle": "Consultancy — Prof. Ennio Tasciotti",
+    "consultancyDescription": "Scientific advisory board, fractional CSO and workshops for deeptech companies.",
+    "contactTitle": "Contact — Prof. Ennio Tasciotti",
+    "contactDescription": "Write for speaking, consultancy, press or academic collaboration.",
+    "privacyTitle": "Privacy Policy — enniotasciotti.com",
+    "privacyDescription": "Personal data processing statement in compliance with GDPR.",
+    "cookiesTitle": "Cookie Policy — enniotasciotti.com",
+    "cookiesDescription": "Cookie usage statement for enniotasciotti.com.",
     "home": {
       "title": "Prof. Ennio Tasciotti — Scientist, Entrepreneur, Longevity Expert",
       "desc": "Full professor, Director of the Human Longevity Program at IRCCS San Raffaele. Top 1% of the world's most influential scientists (Stanford, 2023). 200+ publications, 15 patents."
-    }
+    },
+    "siteName": "enniotasciotti.com"
   },
   "common": {
     "learnMore": "Learn more",
@@ -346,6 +520,11 @@
     "download": "Download",
     "back": "Back",
     "loading": "Loading…",
+    "notFound": {
+      "title": "Page not found",
+      "body": "The page you are looking for does not exist or has been moved.",
+      "cta": "Back to home"
+    },
     "placeholder": {
       "imageAlt": "Image not yet available",
       "logoAlt": "{{name}} logo"

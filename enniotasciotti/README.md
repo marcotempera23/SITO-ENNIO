@@ -1,4 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# enniotasciotti.com
+
+Official personal website for **Prof. Ennio Tasciotti** — Scientist, Entrepreneur, Longevity Expert.
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 15 (App Router, TypeScript strict) |
+| Styling | Tailwind CSS v4 (CSS-first, no tailwind.config.ts) |
+| i18n | next-intl v4 — Italian (default) + English |
+| Dark mode | next-themes v0.4.6 — `data-theme="dark"` attribute |
+| Fonts | Fraunces (display), Inter (body), JetBrains Mono (data) |
+| Animations | Framer Motion v12 |
+| Email | Resend |
+| Forms | react-hook-form + Zod |
+| Icons | Lucide React |
+| Package manager | pnpm 9 |
+| Node | 20 LTS |
+
+## Project Structure
+
+```
+app/
+  [locale]/          # All pages under locale routing
+    about/
+    science/
+      publications/
+    ventures/
+    longevity/
+      [slug]/        # Article detail pages
+    speaking/
+    press/
+    consultancy/
+    contact/
+    privacy/
+    cookies/
+  api/
+    contact/         # POST — contact form
+    newsletter/      # POST — newsletter sign-up
+components/
+  layout/            # Nav, Footer, ThemeToggle, LocaleSwitcher
+  shared/            # SectionHeading, KpiCounter, Prose, CookieConsent, …
+  home/              # Hero, ThreePillars, TedxEmbed, NewsletterCta, …
+content/             # Static JSON data (publications, ventures, press, awards)
+i18n/                # next-intl routing, request, navigation config
+lib/                 # seo, schema, email, analytics utilities
+messages/            # it.json, en.json translation files
+styles/              # tokens.css (brand CSS variables)
+```
+
+## Setup
+
+```bash
+# 1. Install dependencies
+pnpm install
+
+# 2. Copy env file and fill in values
+cp .env.example .env.local
+
+# 3. Start dev server
+pnpm dev
+
+# 4. Open http://localhost:3000
+```
+
+## Build
+
+```bash
+pnpm build
+pnpm start
+```
+
+## Environment Variables
+
+See [`.env.example`](.env.example) for the full list.
+
+## Internationalization
+
+- Default locale: **Italian** (`/`) — no locale prefix
+- English: `/en/…`
+- Translations: `messages/it.json` and `messages/en.json`
+
+## Deployment
+
+The site is ready for deployment to **Vercel** (recommended) or any Node.js hosting.
+
+```bash
+vercel --prod
+```
+
+Set all environment variables in the Vercel dashboard under Project → Settings → Environment Variables.
+
+## CI
+
+GitHub Actions workflow at `.github/workflows/ci.yml` runs on every push/PR:
+lint → typecheck → build.
+
+Set `RESEND_API_KEY`, `NEXT_PUBLIC_BASE_URL`, and `NEXT_PUBLIC_GTM_ID` as repository secrets.
+
 
 ## Getting Started
 

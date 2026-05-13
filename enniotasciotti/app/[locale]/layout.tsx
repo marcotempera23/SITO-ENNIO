@@ -6,12 +6,13 @@ import { Fraunces, Inter, JetBrains_Mono } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import { Nav } from '@/components/layout/nav';
 import { Footer } from '@/components/layout/footer';
+import { CookieConsent } from '@/components/shared/cookie-consent';
 import { personSchema } from '@/lib/schema';
 import '@/app/globals.css';
 
 const fraunces = Fraunces({
   subsets: ['latin'],
-  weight: ['300', '400', '700'],
+  weight: 'variable',
   style: ['normal', 'italic'],
   variable: '--font-display',
   display: 'swap',
@@ -99,6 +100,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
             </main>
 
             <Footer />
+            <CookieConsent />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

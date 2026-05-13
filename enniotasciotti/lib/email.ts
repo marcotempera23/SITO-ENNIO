@@ -1,6 +1,8 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 const FROM_ADDRESS = 'noreply@enniotasciotti.com';
 const NOTIFY_ADDRESS = 'ennio.tasciotti@sanraffaele.it';
@@ -19,7 +21,7 @@ export async function sendContactEmail(data: ContactEmailData) {
       ? `[Contatto] ${data.subject} — da ${data.name}`
       : `[Contact] ${data.subject} — from ${data.name}`;
 
-  return resend.emails.send({
+  return getResend().emails.send({
     from: FROM_ADDRESS,
     to: NOTIFY_ADDRESS,
     replyTo: data.email,
@@ -39,7 +41,7 @@ export async function sendNewsletterWelcome(data: NewsletterEmailData) {
       ? 'Benvenuto — Longevity Dispatch di Ennio Tasciotti'
       : 'Welcome — Longevity Dispatch by Ennio Tasciotti';
 
-  return resend.emails.send({
+  return getResend().emails.send({
     from: FROM_ADDRESS,
     to: data.email,
     subject,
