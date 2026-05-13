@@ -11,13 +11,13 @@
   },
   "home": {
     "heroHeadline": "I turn biology into ventures. And science into health.",
-    "heroSubtitle": "Scientist, entrepreneur, longevity expert. Top 1% of the world's most influential scientists (Stanford, 2023).",
+    "heroSubtitle": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. Top 1% of the world's most influential scientists (Stanford, 2023).",
     "heroCta1": "Work with me",
     "heroCta2": "Read my research",
     "hero": {
       "eyebrow": "Nanomedicine · Longevity · Venture Building",
       "headline": "I turn biology into ventures. And science into health.",
-      "subheadline": "Scientist, entrepreneur, longevity expert. Top 1% of the world's most influential scientists (Stanford, 2023).",
+      "subheadline": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. Top 1% of the world's most influential scientists (Stanford, 2023).",
       "ctaPrimary": "Read my research",
       "ctaSecondary": "Explore longevity"
     },
@@ -42,13 +42,13 @@
       },
       "ventures": {
         "label": "Ventures",
-        "kpi": "5 startups founded",
-        "desc": "From lab to market: I have founded and led deeptech startups in biotech, nanomedicine and precision health, working with Roche, Novartis, Gilead and other global leaders."
+        "kpi": "4 founder roles",
+        "desc": "From lab to market: I have founded and led biomedical and biotech initiatives, serving as scientific consultant to Roche, Novartis, Gilead and other global leaders."
       },
       "longevity": {
         "label": "Longevity",
         "kpi": "H-index 63",
-        "desc": "Director of the Human Longevity Program at IRCCS San Raffaele, Rome: research and clinical practice to extend health span, not just lifespan.",
+        "desc": "Founder and director of the Human Longevity Program at IRCCS San Raffaele, Rome: translational research to extend health span, not just lifespan.",
         "title": "Longevity Medicine",
         "body": "Building clinical and scientific models that extend health span through prevention, precision diagnostics and systems medicine."
       }
@@ -114,20 +114,20 @@
       "citations": "Citations",
       "patents": "15 patents",
       "hIndex": "H-index",
-      "ventures": "Ventures founded",
+      "ventures": "Founder roles",
       "tedx": "TEDx Speaker"
     }
   },
   "about": {
     "title": "About",
     "eyebrow": "Biography",
-    "subtitle": "Scientist, entrepreneur and clinician bridging basic research and applied medicine.",
+    "subtitle": "Scientist, entrepreneur and professor bridging basic research and applied medicine.",
     "metaTitle": "About — Prof. Ennio Tasciotti",
-    "metaDesc": "Full professor, Director of the Human Longevity Program, founder of biotech startups. A career spanning Houston, Rome and the world.",
+    "metaDesc": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. A career spanning Pisa, Houston and Rome.",
     "bio": {
       "title": "Biography",
-      "p1": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — first at the Scuola Normale di Pisa, then at Houston Methodist Research Institute, today at IRCCS San Raffaele in Rome.",
-      "p2": "My work sits at the intersection of nanomedicine, biomimetic materials and longevity medicine. I have directed two major research institutes and authored over 200 peer-reviewed publications.",
+      "p1": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — from Scuola Normale Superiore di Pisa to the Houston Methodist system, and now to IRCCS San Raffaele and San Raffaele University in Rome.",
+      "p2": "My work sits at the intersection of nanomedicine, biomimetic materials and longevity medicine. I have directed research centers and programs and authored over 200 peer-reviewed publications.",
       "p3": "Alongside research, I have co-founded multiple startups and sit on the scientific advisory boards of pharmaceutical and biotech companies globally."
     },
     "timeline": {
@@ -135,18 +135,18 @@
       "education": "Education",
       "career": "Career",
       "items": [
-        { "year": "2023–present", "role": "Director, Human Longevity Program", "place": "IRCCS San Raffaele, Rome" },
-        { "year": "2016–2023", "role": "Full Professor & Research Director", "place": "Houston Methodist Research Institute" },
-        { "year": "2008–2016", "role": "Associate Professor", "place": "Houston Methodist Research Institute" },
-        { "year": "2003–2008", "role": "Postdoctoral Fellow", "place": "Rice University / UT Houston" },
-        { "year": "1997–2003", "role": "PhD, Molecular Biology", "place": "Scuola Normale Superiore, Pisa" }
+        { "year": "2023–present", "role": "Full Professor, Applied Medical Sciences and Technologies", "place": "San Raffaele University, Rome" },
+        { "year": "2021–present", "role": "Founder and Director, Human Longevity Program", "place": "IRCCS San Raffaele, Rome" },
+        { "year": "2016–2020", "role": "Founder and Director, Center for Biomimetic Medicine", "place": "Houston Methodist Research Institute" },
+        { "year": "2011–2016", "role": "Associate Professor of Nanomedicine", "place": "Houston Methodist Research Institute" },
+        { "year": "2005", "role": "PhD in Molecular Medicine", "place": "Scuola Normale Superiore di Pisa and ICGEB" }
       ]
     },
     "teaching": {
       "title": "Teaching",
-      "body": "Full professor at UniCamillus International Medical University, Rome. Courses in translational medicine, nanomedicine and longevity medicine at graduate level. Mentor to over 30 PhD students."
+      "body": "Full Professor of Applied Medical Sciences and Technologies at San Raffaele University, Rome. The course covers innovations in preventive and diagnostic medicine, wellbeing, healthy longevity and rehabilitative medicine. According to the official CV, he has mentored 20 PhD students and 24 master's students."
     },
-    "bioIntro": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — first at the Scuola Normale di Pisa, then at Houston Methodist Research Institute, today at IRCCS San Raffaele in Rome.",
+    "bioIntro": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — from Scuola Normale Superiore di Pisa to the Houston Methodist system, and now to IRCCS San Raffaele and San Raffaele University in Rome.",
     "downloadCV": "Download Curriculum Vitae (PDF)",
     "numbers": {
       "title": "By the numbers",
@@ -252,7 +252,7 @@
     "eyebrow": "Entrepreneurship & Innovation",
     "metaTitle": "Ventures & Consulting — Prof. Ennio Tasciotti",
     "metaDesc": "Startups founded, advisory boards, strategic consulting for Roche, Novartis, Gilead and other pharmaceutical and health sector leaders.",
-    "founded": "Startups founded",
+    "founded": "Founder roles",
     "advisory": "Strategic advisory",
     "subtitle": "Startups founded, advisory boards and strategic partnerships in deeptech and health.",
     "cta": {
@@ -487,7 +487,7 @@
     "intro": "This site is operated by Prof. Ennio Tasciotti. We are committed to protecting your personal data in compliance with GDPR (EU) 2016/679.",
     "controller": {
       "title": "Data Controller",
-      "body": "Prof. Ennio Tasciotti, IRCCS Ospedale San Raffaele, Via Olgettina 60, 20132 Milan, Italy. Email: ennio.tasciotti@sanraffaele.it"
+      "body": "Prof. Ennio Tasciotti, IRCCS San Raffaele, Rome, Italy. San Raffaele University, Rome. Email: ennio.tasciotti@sanraffaele.it"
     },
     "data": {
       "title": "Data We Collect",
@@ -539,9 +539,9 @@
   },
   "seo": {
     "homeTitle": "Prof. Ennio Tasciotti — Scientist, Entrepreneur, Longevity Expert",
-    "homeDescription": "Full professor, Director of the Human Longevity Program at IRCCS San Raffaele. Top 1% of the world's most influential scientists (Stanford, 2023). 200+ publications, 15 patents.",
+    "homeDescription": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. Top 1% Stanford, 200+ publications, 15 patents.",
     "aboutTitle": "About — Prof. Ennio Tasciotti",
-    "aboutDescription": "Full professor, Director of the Human Longevity Program, founder of biotech startups.",
+    "aboutDescription": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele.",
     "scienceTitle": "Research — Prof. Ennio Tasciotti",
     "scienceDescription": "Nanomedicine, biomimetic materials, longevity medicine: 200+ publications, 15 patents.",
     "publicationsTitle": "Publications — Prof. Ennio Tasciotti",
@@ -564,7 +564,7 @@
     "cookiesDescription": "Cookie usage statement for enniotasciotti.com.",
     "home": {
       "title": "Prof. Ennio Tasciotti — Scientist, Entrepreneur, Longevity Expert",
-      "desc": "Full professor, Director of the Human Longevity Program at IRCCS San Raffaele. Top 1% of the world's most influential scientists (Stanford, 2023). 200+ publications, 15 patents."
+      "desc": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. Top 1% Stanford, 200+ publications, 15 patents."
     },
     "siteName": "enniotasciotti.com"
   },

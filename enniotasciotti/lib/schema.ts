@@ -5,7 +5,7 @@ export function personSchema(): WithContext<Person> {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Ennio Tasciotti',
-    jobTitle: 'Biomedical Scientist, Entrepreneur, Professor',
+    jobTitle: 'Full Professor of Applied Medical Sciences and Technologies',
     url: 'https://enniotasciotti.com',
     email: 'ennio.tasciotti@sanraffaele.it',
     sameAs: [
@@ -16,17 +16,20 @@ export function personSchema(): WithContext<Person> {
     ],
     affiliation: {
       '@type': 'Organization',
-      name: 'IRCCS Ospedale San Raffaele',
-      url: 'https://www.hsr.it',
+      name: 'San Raffaele University, Rome',
     },
     alumniOf: [
       {
         '@type': 'EducationalOrganization',
-        name: 'University of Houston',
+        name: 'University of Pisa',
       },
       {
         '@type': 'EducationalOrganization',
-        name: 'The University of Texas MD Anderson Cancer Center',
+        name: 'Scuola Normale Superiore di Pisa',
+      },
+      {
+        '@type': 'EducationalOrganization',
+        name: 'International Centre for Genetic Engineering and Biotechnology',
       },
     ],
     knowsAbout: [

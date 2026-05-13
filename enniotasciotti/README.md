@@ -5,11 +5,11 @@ Official personal website for **Prof. Ennio Tasciotti** — Scientist, Entrepren
 ## Tech Stack
 
 | Layer | Technology |
-|---|---|
-| Framework | Next.js 15 (App Router, TypeScript strict) |
+| --- | --- |
+| Framework | Next.js 16 (App Router, TypeScript strict) |
 | Styling | Tailwind CSS v4 (CSS-first, no tailwind.config.ts) |
 | i18n | next-intl v4 — Italian (default) + English |
-| Dark mode | next-themes v0.4.6 — `data-theme="dark"` attribute |
+| Dark mode | Local theme toggle — `data-theme="dark"` attribute |
 | Fonts | Fraunces (display), Inter (body), JetBrains Mono (data) |
 | Animations | Framer Motion v12 |
 | Email | Resend |
@@ -20,7 +20,7 @@ Official personal website for **Prof. Ennio Tasciotti** — Scientist, Entrepren
 
 ## Project Structure
 
-```
+```text
 app/
   [locale]/          # All pages under locale routing
     about/
@@ -96,8 +96,7 @@ Set all environment variables in the Vercel dashboard under Project → Settings
 GitHub Actions workflow at `.github/workflows/ci.yml` runs on every push/PR:
 lint → typecheck → build.
 
-Set `RESEND_API_KEY`, `NEXT_PUBLIC_BASE_URL`, and `NEXT_PUBLIC_GTM_ID` as repository secrets.
-
+Set `RESEND_API_KEY`, `NEXT_PUBLIC_BASE_URL`, `NEXT_PUBLIC_INDEXABLE`, and `NEXT_PUBLIC_GTM_ID` as repository secrets.
 
 ## Getting Started
 

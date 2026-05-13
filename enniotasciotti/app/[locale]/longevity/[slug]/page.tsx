@@ -19,15 +19,15 @@ const ARTICLES: Record<string, {
     bodyIT: `
 ## Introduzione
 
-La longevità sana non è semplicemente l'assenza di malattia: è il risultato di un approccio integrato che unisce diagnostica di precisione, prevenzione personalizzata e interventi mirati. Con il nostro gruppo di ricerca presso l'IRCCS Ospedale San Raffaele, abbiamo sviluppato un modello — il **Blueprint per la Longevità di Precisione** — che offre una visione sistemica della salute nel corso della vita.
+La longevità sana non è semplicemente l'assenza di malattia: è il risultato di un approccio integrato che unisce prevenzione, biomarcatori, stratificazione del rischio e monitoraggio nel tempo. Nel lavoro **Blueprint for Healthy & Precision Longevity**, il contributo del Prof. Tasciotti è inquadrato nello Human Longevity Program dell'IRCCS San Raffaele e nel Dipartimento di Scienze Umane e Promozione della Qualità della Vita dell'Università Telematica San Raffaele Roma.
 
-## I quattro pilastri
+## Le cinque priorità
 
-Il blueprint si articola in quattro aree interconnesse: **diagnostica avanzata** (genomica, proteomica, metabolomica), **modulazione dell'inflammaging**, **ottimizzazione nutrizionale e dell'esercizio fisico**, e **salute cognitiva e psicosociale**.
+Il blueprint identifica cinque priorità operative: **biomarcatori clinicamente validati dell'età biologica**, **piattaforme digitali interoperabili**, **trial multimodali adattivi**, **strumenti di stratificazione del rischio basati su AI spiegabile** e **formazione professionale sulla relazione tra aging, patologia e disabilità**.
 
 ## Dalla scienza alla pratica
 
-Ogni pilastro si traduce in protocolli clinici applicabili nella medicina primaria. La sfida non è più di natura scientifica, ma organizzativa: come integrare questi strumenti in sistemi sanitari costruiti per la cura della malattia acuta.
+La sfida è organizzativa e scientifica insieme: integrare prevenzione di precisione, dati longitudinali e percorsi multidisciplinari in sistemi sanitari ancora prevalentemente centrati sulla malattia acuta.
 
 ## Conclusioni
 
@@ -36,15 +36,15 @@ La longevità di precisione richiede un cambiamento di paradigma: da un sistema 
     bodyEN: `
 ## Introduction
 
-Healthy longevity is not merely the absence of disease: it is the outcome of an integrated approach combining precision diagnostics, personalised prevention and targeted interventions. With our research group at IRCCS Ospedale San Raffaele, we developed a model — the **Blueprint for Precision Longevity** — offering a systemic vision of health across the lifespan.
+Healthy longevity is not merely the absence of disease: it is the outcome of an integrated approach combining prevention, biomarkers, risk stratification and longitudinal monitoring. In **Blueprint for Healthy & Precision Longevity**, Prof. Tasciotti's contribution is framed through the Human Longevity Program at IRCCS San Raffaele and the Department of Human Sciences and Quality of Life at San Raffaele University, Rome.
 
-## The four pillars
+## The five priorities
 
-The blueprint is structured around four interconnected domains: **advanced diagnostics** (genomics, proteomics, metabolomics), **inflammaging modulation**, **nutritional and physical activity optimisation**, and **cognitive and psychosocial health**.
+The blueprint identifies five operational priorities: **clinically validated biomarkers of biological age**, **interoperable digital monitoring platforms**, **adaptive multimodal trials**, **explainable-AI risk stratification tools** and **professional training on the relationship between ageing, pathology and disability**.
 
 ## From science to practice
 
-Each pillar translates into clinical protocols applicable in primary medicine. The challenge is no longer scientific but organisational: how to integrate these tools into health systems built around acute disease management.
+The challenge is both organisational and scientific: integrating precision prevention, longitudinal data and multidisciplinary care pathways into health systems still largely built around acute disease management.
 
 ## Conclusions
 
@@ -63,15 +63,15 @@ I sistemi sanitari occidentali sono stati progettati per gestire malattie acute.
 
 ## La medicina della longevità come risposta
 
-La medicina della longevità introduce un approccio **preventivo e personalizzato** in grado di identificare i fattori di rischio decenni prima che si manifestino come patologia. Questo non è fantascienza: gli strumenti esistono già — genomica, bioindicatori, wearables.
+La medicina della longevità introduce un approccio **preventivo e personalizzato** basato su prevenzione primaria, stratificazione predittiva del rischio, biomarcatori validati e team multidisciplinari supportati dai dati.
 
 ## Proposta di riforma
 
-Proponiamo l'integrazione di **Longevity Medicine Clinics** nei presidi di medicina primaria. Queste unità, guidate da medici specializzati in longevità, fungono da hub di prevenzione, coordinando specialisti, nutrizionisti, fisioterapisti e psicologi.
+Il documento propone **longevity clinics** accessibili pubblicamente, con assessment standardizzati, percorsi stepped-care, cartelle digitali integrate ed endpoint funzionali ed economici misurabili.
 
 ## Implicazioni di sistema
 
-L'investimento nella prevenzione genera risparmi significativi sul lungo periodo. Le proiezioni indicano una riduzione del 30–40% dei ricoveri ospedalieri evitabili nella coorte 50–70 anni se si adottano protocolli di longevità di precisione.
+L'investimento nella prevenzione richiede una combinazione di strumenti di policy: infrastrutture informative, standard regolatori e di accreditamento, finanziamenti orientati alla prevenzione, hub territoriali e formazione di team multidisciplinari data-literate.
 
 ## Verso un nuovo contratto sociale sulla salute
 
@@ -84,15 +84,15 @@ Western healthcare systems were designed to manage acute illness. Today, with an
 
 ## Longevity medicine as the answer
 
-Longevity medicine introduces a **preventive and personalised** approach capable of identifying risk factors decades before they manifest as disease. This is not science fiction: the tools already exist — genomics, biomarkers, wearables.
+Longevity medicine introduces a **preventive and personalised** approach grounded in primary prevention, predictive risk stratification, validated biomarkers and multidisciplinary, data-enabled teams.
 
 ## Reform proposal
 
-We propose the integration of **Longevity Medicine Clinics** within primary care facilities. These units, led by longevity-trained physicians, serve as prevention hubs, coordinating specialists, nutritionists, physiotherapists and psychologists.
+The document proposes publicly accessible **longevity clinics** with standardized assessment, stepped-care pathways, integrated digital records and measurable functional and economic endpoints.
 
 ## System implications
 
-Investment in prevention generates significant long-term savings. Projections indicate a 30–40% reduction in avoidable hospital admissions in the 50–70 age cohort if precision longevity protocols are adopted.
+Investment in prevention requires a policy mix of information infrastructures, regulatory and accreditation standards, prevention-focused financing, community hubs and workforce development for multidisciplinary, data-literate teams.
 
 ## Towards a new social contract on health
 
@@ -160,8 +160,8 @@ export default async function LongevityArticlePage({ params }: PageProps) {
         <div className="mt-16 border-t border-[var(--color-border)] pt-8">
           <p className="text-step--1 italic text-[var(--color-quote)]">
             {isIT
-              ? 'Prof. Ennio Tasciotti — IRCCS Ospedale San Raffaele, Milano'
-              : 'Prof. Ennio Tasciotti — IRCCS Ospedale San Raffaele, Milan'}
+              ? 'Prof. Ennio Tasciotti — IRCCS San Raffaele, Roma'
+              : 'Prof. Ennio Tasciotti — IRCCS San Raffaele, Rome'}
           </p>
         </div>
       </div>

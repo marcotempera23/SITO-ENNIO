@@ -30,9 +30,9 @@ export default async function SciencePage({ params }: PageProps) {
         {/* KPI row */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-[var(--color-border)] py-12">
           <KpiCounter value={200} suffix="+" label={t('kpi.papers')} />
-          <KpiCounter value={8500} suffix="+" label={t('kpi.citations')} />
-          <KpiCounter value={47} label={t('kpi.hIndex')} />
-          <KpiCounter value={30} suffix="+" label={t('kpi.patents')} />
+          <KpiCounter value={13000} suffix="+" label={t('kpi.citations')} />
+          <KpiCounter value={63} label={t('kpi.hIndex')} />
+          <KpiCounter value={15} label={t('kpi.patents')} />
         </div>
 
         {/* Research areas */}

@@ -9,6 +9,7 @@ interface BuildMetadataOptions {
 }
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://enniotasciotti.com';
+const IS_INDEXABLE = process.env.NEXT_PUBLIC_INDEXABLE === 'true';
 
 export function buildMetadata({
   locale,
@@ -53,11 +54,11 @@ export function buildMetadata({
       images: [ogImage],
     },
     robots: {
-      index: true,
-      follow: true,
+      index: IS_INDEXABLE,
+      follow: IS_INDEXABLE,
       googleBot: {
-        index: true,
-        follow: true,
+        index: IS_INDEXABLE,
+        follow: IS_INDEXABLE,
         'max-video-preview': -1,
         'max-image-preview': 'large',
         'max-snippet': -1,

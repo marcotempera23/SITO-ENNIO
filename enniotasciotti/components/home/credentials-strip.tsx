@@ -5,10 +5,10 @@ export function CredentialsStrip() {
 
   const items = [
     { label: t('publications'), value: '200+' },
-    { label: t('citations'), value: '8,500+' },
-    { label: t('patents'), value: '30+' },
-    { label: t('hIndex'), value: 'h-index 47' },
-    { label: t('ventures'), value: '5' },
+    { label: t('citations'), value: '13,000+' },
+    { label: t('patents'), value: '15' },
+    { label: t('hIndex'), value: 'h-index 63' },
+    { label: t('ventures'), value: '4' },
   ];
 
   return (

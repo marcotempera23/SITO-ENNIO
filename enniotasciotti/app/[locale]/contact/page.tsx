@@ -48,8 +48,8 @@ export default async function ContactPage({ params }: PageProps) {
                   {t('info.institution')}
                 </dt>
                 <dd className="text-step-0 text-[var(--color-text)]">
-                  IRCCS Ospedale San Raffaele<br />
-                  Via Olgettina 60, 20132 Milano, IT
+                  IRCCS San Raffaele, Roma<br />
+                  Università Telematica San Raffaele Roma
                 </dd>
               </div>
               <div>

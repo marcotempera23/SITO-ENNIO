@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { ThemeProvider } from 'next-themes';
 import { Fraunces, Inter, JetBrains_Mono } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import { Nav } from '@/components/layout/nav';
@@ -63,31 +62,24 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
   return (
     <div className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]`}>
-      <ThemeProvider
-        attribute="data-theme"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          {/* Skip link for keyboard / AT users */}
-          <a
-            href="#main-content"
-            className="skip-link"
-          >
-            {locale === 'it' ? 'Vai al contenuto principale' : 'Skip to main content'}
-          </a>
+      <NextIntlClientProvider messages={messages} locale={locale}>
+        {/* Skip link for keyboard / AT users */}
+        <a
+          href="#main-content"
+          className="skip-link"
+        >
+          {locale === 'it' ? 'Vai al contenuto principale' : 'Skip to main content'}
+        </a>
 
-          <Nav />
+        <Nav />
 
-          <main id="main-content" tabIndex={-1}>
-            {children}
-          </main>
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
 
-          <Footer />
-          <CookieConsent />
-        </NextIntlClientProvider>
-      </ThemeProvider>
+        <Footer />
+        <CookieConsent />
+      </NextIntlClientProvider>
     </div>
   );
 }

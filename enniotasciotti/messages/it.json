@@ -11,13 +11,13 @@
   },
   "home": {
     "heroHeadline": "Trasformo la biologia in impresa. La scienza in salute.",
-    "heroSubtitle": "Scienziato, imprenditore, esperto di longevità. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
+    "heroSubtitle": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
     "heroCta1": "Lavora con me",
     "heroCta2": "Leggi la mia ricerca",
     "hero": {
       "eyebrow": "Nanomedicina · Longevità · Venture Building",
       "headline": "Trasformo la biologia in impresa. La scienza in salute.",
-      "subheadline": "Scienziato, imprenditore, esperto di longevità. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
+      "subheadline": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
       "ctaPrimary": "Leggi la mia ricerca",
       "ctaSecondary": "Esplora la longevità"
     },
@@ -42,13 +42,13 @@
       },
       "ventures": {
         "label": "Imprese",
-        "kpi": "5 startup fondate",
-        "desc": "Dal laboratorio al mercato: ho fondato e guidato startup deeptech in biotech, nanomedicina e salute di precisione, collaborando con Roche, Novartis, Gilead e altri leader globali."
+        "kpi": "4 ruoli da founder",
+        "desc": "Dal laboratorio al mercato: ho fondato e guidato iniziative biomedicali e biotech, collaborando come consulente scientifico con Roche, Novartis, Gilead e altri leader globali."
       },
       "longevity": {
         "label": "Longevità",
         "kpi": "H-index 63",
-        "desc": "Direttore del programma Human Longevity all'IRCCS San Raffaele di Roma: ricerca e clinica per estendere la salute, non solo la vita.",
+        "desc": "Fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele di Roma: ricerca traslazionale per estendere la salute, non solo la vita.",
         "title": "Medicina della longevità",
         "body": "Costruire modelli clinici e scientifici per estendere la salute attraverso prevenzione, diagnostica di precisione e medicina dei sistemi."
       }
@@ -114,20 +114,20 @@
       "citations": "Citazioni",
       "patents": "15 brevetti",
       "hIndex": "H-index",
-      "ventures": "Imprese fondate",
+      "ventures": "Ruoli da founder",
       "tedx": "TEDx Speaker"
     }
   },
   "about": {
     "title": "Chi sono",
     "eyebrow": "Biografia",
-    "subtitle": "Scienziato, imprenditore e clinico che fa da ponte tra la ricerca di base e la medicina applicata.",
+    "subtitle": "Scienziato, imprenditore e professore che fa da ponte tra la ricerca di base e la medicina applicata.",
     "metaTitle": "Chi sono — Prof. Ennio Tasciotti",
-    "metaDesc": "Professore ordinario, direttore del programma Human Longevity, fondatore di startup di biotecnologia. La storia di una carriera tra Houston, Roma e il mondo.",
+    "metaDesc": "Professore ordinario all'Università Telematica San Raffaele Roma e fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Una carriera tra Pisa, Houston e Roma.",
     "bio": {
       "title": "Biografia",
-      "p1": "Sono Ennio Tasciotti. Ho trascorso vent'anni a costruire ponti tra la ricerca di base e la medicina applicata — prima nei laboratori della Scuola Normale di Pisa, poi al Houston Methodist Research Institute, oggi all'IRCCS San Raffaele di Roma.",
-      "p2": "Il mio lavoro si trova all'intersezione tra nanomedicina, materiali biomimetici e medicina della longevità. Ho diretto due importanti istituti di ricerca e scritto oltre 200 pubblicazioni peer-reviewed.",
+      "p1": "Sono Ennio Tasciotti. Ho trascorso vent'anni a costruire ponti tra ricerca di base e medicina applicata — dalla Scuola Normale Superiore di Pisa al sistema Houston Methodist, fino all'IRCCS San Raffaele e all'Università Telematica San Raffaele Roma.",
+      "p2": "Il mio lavoro si trova all'intersezione tra nanomedicina, materiali biomimetici e medicina della longevità. Ho diretto centri e programmi di ricerca e scritto oltre 200 pubblicazioni peer-reviewed.",
       "p3": "Accanto alla ricerca, ho co-fondato numerose startup e faccio parte di comitati scientifici di aziende farmaceutiche e biotech in tutto il mondo."
     },
     "timeline": {
@@ -135,18 +135,18 @@
       "education": "Formazione",
       "career": "Carriera",
       "items": [
-        { "year": "2023–oggi", "role": "Direttore, Programma Human Longevity", "place": "IRCCS San Raffaele, Roma" },
-        { "year": "2016–2023", "role": "Professore ordinario e Direttore di Ricerca", "place": "Houston Methodist Research Institute" },
-        { "year": "2008–2016", "role": "Professore associato", "place": "Houston Methodist Research Institute" },
-        { "year": "2003–2008", "role": "Ricercatore postdottorale", "place": "Rice University / UT Houston" },
-        { "year": "1997–2003", "role": "Dottorato di ricerca, Biologia Molecolare", "place": "Scuola Normale Superiore, Pisa" }
+        { "year": "2023–oggi", "role": "Professore ordinario, Scienze e tecnologie mediche applicate", "place": "Università Telematica San Raffaele Roma" },
+        { "year": "2021–oggi", "role": "Fondatore e direttore, Human Longevity Program", "place": "IRCCS San Raffaele, Roma" },
+        { "year": "2016–2020", "role": "Fondatore e direttore, Center for Biomimetic Medicine", "place": "Houston Methodist Research Institute" },
+        { "year": "2011–2016", "role": "Associate Professor of Nanomedicine", "place": "Houston Methodist Research Institute" },
+        { "year": "2005", "role": "Dottorato di ricerca in Molecular Medicine", "place": "Scuola Normale Superiore di Pisa e ICGEB" }
       ]
     },
     "teaching": {
       "title": "Didattica",
-      "body": "Professore ordinario all'Università Internazionale UniCamillus, Roma. Corsi di medicina traslazionale, nanomedicina e medicina della longevità a livello magistrale. Mentore di oltre 30 dottorandi."
+      "body": "Professore ordinario in Scienze e tecnologie mediche applicate presso l'Università Telematica San Raffaele Roma. Il corso copre innovazioni in medicina preventiva e diagnostica, benessere, healthy longevity e medicina riabilitativa. Ha seguito 20 dottorandi e 24 studenti magistrali secondo il CV ufficiale."
     },
-    "bioIntro": "Sono Ennio Tasciotti. Ho trascorso vent'anni a costruire ponti tra la ricerca di base e la medicina applicata — prima nei laboratori della Scuola Normale di Pisa, poi al Houston Methodist Research Institute, oggi all'IRCCS San Raffaele di Roma.",
+    "bioIntro": "Sono Ennio Tasciotti. Ho trascorso vent'anni a costruire ponti tra ricerca di base e medicina applicata — dalla Scuola Normale Superiore di Pisa al sistema Houston Methodist, fino all'IRCCS San Raffaele e all'Università Telematica San Raffaele Roma.",
     "downloadCV": "Scarica il Curriculum Vitae (PDF)",
     "numbers": {
       "title": "In numeri",
@@ -252,7 +252,7 @@
     "eyebrow": "Imprenditorialità & Innovazione",
     "metaTitle": "Imprese e Consulenze — Prof. Ennio Tasciotti",
     "metaDesc": "Startup fondate, advisory board, consulenza strategica per Roche, Novartis, Gilead e altri leader del settore farmaceutico e della salute.",
-    "founded": "Startup fondate",
+    "founded": "Ruoli da founder",
     "advisory": "Advisory strategico",
     "subtitle": "Startup fondate, advisory board e partnership strategiche in deeptech e salute.",
     "cta": {
@@ -487,7 +487,7 @@
     "intro": "Questo sito è gestito dal Prof. Ennio Tasciotti. Siamo impegnati a proteggere i tuoi dati personali nel rispetto del GDPR (UE) 2016/679.",
     "controller": {
       "title": "Titolare del Trattamento",
-      "body": "Prof. Ennio Tasciotti, IRCCS Ospedale San Raffaele, Via Olgettina 60, 20132 Milano, Italia. Email: ennio.tasciotti@sanraffaele.it"
+      "body": "Prof. Ennio Tasciotti, IRCCS San Raffaele, Roma, Italia. Università Telematica San Raffaele Roma. Email: ennio.tasciotti@sanraffaele.it"
     },
     "data": {
       "title": "Dati Raccolti",
@@ -539,9 +539,9 @@
   },
   "seo": {
     "homeTitle": "Prof. Ennio Tasciotti — Scienziato, Imprenditore, Esperto di Longevità",
-    "homeDescription": "Professore ordinario, direttore del programma Human Longevity all'IRCCS San Raffaele. Top 1% degli scienziati più influenti al mondo (Stanford, 2023). 200+ pubblicazioni, 15 brevetti.",
-    "aboutTitle": "About — Prof. Ennio Tasciotti",
-    "aboutDescription": "Professore ordinario, direttore del programma Human Longevity, fondatore di startup biotech.",
+    "homeDescription": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% Stanford, 200+ pubblicazioni, 15 brevetti.",
+    "aboutTitle": "Chi sono — Prof. Ennio Tasciotti",
+    "aboutDescription": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele.",
     "scienceTitle": "Ricerca — Prof. Ennio Tasciotti",
     "scienceDescription": "Nanomedicina, materiali biomimetici, medicina della longevità: 200+ pubblicazioni, 15 brevetti.",
     "publicationsTitle": "Pubblicazioni — Prof. Ennio Tasciotti",
@@ -564,7 +564,7 @@
     "cookiesDescription": "Informativa sull'utilizzo dei cookie su enniotasciotti.com.",
     "home": {
       "title": "Prof. Ennio Tasciotti — Scienziato, Imprenditore, Esperto di Longevità",
-      "desc": "Professore ordinario, direttore del programma Human Longevity all'IRCCS San Raffaele. Top 1% degli scienziati più influenti al mondo (Stanford, 2023). 200+ pubblicazioni, 15 brevetti."
+      "desc": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% Stanford, 200+ pubblicazioni, 15 brevetti."
     },
     "siteName": "enniotasciotti.com"
   },
