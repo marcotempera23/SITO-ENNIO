@@ -1,0 +1,354 @@
+{
+  "nav": {
+    "about": "Chi sono",
+    "science": "Scienza",
+    "ventures": "Imprese",
+    "longevity": "Longevità",
+    "speaking": "Speaking",
+    "consultancy": "Consulenza",
+    "contact": "Contatti",
+    "press": "Press kit"
+  },
+  "home": {
+    "heroHeadline": "Trasformo la biologia in impresa. La scienza in salute.",
+    "heroSubtitle": "Scienziato, imprenditore, esperto di longevità. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
+    "heroCta1": "Lavora con me",
+    "heroCta2": "Leggi la mia ricerca",
+    "tedxQuote": "Per vincere il cancro bisogna pensare come una cellula.",
+    "tedxContext": "TEDxCNR Roma, 2016",
+    "pillars": {
+      "title": "Tre pilastri di un percorso",
+      "science": {
+        "label": "Scienza",
+        "kpi": "200+ pubblicazioni",
+        "desc": "Ricerca di frontiera in nanomedicina, materiali biomimetici e medicina della longevità — pubblicata su Nature Materials, Nature Nanotechnology e oltre 200 riviste peer-reviewed."
+      },
+      "ventures": {
+        "label": "Imprese",
+        "kpi": "5 startup fondate",
+        "desc": "Dal laboratorio al mercato: ho fondato e guidato startup deeptech in biotech, nanomedicina e salute di precisione, collaborando con Roche, Novartis, Gilead e altri leader globali."
+      },
+      "longevity": {
+        "label": "Longevità",
+        "kpi": "H-index 63",
+        "desc": "Direttore del programma Human Longevity all'IRCCS San Raffaele di Roma: ricerca e clinica per estendere la salute, non solo la vita."
+      }
+    },
+    "discoveries": {
+      "title": "Scoperte scientifiche di riferimento",
+      "readMore": "Approfondisci"
+    },
+    "tedxSection": {
+      "title": "TEDx Talk",
+      "watchCta": "Guarda il talk"
+    },
+    "latestArticles": {
+      "title": "Dal Longevity Lab",
+      "viewAll": "Tutti gli articoli"
+    },
+    "newsletter": {
+      "title": "Ricevi aggiornamenti dalla frontiera della longevità",
+      "subtitle": "Analisi, ricerche e approfondimenti — senza rumore. Nessuna email commerciale.",
+      "placeholder": "La tua email",
+      "cta": "Iscriviti",
+      "privacy": "Confermo di aver letto e accettato la",
+      "privacyLink": "privacy policy",
+      "success": "Grazie! Controlla la tua email per confermare l'iscrizione.",
+      "error": "Qualcosa è andato storto. Riprova."
+    },
+    "credentialsStrip": {
+      "stanford": "Top 1% Stanford",
+      "hindex": "H-index 63",
+      "publications": "200+ pubblicazioni",
+      "patents": "15 brevetti",
+      "tedx": "TEDx Speaker"
+    }
+  },
+  "about": {
+    "title": "Chi sono",
+    "metaTitle": "Chi sono — Prof. Ennio Tasciotti",
+    "metaDesc": "Professore ordinario, direttore del programma Human Longevity, fondatore di startup di biotecnologia. La storia di una carriera tra Houston, Roma e il mondo.",
+    "bioIntro": "Sono Ennio Tasciotti. Ho trascorso vent'anni a costruire ponti tra la ricerca di base e la medicina applicata — prima nei laboratori della Scuola Normale di Pisa, poi al Houston Methodist Research Institute, oggi all'IRCCS San Raffaele di Roma.",
+    "downloadCV": "Scarica il Curriculum Vitae (PDF)",
+    "timeline": {
+      "title": "Percorso",
+      "education": "Formazione",
+      "career": "Carriera"
+    },
+    "numbers": {
+      "title": "In numeri",
+      "publications": "Articoli peer-reviewed",
+      "citations": "Citazioni (Google Scholar)",
+      "patents": "Brevetti internazionali",
+      "funding": "Finanziamenti ottenuti (USD)",
+      "students": "Dottorandi seguiti",
+      "lectures": "Conferenze internazionali"
+    }
+  },
+  "science": {
+    "title": "Scienza",
+    "metaTitle": "Ricerca — Prof. Ennio Tasciotti",
+    "metaDesc": "Nanomedicina, materiali biomimetici, medicina della longevità: tre aree di ricerca, 200+ pubblicazioni, 15 brevetti internazionali.",
+    "heroManifesto": "La mia ricerca ha unito ingegneria, biologia e medicina per superare le barriere biologiche nei tumori, nelle malattie infiammatorie e nei processi rigenerativi.",
+    "areas": {
+      "title": "Aree di ricerca",
+      "nanomedicine": {
+        "name": "Nanomedicina",
+        "desc": "Sistemi di rilascio nanometrici progettati per superare le barriere biologiche e consegnare farmaci con precisione nei tessuti malati. Il vettore Multistage (Nature Nanotechnology, 2008) e il Leukosoma (Nature Materials, 2016) sono i risultati più citati."
+      },
+      "biomimetic": {
+        "name": "Materiali Biomimetici",
+        "desc": "Scaffold e matrici extracellulari ingegnerizzate per guidare la rigenerazione di osso, cartilagine e tessuto cardiaco, modulando la risposta immunitaria locale senza tossicità."
+      },
+      "longevity": {
+        "name": "Medicina della Longevità",
+        "desc": "Studio dei meccanismi molecolari dell'invecchiamento, dell'infiammazione cronica e della perdita di funzione d'organo. Direzione clinica del programma Human Longevity all'IRCCS San Raffaele."
+      }
+    },
+    "funding": {
+      "title": "Portfolio di finanziamenti",
+      "dod": "Dipartimento della Difesa USA",
+      "nih": "National Institutes of Health",
+      "eu": "Unione Europea",
+      "reviewed": "Fondi valutati come revisore"
+    },
+    "discoveries": {
+      "title": "Scoperte scientifiche"
+    },
+    "publications": {
+      "link": "Vai alle pubblicazioni"
+    }
+  },
+  "publications": {
+    "title": "Pubblicazioni",
+    "metaTitle": "Pubblicazioni scientifiche — Prof. Ennio Tasciotti",
+    "metaDesc": "Oltre 200 articoli peer-reviewed in nanomedicina, biomateriali e longevità. Seleziona per anno, area tematica o tipo di contributo.",
+    "filterYear": "Anno",
+    "filterArea": "Area",
+    "filterType": "Tipo",
+    "allYears": "Tutti gli anni",
+    "allAreas": "Tutte le aree",
+    "allTypes": "Tutti i tipi",
+    "coverStory": "Cover story",
+    "highlight": "In evidenza",
+    "viewDOI": "DOI",
+    "scholarLink": "Google Scholar",
+    "scopusLink": "Scopus",
+    "total": "{{count}} pubblicazioni",
+    "areas": {
+      "nanomedicine": "Nanomedicina",
+      "regenerative": "Medicina rigenerativa",
+      "longevity": "Longevità",
+      "cancer": "Oncologia",
+      "inflammation": "Infiammazione"
+    },
+    "types": {
+      "original": "Articolo originale",
+      "review": "Review",
+      "book_chapter": "Capitolo di libro"
+    }
+  },
+  "ventures": {
+    "title": "Imprese",
+    "metaTitle": "Imprese e Consulenze — Prof. Ennio Tasciotti",
+    "metaDesc": "Startup fondate, advisory board, consulenza strategica per Roche, Novartis, Gilead e altri leader del settore farmaceutico e della salute.",
+    "founded": "Startup fondate",
+    "advisory": "Advisory strategico",
+    "corporate": {
+      "title": "Consulenza corporate",
+      "pharma": "Farmaceutico e Nutrizione",
+      "clusters": "Advisory & Innovation"
+    },
+    "sectors": "Settori serviti"
+  },
+  "longevity": {
+    "title": "Longevità",
+    "metaTitle": "Longevità — Prof. Ennio Tasciotti",
+    "metaDesc": "Articoli, ricerche e analisi sulla medicina della longevità, sull'invecchiamento sano e sulla riforma della medicina primaria.",
+    "heroTagline": "Vivere più a lungo non è l'obiettivo. Vivere meglio, più a lungo, lo è.",
+    "readTime": "{{min}} min di lettura",
+    "readPaper": "Leggi il paper completo →",
+    "newsletter": "Resta aggiornato",
+    "allArticles": "Tutti gli articoli",
+    "authorNote": "Prof. Ennio Tasciotti, IRCCS San Raffaele, Roma"
+  },
+  "speaking": {
+    "title": "Speaking",
+    "metaTitle": "Speaking & Conferenze — Prof. Ennio Tasciotti",
+    "metaDesc": "Keynote speaker su longevità, nanomedicina e innovazione biomedica. Disponibile per conferenze internazionali, workshop e advisory.",
+    "positioning": "Keynote speaker su longevità, nanomedicina e il futuro della medicina personalizzata.",
+    "topics": "Talk proposti",
+    "venues": "Sedi e contesti",
+    "booking": {
+      "title": "Richiedi una disponibilità",
+      "name": "Nome e cognome",
+      "org": "Organizzazione",
+      "role": "Ruolo",
+      "country": "Paese",
+      "date": "Data dell'evento",
+      "audienceSize": "Dimensione pubblico",
+      "format": "Formato",
+      "feeRange": "Budget orientativo",
+      "topics": "Argomento di interesse",
+      "message": "Messaggio (opzionale)",
+      "privacy": "Ho letto e accetto la",
+      "privacyLink": "privacy policy",
+      "submit": "Invia richiesta",
+      "success": "Richiesta inviata. Vi risponderemo entro 48 ore lavorative.",
+      "formats": {
+        "inperson": "In presenza",
+        "virtual": "Virtuale",
+        "hybrid": "Ibrido"
+      },
+      "audienceSizes": {
+        "small": "< 50 persone",
+        "medium": "50–300 persone",
+        "large": "300–1000 persone",
+        "xlarge": "> 1000 persone"
+      },
+      "feeRanges": {
+        "a": "Budget limitato / accademia",
+        "b": "Corporate standard",
+        "c": "Da concordare"
+      }
+    }
+  },
+  "press": {
+    "title": "Press kit",
+    "metaTitle": "Press Kit — Prof. Ennio Tasciotti",
+    "metaDesc": "Bio ufficiale, foto ad alta risoluzione, loghi e menzioni stampa. Materiali pronti per giornalisti e uffici stampa.",
+    "bios": {
+      "title": "Biografie ufficiali",
+      "copy": "Copia",
+      "copied": "Copiato!",
+      "download": "Scarica PDF",
+      "50words": "50 parole",
+      "100words": "100 parole",
+      "250words": "250 parole",
+      "500words": "500 parole"
+    },
+    "headshots": {
+      "title": "Fotografie ufficiali",
+      "downloadAll": "Scarica tutto (zip)",
+      "portrait": "Ritratto",
+      "square": "Quadrata",
+      "landscape": "Orizzontale"
+    },
+    "mediaLogos": "Loghi istituzionali",
+    "mentions": {
+      "title": "Rassegna stampa"
+    },
+    "storyAngles": {
+      "title": "Idee per giornalisti",
+      "items": [
+        "L'infiammazione cronica come interruttore master dell'invecchiamento: nuovi bersagli terapeutici.",
+        "Nanomedicina personalizzata: come le vescicole biomimetiche cambieranno la terapia oncologica.",
+        "Dal lab al mercato: perché i ricercatori devono diventare imprenditori.",
+        "La riforma della medicina primaria attraverso la medicina della longevità.",
+        "Top 1%: cosa significa essere tra i 100.000 scienziati più citati al mondo."
+      ]
+    }
+  },
+  "consultancy": {
+    "title": "Consulenza",
+    "metaTitle": "Consulenza — Prof. Ennio Tasciotti",
+    "metaDesc": "Advisory board scientifico, CSO fractional e workshop per startup deeptech, fondi di venture capital e aziende farmaceutiche.",
+    "intro": "Oltre vent'anni di esperienza in ricerca, imprenditoria e consulenza a livello globale. Disponibile per engagement mirati con aziende e investitori selezionati.",
+    "packages": {
+      "sab": {
+        "name": "Scientific Advisory Board",
+        "tagline": "Per chi ha bisogno di credibilità scientifica al vertice.",
+        "forWhom": "Startup di biotecnologia, medtech e digital health in fase seed o Series A.",
+        "includes": "Revisione del piano scientifico, accesso alla rete internazionale, preparazione a due diligence e investor pitch.",
+        "duration": "Retainer annuale",
+        "cta": "Richiedi una proposta"
+      },
+      "cso": {
+        "name": "Fractional CSO",
+        "tagline": "Direzione scientifica senior, senza il costo di un CSO a tempo pieno.",
+        "forWhom": "Deeptech bio-startup che necessitano di leadership scientifica strategica per 6–12 mesi.",
+        "includes": "Strategia R&D, rapporti con investitori, recruitment scientifico, supervisione brevettuale e pubblicazioni.",
+        "duration": "6–12 mesi",
+        "cta": "Richiedi una proposta"
+      },
+      "speaking": {
+        "name": "Speaking & Workshop",
+        "tagline": "Contenuto di alto livello per conferenze, boardroom e executive education.",
+        "forWhom": "Aziende farmaceutiche, associazioni di settore, business school e fondi di investimento.",
+        "includes": "Keynote personalizzato, workshop scientifico interattivo, sessione Q&A con leadership.",
+        "duration": "Da mezza giornata a 2 giorni",
+        "cta": "Vai alla pagina Speaking"
+      }
+    },
+    "sectors": {
+      "title": "Settori serviti",
+      "list": ["Farmaceutico", "Nutraceutica", "MedTech", "Biotech VC", "Digital Health"]
+    },
+    "caseStudies": {
+      "title": "Case study (in arrivo)",
+      "placeholder": "Studi di caso anonimi disponibili su richiesta."
+    }
+  },
+  "contact": {
+    "title": "Contatti",
+    "metaTitle": "Contatti — Prof. Ennio Tasciotti",
+    "metaDesc": "Scrivete per richieste di speaking, consulenza, press o collaborazioni accademiche.",
+    "intro": "Per richieste di speaking, consulenza, press o collaborazioni accademiche, compilate il modulo. Risponderemo entro 48 ore lavorative.",
+    "fallback": "In alternativa, scrivete direttamente a",
+    "form": {
+      "name": "Nome e cognome",
+      "email": "Email",
+      "org": "Organizzazione",
+      "reason": "Motivo del contatto",
+      "message": "Messaggio",
+      "privacy": "Ho letto e accetto la",
+      "privacyLink": "privacy policy",
+      "submit": "Invia messaggio",
+      "success": "Messaggio inviato. Vi risponderemo presto.",
+      "error": "Errore nell'invio. Riprovate o scrivete direttamente all'email istituzionale.",
+      "reasons": {
+        "speaking": "Speaking",
+        "consultancy": "Consulenza",
+        "press": "Press",
+        "academic": "Collaborazione accademica",
+        "other": "Altro"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "metaTitle": "Privacy Policy — enniotasciotti.com",
+    "metaDesc": "Informativa completa sul trattamento dei dati personali ai sensi del GDPR."
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "metaTitle": "Cookie Policy — enniotasciotti.com",
+    "metaDesc": "Informativa sull'utilizzo dei cookie su enniotasciotti.com."
+  },
+  "footer": {
+    "rights": "© {{year}} Ennio Tasciotti. Tutti i diritti riservati.",
+    "vat": "P.IVA / CF: (in aggiornamento)",
+    "privacy": "Privacy",
+    "cookies": "Cookie",
+    "scholar": "Google Scholar",
+    "orcid": "ORCID",
+    "linkedin": "LinkedIn"
+  },
+  "seo": {
+    "home": {
+      "title": "Prof. Ennio Tasciotti — Scienziato, Imprenditore, Esperto di Longevità",
+      "desc": "Professore ordinario, direttore del programma Human Longevity all'IRCCS San Raffaele. Top 1% degli scienziati più influenti al mondo (Stanford, 2023). 200+ pubblicazioni, 15 brevetti."
+    }
+  },
+  "common": {
+    "learnMore": "Scopri di più",
+    "viewAll": "Vedi tutti",
+    "download": "Scarica",
+    "back": "Indietro",
+    "loading": "Caricamento…",
+    "placeholder": {
+      "imageAlt": "Immagine non ancora disponibile",
+      "logoAlt": "Logo {{name}}"
+    }
+  }
+}

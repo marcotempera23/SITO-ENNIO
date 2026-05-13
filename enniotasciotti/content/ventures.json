@@ -1,0 +1,62 @@
+[
+  {
+    "id": "aella-labs",
+    "name": "Aella Labs Sagl",
+    "role_it": "Fondatore & CSO",
+    "role_en": "Founder & CSO",
+    "location": "Lugano, CH",
+    "year": 2021,
+    "type": "founded",
+    "desc_it": "Piattaforma di longevità di precisione che integra diagnostica avanzata, nanotecnologie e medicina personalizzata.",
+    "desc_en": "Precision longevity platform integrating advanced diagnostics, nanotechnology and personalised medicine.",
+    "url": null
+  },
+  {
+    "id": "integra-rd",
+    "name": "Integra R&D srl",
+    "role_it": "Fondatore & CSO",
+    "role_en": "Founder & CSO",
+    "location": "Rome, IT",
+    "year": 2022,
+    "type": "founded",
+    "desc_it": "Società di R&D focalizzata sulla traduzione clinica di biomateriali e sistemi di rilascio farmacologico.",
+    "desc_en": "R&D company focused on clinical translation of biomaterials and drug delivery systems.",
+    "url": null
+  },
+  {
+    "id": "3r-biotech",
+    "name": "3R Biotech srl",
+    "role_it": "Fondatore & CSO",
+    "role_en": "Founder & CSO",
+    "location": "Milan, IT",
+    "years": "2020–2022",
+    "type": "founded",
+    "desc_it": "Startup di biotecnologia per la rigenerazione tissutale mediante matrici extracellulari biomimetiche.",
+    "desc_en": "Biotech startup for tissue regeneration using biomimetic extracellular matrices.",
+    "url": null
+  },
+  {
+    "id": "sclavo",
+    "name": "Sclavo Research Center",
+    "role_it": "Fondatore & Direttore",
+    "role_en": "Founder & Director",
+    "location": "Siena, IT",
+    "years": "2020–2022",
+    "type": "founded",
+    "desc_it": "Centro di ricerca traslazionale in immunologia e vaccinologia, con focus su nuovi approcci preventivi.",
+    "desc_en": "Translational research centre in immunology and vaccinology, focused on novel preventive approaches.",
+    "url": null
+  },
+  {
+    "id": "lightscience",
+    "name": "Lightscience srl",
+    "role_it": "Membro del Consiglio",
+    "role_en": "Board Member",
+    "location": "Milan, IT",
+    "year": 2021,
+    "type": "advisory",
+    "desc_it": "Sviluppo di tecnologie a base di luce per applicazioni biomedicali avanzate.",
+    "desc_en": "Development of light-based technologies for advanced biomedical applications.",
+    "url": null
+  }
+]

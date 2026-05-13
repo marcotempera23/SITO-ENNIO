@@ -1,0 +1,54 @@
+/* ============================================================
+   DESIGN TOKENS — enniotasciotti.com
+   ============================================================ */
+
+:root {
+  /* Palette — Light */
+  --color-bg:           #F7F4EE;
+  --color-surface:      #FFFFFF;
+  --color-surface-2:    #EFEAE0;
+  --color-text:         #0E1620;
+  --color-text-muted:   #4B5563;
+  --color-border:       #D9D2C1;
+  --color-accent:       #0A6FB2;
+  --color-accent-2:     #B68C28;
+  --color-quote:        #6B5B3E;
+
+  /* Typography */
+  --font-display: "Fraunces", "GT Sectra", Georgia, serif;
+  --font-sans:    "Inter", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, monospace;
+
+  /* Fluid type scale (Minor third + viewport clamping) */
+  --step--1: clamp(0.83rem, 0.78rem + 0.25vw, 0.94rem);
+  --step-0:  clamp(1rem,    0.93rem + 0.34vw, 1.13rem);
+  --step-1:  clamp(1.2rem,  1.12rem + 0.43vw, 1.41rem);
+  --step-2:  clamp(1.44rem, 1.33rem + 0.55vw, 1.76rem);
+  --step-3:  clamp(1.73rem, 1.59rem + 0.70vw, 2.20rem);
+  --step-4:  clamp(2.07rem, 1.89rem + 0.89vw, 2.75rem);
+  --step-5:  clamp(2.49rem, 2.26rem + 1.13vw, 3.43rem);
+  --step-6:  clamp(2.99rem, 2.69rem + 1.45vw, 4.29rem);
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+
+  /* Motion */
+  --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast:  180ms;
+  --dur-med:   320ms;
+  --dur-slow:  560ms;
+}
+
+[data-theme="dark"] {
+  --color-bg:           #0A0F18;
+  --color-surface:      #111824;
+  --color-surface-2:    #182231;
+  --color-text:         #ECECEC;
+  --color-text-muted:   #9AA3B2;
+  --color-border:       #1F2A3A;
+  --color-accent:       #5BC0FF;
+  --color-accent-2:     #E6C76C;
+  --color-quote:        #C9C2A9;
+}

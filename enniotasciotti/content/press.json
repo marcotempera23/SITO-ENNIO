@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tedx-2016",
+    "title_it": "TEDx CNR Roma — 'Per vincere il cancro bisogna pensare come una cellula'",
+    "title_en": "TEDx CNR Rome — 'To beat cancer, you have to think like a cell'",
+    "outlet": "TEDx",
+    "year": 2016,
+    "url": "https://www.youtube.com/watch?v=Ipb1Xrq8WVQ",
+    "type": "talk"
+  },
+  {
+    "id": "stanford-ranking-2023",
+    "title_it": "Ennio Tasciotti classificato nel top 1% degli scienziati più influenti al mondo",
+    "title_en": "Ennio Tasciotti ranked in the top 1% of the world's most influential scientists",
+    "outlet": "Stanford University Scientific Ranking",
+    "year": 2023,
+    "url": null,
+    "type": "ranking"
+  },
+  {
+    "id": "iaam-2024",
+    "title_it": "Fellow dell'International Association for Advanced Materials (IAAM)",
+    "title_en": "Fellow of the International Association for Advanced Materials (IAAM)",
+    "outlet": "IAAM",
+    "year": 2024,
+    "url": null,
+    "type": "award"
+  },
+  {
+    "id": "taobuk-2022",
+    "title_it": "Premio Taobuk per la Nanoscienza e la Nanomedicina",
+    "title_en": "Taobuk Award for Nanoscience and Nanomedicine",
+    "outlet": "Taobuk Festival",
+    "year": 2022,
+    "url": null,
+    "type": "award"
+  }
+]

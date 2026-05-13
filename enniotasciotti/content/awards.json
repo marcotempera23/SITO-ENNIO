@@ -1,0 +1,26 @@
+[
+  {
+    "id": "stanford-top1",
+    "name": "Stanford University",
+    "type": "ranking",
+    "desc_it": "Top 1% degli scienziati più influenti al mondo",
+    "desc_en": "Top 1% of the world's most influential scientists",
+    "year": 2023
+  },
+  {
+    "id": "iaam-fellow",
+    "name": "IAAM",
+    "type": "fellowship",
+    "desc_it": "Fellow, International Association for Advanced Materials",
+    "desc_en": "Fellow, International Association for Advanced Materials",
+    "year": 2024
+  },
+  {
+    "id": "taobuk",
+    "name": "Taobuk",
+    "type": "award",
+    "desc_it": "Premio per la Nanoscienza e la Nanomedicina",
+    "desc_en": "Award for Nanoscience and Nanomedicine",
+    "year": 2022
+  }
+]
