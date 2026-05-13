@@ -18,7 +18,6 @@ export function buildMetadata({
   ogImage = '/og-default.jpg',
 }: BuildMetadataOptions): Metadata {
   const url = `${BASE_URL}${locale === 'it' ? '' : '/en'}${path}`;
-  const alternateUrl = `${BASE_URL}${locale === 'it' ? '/en' : ''}${path}`;
 
   return {
     title,

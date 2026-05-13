@@ -73,7 +73,6 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
       <head>
         <script
           type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>

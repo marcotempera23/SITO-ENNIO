@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/navigation';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { buildMetadata } from '@/lib/seo';
 import ventures from '@/content/ventures.json';
@@ -98,13 +99,13 @@ export default async function VenturesPage({ params }: PageProps) {
           >
             {t('cta.body')}
           </p>
-          <a
+          <Link
             href="/consultancy"
             className="mt-6 inline-flex h-12 items-center rounded-md px-6 text-step-0 font-medium transition-colors"
             style={{ backgroundColor: 'var(--color-accent)', color: '#ffffff' }}
           >
             {t('cta.button')} →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

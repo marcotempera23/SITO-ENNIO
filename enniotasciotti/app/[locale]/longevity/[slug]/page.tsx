@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
 import { Prose } from '@/components/shared/prose';
 import { buildMetadata } from '@/lib/seo';
 
@@ -149,7 +148,6 @@ export default async function LongevityArticlePage({ params }: PageProps) {
         <Prose>
           {/* Render simple markdown-like content as HTML */}
           <div
-            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: body
                 .trim()

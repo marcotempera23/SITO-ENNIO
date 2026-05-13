@@ -110,7 +110,7 @@ export function Footer() {
             className="text-step--1 italic hover:text-[var(--color-accent)] transition-colors"
             style={{ color: 'var(--color-quote)' }}
           >
-            "Per vincere il cancro bisogna pensare come una cellula."
+            &ldquo;Per vincere il cancro bisogna pensare come una cellula.&rdquo;
           </a>
         </div>
       </div>

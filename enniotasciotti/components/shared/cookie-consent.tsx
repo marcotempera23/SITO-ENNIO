@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { initDefaultConsent, updateGtagConsent, storeConsent, getStoredConsent } from '@/lib/analytics';
 
 export function CookieConsent() {
@@ -11,6 +12,7 @@ export function CookieConsent() {
   useEffect(() => {
     initDefaultConsent();
     const stored = getStoredConsent();
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (!stored) setVisible(true);
   }, []);
 
@@ -46,9 +48,9 @@ export function CookieConsent() {
         style={{ color: 'var(--color-text-muted)' }}
       >
         {t('body')}{' '}
-        <a href="/cookies" className="underline" style={{ color: 'var(--color-accent)' }}>
+        <Link href="/cookies" className="underline" style={{ color: 'var(--color-accent)' }}>
           {t('learnMore')}
-        </a>
+        </Link>
       </p>
       <div className="flex gap-3 shrink-0">
         <button

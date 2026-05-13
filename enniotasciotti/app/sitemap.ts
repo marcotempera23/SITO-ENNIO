@@ -1,7 +1,6 @@
 import type { MetadataRoute } from 'next';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://enniotasciotti.com';
-const LOCALES = ['it', 'en'] as const;
 
 const STATIC_PATHS = [
   '',

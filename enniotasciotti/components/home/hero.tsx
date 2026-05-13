@@ -1,10 +1,9 @@
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
 export function Hero() {
   const t = useTranslations('home.hero');
-  const locale = useLocale();
 
   return (
     <section
