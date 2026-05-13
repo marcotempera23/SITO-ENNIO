@@ -17,8 +17,7 @@ export function LocaleSwitcher() {
     <button
       onClick={handleSwitch}
       aria-label={`Switch to ${otherLocale === 'it' ? 'Italian' : 'English'}`}
-      className="inline-flex h-9 items-center gap-1 rounded-md px-2 text-step--1 font-mono uppercase tracking-wider transition-colors hover:bg-[var(--color-surface-2)]"
-      style={{ color: 'var(--color-text-muted)' }}
+      className="inline-flex h-9 items-center gap-1 rounded-md px-2 text-step--1 font-mono uppercase tracking-wider text-[var(--color-text-muted)] transition-colors hover:bg-[var(--color-surface-2)]"
     >
       {otherLocale.toUpperCase()}
     </button>

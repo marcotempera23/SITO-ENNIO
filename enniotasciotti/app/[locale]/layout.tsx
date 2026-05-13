@@ -76,7 +76,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
-      <body style={{ backgroundColor: 'var(--color-bg)', color: 'var(--color-text)' }}>
+      <body className="bg-[var(--color-bg)] text-[var(--color-text)]">
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="system"

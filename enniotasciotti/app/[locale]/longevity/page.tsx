@@ -50,40 +50,31 @@ export default async function LongevityPage({ params }: PageProps) {
           subtitle={t('subtitle')}
         />
 
-        <div className="mt-16 space-y-0 divide-y" style={{ borderColor: 'var(--color-border)' }}>
+        <div className="mt-16 space-y-0 divide-y divide-[var(--color-border)]">
           {ARTICLES.map((article) => (
             <article key={article.slug} className="py-10 group">
               <Link href={`/longevity/${article.slug}`}>
                 <div className="flex flex-wrap items-center gap-3 mb-3">
                   <span
-                    className="font-mono text-[0.65rem] uppercase tracking-wider px-2 py-0.5 rounded border"
-                    style={{ borderColor: 'var(--color-accent)', color: 'var(--color-accent)' }}
+                    className="font-mono text-[0.65rem] uppercase tracking-wider px-2 py-0.5 rounded border border-[var(--color-accent)] text-[var(--color-accent)]"
                   >
                     {article.tag}
                   </span>
-                  <span
-                    className="font-mono text-step--1"
-                    style={{ color: 'var(--color-text-muted)' }}
-                  >
+                  <span className="font-mono text-step--1 text-[var(--color-text-muted)]">
                     {new Date(article.date).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
                     {' · '}{article.readTime}
                   </span>
                 </div>
                 <h2
-                  className="font-display text-step-3 font-light leading-snug group-hover:text-[var(--color-accent)] transition-colors"
-                  style={{ color: 'var(--color-text)' }}
+                  className="font-display text-step-3 font-light leading-snug text-[var(--color-text)] group-hover:text-[var(--color-accent)] transition-colors"
                 >
                   {isIT ? article.titleIT : article.titleEN}
                 </h2>
-                <p
-                  className="mt-3 text-step-0 leading-relaxed max-w-2xl"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
+                <p className="mt-3 text-step-0 leading-relaxed max-w-2xl text-[var(--color-text-muted)]">
                   {isIT ? article.excerptIT : article.excerptEN}
                 </p>
                 <span
-                  className="mt-4 inline-flex items-center gap-1 text-step--1 font-medium"
-                  style={{ color: 'var(--color-accent)' }}
+                  className="mt-4 inline-flex items-center gap-1 text-step--1 font-medium text-[var(--color-accent)]"
                 >
                   {t('readMore')} →
                 </span>

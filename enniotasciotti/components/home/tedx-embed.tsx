@@ -13,33 +13,25 @@ export function TedxEmbed() {
   return (
     <section
       aria-labelledby="tedx-heading"
-      className="py-24"
-      style={{ backgroundColor: 'var(--color-bg)' }}
+      className="py-24 bg-[var(--color-bg)]"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl mb-12">
-          <p
-            className="font-mono text-step--1 uppercase tracking-widest mb-3"
-            style={{ color: 'var(--color-accent)' }}
-          >
+          <p className="font-mono text-step--1 uppercase tracking-widest mb-3 text-[var(--color-accent)]">
             {t('eyebrow')}
           </p>
           <h2
             id="tedx-heading"
-            className="font-display text-step-4 font-light"
-            style={{ color: 'var(--color-text)' }}
+            className="font-display text-step-4 font-light text-[var(--color-text)]"
           >
             {t('title')}
           </h2>
-          <p
-            className="mt-4 text-step-0 leading-relaxed"
-            style={{ color: 'var(--color-text-muted)' }}
-          >
+          <p className="mt-4 text-step-0 leading-relaxed text-[var(--color-text-muted)]">
             {t('body')}
           </p>
         </div>
 
-        <div className="relative aspect-video rounded-xl overflow-hidden border" style={{ borderColor: 'var(--color-border)' }}>
+        <div className="relative aspect-video rounded-xl overflow-hidden border border-[var(--color-border)]">
           {activated ? (
             <iframe
               src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&rel=0`}
@@ -65,8 +57,7 @@ export function TedxEmbed() {
               />
               {/* Overlay */}
               <span
-                className="absolute inset-0"
-                style={{ backgroundColor: 'rgba(0,0,0,0.35)' }}
+                className="absolute inset-0 bg-black/35"
                 aria-hidden="true"
               />
               {/* Play button */}
@@ -78,8 +69,7 @@ export function TedxEmbed() {
                   <svg
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="h-7 w-7 translate-x-0.5"
-                    style={{ color: '#FF0000' }}
+                    className="h-7 w-7 translate-x-0.5 text-[#FF0000]"
                   >
                     <polygon points="5,3 19,12 5,21" />
                   </svg>

@@ -42,16 +42,11 @@ export function Nav() {
       <header
         role="banner"
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 transition-all',
+          'fixed top-0 left-0 right-0 z-50 transition-all border-b',
           scrolled
-            ? 'border-b shadow-sm'
-            : 'border-b border-transparent'
+            ? 'bg-[var(--color-surface)] border-[var(--color-border)] shadow-sm backdrop-blur-[12px]'
+            : 'border-transparent'
         )}
-        style={{
-          backgroundColor: scrolled ? 'var(--color-surface)' : 'transparent',
-          borderColor: scrolled ? 'var(--color-border)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        }}
       >
         <nav
           role="navigation"
@@ -61,8 +56,7 @@ export function Nav() {
           {/* Logo */}
           <Link
             href="/"
-            className="font-display text-step-1 font-light tracking-tight"
-            style={{ color: 'var(--color-text)' }}
+            className="font-display text-step-1 font-light tracking-tight text-[var(--color-text)]"
             aria-label="Ennio Tasciotti — Home"
           >
             Ennio Tasciotti
@@ -77,8 +71,7 @@ export function Nav() {
               <li key={key}>
                 <Link
                   href={href}
-                  className="text-step--1 transition-colors hover:text-[var(--color-accent)]"
-                  style={{ color: 'var(--color-text-muted)' }}
+                  className="text-step--1 transition-colors text-[var(--color-text-muted)] hover:text-[var(--color-accent)]"
                 >
                   {t(key)}
                 </Link>
@@ -92,11 +85,7 @@ export function Nav() {
             <ThemeToggle />
             <Link
               href="/contact"
-              className="ml-2 inline-flex h-9 items-center rounded-md px-4 text-step--1 font-medium transition-colors"
-              style={{
-                backgroundColor: 'var(--color-accent)',
-                color: '#ffffff',
-              }}
+              className="ml-2 inline-flex h-9 items-center rounded-md px-4 text-step--1 font-medium transition-colors bg-[var(--color-accent)] text-white"
             >
               {t('contact')}
             </Link>
@@ -104,12 +93,10 @@ export function Nav() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-md"
+            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-md text-[var(--color-text)]"
             onClick={() => setMenuOpen(true)}
             aria-label="Open navigation menu"
-            aria-expanded={menuOpen}
             aria-controls="mobile-menu"
-            style={{ color: 'var(--color-text)' }}
           >
             <Menu size={22} aria-hidden="true" />
           </button>
@@ -123,23 +110,20 @@ export function Nav() {
           role="dialog"
           aria-modal="true"
           aria-label="Navigation menu"
-          className="fixed inset-0 z-[100] flex flex-col"
-          style={{ backgroundColor: 'var(--color-bg)' }}
+          className="fixed inset-0 z-[100] flex flex-col bg-[var(--color-bg)]"
         >
           <div className="flex items-center justify-between px-6 py-4">
             <Link
               href="/"
               onClick={() => setMenuOpen(false)}
-              className="font-display text-step-1 font-light"
-              style={{ color: 'var(--color-text)' }}
+              className="font-display text-step-1 font-light text-[var(--color-text)]"
             >
               Ennio Tasciotti
             </Link>
             <button
               onClick={() => setMenuOpen(false)}
               aria-label="Close navigation menu"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-md"
-              style={{ color: 'var(--color-text)' }}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-md text-[var(--color-text)]"
             >
               <X size={22} aria-hidden="true" />
             </button>
@@ -152,8 +136,7 @@ export function Nav() {
                   <Link
                     href={href}
                     onClick={() => setMenuOpen(false)}
-                    className="block py-3 text-step-3 font-display font-light leading-tight transition-colors hover:text-[var(--color-accent)]"
-                    style={{ color: 'var(--color-text)', minHeight: '48px' }}
+                    className="block py-3 text-step-3 font-display font-light leading-tight transition-colors text-[var(--color-text)] min-h-[48px] hover:text-[var(--color-accent)]"
                   >
                     {t(key)}
                   </Link>
@@ -163,8 +146,7 @@ export function Nav() {
                 <Link
                   href="/contact"
                   onClick={() => setMenuOpen(false)}
-                  className="block py-3 text-step-3 font-display font-light leading-tight"
-                  style={{ color: 'var(--color-accent)', minHeight: '48px' }}
+                  className="block py-3 text-step-3 font-display font-light leading-tight text-[var(--color-accent)] min-h-[48px]"
                 >
                   {t('contact')}
                 </Link>
@@ -172,7 +154,7 @@ export function Nav() {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-4 px-8 py-6 border-t" style={{ borderColor: 'var(--color-border)' }}>
+          <div className="flex items-center gap-4 px-8 py-6 border-t border-[var(--color-border)]">
             <LocaleSwitcher />
             <ThemeToggle />
           </div>

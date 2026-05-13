@@ -32,8 +32,7 @@ export default async function PressPage({ params }: PageProps) {
         <section aria-labelledby="awards-heading" className="mt-16">
           <h2
             id="awards-heading"
-            className="font-mono text-step--1 uppercase tracking-widest mb-8"
-            style={{ color: 'var(--color-text-muted)' }}
+            className="font-mono text-step--1 uppercase tracking-widest mb-8 text-[var(--color-text-muted)]"
           >
             {t('awardsTitle')}
           </h2>
@@ -41,20 +40,18 @@ export default async function PressPage({ params }: PageProps) {
             {awards.map((award) => (
               <li
                 key={award.id}
-                className="flex items-start gap-6 border-b pb-6"
-                style={{ borderColor: 'var(--color-border)' }}
+                className="flex items-start gap-6 border-b border-[var(--color-border)] pb-6"
               >
                 <span
-                  className="font-mono text-step-1 font-bold shrink-0"
-                  style={{ color: 'var(--color-accent)' }}
+                  className="font-mono text-step-1 font-bold shrink-0 text-[var(--color-accent)]"
                 >
                   {award.year}
                 </span>
                 <div>
-                  <p className="text-step-0 font-medium" style={{ color: 'var(--color-text)' }}>
+                  <p className="text-step-0 font-medium text-[var(--color-text)]">
                     {isIT ? award.desc_it : award.desc_en}
                   </p>
-                  <p className="text-step--1" style={{ color: 'var(--color-text-muted)' }}>
+                  <p className="text-step--1 text-[var(--color-text-muted)]">
                     {award.name}
                   </p>
                 </div>
@@ -67,26 +64,24 @@ export default async function PressPage({ params }: PageProps) {
         <section aria-labelledby="press-heading" className="mt-20">
           <h2
             id="press-heading"
-            className="font-mono text-step--1 uppercase tracking-widest mb-8"
-            style={{ color: 'var(--color-text-muted)' }}
+            className="font-mono text-step--1 uppercase tracking-widest mb-8 text-[var(--color-text-muted)]"
           >
             {t('pressTitle2')}
           </h2>
-          <ul className="divide-y" style={{ borderColor: 'var(--color-border)' }} role="list">
+          <ul className="divide-y divide-[var(--color-border)]" role="list">
             {pressData.map((item) => (
               <li key={item.id} className="py-6">
                 <div className="flex items-start gap-4">
                   <span
-                    className="font-mono text-step--1 shrink-0"
-                    style={{ color: 'var(--color-text-muted)' }}
+                    className="font-mono text-step--1 shrink-0 text-[var(--color-text-muted)]"
                   >
                     {item.year}
                   </span>
                   <div>
-                    <p className="text-step-0 font-medium" style={{ color: 'var(--color-text)' }}>
+                    <p className="text-step-0 font-medium text-[var(--color-text)]">
                       {isIT ? item.title_it : item.title_en}
                     </p>
-                    <p className="text-step--1" style={{ color: 'var(--color-text-muted)' }}>
+                    <p className="text-step--1 text-[var(--color-text-muted)]">
                       {item.outlet}
                     </p>
                     {item.url && (
@@ -94,8 +89,7 @@ export default async function PressPage({ params }: PageProps) {
                         href={item.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-step--1 hover:underline"
-                        style={{ color: 'var(--color-accent)' }}
+                        className="text-step--1 text-[var(--color-accent)] hover:underline"
                       >
                         {t('watch')} →
                       </a>
@@ -109,23 +103,20 @@ export default async function PressPage({ params }: PageProps) {
 
         {/* Press kit download */}
         <div
-          className="mt-16 border rounded-xl p-8"
-          style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
+          className="mt-16 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-8"
         >
           <p
-            className="font-display text-step-2 font-light"
-            style={{ color: 'var(--color-text)' }}
+            className="font-display text-step-2 font-light text-[var(--color-text)]"
           >
             {t('kitTitle')}
           </p>
-          <p className="mt-2 text-step-0 leading-relaxed" style={{ color: 'var(--color-text-muted)' }}>
+          <p className="mt-2 text-step-0 leading-relaxed text-[var(--color-text-muted)]">
             {t('kitBody')}
           </p>
           <a
             href="/pdf/ennio-tasciotti-press-kit.pdf"
             download
-            className="mt-6 inline-flex h-12 items-center rounded-md px-6 text-step-0 font-medium transition-colors"
-            style={{ backgroundColor: 'var(--color-accent)', color: '#ffffff' }}
+            className="mt-6 inline-flex h-12 items-center rounded-md bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-colors"
           >
             {t('kitCta')}
           </a>

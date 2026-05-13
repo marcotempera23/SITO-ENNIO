@@ -32,38 +32,30 @@ export default async function VenturesPage({ params }: PageProps) {
           {ventures.map((v) => (
             <article
               key={v.id}
-              className="border rounded-lg p-8 space-y-3"
-              style={{
-                borderColor: 'var(--color-border)',
-                backgroundColor: 'var(--color-surface)',
-              }}
+              className="border border-[var(--color-border)] rounded-lg bg-[var(--color-surface)] p-8 space-y-3"
             >
               <div className="flex items-start justify-between gap-4">
                 <h3
-                  className="font-display text-step-1 font-light leading-snug"
-                  style={{ color: 'var(--color-text)' }}
+                  className="font-display text-step-1 font-light leading-snug text-[var(--color-text)]"
                 >
                   {v.name}
                 </h3>
                 <span
-                  className="shrink-0 font-mono text-[0.65rem] uppercase tracking-wider px-2 py-0.5 rounded border"
-                  style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-muted)' }}
+                  className="shrink-0 font-mono text-[0.65rem] uppercase tracking-wider px-2 py-0.5 rounded border border-[var(--color-border)] text-[var(--color-text-muted)]"
                 >
                   {v.type}
                 </span>
               </div>
               <p
-                className="font-mono text-step--1"
-                style={{ color: 'var(--color-accent)' }}
+                className="font-mono text-step--1 text-[var(--color-accent)]"
               >
                 {isIT ? v.role_it : v.role_en}
               </p>
-              <p className="text-step--1" style={{ color: 'var(--color-text-muted)' }}>
+              <p className="text-step--1 text-[var(--color-text-muted)]">
                 {v.location} · {'year' in v ? v.year : v.years}
               </p>
               <p
-                className="text-step-0 leading-relaxed"
-                style={{ color: 'var(--color-text-muted)' }}
+                className="text-step-0 leading-relaxed text-[var(--color-text-muted)]"
               >
                 {isIT ? v.desc_it : v.desc_en}
               </p>
@@ -72,8 +64,7 @@ export default async function VenturesPage({ params }: PageProps) {
                   href={v.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-step--1 hover:underline"
-                  style={{ color: 'var(--color-accent)' }}
+                  className="inline-flex items-center gap-1 text-step--1 text-[var(--color-accent)] hover:underline"
                 >
                   {t('visitWebsite')} →
                 </a>
@@ -84,25 +75,21 @@ export default async function VenturesPage({ params }: PageProps) {
 
         {/* Consulting / Advisory CTA */}
         <div
-          className="mt-24 border rounded-xl p-10 text-center"
-          style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
+          className="mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-10 text-center"
         >
           <p
-            className="font-display text-step-3 font-light"
-            style={{ color: 'var(--color-text)' }}
+            className="font-display text-step-3 font-light text-[var(--color-text)]"
           >
             {t('cta.title')}
           </p>
           <p
-            className="mt-3 text-step-0 max-w-xl mx-auto leading-relaxed"
-            style={{ color: 'var(--color-text-muted)' }}
+            className="mt-3 text-step-0 max-w-xl mx-auto leading-relaxed text-[var(--color-text-muted)]"
           >
             {t('cta.body')}
           </p>
           <Link
             href="/consultancy"
-            className="mt-6 inline-flex h-12 items-center rounded-md px-6 text-step-0 font-medium transition-colors"
-            style={{ backgroundColor: 'var(--color-accent)', color: '#ffffff' }}
+            className="mt-6 inline-flex h-12 items-center rounded-md bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-colors"
           >
             {t('cta.button')} →
           </Link>

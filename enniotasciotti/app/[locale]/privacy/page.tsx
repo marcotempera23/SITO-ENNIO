@@ -20,10 +20,7 @@ export default async function PrivacyPage({ params }: PageProps) {
   return (
     <div className="pt-28 pb-24">
       <div className="mx-auto max-w-3xl px-6">
-        <h1
-          className="font-display text-step-5 font-light mb-12"
-          style={{ color: 'var(--color-text)' }}
-        >
+        <h1 className="font-display text-step-5 font-light mb-12 text-[var(--color-text)]">
           {t('title')}
         </h1>
         <Prose>

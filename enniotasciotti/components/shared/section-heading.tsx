@@ -20,25 +20,15 @@ export function SectionHeading({
   return (
     <div className={`max-w-2xl ${alignClass} ${className}`}>
       {eyebrow && (
-        <p
-          className="text-step--1 font-mono uppercase tracking-widest mb-3"
-          style={{ color: 'var(--color-accent)' }}
-        >
+        <p className="text-step--1 font-mono uppercase tracking-widest mb-3 text-[var(--color-accent)]">
           {eyebrow}
         </p>
       )}
-      <h2
-        id={id}
-        className="font-display text-step-4 font-light leading-tight"
-        style={{ color: 'var(--color-text)' }}
-      >
+      <h2 id={id} className="font-display text-step-4 font-light leading-tight text-[var(--color-text)]">
         {title}
       </h2>
       {subtitle && (
-        <p
-          className="mt-4 text-step-0 leading-relaxed"
-          style={{ color: 'var(--color-text-muted)' }}
-        >
+        <p className="mt-4 text-step-0 leading-relaxed text-[var(--color-text-muted)]">
           {subtitle}
         </p>
       )}

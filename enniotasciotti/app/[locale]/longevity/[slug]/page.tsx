@@ -130,16 +130,12 @@ export default async function LongevityArticlePage({ params }: PageProps) {
     <div className="pt-28 pb-24">
       <div className="mx-auto max-w-3xl px-6">
         <header className="mb-12">
-          <p
-            className="font-mono text-step--1"
-            style={{ color: 'var(--color-text-muted)' }}
-          >
+          <p className="font-mono text-step--1 text-[var(--color-text-muted)]">
             {new Date(article.date).toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric' })}
             {' · '}{article.readTime}
           </p>
           <h1
-            className="mt-4 font-display text-step-5 font-light leading-tight"
-            style={{ color: 'var(--color-text)' }}
+            className="mt-4 font-display text-step-5 font-light leading-tight text-[var(--color-text)]"
           >
             {title}
           </h1>
@@ -161,11 +157,8 @@ export default async function LongevityArticlePage({ params }: PageProps) {
         </Prose>
 
         {/* Attribution */}
-        <div
-          className="mt-16 border-t pt-8"
-          style={{ borderColor: 'var(--color-border)' }}
-        >
-          <p className="text-step--1 italic" style={{ color: 'var(--color-quote)' }}>
+        <div className="mt-16 border-t border-[var(--color-border)] pt-8">
+          <p className="text-step--1 italic text-[var(--color-quote)]">
             {isIT
               ? 'Prof. Ennio Tasciotti — IRCCS Ospedale San Raffaele, Milano'
               : 'Prof. Ennio Tasciotti — IRCCS Ospedale San Raffaele, Milan'}

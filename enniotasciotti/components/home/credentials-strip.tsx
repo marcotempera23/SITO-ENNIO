@@ -12,10 +12,7 @@ export function CredentialsStrip() {
   ];
 
   return (
-    <div
-      className="w-full border-y py-4"
-      style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
-    >
+    <div className="w-full border-y border-[var(--color-border)] bg-[var(--color-surface)] py-4">
       <ul
         className="mx-auto max-w-7xl px-6 flex flex-wrap items-center justify-between gap-y-3 gap-x-4"
         role="list"
@@ -23,16 +20,10 @@ export function CredentialsStrip() {
       >
         {items.map(({ label, value }) => (
           <li key={label} className="flex items-center gap-2">
-            <span
-              className="font-mono text-step-0 font-bold"
-              style={{ color: 'var(--color-accent)' }}
-            >
+            <span className="font-mono text-step-0 font-bold text-[var(--color-accent)]">
               {value}
             </span>
-            <span
-              className="text-step--1"
-              style={{ color: 'var(--color-text-muted)' }}
-            >
+            <span className="text-step--1 text-[var(--color-text-muted)]">
               {label}
             </span>
           </li>

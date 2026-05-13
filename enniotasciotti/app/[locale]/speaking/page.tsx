@@ -71,22 +71,19 @@ export default async function SpeakingPage({ params }: PageProps) {
           {TOPICS.map((topic) => (
             <article
               key={topic.id}
-              className="border rounded-lg p-8 space-y-3"
-              style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
+              className="border border-[var(--color-border)] rounded-lg bg-[var(--color-surface)] p-8 space-y-3"
             >
               <span
-                className="font-mono text-[0.65rem] uppercase tracking-wider px-2 py-0.5 rounded border inline-block"
-                style={{ borderColor: 'var(--color-accent)', color: 'var(--color-accent)' }}
+                className="font-mono text-[0.65rem] uppercase tracking-wider px-2 py-0.5 rounded border border-[var(--color-accent)] text-[var(--color-accent)] inline-block"
               >
                 {isIT ? topic.tagIT : topic.tagEN}
               </span>
               <h3
-                className="font-display text-step-1 font-light leading-snug"
-                style={{ color: 'var(--color-text)' }}
+                className="font-display text-step-1 font-light leading-snug text-[var(--color-text)]"
               >
                 {isIT ? topic.titleIT : topic.titleEN}
               </h3>
-              <p className="text-step--1 leading-relaxed" style={{ color: 'var(--color-text-muted)' }}>
+              <p className="text-step--1 leading-relaxed text-[var(--color-text-muted)]">
                 {isIT ? topic.descIT : topic.descEN}
               </p>
             </article>
@@ -96,23 +93,20 @@ export default async function SpeakingPage({ params }: PageProps) {
         {/* Booking form */}
         <section
           aria-labelledby="booking-heading"
-          className="mt-24 border rounded-xl p-10 max-w-2xl"
-          style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
+          className="mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-10 max-w-2xl"
         >
           <h2
             id="booking-heading"
-            className="font-display text-step-3 font-light mb-2"
-            style={{ color: 'var(--color-text)' }}
+            className="font-display text-step-3 font-light mb-2 text-[var(--color-text)]"
           >
             {t('booking.title')}
           </h2>
-          <p className="text-step-0 leading-relaxed mb-8" style={{ color: 'var(--color-text-muted)' }}>
+          <p className="text-step-0 leading-relaxed mb-8 text-[var(--color-text-muted)]">
             {t('booking.body')}
           </p>
           <Link
             href="/contact"
-            className="inline-flex h-12 items-center rounded-md px-6 text-step-0 font-medium transition-colors"
-            style={{ backgroundColor: 'var(--color-accent)', color: '#ffffff' }}
+            className="inline-flex h-12 items-center rounded-md bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-colors"
           >
             {t('booking.cta')} →
           </Link>

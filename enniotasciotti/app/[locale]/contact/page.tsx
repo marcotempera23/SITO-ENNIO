@@ -31,39 +31,29 @@ export default async function ContactPage({ params }: PageProps) {
           <aside>
             <dl className="space-y-8">
               <div>
-                <dt
-                  className="font-mono text-step--1 uppercase tracking-widest mb-2"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
+                <dt className="font-mono text-step--1 uppercase tracking-widest mb-2 text-[var(--color-text-muted)]">
                   {t('info.email')}
                 </dt>
                 <dd>
                   <a
                     href="mailto:ennio.tasciotti@sanraffaele.it"
-                    className="text-step-0 hover:underline"
-                    style={{ color: 'var(--color-text)' }}
+                    className="text-step-0 text-[var(--color-text)] hover:underline"
                   >
                     ennio.tasciotti@sanraffaele.it
                   </a>
                 </dd>
               </div>
               <div>
-                <dt
-                  className="font-mono text-step--1 uppercase tracking-widest mb-2"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
+                <dt className="font-mono text-step--1 uppercase tracking-widest mb-2 text-[var(--color-text-muted)]">
                   {t('info.institution')}
                 </dt>
-                <dd className="text-step-0" style={{ color: 'var(--color-text)' }}>
+                <dd className="text-step-0 text-[var(--color-text)]">
                   IRCCS Ospedale San Raffaele<br />
                   Via Olgettina 60, 20132 Milano, IT
                 </dd>
               </div>
               <div>
-                <dt
-                  className="font-mono text-step--1 uppercase tracking-widest mb-2"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
+                <dt className="font-mono text-step--1 uppercase tracking-widest mb-2 text-[var(--color-text-muted)]">
                   {t('info.profiles')}
                 </dt>
                 <dd className="space-y-1">
@@ -71,8 +61,7 @@ export default async function ContactPage({ params }: PageProps) {
                     href="https://orcid.org/0000-0003-1187-3205"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block text-step-0 hover:underline"
-                    style={{ color: 'var(--color-accent)' }}
+                    className="block text-step-0 text-[var(--color-accent)] hover:underline"
                   >
                     ORCID
                   </a>
@@ -80,8 +69,7 @@ export default async function ContactPage({ params }: PageProps) {
                     href="https://scholar.google.com/citations?user=A8sSvg0AAAAJ&hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block text-step-0 hover:underline"
-                    style={{ color: 'var(--color-accent)' }}
+                    className="block text-step-0 text-[var(--color-accent)] hover:underline"
                   >
                     Google Scholar
                   </a>

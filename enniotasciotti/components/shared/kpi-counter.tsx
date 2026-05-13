@@ -62,10 +62,10 @@ export function KpiCounter({
 
   return (
     <div ref={ref} className="text-center">
-      <p className="font-mono text-step-4 font-bold" style={{ color: 'var(--color-accent)' }}>
+      <p className="font-mono text-step-4 font-bold text-[var(--color-accent)]">
         {prefix}{count.toLocaleString('en')}{suffix}
       </p>
-      <p className="text-step--1 mt-1" style={{ color: 'var(--color-text-muted)' }}>
+      <p className="text-step--1 mt-1 text-[var(--color-text-muted)]">
         {label}
       </p>
     </div>

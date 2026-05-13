@@ -8,17 +8,16 @@ export function Footer() {
   return (
     <footer
       role="contentinfo"
-      className="border-t mt-24"
-      style={{ borderColor: 'var(--color-border)', backgroundColor: 'var(--color-surface)' }}
+      className="border-t border-[var(--color-border)] bg-[var(--color-surface)] mt-24"
     >
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Identity */}
           <div>
-            <p className="font-display text-step-1 font-light" style={{ color: 'var(--color-text)' }}>
+            <p className="font-display text-step-1 font-light text-[var(--color-text)]">
               Ennio Tasciotti
             </p>
-            <p className="mt-2 text-step--1" style={{ color: 'var(--color-text-muted)' }}>
+            <p className="mt-2 text-step--1 text-[var(--color-text-muted)]">
               {t('vat')}
             </p>
           </div>
@@ -29,8 +28,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/privacy"
-                  className="text-step--1 hover:text-[var(--color-accent)] transition-colors"
-                  style={{ color: 'var(--color-text-muted)' }}
+                  className="text-step--1 text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors"
                 >
                   {t('privacy')}
                 </Link>
@@ -38,8 +36,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/cookies"
-                  className="text-step--1 hover:text-[var(--color-accent)] transition-colors"
-                  style={{ color: 'var(--color-text-muted)' }}
+                  className="text-step--1 text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors"
                 >
                   {t('cookies')}
                 </Link>
@@ -47,8 +44,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/press"
-                  className="text-step--1 hover:text-[var(--color-accent)] transition-colors"
-                  style={{ color: 'var(--color-text-muted)' }}
+                  className="text-step--1 text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors"
                 >
                   Press kit
                 </Link>
@@ -58,7 +54,7 @@ export function Footer() {
 
           {/* Scholarly / social */}
           <div>
-            <p className="text-step--1 font-mono uppercase tracking-widest mb-3" style={{ color: 'var(--color-text-muted)' }}>
+            <p className="text-step--1 font-mono uppercase tracking-widest mb-3 text-[var(--color-text-muted)]">
               Scholarly profiles
             </p>
             <ul className="space-y-2" role="list">
@@ -67,8 +63,7 @@ export function Footer() {
                   href="https://scholar.google.com/citations?user=A8sSvg0AAAAJ&hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-step--1 hover:text-[var(--color-accent)] transition-colors"
-                  style={{ color: 'var(--color-text-muted)' }}
+                  className="text-step--1 text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors"
                 >
                   {t('scholar')}
                 </a>
@@ -78,8 +73,7 @@ export function Footer() {
                   href="https://orcid.org/0000-0003-1187-3205"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-step--1 hover:text-[var(--color-accent)] transition-colors"
-                  style={{ color: 'var(--color-text-muted)' }}
+                  className="text-step--1 text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors"
                 >
                   {t('orcid')}
                 </a>
@@ -89,8 +83,7 @@ export function Footer() {
                   href="https://www.scopus.com/authid/detail.uri?authorId=23971656200"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-step--1 hover:text-[var(--color-accent)] transition-colors"
-                  style={{ color: 'var(--color-text-muted)' }}
+                  className="text-step--1 text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors"
                 >
                   Scopus
                 </a>
@@ -99,16 +92,15 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4" style={{ borderColor: 'var(--color-border)' }}>
-          <p className="text-step--1" style={{ color: 'var(--color-text-muted)' }}>
+        <div className="mt-10 border-t border-[var(--color-border)] pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <p className="text-step--1 text-[var(--color-text-muted)]">
             {t('rights', { year })}
           </p>
           <a
             href="https://www.youtube.com/watch?v=Ipb1Xrq8WVQ"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-step--1 italic hover:text-[var(--color-accent)] transition-colors"
-            style={{ color: 'var(--color-quote)' }}
+            className="text-step--1 italic text-[var(--color-quote)] hover:text-[var(--color-accent)] transition-colors"
           >
             &ldquo;Per vincere il cancro bisogna pensare come una cellula.&rdquo;
           </a>

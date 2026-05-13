@@ -40,8 +40,7 @@ export function FeaturedDiscoveries() {
   return (
     <section
       aria-labelledby="discoveries-heading"
-      className="py-24"
-      style={{ backgroundColor: 'var(--color-surface)' }}
+      className="py-24 bg-[var(--color-surface)]"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-16">
@@ -52,8 +51,7 @@ export function FeaturedDiscoveries() {
           />
           <Link
             href="/science/publications"
-            className="shrink-0 text-step--1 font-medium hover:underline"
-            style={{ color: 'var(--color-accent)' }}
+            className="shrink-0 text-step--1 font-medium text-[var(--color-accent)] hover:underline"
           >
             {t('viewAll')} →
           </Link>
@@ -63,36 +61,20 @@ export function FeaturedDiscoveries() {
           {discoveries.map(({ id, tag, title, body, year }) => (
             <article
               key={id}
-              className="group border rounded-lg p-8 transition-colors hover:border-[var(--color-accent)]"
-              style={{
-                borderColor: 'var(--color-border)',
-                backgroundColor: 'var(--color-surface)',
-              }}
+              className="group border border-[var(--color-border)] rounded-lg bg-[var(--color-surface)] p-8 transition-colors hover:border-[var(--color-accent)]"
             >
               <div className="flex items-center justify-between mb-4">
-                <span
-                  className="font-mono text-step--1 uppercase tracking-widest"
-                  style={{ color: 'var(--color-accent)' }}
-                >
+                <span className="font-mono text-step--1 uppercase tracking-widest text-[var(--color-accent)]">
                   {tag}
                 </span>
-                <span
-                  className="font-mono text-step--1"
-                  style={{ color: 'var(--color-text-muted)' }}
-                >
+                <span className="font-mono text-step--1 text-[var(--color-text-muted)]">
                   {year}
                 </span>
               </div>
-              <h3
-                className="font-display text-step-1 font-light leading-snug"
-                style={{ color: 'var(--color-text)' }}
-              >
+              <h3 className="font-display text-step-1 font-light leading-snug text-[var(--color-text)]">
                 {title}
               </h3>
-              <p
-                className="mt-3 text-step--1 leading-relaxed"
-                style={{ color: 'var(--color-text-muted)' }}
-              >
+              <p className="mt-3 text-step--1 leading-relaxed text-[var(--color-text-muted)]">
                 {body}
               </p>
             </article>

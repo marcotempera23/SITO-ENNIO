@@ -76,8 +76,8 @@ export function MoleculePattern({
       height={height}
       viewBox={`0 0 ${width} ${height}`}
       aria-hidden="true"
-      className={className}
-      style={{ color: 'var(--color-accent)', opacity }}
+      className={`text-[var(--color-accent)] ${className}`}
+      opacity={opacity}
     >
       {patterns[variant]}
     </svg>

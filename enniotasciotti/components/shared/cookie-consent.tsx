@@ -37,33 +37,24 @@ export function CookieConsent() {
       role="dialog"
       aria-modal="false"
       aria-label={t('ariaLabel')}
-      className="fixed bottom-0 left-0 right-0 z-50 border-t px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4"
-      style={{
-        backgroundColor: 'var(--color-surface)',
-        borderColor: 'var(--color-border)',
-      }}
+      className="fixed bottom-0 left-0 right-0 z-50 border-t border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4"
     >
-      <p
-        className="text-step--1 flex-1 leading-relaxed"
-        style={{ color: 'var(--color-text-muted)' }}
-      >
+      <p className="text-step--1 flex-1 leading-relaxed text-[var(--color-text-muted)]">
         {t('body')}{' '}
-        <Link href="/cookies" className="underline" style={{ color: 'var(--color-accent)' }}>
+        <Link href="/cookies" className="text-[var(--color-accent)] underline">
           {t('learnMore')}
         </Link>
       </p>
       <div className="flex gap-3 shrink-0">
         <button
           onClick={decline}
-          className="h-10 px-5 text-step--1 rounded-md border transition-colors hover:bg-[var(--color-surface-2)]"
-          style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-muted)' }}
+          className="h-10 px-5 text-step--1 rounded-md border border-[var(--color-border)] text-[var(--color-text-muted)] transition-colors hover:bg-[var(--color-surface-2)]"
         >
           {t('decline')}
         </button>
         <button
           onClick={accept}
-          className="h-10 px-5 text-step--1 rounded-md font-medium transition-colors"
-          style={{ backgroundColor: 'var(--color-accent)', color: '#ffffff' }}
+          className="h-10 px-5 text-step--1 rounded-md bg-[var(--color-accent)] font-medium text-white transition-colors"
         >
           {t('accept')}
         </button>

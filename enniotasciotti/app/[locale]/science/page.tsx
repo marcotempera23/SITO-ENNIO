@@ -28,7 +28,7 @@ export default async function SciencePage({ params }: PageProps) {
         />
 
         {/* KPI row */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-y py-12" style={{ borderColor: 'var(--color-border)' }}>
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-[var(--color-border)] py-12">
           <KpiCounter value={200} suffix="+" label={t('kpi.papers')} />
           <KpiCounter value={8500} suffix="+" label={t('kpi.citations')} />
           <KpiCounter value={47} label={t('kpi.hIndex')} />
@@ -40,12 +40,11 @@ export default async function SciencePage({ params }: PageProps) {
           {(['nano', 'regen', 'longevity'] as const).map((area) => (
             <article key={area} className="space-y-3">
               <h3
-                className="font-display text-step-2 font-light"
-                style={{ color: 'var(--color-text)' }}
+                className="font-display text-step-2 font-light text-[var(--color-text)]"
               >
                 {t(`areas.${area}.title`)}
               </h3>
-              <p className="text-step-0 leading-relaxed" style={{ color: 'var(--color-text-muted)' }}>
+              <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)]">
                 {t(`areas.${area}.body`)}
               </p>
             </article>
@@ -55,8 +54,7 @@ export default async function SciencePage({ params }: PageProps) {
         <div className="mt-14">
           <Link
             href="/science/publications"
-            className="inline-flex h-12 items-center rounded-md px-6 text-step-0 font-medium transition-colors"
-            style={{ backgroundColor: 'var(--color-accent)', color: '#ffffff' }}
+            className="inline-flex h-12 items-center rounded-md bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-colors"
           >
             {t('viewPublications')} →
           </Link>
