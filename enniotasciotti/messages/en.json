@@ -14,10 +14,27 @@
     "heroSubtitle": "Scientist, entrepreneur, longevity expert. Top 1% of the world's most influential scientists (Stanford, 2023).",
     "heroCta1": "Work with me",
     "heroCta2": "Read my research",
+    "hero": {
+      "eyebrow": "Nanomedicine · Longevity · Venture Building",
+      "headline": "I turn biology into ventures. And science into health.",
+      "subheadline": "Scientist, entrepreneur, longevity expert. Top 1% of the world's most influential scientists (Stanford, 2023).",
+      "ctaPrimary": "Read my research",
+      "ctaSecondary": "Explore longevity"
+    },
     "tedxQuote": "To beat cancer, you have to think like a cell.",
     "tedxContext": "TEDxCNR Rome, 2016",
     "pillars": {
       "title": "Three pillars, one trajectory",
+      "eyebrow": "Scientific platform",
+      "subtitle": "Nanomedicine, regenerative materials and longevity medicine form one translational path: from biological insight to patient impact.",
+      "nano": {
+        "title": "Nanomedicine",
+        "body": "Engineering delivery systems that cross biological barriers and bring therapeutics precisely where disease begins."
+      },
+      "regen": {
+        "title": "Regenerative Materials",
+        "body": "Designing biomimetic scaffolds and extracellular matrices that guide tissue repair through immune-aware regeneration."
+      },
       "science": {
         "label": "Science",
         "kpi": "200+ publications",
@@ -31,12 +48,38 @@
       "longevity": {
         "label": "Longevity",
         "kpi": "H-index 63",
-        "desc": "Director of the Human Longevity Program at IRCCS San Raffaele, Rome: research and clinical practice to extend health span, not just lifespan."
+        "desc": "Director of the Human Longevity Program at IRCCS San Raffaele, Rome: research and clinical practice to extend health span, not just lifespan.",
+        "title": "Longevity Medicine",
+        "body": "Building clinical and scientific models that extend health span through prevention, precision diagnostics and systems medicine."
       }
     },
     "discoveries": {
       "title": "Signature scientific discoveries",
-      "readMore": "Read more"
+      "eyebrow": "Selected work",
+      "readMore": "Read more",
+      "viewAll": "View publications",
+      "leukosome": {
+        "tag": "Biomimicry",
+        "title": "Leukosome",
+        "body": "A biomimetic vesicle that uses leukocyte membrane proteins to navigate inflammation and deliver drugs with precision."
+      },
+      "msv": {
+        "tag": "Nanotechnology",
+        "title": "Multistage Vector",
+        "body": "A multistage nanocarrier designed to overcome biological barriers sequentially, from circulation to diseased tissue."
+      },
+      "longevity": {
+        "tag": "Longevity",
+        "title": "Precision longevity medicine",
+        "body": "A preventive medicine model integrating biomarkers, inflammation, metabolism and organ function across the lifespan."
+      }
+    },
+    "tedx": {
+      "eyebrow": "TEDxCNR Rome",
+      "title": "To beat cancer, you have to think like a cell",
+      "body": "A talk on how nanomedicine and biomimicry can help us rethink cancer therapy from the point of view of the cell.",
+      "playLabel": "Play TEDx talk",
+      "thumbnailAlt": "TEDx talk thumbnail featuring Prof. Ennio Tasciotti"
     },
     "tedxSection": {
       "title": "TEDx Talk",
@@ -48,19 +91,30 @@
     },
     "newsletter": {
       "title": "Stay at the frontier of longevity science",
+      "eyebrow": "Newsletter",
       "subtitle": "Analysis, research and commentary — no noise. No marketing emails.",
+      "body": "Analysis, research and commentary from nanomedicine, translational science and longevity medicine.",
       "placeholder": "Your email address",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "Your email address",
       "cta": "Subscribe",
+      "loading": "Subscribing…",
       "privacy": "I confirm I have read and accepted the",
       "privacyLink": "privacy policy",
       "success": "Thank you! Check your email to confirm your subscription.",
-      "error": "Something went wrong. Please try again."
+      "successMessage": "Thank you. You are subscribed.",
+      "error": "Something went wrong. Please try again.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "noSpam": "No spam. Research updates only."
     },
     "credentialsStrip": {
       "stanford": "Top 1% Stanford",
       "hindex": "H-index 63",
       "publications": "200+ publications",
+      "citations": "Citations",
       "patents": "15 patents",
+      "hIndex": "H-index",
+      "ventures": "Ventures founded",
       "tedx": "TEDx Speaker"
     }
   },
@@ -179,7 +233,7 @@
     "viewDOI": "DOI",
     "scholarLink": "Google Scholar",
     "scopusLink": "Scopus",
-    "total": "{{count}} publications",
+    "total": "{count} publications",
     "areas": {
       "nanomedicine": "Nanomedicine",
       "regenerative": "Regenerative Medicine",
@@ -220,7 +274,7 @@
     "metaTitle": "Longevity — Prof. Ennio Tasciotti",
     "metaDesc": "Articles, research and analysis on longevity medicine, healthy aging and the reform of primary healthcare.",
     "heroTagline": "Living longer is not the goal. Living better, longer, is.",
-    "readTime": "{{min}} min read",
+    "readTime": "{min} min read",
     "readMore": "Read more",
     "readPaper": "Read the full peer-reviewed paper →",
     "newsletter": "Stay updated",
@@ -475,7 +529,7 @@
     }
   },
   "footer": {
-    "rights": "© {{year}} Ennio Tasciotti. All rights reserved.",
+    "rights": "© {year} Ennio Tasciotti. All rights reserved.",
     "vat": "VAT / Tax ID: (pending)",
     "privacy": "Privacy",
     "cookies": "Cookies",
@@ -527,7 +581,7 @@
     },
     "placeholder": {
       "imageAlt": "Image not yet available",
-      "logoAlt": "{{name}} logo"
+      "logoAlt": "{name} logo"
     }
   }
 }

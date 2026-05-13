@@ -7,8 +7,6 @@ import { routing } from '@/i18n/routing';
 import { Nav } from '@/components/layout/nav';
 import { Footer } from '@/components/layout/footer';
 import { CookieConsent } from '@/components/shared/cookie-consent';
-import { personSchema } from '@/lib/schema';
-import '@/app/globals.css';
 
 const fraunces = Fraunces({
   subsets: ['latin'],
@@ -62,47 +60,34 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   }
 
   const messages = await getMessages({ locale });
-  const schema = personSchema();
 
   return (
-    <html
-      lang={locale}
-      suppressHydrationWarning
-      className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}
-    >
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      </head>
-      <body className="bg-[var(--color-bg)] text-[var(--color-text)]">
-        <ThemeProvider
-          attribute="data-theme"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <NextIntlClientProvider messages={messages} locale={locale}>
-            {/* Skip link for keyboard / AT users */}
-            <a
-              href="#main-content"
-              className="skip-link"
-            >
-              {locale === 'it' ? 'Vai al contenuto principale' : 'Skip to main content'}
-            </a>
+    <div className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]`}>
+      <ThemeProvider
+        attribute="data-theme"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          {/* Skip link for keyboard / AT users */}
+          <a
+            href="#main-content"
+            className="skip-link"
+          >
+            {locale === 'it' ? 'Vai al contenuto principale' : 'Skip to main content'}
+          </a>
 
-            <Nav />
+          <Nav />
 
-            <main id="main-content" tabIndex={-1}>
-              {children}
-            </main>
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
 
-            <Footer />
-            <CookieConsent />
-          </NextIntlClientProvider>
-        </ThemeProvider>
-      </body>
-    </html>
+          <Footer />
+          <CookieConsent />
+        </NextIntlClientProvider>
+      </ThemeProvider>
+    </div>
   );
 }

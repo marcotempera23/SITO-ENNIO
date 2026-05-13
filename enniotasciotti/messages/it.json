@@ -14,10 +14,27 @@
     "heroSubtitle": "Scienziato, imprenditore, esperto di longevità. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
     "heroCta1": "Lavora con me",
     "heroCta2": "Leggi la mia ricerca",
+    "hero": {
+      "eyebrow": "Nanomedicina · Longevità · Venture Building",
+      "headline": "Trasformo la biologia in impresa. La scienza in salute.",
+      "subheadline": "Scienziato, imprenditore, esperto di longevità. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
+      "ctaPrimary": "Leggi la mia ricerca",
+      "ctaSecondary": "Esplora la longevità"
+    },
     "tedxQuote": "Per vincere il cancro bisogna pensare come una cellula.",
     "tedxContext": "TEDxCNR Roma, 2016",
     "pillars": {
       "title": "Tre pilastri di un percorso",
+      "eyebrow": "Piattaforma scientifica",
+      "subtitle": "Nanomedicina, materiali rigenerativi e medicina della longevità formano un unico percorso traslazionale: dall'intuizione biologica all'impatto sul paziente.",
+      "nano": {
+        "title": "Nanomedicina",
+        "body": "Ingegnerizzare sistemi di rilascio capaci di superare le barriere biologiche e portare le terapie esattamente dove nasce la malattia."
+      },
+      "regen": {
+        "title": "Materiali rigenerativi",
+        "body": "Progettare scaffold biomimetici e matrici extracellulari che guidano la riparazione dei tessuti attraverso una rigenerazione attenta alla risposta immunitaria."
+      },
       "science": {
         "label": "Scienza",
         "kpi": "200+ pubblicazioni",
@@ -31,12 +48,38 @@
       "longevity": {
         "label": "Longevità",
         "kpi": "H-index 63",
-        "desc": "Direttore del programma Human Longevity all'IRCCS San Raffaele di Roma: ricerca e clinica per estendere la salute, non solo la vita."
+        "desc": "Direttore del programma Human Longevity all'IRCCS San Raffaele di Roma: ricerca e clinica per estendere la salute, non solo la vita.",
+        "title": "Medicina della longevità",
+        "body": "Costruire modelli clinici e scientifici per estendere la salute attraverso prevenzione, diagnostica di precisione e medicina dei sistemi."
       }
     },
     "discoveries": {
       "title": "Scoperte scientifiche di riferimento",
-      "readMore": "Approfondisci"
+      "eyebrow": "Lavori selezionati",
+      "readMore": "Approfondisci",
+      "viewAll": "Vedi le pubblicazioni",
+      "leukosome": {
+        "tag": "Biomimetica",
+        "title": "Leukosoma",
+        "body": "Una vescicola biomimetica che usa proteine di membrana dei leucociti per navigare l'infiammazione e consegnare farmaci con precisione."
+      },
+      "msv": {
+        "tag": "Nanotecnologia",
+        "title": "Multistage Vector",
+        "body": "Un nanovettore multistadio progettato per superare in sequenza le barriere biologiche, dalla circolazione al tessuto malato."
+      },
+      "longevity": {
+        "tag": "Longevità",
+        "title": "Medicina della longevità di precisione",
+        "body": "Un modello di medicina preventiva che integra biomarcatori, infiammazione, metabolismo e funzione d'organo lungo tutto l'arco della vita."
+      }
+    },
+    "tedx": {
+      "eyebrow": "TEDxCNR Roma",
+      "title": "Per vincere il cancro bisogna pensare come una cellula",
+      "body": "Un talk su come nanomedicina e biomimetica possano aiutarci a ripensare la terapia oncologica dal punto di vista della cellula.",
+      "playLabel": "Riproduci il talk TEDx",
+      "thumbnailAlt": "Miniatura del talk TEDx con il Prof. Ennio Tasciotti"
     },
     "tedxSection": {
       "title": "TEDx Talk",
@@ -48,19 +91,30 @@
     },
     "newsletter": {
       "title": "Ricevi aggiornamenti dalla frontiera della longevità",
+      "eyebrow": "Newsletter",
       "subtitle": "Analisi, ricerche e approfondimenti — senza rumore. Nessuna email commerciale.",
+      "body": "Analisi, ricerche e commenti da nanomedicina, scienza traslazionale e medicina della longevità.",
       "placeholder": "La tua email",
+      "emailLabel": "Indirizzo email",
+      "emailPlaceholder": "La tua email",
       "cta": "Iscriviti",
+      "loading": "Iscrizione…",
       "privacy": "Confermo di aver letto e accettato la",
       "privacyLink": "privacy policy",
       "success": "Grazie! Controlla la tua email per confermare l'iscrizione.",
-      "error": "Qualcosa è andato storto. Riprova."
+      "successMessage": "Grazie. Iscrizione confermata.",
+      "error": "Qualcosa è andato storto. Riprova.",
+      "errorMessage": "Qualcosa è andato storto. Riprova.",
+      "noSpam": "Niente spam. Solo aggiornamenti scientifici."
     },
     "credentialsStrip": {
       "stanford": "Top 1% Stanford",
       "hindex": "H-index 63",
       "publications": "200+ pubblicazioni",
+      "citations": "Citazioni",
       "patents": "15 brevetti",
+      "hIndex": "H-index",
+      "ventures": "Imprese fondate",
       "tedx": "TEDx Speaker"
     }
   },
@@ -179,7 +233,7 @@
     "viewDOI": "DOI",
     "scholarLink": "Google Scholar",
     "scopusLink": "Scopus",
-    "total": "{{count}} pubblicazioni",
+    "total": "{count} pubblicazioni",
     "areas": {
       "nanomedicine": "Nanomedicina",
       "regenerative": "Medicina rigenerativa",
@@ -220,7 +274,7 @@
     "metaTitle": "Longevità — Prof. Ennio Tasciotti",
     "metaDesc": "Articoli, ricerche e analisi sulla medicina della longevità, sull'invecchiamento sano e sulla riforma della medicina primaria.",
     "heroTagline": "Vivere più a lungo non è l'obiettivo. Vivere meglio, più a lungo, lo è.",
-    "readTime": "{{min}} min di lettura",
+    "readTime": "{min} min di lettura",
     "readMore": "Leggi l'articolo",
     "readPaper": "Leggi il paper completo →",
     "newsletter": "Resta aggiornato",
@@ -475,7 +529,7 @@
     }
   },
   "footer": {
-    "rights": "© {{year}} Ennio Tasciotti. Tutti i diritti riservati.",
+    "rights": "© {year} Ennio Tasciotti. Tutti i diritti riservati.",
     "vat": "P.IVA / CF: (in aggiornamento)",
     "privacy": "Privacy",
     "cookies": "Cookie",
@@ -527,7 +581,7 @@
     },
     "placeholder": {
       "imageAlt": "Immagine non ancora disponibile",
-      "logoAlt": "Logo {{name}}"
+      "logoAlt": "Logo {name}"
     }
   }
 }
