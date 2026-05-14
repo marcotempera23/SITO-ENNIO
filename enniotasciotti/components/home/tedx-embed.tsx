@@ -13,7 +13,7 @@ export function TedxEmbed() {
   return (
     <section
       aria-labelledby="tedx-heading"
-      className="py-24 bg-[var(--color-bg)]"
+      className="py-24 bg-transparent"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl mb-12">

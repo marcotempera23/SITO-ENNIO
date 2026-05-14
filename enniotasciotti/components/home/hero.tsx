@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-headline"
-      className="relative overflow-hidden pt-24 pb-0 min-h-[90svh] flex items-end md:items-center bg-[var(--color-bg)]"
+      className="relative overflow-hidden pt-24 pb-0 min-h-[90svh] flex items-end md:items-center bg-transparent"
     >
       <div className="relative z-10 mx-auto max-w-7xl w-full px-6 pb-16 md:pb-0">
         <div className="grid md:grid-cols-2 items-center gap-12">

@@ -25,7 +25,7 @@ export function ThreePillars() {
   return (
     <section
       aria-labelledby="pillars-heading"
-      className="py-24 bg-[var(--color-bg)]"
+      className="py-24 bg-transparent"
     >
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading

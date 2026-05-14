@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import { Nav } from '@/components/layout/nav';
 import { Footer } from '@/components/layout/footer';
 import { CookieConsent } from '@/components/shared/cookie-consent';
+import { ScientificWireframeBackground } from '@/components/shared/scientific-wireframe-background';
 
 const fraunces = Fraunces({
   subsets: ['latin'],
@@ -61,7 +62,8 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   const messages = await getMessages({ locale });
 
   return (
-    <div className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]`}>
+    <div className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} relative isolate min-h-screen overflow-x-clip bg-[var(--color-bg)] text-[var(--color-text)]`}>
+      <ScientificWireframeBackground />
       <NextIntlClientProvider messages={messages} locale={locale}>
         {/* Skip link for keyboard / AT users */}
         <a
@@ -73,11 +75,13 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
         <Nav />
 
-        <main id="main-content" tabIndex={-1}>
+        <main id="main-content" tabIndex={-1} className="relative z-10">
           {children}
         </main>
 
-        <Footer />
+        <div className="relative z-10">
+          <Footer />
+        </div>
         <CookieConsent />
       </NextIntlClientProvider>
     </div>
