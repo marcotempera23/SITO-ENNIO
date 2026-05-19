@@ -126,27 +126,456 @@
     "metaDesc": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. A career spanning Pisa, Houston and Rome.",
     "bio": {
       "title": "Biography",
-      "p1": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — from Scuola Normale Superiore di Pisa to the Houston Methodist system, and now to IRCCS San Raffaele and San Raffaele University in Rome.",
-      "p2": "My work sits at the intersection of nanomedicine, biomimetic materials and longevity medicine. I have directed research centers and programs and authored over 200 peer-reviewed publications.",
-      "p3": "Alongside research, I have co-founded multiple startups and sit on the scientific advisory boards of pharmaceutical and biotech companies globally."
+      "p1": "Born in Latina, Italy, on August 20, 1977, Ennio Tasciotti is an international scientist and pioneer in the fields of biomimetic medicine, nanotechnology, and regenerative medicine.",
+      "p2": "After excelling in Italy, he spent 15 years in the United States climbing the ranks of biomedical research at the Houston Methodist Hospital (Texas), where he founded and directed cutting-edge research centers.",
+      "p3": "He is currently the Director of the Human Longevity Program at the IRCCS San Raffaele in Rome, merging molecular biology, engineering, and medicine to develop new translational therapies and healthy aging protocols."
+    },
+    "education": {
+      "title": "Educational Background",
+      "items": [
+        {
+          "year": "2005",
+          "degree": "Ph.D. Molecular Biology, summa cum laude",
+          "place": "Scuola Normale Superiore degli Studi di Pisa and International Center for Genetic Engineering and Biotechnology (ICGEB)"
+        },
+        {
+          "year": "2001",
+          "degree": "M.S. Biology, summa cum laude",
+          "place": "Scuola Normale Superiore degli Studi di Pisa"
+        },
+        {
+          "year": "2000",
+          "degree": "M.S. Biological Sciences, summa cum laude",
+          "place": "University of Pisa, Italy"
+        }
+      ]
+    },
+    "academicAffiliations": {
+      "title": "Academic Affiliations",
+      "items": [
+        {
+          "years": "2023 – to date",
+          "role": "Full Professor Applied Medical Sciences and Technologies",
+          "place": "San Raffaele University"
+        },
+        {
+          "years": "2021 – 2022",
+          "role": "Contract Professor (Professore Straordinario)",
+          "place": "San Raffaele University, Rome"
+        },
+        {
+          "years": "2018 – 2020",
+          "role": "Full Professor of Regenerative Medicine",
+          "place": "Houston Methodist Hospital, Houston, TX"
+        },
+        {
+          "years": "2014 – 2018",
+          "role": "Associate Professor of Orthopedic Surgery, Department of Orthopedics and Sports Medicine",
+          "place": "Houston Methodist Hospital, Houston, TX"
+        },
+        {
+          "years": "2010 – 2015",
+          "role": "Chairman, Department of Nanomedicine",
+          "place": "Houston Methodist Research Institute, TX"
+        },
+        {
+          "years": "2010 – 2016",
+          "role": "Adjunct Professor of Nanomedicine, Graduate School of Biomedical Sciences (GSBS)",
+          "place": "University of Texas Health Science Center, Houston, TX"
+        },
+        {
+          "years": "2011 – 2016",
+          "role": "Associate Professor of Nanomedicine, Institute for Academic Medicine",
+          "place": "Houston, TX"
+        },
+        {
+          "years": "2013 – 2016",
+          "role": "Visiting Professor of Material Sciences",
+          "place": "Chinese Academy of Sciences, Beijing"
+        },
+        {
+          "years": "2014 – 2020",
+          "role": "Adjunct Professor of Bioceramics and Bio-hybrid Composites",
+          "place": "Italian National Research Council, Institute of Science and Technology for Ceramics Faenza, Italy"
+        },
+        {
+          "years": "2015 – 2020",
+          "role": "Honorary Professor, Department of Molecular Medicine and Medical Biotechnology, Center for Advanced Biotechnology",
+          "place": "University of Federico II of Naples, Italy"
+        },
+        {
+          "years": "2015 – 2020",
+          "role": "Honorary Professorship",
+          "place": "Swansea University School of Medicine, UK"
+        },
+        {
+          "years": "2016 – 2020",
+          "role": "Adjunct Professor, Dpt Molecular Cellular Medicine",
+          "place": "Texas A&M University"
+        },
+        {
+          "years": "2016 – 2020",
+          "role": "Adjunct Professor, Dpt of Biomedical Engineering",
+          "place": "Texas A&M University"
+        },
+        {
+          "years": "2019 – 2020",
+          "role": "Affiliated Member, Graduate Committee Faculty",
+          "place": "Texas A&M University"
+        }
+      ]
+    },
+    "teaching": {
+      "title": "Didactic Activity",
+      "items": [
+        {
+          "period": "01-06-2023 – current",
+          "role": "Full Professor in Applied Medical Sciences and Technologies",
+          "place": "San Raffaele University, Roma",
+          "body": "The course covers the main innovations in preventive and diagnostic medicine as well as the most innovative technologies for wellbeing, healthy longevity and rehabilitative medicine."
+        },
+        {
+          "period": "01-05-2022 – 30-05-2023",
+          "role": "Contract Professor in Nutraceutical Sciences and Human Nutrition",
+          "place": "San Raffaele University, Roma",
+          "body": "The course covers the formulation of nutraceutical molecules in nano and micro particles for the improvement of the physicochemical properties of the individual molecules and the creation of innovative nutraceutical therapies."
+        },
+        {
+          "period": "10-11-2022 – current",
+          "role": "Member of the PhD Graduate Program in Medical and Surgical Biotechnologies and translational medicine",
+          "place": "Tor Vergata University, Rome",
+          "body": "Holds lectures on the principles of development of nano- and micro-technologies for drug delivery and tissue engineering applications."
+        },
+        {
+          "period": "01-01-2008 – 31-12-2014",
+          "role": "Member of the PhD Graduate Program of the Department of Biomedical Engineering",
+          "place": "University of Houston, Houston Texas, USA",
+          "body": "Taught classes through a series of lectures and seminars on nanotechnology, microformulations and biomaterials for drug delivery and tissue engineering."
+        },
+        {
+          "period": "01-01-2010 – 31-12-2016",
+          "role": "Member of the Graduate School of Biomedical Sciences",
+          "place": "University of Texas Health Science Center, Houston Texas",
+          "body": "Taught classes through a series of lectures and seminars on nanomedicine approaches and on the basic principles of translational research."
+        },
+        {
+          "period": "01-01-2013 – 31-12-2017",
+          "role": "Member of the PhD Graduate Program of the Department of Material Sciences",
+          "place": "Chinese Academy of Sciences, Beijing, China",
+          "body": "Taught classes through a series of lectures and seminars on nano-micro- and bio-materials for drug delivery and tissue engineering applications."
+        },
+        {
+          "period": "01-01-2014 – 31-10-2020",
+          "role": "PhD advisor, Department of Biomedical Engineering",
+          "place": "Rice University, Houston Texas, USA",
+          "body": "Taught a series of lectures and seminars on biomimetic medicine approaches."
+        },
+        {
+          "period": "01-01-2016 – 29-10-2020",
+          "role": "PhD advisor, School of Medicine and Health Sciences",
+          "place": "Tecnológico de Monterrey, Monterrey, Mexico",
+          "body": ""
+        },
+        {
+          "period": "20-09-2013 – 28-09-2013",
+          "role": "International Lecturer of 'Biomimetic Theranostics'",
+          "place": "International Graduate School in Nanostructured Materials in Biomedical Applications, Turku, Finland",
+          "body": "Held lessons on the use of nanoparticles with dual functionality for both the therapeutic and diagnostic part."
+        },
+        {
+          "period": "15-06-2017 – 18-07-2018",
+          "role": "Lecturer of 'Nanomaterials for tissue engineering and drug delivery'",
+          "place": "ENMED (engineering and medicine) graduate program, Texas A&M, College Station, TX",
+          "body": ""
+        }
+      ]
+    },
+    "scientificCareer": {
+      "title": "Scientific Career and Positions",
+      "items": [
+        {
+          "years": "2021 – Present",
+          "role": "Director Human Longevity Program",
+          "place": "IRCCS San Raffaele, Rome"
+        },
+        {
+          "years": "2019 – 2020",
+          "role": "Vice Chair, Department of Orthopedics and Sports Medicine",
+          "place": "Houston Methodist Hospital, Houston, TX"
+        },
+        {
+          "years": "2017 – 2020",
+          "role": "Founder and Director, Center for Musculoskeletal Regeneration, Department of Orthopedic and Sports Medicine",
+          "place": "Houston Methodist Hospital, Houston, TX"
+        },
+        {
+          "years": "2016 – 2020",
+          "role": "Founder and Director, Center for Biomimetic Medicine, Regenerative Medicine Program",
+          "place": "Houston Methodist Research Institute, Houston, TX"
+        },
+        {
+          "years": "2011 – 2016",
+          "role": "Associate Professor Nanomedicine",
+          "place": "Methodist Research Institute, Houston, TX"
+        },
+        {
+          "years": "2009 – 2011",
+          "role": "Assistant Professor Nanomedicine, University of Texas Health Science Center at Houston (UTHSC-H), Institute for Molecular Medicine",
+          "place": "Houston, TX"
+        },
+        {
+          "years": "2006 – 2009",
+          "role": "Senior Postdoctoral Fellow, Nanomedicine Laboratory, Institute of Molecular Medicine",
+          "place": "University of Texas Health Science Center, Houston, TX"
+        },
+        {
+          "years": "2005",
+          "role": "Visiting Scientist, Micro Medical Device Laboratory",
+          "place": "Ohio State University, Columbus, OH"
+        },
+        {
+          "years": "2005",
+          "role": "Postdoctoral Fellowship in Molecular Imaging, Center for Biomolecular Medicine, AREA Science Park",
+          "place": "Trieste, Italy"
+        },
+        {
+          "years": "2005 – 2006",
+          "role": "Postdoctoral Fellow, Molecular Medicine Laboratory",
+          "place": "ICGEB Trieste, Italy"
+        }
+      ]
+    },
+    "leadershipRoles": {
+      "title": "Scientific Leadership Roles",
+      "items": [
+        {
+          "years": "November 2023",
+          "role": "Organizer and Conference Chair – Innovation in Lifesciences",
+          "place": "Trieste"
+        },
+        {
+          "years": "October 2023",
+          "role": "Organizer and Conference Chair – Next Oncology",
+          "place": "Italy"
+        },
+        {
+          "years": "2019 – 2022",
+          "role": "Strategic Advisor - Technoscience Park",
+          "place": "Rome, Italy"
+        },
+        {
+          "years": "2015 – 2019",
+          "role": "Scientific Advisor TMCx - Texas Medical Center Incubator/Accelerator",
+          "place": "TX"
+        },
+        {
+          "years": "2018 – 2019",
+          "role": "Extramural Funding Advisory Committee",
+          "place": "Texas A&M Health Science Center, TX"
+        },
+        {
+          "years": "2015 – 2018",
+          "role": "Junior Cabinet Member - President Leadership Council Advisory Board",
+          "place": ""
+        },
+        {
+          "years": "2012 – 2018",
+          "role": "Organizer and Session Chair - Conference of the Italian Researchers in the World",
+          "place": ""
+        },
+        {
+          "years": "2012 – 2015",
+          "role": "President - Italian Ministry of Health Grant Review Panel",
+          "place": ""
+        },
+        {
+          "years": "November 2014 – 2020",
+          "role": "Scientific Leadership Committee - Young Against Pain",
+          "place": "Italy"
+        },
+        {
+          "years": "October 2013",
+          "role": "Organizer and Conference Chair - Materials in Medicine",
+          "place": "Italy"
+        },
+        {
+          "years": "2011 – 2016",
+          "role": "Director - Accademia delle Nanoscienze",
+          "place": "Italy"
+        }
+      ]
+    },
+    "adminResponsibilities": {
+      "title": "Administrative Responsibilities",
+      "items": [
+        {
+          "years": "2010 – 2019",
+          "role": "Member HMRI Hazardous Substances Committee"
+        },
+        {
+          "years": "2010 – 2019",
+          "role": "Member HMRI Institutional Biosafety Committee"
+        },
+        {
+          "years": "2010 – 2016",
+          "role": "Scientific Director HMRI Surgical Advanced Technology Laboratory"
+        },
+        {
+          "years": "2011 – 2015",
+          "role": "Member HMRI Scientific Council Meeting"
+        },
+        {
+          "years": "2011 – 2015",
+          "role": "Member HMRI Clinical Council Meeting"
+        },
+        {
+          "years": "2011 – 2015",
+          "role": "Member HMRI Council of Chairs"
+        },
+        {
+          "years": "2013 – 2019",
+          "role": "Member IAM Faculty Affairs Committee"
+        },
+        {
+          "years": "2015 – 2019",
+          "role": "Director HMRI Center for Biomimetic Medicine"
+        },
+        {
+          "years": "2017 – 2019",
+          "role": "Director Center for Musculoskeletal Regeneration"
+        },
+        {
+          "years": "2019",
+          "role": "Director of Research for Center of Excellence in Orthopedics and Sports Medicine"
+        },
+        {
+          "years": "2023",
+          "role": "Director of Research for Human Longevity Program"
+        },
+        {
+          "years": "2024",
+          "role": "President Scientific Board Plastic Free ONLUS"
+        }
+      ]
+    },
+    "honors": {
+      "title": "Honors and Awards",
+      "items": [
+        {
+          "year": "2024",
+          "award": "Inducted as Fellow of the International Association for Advanced Materials (IAAM) in recognition of the outstanding contributions to the field of advanced materials and technology."
+        },
+        {
+          "year": "2023",
+          "award": "Stanford University Scientific Ranking (Top 1% of most influential scientists worldwide)."
+        },
+        {
+          "year": "2022",
+          "award": "Taobuk Award for Nanoscience and Nanomedicine."
+        },
+        {
+          "year": "2020",
+          "award": "Winner American Chemical Society Nano Championship."
+        },
+        {
+          "year": "2018",
+          "award": "Houston Men of Distinction Award."
+        },
+        {
+          "year": "2017",
+          "award": "Houston Men of Distinction Award."
+        },
+        {
+          "year": "2016",
+          "award": "Career Award, NanoScience Symposium, Houston."
+        },
+        {
+          "year": "2015",
+          "award": "TMHRI President's Award for Transformational Excellence."
+        },
+        {
+          "year": "2013",
+          "award": "Italy-America Chamber of Commerce 'PrimiDieci Under Forty Award'."
+        },
+        {
+          "year": "2012",
+          "award": "Moran Foundation Award in Translational Research."
+        },
+        {
+          "year": "2012",
+          "award": "TMHRI President's Award for Transformational Excellence."
+        },
+        {
+          "year": "2011",
+          "award": "Best Italian Cancer Research Scientists Award, ISSNAF, Washington DC."
+        },
+        {
+          "year": "2009",
+          "award": "Nature Medicine, 'Five big ideas for nanotechnology'."
+        },
+        {
+          "year": "2008",
+          "award": "Best Abstract and Travel Award, World Conference on Molecular Imaging, Nice, France."
+        },
+        {
+          "year": "2006 – 2007",
+          "award": "University of Texas Undergraduate Society Research Fellowship."
+        },
+        {
+          "year": "2006",
+          "award": "Best Abstract & Travel Award, Society of Molecular Imaging Meeting, Minneapolis, USA."
+        },
+        {
+          "year": "2004",
+          "award": "Best Abstract & Travel Award, American Society for Gene Therapy, Minneapolis, USA."
+        },
+        {
+          "year": "2001 – 2005",
+          "award": "European Community 'Researchers Training and Mobility Program' Fellowships."
+        },
+        {
+          "year": "2000",
+          "award": "Molecular Biology Research Society Graduate Student Award."
+        },
+        {
+          "year": "2000 – 2005",
+          "award": "Italian Ministry of Education 'Distinguished Scholar Fellowship'."
+        }
+      ]
     },
     "timeline": {
       "title": "Career timeline",
       "education": "Education",
       "career": "Career",
       "items": [
-        { "year": "2023–present", "role": "Full Professor, Applied Medical Sciences and Technologies", "place": "San Raffaele University, Rome" },
-        { "year": "2021–present", "role": "Founder and Director, Human Longevity Program", "place": "IRCCS San Raffaele, Rome" },
-        { "year": "2016–2020", "role": "Founder and Director, Center for Biomimetic Medicine", "place": "Houston Methodist Research Institute" },
-        { "year": "2011–2016", "role": "Associate Professor of Nanomedicine", "place": "Houston Methodist Research Institute" },
-        { "year": "2005", "role": "PhD in Molecular Medicine", "place": "Scuola Normale Superiore di Pisa and ICGEB" }
+        {
+          "year": "2023–present",
+          "role": "Full Professor, Applied Medical Sciences and Technologies",
+          "place": "San Raffaele University, Rome"
+        },
+        {
+          "year": "2021–present",
+          "role": "Founder and Director, Human Longevity Program",
+          "place": "IRCCS San Raffaele, Rome"
+        },
+        {
+          "year": "2016–2020",
+          "role": "Founder and Director, Center for Biomimetic Medicine",
+          "place": "Houston Methodist Research Institute"
+        },
+        {
+          "year": "2011–2016",
+          "role": "Associate Professor of Nanomedicine",
+          "place": "Houston Methodist Research Institute"
+        },
+        {
+          "year": "2005",
+          "role": "PhD in Molecular Medicine",
+          "place": "Scuola Normale Superiore di Pisa and ICGEB"
+        }
       ]
     },
-    "teaching": {
-      "title": "Teaching",
-      "body": "Full Professor of Applied Medical Sciences and Technologies at San Raffaele University, Rome. The course covers innovations in preventive and diagnostic medicine, wellbeing, healthy longevity and rehabilitative medicine. According to the official CV, he has mentored 20 PhD students and 24 master's students."
-    },
-    "bioIntro": "I am Ennio Tasciotti. I have spent twenty years building bridges between basic research and applied medicine — from Scuola Normale Superiore di Pisa to the Houston Methodist system, and now to IRCCS San Raffaele and San Raffaele University in Rome.",
+    "bioIntro": "Born in Latina, Italy, on August 20, 1977, Ennio Tasciotti is an international scientist and pioneer in the fields of biomimetic medicine, nanotechnology, and regenerative medicine.",
     "downloadCV": "Download Curriculum Vitae (PDF)",
     "numbers": {
       "title": "By the numbers",
@@ -209,6 +638,407 @@
     "discoveries": {
       "title": "Signature discoveries"
     },
+    "citations": "citations",
+    "macroAreasTitle": "4 Research Areas",
+    "macroAreasPubTitle": "Top 10 most cited publications",
+    "macroAreas": [
+      {
+        "id": "drugDelivery",
+        "number": "01",
+        "title": "Drug Delivery",
+        "subtitle": "Nanomedicine and Targeted Transport",
+        "body": "Prof. Tasciotti has conducted extensive research into the utilization of micro-, nano-, and bio-materials for drug delivery purposes. By integrating nanotechnology with cell biology, he developed medical tools that operate in harmony with natural laws. His focus has been on designing implantable and injectable platforms to surmount biological barriers, target inflammation, administer drugs for cancer treatment, and modulate immune responses. The creation of the Multi Stage Vector, featured as the cover story in Nature Nanotechnology in 2008, marked the inception of targeted chemotherapy nanosystems and was recognized as one of the 'Five big ideas for nanotechnology' in Nature Medicine in 2009. He introduced the use of biomimicry principles to engineer bioinspired systems that evade reticulo-endothelial clearance, target inflamed vessels, traverse endothelial layers, and enhance therapeutic accumulation in the cellular cytoplasm. Noteworthy contributions include the Leuko-Like Vector, porous nanoneedles, and exosome-like vesicles.",
+        "publications": [
+          {
+            "rank": 1,
+            "journal": "Nature Nanotechnology",
+            "year": 2013,
+            "title": "Synthetic nanoparticles functionalized with biomimetic leukocyte membranes possess cell-like functions.",
+            "authors": "A. Parodi et al.",
+            "citations": 1276,
+            "doi": "10.1038/nnano.2012.212"
+          },
+          {
+            "rank": 2,
+            "journal": "Nature Nanotechnology",
+            "year": 2008,
+            "title": "Mesoporous silicon particles as a multistage delivery system for imaging and therapeutic applications.",
+            "authors": "E. Tasciotti et al.",
+            "citations": 853,
+            "doi": "10.1038/nnano.2008.34"
+          },
+          {
+            "rank": 3,
+            "journal": "Nanomedicine",
+            "year": 2016,
+            "title": "The impact of nanoparticle protein corona on cytotoxicity, immunotoxicity and target drug delivery.",
+            "authors": "C. Corbo et al.",
+            "citations": 810,
+            "doi": "10.1038/nnano.2013.253"
+          },
+          {
+            "rank": 4,
+            "journal": "ACS Nano",
+            "year": 2020,
+            "title": "Toward nanotechnology-enabled approaches against the COVID-19 pandemic.",
+            "authors": "C. Weiss et al.",
+            "citations": 663,
+            "doi": ""
+          },
+          {
+            "rank": 5,
+            "journal": "Nature Materials",
+            "year": 2015,
+            "title": "Biodegradable silicon nanoneedles delivering nucleic acids intracellularly induce localized in vivo neovascularization.",
+            "authors": "C. Chiappini et al.",
+            "citations": 503,
+            "doi": ""
+          },
+          {
+            "rank": 6,
+            "journal": "Nature Materials",
+            "year": 2016,
+            "title": "Biomimetic proteolipid vesicles for targeting inflamed tissues.",
+            "authors": "R. Molinaro et al.",
+            "citations": 463,
+            "doi": "10.1038/nmat4644"
+          },
+          {
+            "rank": 7,
+            "journal": "Nature Communications",
+            "year": 2021,
+            "title": "Cell membrane coating integrity affects the internalization mechanism of biomimetic nanoparticles.",
+            "authors": "L. Liu et al.",
+            "citations": 452,
+            "doi": "10.1038/s41467-021-25972-2"
+          },
+          {
+            "rank": 8,
+            "journal": "Pharmacological Research",
+            "year": 2010,
+            "title": "Enabling individualized therapy through nanotechnology.",
+            "authors": "J.H. Sakamoto et al.",
+            "citations": 316,
+            "doi": ""
+          },
+          {
+            "rank": 9,
+            "journal": "Biomaterials",
+            "year": 2017,
+            "title": "Bio-inspired engineering of cell-and virus-like nanoparticles for drug delivery.",
+            "authors": "A. Parodi et al.",
+            "citations": 298,
+            "doi": ""
+          },
+          {
+            "rank": 10,
+            "journal": "Advanced Functional Materials",
+            "year": 2010,
+            "title": "Biodegradable porous silicon barcode nanowires with defined geometry.",
+            "authors": "C. Chiappini et al.",
+            "citations": 277,
+            "doi": "10.1002/adfm.201000360"
+          }
+        ]
+      },
+      {
+        "id": "regenerative",
+        "number": "02",
+        "title": "Regenerative Medicine and Tissue Engineering",
+        "subtitle": "Biomimetic Scaffolds and Extracellular Matrix",
+        "body": "Prof. Tasciotti has contributed to the understanding of the healing potential inherent within the human body, endeavoring to maximize it by engineering biomimetic scaffolds capable of eliciting targeted cell and tissue responses. These materials are meticulously crafted to emulate the natural tissue response observed during physiological healing processes. His investigations demonstrated that both immune and stem cells exhibit distinct responses to implanted materials based on their composition, structure, and surface characteristics. His pioneering work in tissue engineering led to the development of scaffolds and membranes that closely mimic native tissue at both nano- and micro-scales, imbuing synthetic constructs with the functional properties of natural tissues. His primary focus lies in the advancement of translational biomaterials for musculoskeletal tissue engineering, mimicking the extracellular matrix of multiple tissues to facilitate superior regeneration of composite tissues.",
+        "publications": [
+          {
+            "rank": 1,
+            "journal": "Biomaterials",
+            "year": 2015,
+            "title": "Evaluation of the osteoinductive potential of a bio-inspired scaffold mimicking the osteogenic niche for bone augmentation.",
+            "authors": "S. Minardi et al.",
+            "citations": 208,
+            "doi": ""
+          },
+          {
+            "rank": 2,
+            "journal": "Stem Cells Translational Medicine",
+            "year": 2016,
+            "title": "Chondroitin sulfate immobilized on a biomimetic scaffold modulates inflammation while driving chondrogenesis.",
+            "authors": "B. Corradetti et al.",
+            "citations": 107,
+            "doi": ""
+          },
+          {
+            "rank": 3,
+            "journal": "Advanced Functional Materials",
+            "year": 2012,
+            "title": "Mesoporous silicon‐PLGA composite microspheres for the double controlled release of biomolecules for orthopedic tissue engineering.",
+            "authors": "D. Fan et al.",
+            "citations": 105,
+            "doi": ""
+          },
+          {
+            "rank": 4,
+            "journal": "International Journal of Pharmaceutics",
+            "year": 2020,
+            "title": "Electrospun anti-inflammatory patch loaded with essential oils for wound healing.",
+            "authors": "S. Garcia-Salinas et al.",
+            "citations": 100,
+            "doi": ""
+          },
+          {
+            "rank": 5,
+            "journal": "Cellular and Molecular Bioengineering",
+            "year": 2017,
+            "title": "Investigating the mechanobiology of cancer cell–ECM interaction through collagen-based 3D scaffolds.",
+            "authors": "C. Liverani et al.",
+            "citations": 80,
+            "doi": ""
+          },
+          {
+            "rank": 6,
+            "journal": "Acta Biomaterialia",
+            "year": 2017,
+            "title": "Biomimetic collagen/elastin meshes for ventral hernia repair in a rat model.",
+            "authors": "S. Minardi et al.",
+            "citations": 75,
+            "doi": ""
+          },
+          {
+            "rank": 7,
+            "journal": "Small",
+            "year": 2016,
+            "title": "Nanocomposite hydrogels as platform for cells growth, proliferation, and chemotaxis.",
+            "authors": "F. Fiorini et al.",
+            "citations": 73,
+            "doi": ""
+          },
+          {
+            "rank": 8,
+            "journal": "Materials Today Bio",
+            "year": 2019,
+            "title": "Biomimetic hydroxyapatite/collagen composite drives bone niche recapitulation in a rabbit orthotopic model.",
+            "authors": "S. Minardi et al.",
+            "citations": 58,
+            "doi": ""
+          },
+          {
+            "rank": 9,
+            "journal": "ACS Applied Materials & Interfaces",
+            "year": 2015,
+            "title": "PLGA-Mesoporous Silicon Microspheres for the in Vivo Controlled Temporospatial Delivery of Proteins.",
+            "authors": "S. Minardi et al.",
+            "citations": 56,
+            "doi": ""
+          },
+          {
+            "rank": 10,
+            "journal": "Small",
+            "year": 2014,
+            "title": "Multiscale patterning of a biomimetic scaffold integrated with composite microspheres.",
+            "authors": "S. Minardi et al.",
+            "citations": 53,
+            "doi": ""
+          }
+        ]
+      },
+      {
+        "id": "immunology",
+        "number": "03",
+        "title": "Immune and Stem Cell Biology",
+        "subtitle": "Immunomodulation",
+        "body": "He made significant contributions to the understanding of stem cell and immune cell responses to biomaterials. His research has shown that it is feasible to influence cell fate within the body directly, eliminating the need for ex vivo cell expansion or manipulation. His team was among the pioneers in developing technologies that harness the activity of immune cells as initial responders following injury, aiming to recruit stem cells and facilitate neoangiogenesis. His approach to biomaterials engineering centers on regulating the response of inflammatory cells to the implant. By deciphering the cascade of inflammatory events, his research has shown that activation of M1 macrophages can lead to detrimental immune dysfunction and fibrosis. Conversely, M2 switching is associated with accelerated tissue healing and can prevent scar tissue formation. To enhance implant biocompatibility, his team has developed several immune-instructive biomaterials capable of modulating the immune response to promote improved tissue regeneration.",
+        "publications": [
+          {
+            "rank": 1,
+            "journal": "Circulation Research",
+            "year": 2020,
+            "title": "Rapamycin-loaded biomimetic nanoparticles reverse vascular inflammation.",
+            "authors": "C. Boada et al.",
+            "citations": 195,
+            "doi": "10.1016/j.jconrel.2019.06.012"
+          },
+          {
+            "rank": 2,
+            "journal": "Advanced Healthcare Materials",
+            "year": 2018,
+            "title": "Biomimetic tissue engineering: tuning the immune and inflammatory response to implantable biomaterials.",
+            "authors": "F. Taraballi et al.",
+            "citations": 155,
+            "doi": ""
+          },
+          {
+            "rank": 3,
+            "journal": "Frontiers in Bioengineering and Biotechnology",
+            "year": 2020,
+            "title": "Cell membrane-based biomimetic nanoparticles and the immune system: immunomodulatory interactions to therapeutic applications.",
+            "authors": "M. Sushnitha et al.",
+            "citations": 137,
+            "doi": ""
+          },
+          {
+            "rank": 4,
+            "journal": "Scientific Reports",
+            "year": 2017,
+            "title": "Hyaluronic acid coatings as a simple and efficient approach to improve MSC homing toward the site of inflammation.",
+            "authors": "B. Corradetti et al.",
+            "citations": 103,
+            "doi": ""
+          },
+          {
+            "rank": 5,
+            "journal": "Journal of Tissue Engineering",
+            "year": 2016,
+            "title": "Biomimetic collagenous scaffold to tune inflammation by targeting macrophages.",
+            "authors": "F. Taraballi et al.",
+            "citations": 102,
+            "doi": "10.1177/2041731415624667"
+          },
+          {
+            "rank": 6,
+            "journal": "Nanoscale",
+            "year": 2017,
+            "title": "Engineered biomimetic nanovesicles show intrinsic anti-inflammatory properties for the treatment of inflammatory bowel diseases.",
+            "authors": "C. Corbo et al.",
+            "citations": 92,
+            "doi": ""
+          },
+          {
+            "rank": 7,
+            "journal": "Annals of Biomedical Engineering",
+            "year": 2016,
+            "title": "IL-4 release from a biomimetic scaffold for the temporally controlled modulation of macrophage response.",
+            "authors": "S. Minardi et al.",
+            "citations": 80,
+            "doi": ""
+          },
+          {
+            "rank": 8,
+            "journal": "Nanoscale",
+            "year": 2019,
+            "title": "Macrophage-derived nanovesicles exert intrinsic anti-inflammatory properties and prolong survival in sepsis through a direct interaction with macrophages.",
+            "authors": "R. Molinaro et al.",
+            "citations": 67,
+            "doi": ""
+          },
+          {
+            "rank": 9,
+            "journal": "Stem Cell Research & Therapy",
+            "year": 2015,
+            "title": "Enhanced osteogenic potential of mesenchymal stem cells from cortical bone: a comparative analysis.",
+            "authors": "J.S. Fernandez-Moure et al.",
+            "citations": 66,
+            "doi": ""
+          },
+          {
+            "rank": 10,
+            "journal": "Biomaterials",
+            "year": 2016,
+            "title": "Cell source determines the immunological impact of biomimetic nanoparticles.",
+            "authors": "M. Evangelopoulos et al.",
+            "citations": 65,
+            "doi": ""
+          }
+        ]
+      },
+      {
+        "id": "translational",
+        "number": "04",
+        "title": "Translational Research and Clinical Applications",
+        "subtitle": "Clinical Imaging and Regenerative Matrices",
+        "body": "Expanding the scope of biomimetic approaches to unresolved clinical challenges, Prof. Tasciotti initiated a program focusing on the utilization of platelet-rich plasma (PRP) as a biomaterial in regenerative medicine. Investigations revealed that this blood-derived product substantially enhances early neovascularization and tissue deposition, while also modulating immune responses and mitigating host degradation of biologic matrices. The research explored innovative regenerative matrices, including repurposed lung tissue, which, following a decellularization process, offers architectural and biochemical cues to native cells. Additionally, he played a pivotal role in the advancement of novel imaging techniques, such as ultrasound elastography, to elucidate the progressive mechanisms involved in both hard and soft tissue healing in vivo.",
+        "publications": [
+          {
+            "rank": 1,
+            "journal": "Nature",
+            "year": 2020,
+            "title": "Loss of p53 drives neuron reprogramming in head and neck cancer.",
+            "authors": "M. Amit et al.",
+            "citations": 472,
+            "doi": ""
+          },
+          {
+            "rank": 2,
+            "journal": "Biomaterials",
+            "year": 2012,
+            "title": "Adult and umbilical cord blood-derived platelet-rich plasma for mesenchymal stem cell proliferation, chemotaxis, and cryo-preservation.",
+            "authors": "M.B. Murphy et al.",
+            "citations": 228,
+            "doi": ""
+          },
+          {
+            "rank": 3,
+            "journal": "Theranostics",
+            "year": 2018,
+            "title": "Biomimetic nanoparticles with enhanced affinity towards activated endothelium as versatile tools for theranostic drug delivery.",
+            "authors": "J.O. Martinez et al.",
+            "citations": 123,
+            "doi": ""
+          },
+          {
+            "rank": 4,
+            "journal": "Journal of Surgical Research",
+            "year": 2017,
+            "title": "Platelet-rich plasma: a biomimetic approach to enhancement of surgical wound healing.",
+            "authors": "J.S. Fernandez-Moure et al.",
+            "citations": 113,
+            "doi": ""
+          },
+          {
+            "rank": 5,
+            "journal": "Scientific Reports",
+            "year": 2019,
+            "title": "A biomimetic 3D model of hypoxia-driven cancer progression.",
+            "authors": "C. Liverani et al.",
+            "citations": 104,
+            "doi": ""
+          },
+          {
+            "rank": 6,
+            "journal": "Wiley Interdisciplinary Reviews",
+            "year": 2011,
+            "title": "Nanodevices in diagnostics.",
+            "authors": "Y. Hu et al.",
+            "citations": 103,
+            "doi": ""
+          },
+          {
+            "rank": 7,
+            "journal": "Scientific Reports",
+            "year": 2020,
+            "title": "Non-invasive imaging of Young's modulus and Poisson's ratio in cancers in vivo.",
+            "authors": "M.T. Islam et al.",
+            "citations": 102,
+            "doi": ""
+          },
+          {
+            "rank": 8,
+            "journal": "Proteomics",
+            "year": 2010,
+            "title": "Mesoporous silica chips for selective enrichment and stabilization of low molecular weight proteome.",
+            "authors": "A. Bouamrani et al.",
+            "citations": 89,
+            "doi": ""
+          },
+          {
+            "rank": 9,
+            "journal": "Human Gene Therapy",
+            "year": 2007,
+            "title": "In Vivo Imaging Shows Abnormal Function of Vascular Endothelial Growth Factor-Induced Vasculature.",
+            "authors": "S. Zacchigna et al.",
+            "citations": 86,
+            "doi": ""
+          },
+          {
+            "rank": 10,
+            "journal": "Molecular Imaging",
+            "year": 2011,
+            "title": "Near-infrared imaging method for the in vivo assessment of the biodistribution of nanoporous silicon particles.",
+            "authors": "E. Tasciotti et al.",
+            "citations": 74,
+            "doi": ""
+          }
+        ]
+      }
+    ],
     "publications": {
       "link": "View all publications"
     }
@@ -254,7 +1084,16 @@
     "metaDesc": "Startups founded, advisory boards, strategic consulting for Roche, Novartis, Gilead and other pharmaceutical and health sector leaders.",
     "founded": "Founder roles",
     "advisory": "Strategic advisory",
-    "subtitle": "Startups founded, advisory boards and strategic partnerships in deeptech and health.",
+    "subtitle": "Turning world-class research into market value and technological innovation.",
+    "visitWebsite": "Visit website",
+    "vision": {
+      "title": "Entrepreneurial Vision and Technology Transfer",
+      "body1": "Prof. Ennio Tasciotti combines a rigorous academic background with a proven entrepreneurial vision, translating complex biological observations into scalable engineering solutions. His translational research has direct clinical applicability, supported by 12 international patents covering nanomaterials and biomaterials.",
+      "body2": "Among his most prominent industrial projects is the 'Fracture Putty' program, funded by the DARPA (Defense Advanced Research Projects Agency) through multiple grants totaling approximately $15 million, aimed at developing bionanotechnological scaffolds for traumatic bone regeneration.",
+      "body3": "Furthermore, he championed the 'democratization of nanotechnology' by openly publishing standardized protocols for manufacturing biomimetic nanoparticles via microfluidics, making the technology accessible and affordable to laboratories worldwide."
+    },
+    "startupsTitle": "Startup Creation and R&D Leadership",
+    "startupsIntro": "Actively engaged in the international biotechnological ecosystem, Prof. Tasciotti has founded several companies and sits on the boards of directors of entities where he holds top-tier roles in scientific direction and Research & Development (R&D).",
     "cta": {
       "title": "Work together",
       "body": "Available for advisory boards, strategic consulting and research partnerships.",
@@ -283,13 +1122,65 @@
   },
   "speaking": {
     "title": "Speaking & Keynotes",
-    "eyebrow": "Speaking",
+    "eyebrow": "Speaking & Outreach",
     "subtitle": "Keynote speaker on longevity, nanomedicine and biomedical innovation.",
     "metaTitle": "Speaking & Keynotes — Prof. Ennio Tasciotti",
     "metaDesc": "Keynote speaker on longevity, nanomedicine and biomedical innovation. Available for international conferences, workshops and advisory.",
     "positioning": "Keynote speaker on longevity, nanomedicine and the future of personalized medicine.",
     "topics": "Proposed talks",
     "venues": "Past venues",
+    "outreach": {
+      "divulgazione": {
+        "title": "Science Communication",
+        "body": "Prof. Tasciotti integrates cutting-edge research with intensive public communication activities, promoting the shift from reactive medicine to proactive and biomimetic medicine. Through the use of effective narrative metaphors, he makes complex topics related to nanomedicine, aging, and chronic systemic inflammation highly accessible."
+      },
+      "tedx": {
+        "title": "TEDx Talks",
+        "intro": "He has participated as a speaker at prominent TEDx events, addressing themes of medical innovation and cellular regeneration:",
+        "talks": [
+          {
+            "event": "TEDxCNR",
+            "location": "Rome",
+            "year": 2016,
+            "talkTitle": "Beyond the Known",
+            "body": "In his talk he illustrated how nanomedicine and biomimetic nanovectors are revolutionizing cellular communication and anticancer therapies."
+          },
+          {
+            "event": "TEDxLago di Fogliano",
+            "location": "",
+            "year": null,
+            "talkTitle": "Rebuilding the Body One Cell at a Time",
+            "body": "In his speech he focused on the milestones of regenerative medicine, explaining how tissue engineering via three-dimensional scaffolds can awaken latent human regenerative capabilities."
+          }
+        ]
+      },
+      "media": {
+        "title": "Television and Media Presence",
+        "intro": "His science outreach on health, aging, and science is regularly featured on national networks:",
+        "appearances": [
+          {
+            "outlet": "Rai 1 – Superquark",
+            "years": "2015–2020",
+            "body": "He collaborated regularly with Piero Angela on documentaries dedicated to nanotechnology, tissue engineering, and bone regeneration."
+          },
+          {
+            "outlet": "Rai 3 – Presa Diretta",
+            "years": "2021",
+            "body": "He was featured in the episode 'The Organ Factory', focusing on the creation of biological tissues in the laboratory capable of integrating into the host organism."
+          },
+          {
+            "outlet": "Real Time",
+            "years": "2025",
+            "body": "He starred in the special 'The Longevity Clinic', dedicated to the application of preventive medicine for managing women's wellness during menopause."
+          },
+          {
+            "outlet": "Rai 1, Rai 3, and TV2000",
+            "years": "2025–2026",
+            "body": "He was a special guest on TG1 Speciale Mattina (2025) to discuss the link between longevity and social networks; on Quinta Dimensione (Rai) to delve into the connection between obesity and cellular inflammation; on Casa Italia to clarify the difference between chronological and biological age; and on Il Mio Medico (TV2000, 2026) providing practical medical advice on healthy aging."
+          }
+        ]
+      }
+    },
     "booking": {
       "cta": "Request availability →",
       "body": "Complete the form with event details and we will respond within 48 business hours.",
@@ -371,11 +1262,23 @@
     }
   },
   "consultancy": {
-    "title": "Consultancy",
+    "title": "Consulting",
     "eyebrow": "Advisory & Consulting",
-    "subtitle": "Strategic scientific leadership for deeptech, biotech and health innovation.",
-    "orgsTitle": "Collaborating organisations",
-    "orgsBody": "Past and present collaborations include pharmaceutical multinationals, biotech startups, venture capital funds, hospital networks and government health agencies.",
+    "subtitle": "Top-tier strategic consultant and scientific evaluator for multinational pharmaceutical companies, institutional investment funds, and global innovation ecosystems.",
+    "areas": {
+      "corporate_pharma": {
+        "title": "Strategic Consulting and Corporate Pharma",
+        "body": "Prof. Tasciotti's extensive expertise in applied science and nanomedicine is sought after by global leaders in the biomedical and pharmaceutical industries. Since 2021, he has served as a Corporate Consultant for the scientific and strategic development of renowned international entities, including Roche Pharma, Novartis, Gilead, AlfaSigma, Corden Pharma, Named, Aboca, Sclavo Diagnostics, Inpeco, Ferrero, Protiviti, and CORIS Veneto."
+      },
+      "investment_funds": {
+        "title": "Advisor for Investment Funds",
+        "body": "His expertise in the clinical translation of technologies allows him to accurately evaluate the innovation ecosystem for venture capital. Between 2020 and 2023, he served as a Consultant and Due Diligence Advisor for major international institutional funds, providing technical and strategic analysis for Panakes, Principia, AuroraTT, Utopia, Sofinnova, and Cascade Global-UK."
+      },
+      "innovation_ecosystems": {
+        "title": "Scientific Guidance for Innovation Ecosystems",
+        "body": "Prof. Tasciotti plays a key role as a Scientific Advisor at technological hubs, science parks, and business incubators, promoting technology transfer. His current and past appointments include Scientific Advisor for Cube Labs Venture Builder (Milan, 2023 - present), Cluster Lifesciences (Friuli Venezia Giulia, 2022 - present), as well as G-Factor, ComoNext, Technoscience Park, THD, and EOS Consulting (2020 - present)."
+      }
+    },
     "cta": {
       "title": "Start a conversation",
       "body": "Every engagement begins with a focused conversation. Tell me about your challenge.",
@@ -430,7 +1333,13 @@
     },
     "sectors": {
       "title": "Sectors served",
-      "list": ["Pharmaceuticals", "Nutraceuticals", "MedTech", "Biotech VC", "Digital Health"]
+      "list": [
+        "Pharmaceuticals",
+        "Nutraceuticals",
+        "MedTech",
+        "Biotech VC",
+        "Digital Health"
+      ]
     },
     "caseStudies": {
       "title": "Case studies (coming soon)",

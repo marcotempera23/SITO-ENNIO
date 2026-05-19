@@ -4,6 +4,25 @@ import { SectionHeading } from '@/components/shared/section-heading';
 import { KpiCounter } from '@/components/shared/kpi-counter';
 import { buildMetadata } from '@/lib/seo';
 
+interface Publication {
+  rank: number;
+  journal: string;
+  year: number;
+  title: string;
+  authors: string;
+  citations: number;
+  doi: string;
+}
+
+interface MacroArea {
+  id: string;
+  number: string;
+  title: string;
+  subtitle: string;
+  body: string;
+  publications: Publication[];
+}
+
 interface PageProps {
   params: Promise<{ locale: string }>;
 }
@@ -17,6 +36,7 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function SciencePage({ params }: PageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'science' });
+  const macroAreas = t.raw('macroAreas') as MacroArea[];
 
   return (
     <div className="pt-28 pb-24">
@@ -35,26 +55,99 @@ export default async function SciencePage({ params }: PageProps) {
           <KpiCounter value={15} label={t('kpi.patents')} />
         </div>
 
-        {/* Research areas */}
-        <div className="mt-20 grid gap-12 md:grid-cols-3">
-          {(['nano', 'regen', 'longevity'] as const).map((area) => (
-            <article key={area} className="space-y-3">
-              <h3
-                className="font-display text-step-2 font-light text-[var(--color-text)]"
+        {/* Macro research areas */}
+        <div className="mt-24">
+          <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-16">
+            {t('macroAreasTitle')}
+          </h2>
+
+          <div className="space-y-24">
+            {macroAreas.map((area) => (
+              <section
+                key={area.id}
+                id={area.id}
+                aria-labelledby={`${area.id}-heading`}
+                className="scroll-mt-28"
               >
-                {t(`areas.${area}.title`)}
-              </h3>
-              <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)]">
-                {t(`areas.${area}.body`)}
-              </p>
-            </article>
-          ))}
+                {/* Area header */}
+                <div className="flex items-start gap-6 mb-8">
+                  <span
+                    className="font-mono text-[4rem] leading-none font-light text-[var(--color-accent)] opacity-20 select-none"
+                    aria-hidden="true"
+                  >
+                    {area.number}
+                  </span>
+                  <div>
+                    <h3
+                      id={`${area.id}-heading`}
+                      className="font-display text-step-3 font-light text-[var(--color-text)]"
+                    >
+                      {area.title}
+                    </h3>
+                    <p className="mt-1 font-mono text-step--1 text-[var(--color-accent)] tracking-wide uppercase">
+                      {area.subtitle}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)] max-w-4xl mb-12 pl-0 md:pl-[calc(4rem+1.5rem)]">
+                  {area.body}
+                </p>
+
+                {/* Publications */}
+                <div className="pl-0 md:pl-[calc(4rem+1.5rem)]">
+                  <h4 className="font-mono text-step--1 text-[var(--color-text)] uppercase tracking-widest mb-6 pb-3 border-b border-[var(--color-border)]">
+                    {t('macroAreasPubTitle')}
+                  </h4>
+                  <ol className="space-y-0 divide-y divide-[var(--color-border)]">
+                    {area.publications.map((pub) => (
+                      <li
+                        key={pub.rank}
+                        className="py-4 grid grid-cols-[2rem_1fr_auto] gap-x-4 items-start group"
+                      >
+                        {/* Rank */}
+                        <span className="font-mono text-step--2 text-[var(--color-accent)] pt-0.5 tabular-nums">
+                          {String(pub.rank).padStart(2, '0')}
+                        </span>
+
+                        {/* Content */}
+                        <div className="min-w-0">
+                          <p className="text-step--1 font-medium text-[var(--color-text)] leading-snug">
+                            {pub.title}
+                          </p>
+                          <p className="mt-1 text-step--2 text-[var(--color-text-muted)]">
+                            <span className="font-medium text-[var(--color-text)]">{pub.journal}</span>
+                            {' '}·{' '}
+                            {pub.year}
+                            {' '}·{' '}
+                            {pub.authors}
+                          </p>
+
+                        </div>
+
+                        {/* Citations badge */}
+                        <div className="flex flex-col items-end gap-0.5 pt-0.5 shrink-0">
+                          <span className="font-mono text-step-0 font-semibold text-[var(--color-text)] tabular-nums">
+                            {pub.citations.toLocaleString()}
+                          </span>
+                          <span className="font-mono text-step--2 text-[var(--color-text-muted)] whitespace-nowrap">
+                            {t('citations')}
+                          </span>
+                        </div>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </section>
+            ))}
+          </div>
         </div>
 
-        <div className="mt-14">
+        <div className="mt-20">
           <Link
             href="/science/publications"
-            className="inline-flex h-12 items-center rounded-md bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-colors"
+            className="inline-flex h-12 items-center rounded-md bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-colors hover:opacity-90"
           >
             {t('viewPublications')} →
           </Link>
