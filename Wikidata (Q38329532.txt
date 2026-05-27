@@ -1,0 +1,30 @@
+1) Wikidata (Q38329532) — dichiarazioni da inserire
+Nell'editor di Wikidata ti basta digitare il nome del valore e lui te lo completa, quindi non serve memorizzare i QID. Ecco cosa inserire:
+Etichetta / Descrizione
+
+Etichetta (it): Ennio Tasciotti — (en): Ennio Tasciotti
+Descrizione (it): biologo e accademico italiano — (en): Italian biologist and academic
+
+Dichiarazioni (proprietà → valore)
+
+istanza di (P31) → essere umano
+sesso (P21) → maschile
+cittadinanza (P27) → Italia
+data di nascita (P569) → 20 agosto 1977
+luogo di nascita (P19) → Latina
+nome proprio di persona (P735) → Ennio
+cognome (P734) → Tasciotti
+occupazione (P106) → biologo; professore universitario; ricercatore
+campo di lavoro (P101) → nanomedicina; medicina rigenerativa; biologia molecolare; somministrazione di farmaci (drug delivery)
+istruito presso (P69) → Università di Pisa; Scuola Normale Superiore di Pisa; International Centre for Genetic Engineering and Biotechnology
+titolo accademico (P512) → dottorato di ricerca
+datore di lavoro (P108) → IRCCS Ospedale San Raffaele; Università Vita-Salute San Raffaele; Houston Methodist Hospital; University of Texas Health Science Center at Houston
+lingue parlate o scritte (P1412) → italiano; inglese
+
+Identificatori esterni (questi sono i valori esatti dal suo CV/ORCID):
+
+ORCID iD (P496) → 0000-0003-1187-3205
+Scopus Author ID (P1153) → 23971656200
+Google Scholar author ID (P1960) → A8sSvg0AAAAJ
+
+Su ogni dichiarazione importante aggiungi un riferimento (il campo "stated in" / "reference URL") puntando alla scheda San Raffaele o al CV — Wikidata apprezza molto le fonti.

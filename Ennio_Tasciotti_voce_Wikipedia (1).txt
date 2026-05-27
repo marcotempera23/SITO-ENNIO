@@ -1,0 +1,96 @@
+{{Bio
+|Nome = Ennio
+|Cognome = Tasciotti
+|Sesso = M
+|LuogoNascita = Latina
+|GiornoMeseNascita = 20 agosto
+|AnnoNascita = 1977
+|Attività = biologo
+|Attività2 = accademico
+|Nazionalità = italiano
+|Immagine = Ennio Tasciotti.jpg
+|Didascalia = Ennio Tasciotti
+|DimImmagine = 
+|PostNazionalità = , specializzato in [[nanomedicina]] e [[medicina rigenerativa]]
+}}
+
+È [[professore ordinario]] di Tecnologie avanzate per il benessere e l'invecchiamento presso l'[[Università Vita-Salute San Raffaele]] e direttore del laboratorio ''Human Longevity Program'' dell'[[Ospedale San Raffaele|IRCCS Ospedale San Raffaele]] di [[Roma]].<ref name="sanraffaele" /><ref name="formiche" /> È noto soprattutto per le sue ricerche sui [[Nanomateriale|nanomateriali]] biomimetici applicati al rilascio mirato di farmaci e alla rigenerazione dei tessuti.<ref name="wetheitalians" /><ref name="cv" />
+
+== Biografia ==
+=== Formazione ===
+Ennio Tasciotti nasce a [[Latina]] il 20 agosto 1977.<ref name="cv" /> Dopo il diploma al [[liceo scientifico]] "Grassi" della sua città,<ref name="radioluna" /> si laurea in [[Scienze biologiche]] all'[[Università di Pisa]] nel 2000 e consegue una seconda laurea in [[biologia molecolare]] presso la [[Scuola Normale Superiore]] di [[Pisa]] nel 2001. Nel 2005 ottiene il [[dottorato di ricerca]] in biologia molecolare alla Scuola Normale Superiore, in collaborazione con l'[[International Centre for Genetic Engineering and Biotechnology]] (ICGEB) di [[Trieste]].<ref name="cv" /><ref name="torvergata" />
+
+Prosegue con attività di ricerca post-dottorale in ''[[imaging molecolare]]'' presso l'[[Area Science Park]] di Trieste e, dal 2006, presso il laboratorio di nanomedicina dell'Institute of Molecular Medicine della [[University of Texas Health Science Center at Houston]], negli [[Stati Uniti d'America|Stati Uniti]].<ref name="cv" /><ref name="torvergata" />
+
+=== Carriera negli Stati Uniti ===
+Nel 2009 diventa ''assistant professor'' di nanomedicina alla University of Texas Health Science Center di [[Houston]].<ref name="cv" /> Dal 2010 al 2015 dirige come ''chairman'' il dipartimento di nanomedicina dello [[Houston Methodist|Houston Methodist Research Institute]],<ref name="sanraffaele" /><ref name="cv" /> dove fonda e dirige il ''Center for Biomimetic Medicine'' (2015-2020) e il ''Center for Musculoskeletal Regeneration'' (2017-2020), ricoprendo inoltre incarichi accademici di ''professor'' di medicina rigenerativa e di chirurgia ortopedica.<ref name="cv" /><ref name="wetheitalians" /> Nel periodo statunitense ottiene finanziamenti da enti quali i [[National Institutes of Health]] e il [[Dipartimento della Difesa degli Stati Uniti d'America|Dipartimento della Difesa]] per progetti su tumori e rigenerazione dei tessuti.<ref name="cv" />
+
+=== Ritorno in Italia ===
+Nel 2021, dopo circa quindici anni trascorsi negli Stati Uniti, rientra in Italia per assumere la direzione del laboratorio ''Human Longevity Program'' dell'IRCCS Ospedale San Raffaele di Roma, dedicato all'invecchiamento in salute e che integra ricerca di base e [[riabilitazione]] clinica dei pazienti anziani.<ref name="formiche" /><ref name="vanityfair" /><ref name="medicoepaziente" /> Dal 2023 è professore ordinario di Tecnologie avanzate per il benessere e l'invecchiamento all'Università Vita-Salute San Raffaele.<ref name="cv" /><ref name="sanraffaele" /> In Italia partecipa frequentemente a iniziative di [[divulgazione scientifica]] sui temi della longevità e della prevenzione.<ref name="gente" /><ref name="politicamentecorretto" /><ref name="radioluna" />
+
+== Ricerca scientifica ==
+L'attività di ricerca di Tasciotti si colloca all'intersezione tra [[ingegneria]], [[farmacologia]], [[biologia]] e [[medicina]].<ref name="sanraffaele" /> Secondo le fonti istituzionali è considerato uno dei pionieri dei materiali e delle nanotecnologie bio-ispirate applicate al ''[[targeted drug delivery]]'', al controllo dell'[[infiammazione]] e alla [[medicina rigenerativa]].<ref name="sanraffaele" /><ref name="lifeboat" />
+
+=== Nanomedicina e rilascio di farmaci ===
+Tra i suoi contributi più citati vi è lo sviluppo del ''Multistage Vector'', un sistema di [[Nanoparticella|nanoparticelle]] in [[silicio]] mesoporoso per la somministrazione mirata di farmaci antitumorali, descritto nel 2008 come articolo di copertina su ''[[Nature Nanotechnology]]''<ref name="naturenano2008" /> e indicato nel 2009 dalla rivista ''[[Nature Medicine]]'' tra le "cinque grandi idee della nanotecnologia".<ref name="cv" /> In seguito i suoi gruppi sviluppano sistemi biomimetici capaci di superare le barriere biologiche sfruttando le membrane delle cellule immunitarie, come il ''Leuko-like Vector'' (2013)<ref name="parodi2013" /> e vescicole proteolipidiche per il bersagliamento dei tessuti infiammati (2016).<ref name="molinaro2016" />
+
+=== Medicina rigenerativa e biomimetica ===
+Nell'ambito dell'[[ingegneria tissutale]], Tasciotti studia ''scaffold'' biomimetici in grado di orientare la risposta delle [[Cellula staminale|cellule staminali]] e dei [[macrofago|macrofagi]] verso la rigenerazione dei tessuti [[Apparato locomotore|muscolo-scheletrici]], oltre ad aghi di silicio nanostrutturati per il rilascio intracellulare di [[Acido nucleico|acidi nucleici]] (2015).<ref name="chiappini2015" /><ref name="cv" />
+
+Secondo la sua scheda istituzionale è autore di oltre 180 articoli scientifici e ha contribuito a 14 volumi tecnici, con un [[indice di Hirsch|indice H]] pari a 50 secondo [[Scopus]] e oltre {{formatnum:10000}} citazioni.<ref name="sanraffaele" /> È inoltre titolare di numerosi [[brevetto|brevetti]] internazionali su nanomateriali per uso biomedico.<ref name="cv" /> Nel 2023 è stato incluso nella classifica dei ricercatori più citati al mondo elaborata dall'[[Università di Stanford|Università Stanford]].<ref name="cv" />
+
+== Riconoscimenti ==
+* 2011 – ''Best Italian Cancer Research Scientist Award'', ISSNAF<ref name="cv" />
+* 2013 – ''PrimiDieci Under Forty Award'', Italy-America Chamber of Commerce<ref name="cv" />
+* 2022 – ''Taobuk Award'' per le nanoscienze e la nanomedicina<ref name="cv" />
+* 2024 – ''Fellow'' della International Association for Advanced Materials (IAAM)<ref name="cv" />
+
+== Pubblicazioni selezionate ==
+* {{Cita pubblicazione|autore=Ennio Tasciotti |autore2=Xuewu Liu |autore3=Rita Bhavane |titolo=Mesoporous silicon particles as a multistage delivery system for imaging and therapeutic applications |rivista=Nature Nanotechnology |volume=3 |numero=3 |anno=2008 |pp=151-157 |lingua=en}}
+* {{Cita pubblicazione|autore=Alessandro Parodi |autore2=Nicoletta Quattrocchi |autore3=Ennio Tasciotti |titolo=Synthetic nanoparticles functionalized with biomimetic leukocyte membranes possess cell-like functions |rivista=Nature Nanotechnology |volume=8 |numero=1 |anno=2013 |pp=61-68 |lingua=en}}
+* {{Cita pubblicazione|autore=Ciro Chiappini |autore2=Jonathan O. Martinez |autore3=Ennio Tasciotti |titolo=Biodegradable silicon nanoneedles delivering nucleic acids intracellularly induce localized in vivo neovascularization |rivista=Nature Materials |volume=14 |numero=5 |anno=2015 |pp=532-539 |lingua=en}}
+* {{Cita pubblicazione|autore=Roberto Molinaro |autore2=Claudia Corbo |autore3=Ennio Tasciotti |titolo=Biomimetic proteolipid vesicles for targeting inflamed tissues |rivista=Nature Materials |volume=15 |numero=9 |anno=2016 |pp=1037-1046 |doi=10.1038/nmat4644 |lingua=en}}
+
+== Note ==
+<references>
+<ref name="sanraffaele">{{Cita web|url=https://sanraffaele.it/personale/ennio-tasciotti/|titolo=Tasciotti Ennio|editore=IRCCS Ospedale San Raffaele|accesso=26 maggio 2026}}</ref>
+<ref name="formiche">{{Cita news|url=https://formiche.net/2025/05/la-medicina-della-longevita-tasciotti/|titolo=Medicina della longevità, un confronto tra Usa e Ue. Parla il prof. Tasciotti|pubblicazione=Formiche.net|data=6 maggio 2025|accesso=26 maggio 2026}}</ref>
+<ref name="vanityfair">{{Cita news|url=https://sanraffaele.it/il-cervello-la-nuova-frontiera-della-longevita-i-consigli-del-prof-ennio-tasciotti-dellirccs-san-raffaele/|titolo=Il cervello, la nuova frontiera della longevità: i consigli del Prof. Ennio Tasciotti|pubblicazione=IRCCS Ospedale San Raffaele|data=2025|accesso=26 maggio 2026}}</ref>
+<ref name="gente">{{Cita news|url=https://sanraffaele.it/la-formula-della-longevita-la-parola-al-prof-tasciotti-dellirccs-san-raffaele/|titolo=La formula della longevità: la parola al prof. Tasciotti dell'IRCCS San Raffaele|pubblicazione=IRCCS Ospedale San Raffaele|data=2024|accesso=26 maggio 2026}}</ref>
+<ref name="politicamentecorretto">{{Cita news|url=https://www.politicamentecorretto.com/2025/04/12/il-prof-ennio-tasciotti-direttore-dello-human-longevity-program-dellirccs-san-raffaele/|titolo=Il Prof. Ennio Tasciotti, Direttore dello Human Longevity Program dell'IRCCS San Raffaele|pubblicazione=politicamentecorretto.com|data=12 aprile 2025|accesso=26 maggio 2026}}</ref>
+<ref name="radioluna">{{Cita news|url=https://www.radioluna.it/news/2024/04/ricerca-scientifica-orto-e-mindfulness-la-ricetta-di-ennio-tasciotti/|titolo=Ricerca scientifica, orto e mindfulness: la ricetta di Ennio Tasciotti|pubblicazione=Radio Luna|data=aprile 2024|accesso=26 maggio 2026}}</ref>
+<ref name="medicoepaziente">{{Cita news|url=https://medicoepaziente.it/2022/rivoluzione-digitale-in-sanita-nuovi-percorsi-assistenziali-per-la-longevita/|titolo=Rivoluzione digitale in sanità. Nuovi percorsi assistenziali per la longevità|pubblicazione=Medico e Paziente|data=2022|accesso=26 maggio 2026}}</ref>
+<ref name="wetheitalians">{{Cita web|url=https://wetheitalians.com/news/italian-science-america-cool|titolo=Ennio Tasciotti (Italian scientist in Houston, TX)|editore=We the Italians|data=2017|lingua=en|accesso=26 maggio 2026}}</ref>
+<ref name="lifeboat">{{Cita web|url=https://lifeboat.com/ex/bios.ennio.tasciotti|titolo=Professor Ennio Tasciotti|editore=Lifeboat Foundation|lingua=en|accesso=26 maggio 2026}}</ref>
+<ref name="torvergata">{{Cita web|url=https://phd.uniroma2.it/web/ENNIO-TASCIOTTI_nC4120_EN.aspx|titolo=Ennio Tasciotti|editore=Università degli Studi di Roma "Tor Vergata"|lingua=en|accesso=26 maggio 2026}}</ref>
+<ref name="cv">{{Cita web|url=https://www.uniurb.it/it/cdocs/CWEB/12799-cv.pdf|titolo=Curriculum Vitae – Prof. Ennio Tasciotti|formato=PDF|data=febbraio 2024|accesso=26 maggio 2026}}</ref>
+<ref name="naturenano2008">{{Cita pubblicazione|autore=Ennio Tasciotti et al.|titolo=Mesoporous silicon particles as a multistage delivery system for imaging and therapeutic applications|rivista=Nature Nanotechnology|volume=3|numero=3|anno=2008|pp=151-157|lingua=en}}</ref>
+<ref name="parodi2013">{{Cita pubblicazione|autore=Alessandro Parodi et al.|titolo=Synthetic nanoparticles functionalized with biomimetic leukocyte membranes possess cell-like functions|rivista=Nature Nanotechnology|volume=8|numero=1|anno=2013|pp=61-68|lingua=en}}</ref>
+<ref name="chiappini2015">{{Cita pubblicazione|autore=Ciro Chiappini et al.|titolo=Biodegradable silicon nanoneedles delivering nucleic acids intracellularly induce localized in vivo neovascularization|rivista=Nature Materials|volume=14|numero=5|anno=2015|pp=532-539|lingua=en}}</ref>
+<ref name="molinaro2016">{{Cita pubblicazione|autore=Roberto Molinaro et al.|titolo=Biomimetic proteolipid vesicles for targeting inflamed tissues|rivista=Nature Materials|volume=15|numero=9|anno=2016|pp=1037-1046|doi=10.1038/nmat4644|lingua=en}}</ref>
+</references>
+
+== Voci correlate ==
+* [[Nanomedicina]]
+* [[Nanotecnologia]]
+* [[Medicina rigenerativa]]
+* [[Ingegneria tissutale]]
+* [[Somministrazione di farmaci]]
+* [[Biologia molecolare]]
+* [[Cellula staminale]]
+* [[Scuola Normale Superiore]]
+
+== Collegamenti esterni ==
+* {{Cita web|url=https://sanraffaele.it/personale/ennio-tasciotti/|titolo=Scheda di Ennio Tasciotti|editore=IRCCS Ospedale San Raffaele}}
+* {{Cita web|url=https://orcid.org/0000-0003-1187-3205|titolo=Profilo ORCID di Ennio Tasciotti}}
+* {{Cita web|url=https://scholar.google.com/citations?user=A8sSvg0AAAAJ|titolo=Profilo Google Scholar di Ennio Tasciotti|lingua=en}}
+
+{{Controllo di autorità}}
+{{Portale|biografie|medicina}}
+
+[[Categoria:Nati nel 1977]]
+[[Categoria:Nati a Latina]]
+[[Categoria:Biologi italiani]]
+[[Categoria:Studenti dell'Università di Pisa]]
+[[Categoria:Studenti della Scuola Normale Superiore]]
+[[Categoria:Professori dell'Università Vita-Salute San Raffaele]]
