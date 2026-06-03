@@ -1178,55 +1178,336 @@
     "outreach": {
       "divulgazione": {
         "title": "Science Communication",
-        "body": "Prof. Tasciotti integrates cutting-edge research with intensive public communication activities, promoting the shift from reactive medicine to proactive and biomimetic medicine. Through the use of effective narrative metaphors, he makes complex topics related to nanomedicine, aging, and chronic systemic inflammation highly accessible."
-      },
-      "tedx": {
-        "title": "TEDx Talks",
-        "intro": "He has participated as a speaker at prominent TEDx events, addressing themes of medical innovation and cellular regeneration:",
-        "talks": [
-          {
-            "event": "TEDxCNR",
-            "location": "Rome",
-            "year": 2016,
-            "talkTitle": "Beyond the Known",
-            "body": "In his talk he illustrated how nanomedicine and biomimetic nanovectors are revolutionizing cellular communication and anticancer therapies."
-          },
-          {
-            "event": "TEDxLago di Fogliano",
-            "location": "",
-            "year": null,
-            "talkTitle": "Rebuilding the Body One Cell at a Time",
-            "body": "In his speech he focused on the milestones of regenerative medicine, explaining how tissue engineering via three-dimensional scaffolds can awaken latent human regenerative capabilities."
-          }
-        ]
-      },
-      "media": {
-        "title": "Television and Media Presence",
-        "intro": "His science outreach on health, aging, and science is regularly featured on national networks:",
-        "appearances": [
-          {
-            "outlet": "Rai 1 – Superquark",
-            "years": "2015–2020",
-            "body": "He collaborated regularly with Piero Angela on documentaries dedicated to nanotechnology, tissue engineering, and bone regeneration."
-          },
-          {
-            "outlet": "Rai 3 – Presa Diretta",
-            "years": "2021",
-            "body": "He was featured in the episode 'The Organ Factory', focusing on the creation of biological tissues in the laboratory capable of integrating into the host organism."
-          },
-          {
-            "outlet": "Real Time",
-            "years": "2025",
-            "body": "He starred in the special 'The Longevity Clinic', dedicated to the application of preventive medicine for managing women's wellness during menopause."
-          },
-          {
-            "outlet": "Rai 1, Rai 3, and TV2000",
-            "years": "2025–2026",
-            "body": "He was a special guest on TG1 Speciale Mattina (2025) to discuss the link between longevity and social networks; on Quinta Dimensione (Rai) to delve into the connection between obesity and cellular inflammation; on Casa Italia to clarify the difference between chronological and biological age; and on Il Mio Medico (TV2000, 2026) providing practical medical advice on healthy aging."
-          }
-        ]
+        "body": "Prof. Tasciotti integrates cutting-edge research with intense public communication activities, promoting the shift from reactive to proactive medicine. From highly specialised conferences on aging and artificial intelligence to meetings on technology transfer and startups, his stage presence is always in demand."
       }
     },
+    "detailTitle": "Detailed Speaking Engagements",
+    "events": [
+      {
+        "date": "May 30, 2026",
+        "event": "The Roots of Longevity (Nocera Umbra)",
+        "role": "Conference Speaker",
+        "topic": "Sustainable development, well-being, and longevity linked to the territory."
+      },
+      {
+        "date": "March 26-28, 2026",
+        "event": "XXXVIII FMSI National Congress (Rome)",
+        "role": "Opening Master Lecture",
+        "topic": "\"Healthspan: the duration of a healthy life\"."
+      },
+      {
+        "date": "March 12-14, 2026",
+        "event": "XV High Training Course in Pain Therapy (Naples)",
+        "role": "Lecturer / Speaker",
+        "topic": "\"Inflammation and aging\"."
+      },
+      {
+        "date": "March 11, 2026",
+        "event": "Live better, live longer (Palazzo Ripetta, Rome)",
+        "role": "Expert / Protagonist",
+        "topic": "Longevity medicine / Clinical opportunities vs. false myths."
+      },
+      {
+        "date": "March 3-4, 2026",
+        "event": "Sport Value Observatory Forum (CONI, Rome)",
+        "role": "Panelist",
+        "topic": "\"The value of physical activity in adulthood: Work, welfare, and active aging\"."
+      },
+      {
+        "date": "February 19, 2026",
+        "event": "Computational thinking and its variations (La Sapienza, Latina Hub)",
+        "role": "Speaker",
+        "topic": "\"Big data and AI for the medicine of the future\"."
+      },
+      {
+        "date": "January 29, 2026",
+        "event": "D&I Observatory in Finance (SpazioPola, Milan)",
+        "role": "Guest / Interview",
+        "topic": "\"LONGEVITY: Strategic driver for Italy and new paradigm\"."
+      },
+      {
+        "date": "December 12-13, 2025",
+        "event": "Menopause Conference",
+        "role": "Speaker / Award Scientific Committee Member",
+        "topic": "\"Sarcopenia, invisible enemy?\"."
+      },
+      {
+        "date": "November 19-22, 2025",
+        "event": "XVIII AIUC National Congress (Fiera del Levante, Bari)",
+        "role": "Discussant",
+        "topic": "\"Medical technological innovation and new investment models\"."
+      },
+      {
+        "date": "September 28-29, 2025",
+        "event": "Neovalis (Bologna)",
+        "role": "Speaker",
+        "topic": "\"Promises and possibilities of Longevity medicine\"."
+      },
+      {
+        "date": "September 18, 2025",
+        "event": "MiCuroDigitale 2025",
+        "role": "Speaker",
+        "topic": "\"DigiCare: training digital healthcare professionals\"."
+      },
+      {
+        "date": "September 11-13, 2025",
+        "event": "15th SINut National Congress (Bologna)",
+        "role": "Speaker / Moderator / Discussant",
+        "topic": "Clinical research and innovation."
+      },
+      {
+        "date": "May 30-31, 2025",
+        "event": "The dermatology of tomorrow: challenges and innovations (Milano Marittima)",
+        "role": "Speaker",
+        "topic": "\"Longevity and youth\"."
+      },
+      {
+        "date": "February 26, 2025",
+        "event": "Community Longevity+ / On Radar Event (Rome)",
+        "role": "Panel Contributor",
+        "topic": "\"Longevity strategy: how large companies are rethinking work, services, and living spaces\"."
+      },
+      {
+        "date": "2025",
+        "event": "Call 4 Ideas Award Ceremony - Ed2 (Alto Adriatico Tech Hub)",
+        "role": "Keynote",
+        "topic": "\"Innovation in action: when ideas drive progress in Life Sciences\"."
+      },
+      {
+        "date": "2025",
+        "event": "Rimini Wellness Conference",
+        "role": "Round table speaker with D. Lumera",
+        "topic": "Theories and practices for psychophysical well-being."
+      },
+      {
+        "date": "December 17, 2024",
+        "event": "Smartalks, Spazio Lenovo (Milan)",
+        "role": "Guest / Speaker",
+        "topic": "Aging projects and quality of life / Human Longevity."
+      },
+      {
+        "date": "December 10, 2024",
+        "event": "Booster for Life Science (Urban Center Trieste)",
+        "role": "Speaker / Scientific Advisor",
+        "topic": "Growth and Innovation in Life Sciences."
+      },
+      {
+        "date": "November 21-22, 2024",
+        "event": "Business Matching Hot Topic (Cagliari)",
+        "role": "Keynote",
+        "topic": "\"Artificial intelligence, digital therapies, and big data for the future of medicine\"."
+      },
+      {
+        "date": "November 20, 2024",
+        "event": "Humanitas University Consortium Press Conference (Chamber of Deputies, Rome)",
+        "role": "Speaker / Participant",
+        "topic": "Prevention, motor activity, and economic savings for the state."
+      },
+      {
+        "date": "October 28, 2024",
+        "event": "PerfeTTO Italian Technology Transfer Office Event (IRCCS San Raffaele, Rome)",
+        "role": "Speaker",
+        "topic": "Technology transfer in Life Science."
+      },
+      {
+        "date": "October 24, 2024",
+        "event": "ONCOTYPE Event - Palazzo Lombardia (Milan)",
+        "role": "Speaker",
+        "topic": "\"Nanotechnology at the service of health\"."
+      },
+      {
+        "date": "September 17, 2024",
+        "event": "Rome Future Week / Geosmartcampus (Rome)",
+        "role": "Innovation Talk Speaker",
+        "topic": "\"NexTown: digital transformation for the rebirth of territories\"."
+      },
+      {
+        "date": "2024",
+        "event": "Technology Forum 2024",
+        "role": "Panelist",
+        "topic": "\"The Italian Life Sciences ecosystem in the international framework\"."
+      },
+      {
+        "date": "2024",
+        "event": "Alzheimer's Conference (Sassari)",
+        "role": "Speaker",
+        "topic": "The role of neuroinflammation."
+      },
+      {
+        "date": "February 23-24, 2024",
+        "event": "The Metaverse for Healthcare (Golinelli Foundation, Bologna)",
+        "role": "Speaker / CME Lecturer",
+        "topic": "The importance of the metaverse in clinical challenges."
+      },
+      {
+        "date": "January 23, 2024",
+        "event": "\"Turing Machine Problem Solving\" - Rotary Club (Latina)",
+        "role": "Speaker",
+        "topic": "\"The intersection between life sciences and technology\"."
+      },
+      {
+        "date": "November 2023",
+        "event": "Innovation in Lifesciences (Trieste)",
+        "role": "Organizer and Conference Chair",
+        "topic": "Life Sciences Innovation."
+      },
+      {
+        "date": "November 8-9, 2023",
+        "event": "Fostering Innovation in Life Sciences (FVG Region)",
+        "role": "Session Moderator / Panelist",
+        "topic": "\"Digital solutions for a healthy and active life\"."
+      },
+      {
+        "date": "October 2023",
+        "event": "Next Oncology (Italy)",
+        "role": "Organizer and Conference Chair",
+        "topic": "Oncology and new technologies."
+      },
+      {
+        "date": "October 7, 2023",
+        "event": "Prevention and Technology Refresher Course (Aula Roberto LALA)",
+        "role": "Speaker",
+        "topic": "\"Nanotechnology at the service of health\"."
+      },
+      {
+        "date": "October 3-4, 2023",
+        "event": "XVI SIMM National Congress (Rome)",
+        "role": "Moderator and Introduction",
+        "topic": "\"Foreign and regional organisational models: the role of research\"."
+      },
+      {
+        "date": "October 3, 2023",
+        "event": "EPPI National Event (Como)",
+        "role": "Speaker / Panelist",
+        "topic": "Dialogue with the Research World / Aging."
+      },
+      {
+        "date": "June 12-19, 2023",
+        "event": "TAOBUK - The Freedoms of Science (Taormina)",
+        "role": "Guest Scientist",
+        "topic": "\"The dangers and challenges of the food industry to ensure the safety\"."
+      },
+      {
+        "date": "May 19, 2023",
+        "event": "Investopia 2023 (Milan)",
+        "role": "Guest / Speaker",
+        "topic": "Digital platforms for medicine, transition, and UAE investments."
+      },
+      {
+        "date": "March 22, 2023",
+        "event": "AQUAE! World Water Day 2023 (Rome)",
+        "role": "Scientific outreach speech for schools",
+        "topic": "\"Water, the birth of life, and human fertility\"."
+      },
+      {
+        "date": "October 6, 2022",
+        "event": "BtBs Seminar (Bicocca University, Milan)",
+        "role": "Academic Speaker",
+        "topic": "\"Bioactive and biomimetic nanotherapeutics to modulate inflammation and immune response\"."
+      },
+      {
+        "date": "September 8-9, 2022",
+        "event": "XIV SIMM National Congress (Rome)",
+        "role": "Talk / Report (#SIMMinnova)",
+        "topic": "\"Digitalization, big data, artificial intelligence, and privacy\"."
+      },
+      {
+        "date": "June 17-18, 2022",
+        "event": "Science and Truth / Diodoro Closed Meeting (Taormina)",
+        "role": "Speaker (Clinical Research)",
+        "topic": "Verifications and revolutions in science, determinism, and probability."
+      },
+      {
+        "date": "April 22, 2022",
+        "event": "P3 – Public Private Partnership: Phase 2 (Bologna)",
+        "role": "Lecturer / Moderator",
+        "topic": "From Thought to Action."
+      },
+      {
+        "date": "March 28-29, 2022",
+        "event": "Consensus Conference - National Academy of Medicine (Rome)",
+        "role": "Round table participant / Expert",
+        "topic": "Healthcare system reform and professional training."
+      },
+      {
+        "date": "March 14, 2022",
+        "event": "Salute Italia (Milan)",
+        "role": "Digital talk",
+        "topic": "\"Roche Now-Connected for the health of the future\"."
+      },
+      {
+        "date": "December 22, 2021",
+        "event": "SIMM Public Private Partnership (Bologna)",
+        "role": "Round table Moderator",
+        "topic": "Proposal for an \"Ethical Document\"."
+      },
+      {
+        "date": "November 4, 2021",
+        "event": "Health & Wellbeing Forum (Veneto)",
+        "role": "Panelist",
+        "topic": "Medical Care and Prevention."
+      },
+      {
+        "date": "September 24-25, 2021",
+        "event": "XIII SIMM National Congress (Live Webinar)",
+        "role": "Host and Moderator",
+        "topic": "\"The SIMMitation Game - The Action\" / Planning the response to chronicity."
+      },
+      {
+        "date": "September 10, 2021",
+        "event": "XIII SIMM National Congress (Rome)",
+        "role": "Speaker",
+        "topic": "\"The SIMMitation Game - The Thought\"."
+      },
+      {
+        "date": "2016",
+        "event": "TEDxCNR (Rome)",
+        "role": "TEDx Talk",
+        "topic": "\"Beyond the known\" (impact of nanomedicine)."
+      },
+      {
+        "date": "2012 – 2018",
+        "event": "Conference of the Italian Researchers in the World",
+        "role": "Organizer and Session Chair",
+        "topic": "International research networking."
+      },
+      {
+        "date": "October 2013",
+        "event": "Materials in Medicine (Italy)",
+        "role": "Organizer and Conference Chair",
+        "topic": "Nanomedicine and biomaterials."
+      },
+      {
+        "date": "December 3 (Year N/A)",
+        "event": "Camerae Sanitatis",
+        "role": "Institutional Guest / Speaker",
+        "topic": "Conscious Longevity and healthcare."
+      },
+      {
+        "date": "November 21 (Year N/A)",
+        "event": "PhD Seminar (MIT) (La Sapienza, Rome)",
+        "role": "Speaker (Guest)",
+        "topic": "Morphogenesis, tissue engineering, and longevity."
+      },
+      {
+        "date": "Date N/A",
+        "event": "ScuolaNM / Debate",
+        "role": "Speaker (Debate)",
+        "topic": "Ethics and scientific research."
+      },
+      {
+        "date": "Date N/A",
+        "event": "TEDxLago di Fogliano",
+        "role": "TEDx Talk",
+        "topic": "\"Rebuilding the body one cell at a time\"."
+      },
+      {
+        "date": "Date N/A",
+        "event": "Demo Day - ReActorPro DARE",
+        "role": "Expert / Mentor",
+        "topic": "Mentoring for startups."
+      }
+    ],
     "booking": {
       "cta": "Request availability →",
       "body": "Complete the form with event details and we will respond within 48 business hours.",
