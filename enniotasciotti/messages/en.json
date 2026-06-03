@@ -1268,17 +1268,175 @@
     "areas": {
       "corporate_pharma": {
         "title": "Strategic Consulting and Corporate Pharma",
-        "body": "Prof. Tasciotti's extensive expertise in applied science and nanomedicine is sought after by global leaders in the biomedical and pharmaceutical industries. Since 2021, he has served as a Corporate Consultant for the scientific and strategic development of renowned international entities, including Roche Pharma, Novartis, Gilead, AlfaSigma, Corden Pharma, Named, Aboca, Sclavo Diagnostics, Inpeco, Ferrero, Protiviti, and CORIS Veneto."
+        "body": "Prof. Tasciotti's expertise in applied science and nanomedicine is sought after by global leaders in the biomedical and pharmaceutical industries. Since 2021, he has operated as a Corporate Consultant for the scientific and strategic development of numerous international entities."
       },
       "investment_funds": {
         "title": "Advisor for Investment Funds",
-        "body": "His expertise in the clinical translation of technologies allows him to accurately evaluate the innovation ecosystem for venture capital. Between 2020 and 2023, he served as a Consultant and Due Diligence Advisor for major international institutional funds, providing technical and strategic analysis for Panakes, Principia, AuroraTT, Utopia, Sofinnova, and Cascade Global-UK."
+        "body": "His expertise in the clinical translation of technologies allows him to accurately evaluate the innovation ecosystem for venture capital. He has served as a Consultant and Due Diligence Advisor for leading international institutional funds, providing technical and strategic analysis."
       },
       "innovation_ecosystems": {
         "title": "Scientific Guidance for Innovation Ecosystems",
-        "body": "Prof. Tasciotti plays a key role as a Scientific Advisor at technological hubs, science parks, and business incubators, promoting technology transfer. His current and past appointments include Scientific Advisor for Cube Labs Venture Builder (Milan, 2023 - present), Cluster Lifesciences (Friuli Venezia Giulia, 2022 - present), as well as G-Factor, ComoNext, Technoscience Park, THD, and EOS Consulting (2020 - present)."
+        "body": "Prof. Tasciotti plays a key role as a Scientific Advisor at technology hubs, science parks, and business incubators, promoting technology transfer and serving on numerous prestigious international and governmental committees."
       }
     },
+    "detailTitle": "Detailed Consulting Roles",
+    "roles": [
+      {
+        "period": "2024 – Present",
+        "org": "Community Longevity+",
+        "role": "Scientific Advisor for the Italian life sciences and longevity ecosystem."
+      },
+      {
+        "period": "2023 – Present",
+        "org": "Cube Labs Venture Builder",
+        "role": "Scientific Advisor (promoting technology transfer)."
+      },
+      {
+        "period": "2022 – Present",
+        "org": "Life Sciences Cluster (Friuli Venezia Giulia)",
+        "role": "Scientific Advisor and scientific guide for the innovation ecosystem."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Roche Pharma",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Novartis",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Gilead",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "AlfaSigma",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Corden Pharma",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Named",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Aboca",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Sclavo Diagnostics",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Inpeco",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Ferrero",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Protiviti",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "CORIS Veneto",
+        "role": "Corporate and Strategic Consultant for scientific development."
+      },
+      {
+        "period": "2020 – Present",
+        "org": "G-Factor",
+        "role": "Scientific Advisor / Scientific Guide for incubator."
+      },
+      {
+        "period": "2020 – Present",
+        "org": "ComoNext",
+        "role": "Scientific Advisor / Scientific Guide for technology pole."
+      },
+      {
+        "period": "2020 – Present",
+        "org": "THD",
+        "role": "Scientific Advisor / Scientific Guide."
+      },
+      {
+        "period": "2020 – Present",
+        "org": "EOS Consulting",
+        "role": "Scientific Advisor / Scientific Guide."
+      },
+      {
+        "period": "2020 – Present",
+        "org": "Technoscience Park",
+        "role": "Strategic / Scientific Advisor for innovation development."
+      },
+      {
+        "period": "2020 – 2023",
+        "org": "Panakes",
+        "role": "Consultant and Due Diligence Advisor (investment fund)."
+      },
+      {
+        "period": "2020 – 2023",
+        "org": "Principia",
+        "role": "Consultant and Due Diligence Advisor (investment fund)."
+      },
+      {
+        "period": "2020 – 2023",
+        "org": "AuroraTT",
+        "role": "Consultant and Due Diligence Advisor (investment fund)."
+      },
+      {
+        "period": "2020 – 2023",
+        "org": "Utopia",
+        "role": "Consultant and Due Diligence Advisor (investment fund)."
+      },
+      {
+        "period": "2020 – 2023",
+        "org": "Sofinnova",
+        "role": "Consultant and Due Diligence Advisor (investment fund)."
+      },
+      {
+        "period": "2020 – 2023",
+        "org": "Cascade Global-UK",
+        "role": "Consultant and Due Diligence Advisor (investment fund)."
+      },
+      {
+        "period": "2018 – 2019",
+        "org": "Texas A&M Health Science Center",
+        "role": "Member of the Extramural Funding Advisory Committee."
+      },
+      {
+        "period": "2015 – 2019",
+        "org": "TMCx – Texas Medical Center Incubator/Accelerator",
+        "role": "Scientific Advisor."
+      },
+      {
+        "period": "2015 – 2018",
+        "org": "President Leadership Council Advisory Board",
+        "role": "Junior Cabinet Member."
+      },
+      {
+        "period": "2014 – 2020",
+        "org": "Young Against Pain (Italy)",
+        "role": "Member of the Scientific Leadership Committee."
+      },
+      {
+        "period": "2012 – 2015",
+        "org": "Italian Ministry of Health",
+        "role": "President of the Grant Review Panel."
+      }
+    ],
     "cta": {
       "title": "Start a conversation",
       "body": "Every engagement begins with a focused conversation. Tell me about your challenge.",

@@ -8,6 +8,12 @@ interface Area {
   body: string;
 }
 
+interface ConsultingRole {
+  period: string;
+  org: string;
+  role: string;
+}
+
 interface PageProps {
   params: Promise<{ locale: string }>;
 }
@@ -23,6 +29,7 @@ export default async function ConsultancyPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'consultancy' });
 
   const areas = t.raw('areas') as Record<string, Area>;
+  const roles = t.raw('roles') as ConsultingRole[];
 
   return (
     <div className="pt-28 pb-24">
@@ -82,6 +89,28 @@ export default async function ConsultancyPage({ params }: PageProps) {
           </section>
 
         </div>
+
+        {/* Detailed Consulting Roles Timeline */}
+        <section className="mt-24 border-t border-[var(--color-border)] pt-16">
+          <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-10">
+            {t('detailTitle')}
+          </h2>
+          <div className="space-y-0 divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-lg overflow-hidden">
+            {roles.map((item, i) => (
+              <div key={i} className="grid md:grid-cols-[10rem_14rem_1fr] bg-[var(--color-surface)]">
+                <div className="px-6 py-4 border-b md:border-b-0 md:border-r border-[var(--color-border)] flex items-center">
+                  <span className="font-mono text-step--2 text-[var(--color-accent)]">{item.period}</span>
+                </div>
+                <div className="px-6 py-4 border-b md:border-b-0 md:border-r border-[var(--color-border)] flex items-center">
+                  <span className="font-mono text-step--1 font-medium text-[var(--color-text)]">{item.org}</span>
+                </div>
+                <div className="px-6 py-4 flex items-center">
+                  <span className="text-step--1 text-[var(--color-text-muted)]">{item.role}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* CTA */}
         <div className="mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
