@@ -1093,16 +1093,62 @@
       "body3": "Furthermore, he championed the 'democratization of nanotechnology' by openly publishing standardized protocols for manufacturing biomimetic nanoparticles via microfluidics, making the technology accessible and affordable to laboratories worldwide."
     },
     "startupsTitle": "Startup Creation and R&D Leadership",
-    "startupsIntro": "Actively engaged in the international biotechnological ecosystem, Prof. Tasciotti has founded several companies and sits on the boards of directors of entities where he holds top-tier roles in scientific direction and Research & Development (R&D).",
+    "startupsIntro": "Active in the biotechnology ecosystem, he sits on the boards of directors of several companies where he holds top roles in scientific direction (R&D).",
+    "detailTitle": "Detailed Business Roles",
+    "roles": [
+      {
+        "period": "2026 – Present",
+        "org": "GreenBone Ortho S.p.A.",
+        "role": "Member of the Board of Directors (Board Member).",
+        "activity": "Translation of research in the biotech and nanotechnology sectors into market value."
+      },
+      {
+        "period": "2022 – Present",
+        "org": "Integra R&D srl (Rome, Italy)",
+        "role": "Founder and Chief Scientific Officer (CSO).",
+        "activity": "Biotech startup and innovation."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Aella Labs Sagl (Lugano, Switzerland)",
+        "role": "Founder and Chief Scientific Officer (CSO).",
+        "activity": "Biotech startup and innovation."
+      },
+      {
+        "period": "2021 – Present",
+        "org": "Lightscience srl (Milan, Italy)",
+        "role": "Member of the Board of Directors (Board Member).",
+        "activity": "R&D management in the biotech sector."
+      },
+      {
+        "period": "2020 – 2023",
+        "org": "Friuli Innovazione srl (Udine, Italy)",
+        "role": "Member of the Board of Directors (Board Member).",
+        "activity": "Management and research in the biotech sector."
+      },
+      {
+        "period": "2020 – 2022",
+        "org": "Sclavo Research Center (Siena, Italy)",
+        "role": "Founder and Director.",
+        "activity": "Research and development center in the biotech sector."
+      },
+      {
+        "period": "2020 – 2022",
+        "org": "3R Biotech srl (Milan, Italy)",
+        "role": "Founder and Chief Scientific Officer (CSO).",
+        "activity": "Biotech startup and R&D."
+      },
+      {
+        "period": "2011 – 2016",
+        "org": "Accademia delle Nanoscienze (Italy)",
+        "role": "Director.",
+        "activity": "Italian scientific academy for nanosciences."
+      }
+    ],
     "cta": {
       "title": "Work together",
       "body": "Available for advisory boards, strategic consulting and research partnerships.",
       "button": "Get in touch"
-    },
-    "corporate": {
-      "title": "Corporate consulting",
-      "pharma": "Pharma & Nutrition",
-      "clusters": "Advisory & Innovation"
     },
     "sectors": "Sectors served"
   },

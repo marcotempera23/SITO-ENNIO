@@ -2,7 +2,13 @@ import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { buildMetadata } from '@/lib/seo';
-import ventures from '@/content/ventures.json';
+
+interface VentureRole {
+  period: string;
+  org: string;
+  role: string;
+  activity: string;
+}
 
 interface PageProps {
   params: Promise<{ locale: string }>;
@@ -17,7 +23,7 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function VenturesPage({ params }: PageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'ventures' });
-  const isIT = locale === 'it';
+  const roles = t.raw('roles') as VentureRole[];
 
   return (
     <div className="pt-28 pb-24">
@@ -43,73 +49,48 @@ export default async function VenturesPage({ params }: PageProps) {
             <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)]">
               {t('vision.body3')}
             </p>
+            <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)]">
+              {t('startupsIntro')}
+            </p>
           </div>
         </section>
 
-        {/* Startups & Board Roles */}
+        {/* Detailed Business Roles Timeline */}
         <section className="mt-20 border-t border-[var(--color-border)] pt-16">
-          <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-4">
-            {t('startupsTitle')}
+          <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-10">
+            {t('detailTitle')}
           </h2>
-          <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)] max-w-4xl mb-12">
-            {t('startupsIntro')}
-          </p>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {ventures.map((v) => (
-              <article
-                key={v.id}
-                className="border border-[var(--color-border)] rounded-lg bg-[var(--color-surface)] p-8 flex flex-col gap-3 hover:border-[var(--color-accent)] transition-colors"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="font-display text-step-1 font-light leading-snug text-[var(--color-text)]">
-                    {v.name}
-                  </h3>
-                  <span className="shrink-0 font-mono text-[0.65rem] uppercase tracking-wider px-2 py-0.5 rounded border border-[var(--color-border)] text-[var(--color-text-muted)]">
-                    {v.type === 'founded' ? t('founded') : t('advisory')}
-                  </span>
+          <div className="space-y-0 divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-lg overflow-hidden">
+            {roles.map((item, i) => (
+              <div key={i} className="grid md:grid-cols-[10rem_16rem_1fr] bg-[var(--color-surface)]">
+                <div className="px-6 py-4 border-b md:border-b-0 md:border-r border-[var(--color-border)] flex items-start pt-5">
+                  <span className="font-mono text-step--2 text-[var(--color-accent)]">{item.period}</span>
                 </div>
-
-                <p className="font-mono text-step--1 text-[var(--color-accent)]">
-                  {isIT ? v.role_it : v.role_en}
-                </p>
-
-                <p className="text-step--1 text-[var(--color-text-muted)]">
-                  {v.location}
-                  {' · '}
-                  {v.years}
-                </p>
-
-                <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)] flex-1">
-                  {isIT ? v.desc_it : v.desc_en}
-                </p>
-
-                {v.url && (
-                  <a
-                    href={v.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-step--1 text-[var(--color-accent)] hover:underline"
-                  >
-                    {t('visitWebsite')} →
-                  </a>
-                )}
-              </article>
+                <div className="px-6 py-4 border-b md:border-b-0 md:border-r border-[var(--color-border)] flex items-start pt-5">
+                  <span className="font-mono text-step--1 font-medium text-[var(--color-text)]">{item.org}</span>
+                </div>
+                <div className="px-6 py-4 flex flex-col gap-1">
+                  <span className="text-step--1 font-medium text-[var(--color-text)]">{item.role}</span>
+                  <span className="text-step--1 text-[var(--color-text-muted)]">{item.activity}</span>
+                </div>
+              </div>
             ))}
           </div>
         </section>
 
-        {/* Consulting / Advisory CTA */}
-        <div className="mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-10 text-center">
-          <p className="font-display text-step-3 font-light text-[var(--color-text)]">
-            {t('cta.title')}
-          </p>
-          <p className="mt-3 text-step-0 max-w-xl mx-auto leading-relaxed text-[var(--color-text-muted)]">
-            {t('cta.body')}
-          </p>
+        {/* CTA */}
+        <div className="mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+          <div>
+            <p className="font-display text-step-2 font-light text-[var(--color-text)]">
+              {t('cta.title')}
+            </p>
+            <p className="mt-2 text-step-0 leading-relaxed max-w-lg text-[var(--color-text-muted)]">
+              {t('cta.body')}
+            </p>
+          </div>
           <Link
-            href="/consultancy"
-            className="mt-6 inline-flex h-12 items-center rounded-md bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-colors hover:opacity-90"
+            href="/contact"
+            className="shrink-0 inline-flex h-12 items-center rounded-md bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-colors hover:opacity-90"
           >
             {t('cta.button')} →
           </Link>

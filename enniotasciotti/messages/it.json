@@ -1093,16 +1093,62 @@
       "body3": "Inoltre, ha promosso un'iniziativa di 'democratizzazione della nanotecnologia', pubblicando apertamente protocolli standardizzati per la produzione di nanoparticelle biomimetiche tramite microfluidica, rendendoli accessibili ed economici per i laboratori di tutto il mondo."
     },
     "startupsTitle": "Creazione di Startup e Direzione R&D",
-    "startupsIntro": "Attivo nell'ecosistema biotecnologico internazionale, il Prof. Tasciotti ha fondato diverse società e siede nei consigli di amministrazione di aziende in cui ricopre ruoli apicali per la direzione scientifica e la Ricerca e Sviluppo (R&D).",
+    "startupsIntro": "Attivo nell'ecosistema biotecnologico, siede nei consigli di amministrazione di diverse società in cui ricopre ruoli apicali per la direzione scientifica (R&D).",
+    "detailTitle": "Dettaglio Incarichi Imprenditoriali",
+    "roles": [
+      {
+        "period": "2026 – Presente",
+        "org": "GreenBone Ortho S.p.A.",
+        "role": "Membro del Consiglio di Amministrazione (Board Member).",
+        "activity": "Trasformazione della ricerca nel settore biotech e delle nanotecnologie in valore di mercato."
+      },
+      {
+        "period": "2022 – Presente",
+        "org": "Integra R&D srl (Roma)",
+        "role": "Fondatore e Chief Scientific Officer (CSO).",
+        "activity": "Startup e innovazione nel settore biotech."
+      },
+      {
+        "period": "2021 – Presente",
+        "org": "Aella Labs Sagl (Lugano, Svizzera)",
+        "role": "Fondatore e Chief Scientific Officer (CSO).",
+        "activity": "Startup e innovazione nel settore biotech."
+      },
+      {
+        "period": "2021 – Presente",
+        "org": "Lightscience srl (Milano)",
+        "role": "Membro del Consiglio di Amministrazione (Board Member).",
+        "activity": "Direzione R&D nel settore biotech."
+      },
+      {
+        "period": "2020 – 2023",
+        "org": "Friuli Innovazione srl (Udine)",
+        "role": "Membro del Consiglio di Amministrazione (Board Member).",
+        "activity": "Direzione e ricerca nel settore biotech."
+      },
+      {
+        "period": "2020 – 2022",
+        "org": "Sclavo Research Center (Siena)",
+        "role": "Fondatore e Direttore.",
+        "activity": "Centro di ricerca e sviluppo nel settore biotech."
+      },
+      {
+        "period": "2020 – 2022",
+        "org": "3R Biotech srl (Milano)",
+        "role": "Fondatore e Chief Scientific Officer (CSO).",
+        "activity": "Startup e R&D nel settore biotech."
+      },
+      {
+        "period": "2011 – 2016",
+        "org": "Accademia delle Nanoscienze (Italia)",
+        "role": "Direttore (Director).",
+        "activity": "Accademia scientifica italiana per le nanoscienze."
+      }
+    ],
     "cta": {
       "title": "Collaboriamo",
       "body": "Disponibile per advisory board, consulenza strategica e partnership di ricerca.",
       "button": "Scrivimi"
-    },
-    "corporate": {
-      "title": "Consulenza corporate",
-      "pharma": "Farmaceutico e Nutrizione",
-      "clusters": "Advisory & Innovation"
     },
     "sectors": "Settori serviti"
   },
