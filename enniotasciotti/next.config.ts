@@ -1,8 +1,11 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 import type { NextConfig } from 'next';
-
-const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
-
+const withNextIntl = createNextIntlPlugin({
+  requestConfig: './i18n/request.ts',
+  experimental: {
+    middlewareFile: './proxy.ts',
+  },
+});
 const nextConfig: NextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
@@ -14,5 +17,4 @@ const nextConfig: NextConfig = {
     ],
   },
 };
-
 export default withNextIntl(nextConfig);
