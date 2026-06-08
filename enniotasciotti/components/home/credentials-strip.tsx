@@ -22,7 +22,7 @@ export function CredentialsStrip() {
   return (
     <div
       aria-label="Credentials at a glance"
-      className="w-full border-y border-[var(--color-border)] bg-[var(--color-surface)] py-3 overflow-hidden"
+      className="credentials-strip w-full border-y border-[var(--color-border)] bg-[var(--color-surface)] py-3 overflow-hidden"
     >
       <div className="flex animate-marquee whitespace-nowrap">
         {items.map(({ label, value }, i) => (
@@ -45,7 +45,10 @@ export function CredentialsStrip() {
           to   { transform: translateX(-50%); }
         }
         .animate-marquee {
-          animation: marquee 22s linear infinite;
+          animation: marquee 30s linear infinite;
+        }
+        .credentials-strip:hover .animate-marquee {
+          animation-play-state: paused;
         }
         @media (prefers-reduced-motion: reduce) {
           .animate-marquee { animation: none; }

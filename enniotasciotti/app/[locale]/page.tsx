@@ -1,9 +1,11 @@
 import { getTranslations } from 'next-intl/server';
 import { Hero } from '@/components/home/hero';
 import { CredentialsStrip } from '@/components/home/credentials-strip';
+import { ChiSonoTeaser } from '@/components/home/chi-sono-teaser';
 import { ThreePillars } from '@/components/home/three-pillars';
-import { FeaturedDiscoveries } from '@/components/home/featured-discoveries';
-import { TedxEmbed } from '@/components/home/tedx-embed';
+import { ScienzaTeaser } from '@/components/home/scienza-teaser';
+import { ImpreseConsulenzeTeaser } from '@/components/home/imprese-consulenze';
+import { SpeakingTeaser } from '@/components/home/speaking-teaser';
 import { NewsletterCta } from '@/components/home/newsletter-cta';
 import { buildMetadata } from '@/lib/seo';
 
@@ -26,9 +28,11 @@ export default function HomePage() {
     <>
       <Hero />
       <CredentialsStrip />
+      <ChiSonoTeaser />
       <ThreePillars />
-      <FeaturedDiscoveries />
-      <TedxEmbed />
+      <ScienzaTeaser />
+      <ImpreseConsulenzeTeaser />
+      <SpeakingTeaser />
       <NewsletterCta />
     </>
   );

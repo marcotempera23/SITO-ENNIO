@@ -29,7 +29,7 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-headline"
-      className="relative overflow-hidden min-h-[100svh] flex items-center bg-transparent"
+      className="relative overflow-hidden min-h-[calc(100svh-3.5rem)] flex items-center bg-transparent"
     >
       {/* Background grid — ultra-subtle */}
       <div

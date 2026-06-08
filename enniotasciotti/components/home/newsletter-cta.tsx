@@ -89,14 +89,22 @@ export function NewsletterCta() {
                   required
                   placeholder={t('emailPlaceholder')}
                   disabled={status === 'loading'}
-                  className="h-12 border border-[var(--color-border)] bg-transparent px-4 text-step-0 text-[var(--color-text)] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--color-accent)] placeholder:text-[var(--color-text-muted)]"
+                  className="h-12 border border-[var(--color-border)] bg-transparent px-4 text-step-0 text-[var(--color-text)] transition-all duration-300 focus-visible:outline-none focus-visible:border-[var(--color-accent)] focus-visible:ring-2 focus-visible:ring-[var(--color-accent)]/20 placeholder:text-[var(--color-text-muted)]"
                 />
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="h-12 bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-opacity disabled:opacity-50 hover:opacity-90"
+                  className="h-12 bg-[var(--color-accent)] px-6 text-step-0 font-medium text-white transition-all duration-400 disabled:opacity-50 hover:opacity-90 hover:-translate-y-[1px] flex items-center justify-center gap-2"
                 >
-                  {status === 'loading' ? t('loading') : t('cta')}
+                  {status === 'loading' ? (
+                    <>
+                      <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" />
+                        <path className="opacity-80" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                      </svg>
+                      <span>{t('loading')}</span>
+                    </>
+                  ) : t('cta')}
                 </button>
               </form>
             )}
