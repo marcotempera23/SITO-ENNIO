@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const EASE = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number];
 
@@ -12,15 +13,16 @@ const COMPANIES: {
     font: 'serif' | 'sans' | 'mono';
     weight: string;
     letter?: string;
+    image?: string;
 }[] = [
-    { name: 'Roche',       href: 'https://www.roche.com',        color: '#0066CC', font: 'serif', weight: '700' },
-    { name: 'NOVARTIS',    href: 'https://www.novartis.com',      color: '#E5282A', font: 'sans',  weight: '800', letter: '0.06em' },
-    { name: 'Gilead',      href: 'https://www.gilead.com',        color: '#C8102E', font: 'sans',  weight: '600' },
-    { name: 'Ferrero',     href: 'https://www.ferrero.com',       color: '#8B1A1A', font: 'serif', weight: '700' },
-    { name: 'alfasigma',   href: 'https://www.alfasigma.com',     color: '#003087', font: 'sans',  weight: '700', letter: '0.04em' },
-    { name: 'aboca',       href: 'https://www.aboca.com',         color: '#3D7A2B', font: 'sans',  weight: '700' },
-    { name: 'GreenBone',   href: 'https://www.greenbone.it',      color: '#2E7D32', font: 'sans',  weight: '600' },
-    { name: 'NAMED',       href: 'https://www.named.it',          color: '#1A1A2E', font: 'sans',  weight: '900', letter: '0.12em' },
+    { name: 'Roche',       href: 'https://www.roche.com',        color: '#0066CC', font: 'serif', weight: '700', image: '/images/partners/roche.png' },
+    { name: 'NOVARTIS',    href: 'https://www.novartis.com',      color: '#E5282A', font: 'sans',  weight: '800', letter: '0.06em', image: '/images/partners/novartis.png' },
+    { name: 'Gilead',      href: 'https://www.gilead.com',        color: '#C8102E', font: 'sans',  weight: '600', image: '/images/partners/gilead.png' },
+    { name: 'Ferrero',     href: 'https://www.ferrero.com',       color: '#8B1A1A', font: 'serif', weight: '700', image: '/images/partners/ferrero.png' },
+    { name: 'alfasigma',   href: 'https://www.alfasigma.com',     color: '#003087', font: 'sans',  weight: '700', letter: '0.04em', image: '/images/partners/alfasigma.png' },
+    { name: 'aboca',       href: 'https://www.aboca.com',         color: '#3D7A2B', font: 'sans',  weight: '700', image: '/images/partners/aboca.png' },
+    { name: 'GreenBone',   href: 'https://www.greenbone.it',      color: '#2E7D32', font: 'sans',  weight: '600', image: '/images/partners/greenbone.png' },
+    { name: 'NAMED',       href: 'https://www.named.it',          color: '#1A1A2E', font: 'sans',  weight: '900', letter: '0.12em', image: '/images/partners/named.png' },
     { name: 'INTEGRA',     href: 'https://www.integralife.com',   color: '#004B87', font: 'sans',  weight: '700', letter: '0.08em' },
     { name: 'Lightscience', href: '#',                            color: '#D97706', font: 'sans',  weight: '500' },
 ];
@@ -67,8 +69,8 @@ export function ImpreseConsulenzeTeaser() {
                 </div>
 
                 {/* ── Infinite logo marquee ── */}
-                <div className="imprese-marquee-outer border-y border-[var(--color-border)] py-8 overflow-hidden">
-                    <div className="imprese-marquee-track flex items-center gap-16 whitespace-nowrap">
+                <div className="imprese-marquee-outer relative w-full overflow-hidden">
+                    <div className="imprese-marquee-track flex w-max gap-6 py-2">
                         {ITEMS.map((co, i) => (
                             <a
                                 key={i}
@@ -76,30 +78,30 @@ export function ImpreseConsulenzeTeaser() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={co.name}
-                                className="imprese-logo-item group inline-flex items-center shrink-0 select-none"
+                                className="group shrink-0 relative flex items-center justify-center w-52 h-28 border border-[var(--color-border)] bg-white overflow-hidden transition-all duration-300 hover:border-[var(--color-accent)] hover:shadow-lg"
+                                style={{ '--brand-color': co.color } as React.CSSProperties}
                             >
-                                {/* Bullet separator */}
-                                {i > 0 && (
+                                {co.image ? (
+                                    <Image
+                                        src={co.image}
+                                        alt={co.name}
+                                        fill
+                                        className="object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-400"
+                                        sizes="208px"
+                                    />
+                                ) : (
                                     <span
-                                        className="mr-16 text-[var(--color-border)] text-2xl select-none"
-                                        aria-hidden="true"
+                                        className="imprese-name font-sans transition-all duration-500 text-[var(--color-text-muted)]"
+                                        style={{
+                                            fontFamily: co.font === 'serif' ? 'var(--font-display)' : 'var(--font-sans)',
+                                            fontWeight: co.weight,
+                                            letterSpacing: co.letter ?? '0',
+                                            fontSize: 'clamp(1rem, 1.4vw, 1.3rem)',
+                                        }}
                                     >
-                                        ·
+                                        {co.name}
                                     </span>
                                 )}
-                                <span
-                                    className="imprese-name font-sans transition-all duration-500"
-                                    style={{
-                                        fontFamily: co.font === 'serif' ? 'var(--font-display)' : 'var(--font-sans)',
-                                        fontWeight: co.weight,
-                                        letterSpacing: co.letter ?? '0',
-                                        fontSize: 'clamp(1.1rem, 1.6vw, 1.5rem)',
-                                        color: 'var(--color-text-muted)',
-                                        '--brand-color': co.color,
-                                    } as React.CSSProperties}
-                                >
-                                    {co.name}
-                                </span>
                             </a>
                         ))}
                     </div>
@@ -123,15 +125,14 @@ export function ImpreseConsulenzeTeaser() {
           to   { transform: translateX(-50%); }
         }
         .imprese-marquee-track {
-          animation: imprese-scroll 36s linear infinite;
+          animation: imprese-scroll 45s linear infinite;
           will-change: transform;
         }
         .imprese-marquee-outer:hover .imprese-marquee-track {
           animation-play-state: paused;
         }
-        .imprese-logo-item:hover .imprese-name {
+        .group:hover .imprese-name {
           color: var(--brand-color) !important;
-          opacity: 1;
         }
         .imprese-marquee-outer {
           -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
