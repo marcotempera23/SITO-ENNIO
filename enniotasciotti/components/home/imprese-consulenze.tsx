@@ -23,8 +23,6 @@ const COMPANIES: {
     { name: 'aboca',       href: 'https://www.aboca.com',         color: '#3D7A2B', font: 'sans',  weight: '700', image: '/images/partners/aboca.png' },
     { name: 'GreenBone',   href: 'https://www.greenbone.it',      color: '#2E7D32', font: 'sans',  weight: '600', image: '/images/partners/greenbone.png' },
     { name: 'NAMED',       href: 'https://www.named.it',          color: '#1A1A2E', font: 'sans',  weight: '900', letter: '0.12em', image: '/images/partners/named.png' },
-    { name: 'INTEGRA',     href: 'https://www.integralife.com',   color: '#004B87', font: 'sans',  weight: '700', letter: '0.08em' },
-    { name: 'Lightscience', href: '#',                            color: '#D97706', font: 'sans',  weight: '500' },
 ];
 
 /* Duplicated for seamless infinite loop */
