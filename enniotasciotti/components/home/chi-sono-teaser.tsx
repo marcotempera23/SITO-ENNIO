@@ -95,34 +95,6 @@ export function ChiSonoTeaser() {
                     </motion.div>
                 </div>
             </div>
-
-            {/* Rotating ticker at bottom */}
-            <div className="chi-sono-ticker relative z-10 w-full border-t border-white/20 bg-black/30 backdrop-blur-sm py-3 overflow-hidden">
-                <div className="flex animate-marquee-slow whitespace-nowrap">
-                    {[...TICKER, ...TICKER].map((item, i) => (
-                        <span key={i} className="mx-10 font-mono text-step--1 text-white/70 shrink-0">
-                            {item}
-                            <span className="ml-10 text-white/30" aria-hidden="true">·</span>
-                        </span>
-                    ))}
-                </div>
-            </div>
-
-            <style>{`
-        @keyframes marquee-slow {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        .animate-marquee-slow {
-          animation: marquee-slow 38s linear infinite;
-        }
-        .chi-sono-ticker:hover .animate-marquee-slow {
-          animation-play-state: paused;
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .animate-marquee-slow { animation: none; }
-        }
-      `}</style>
         </section>
     );
 }

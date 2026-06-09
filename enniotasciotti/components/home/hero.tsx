@@ -88,12 +88,6 @@ export function Hero() {
                 {t('ctaPrimary')}
                 <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
               </Link>
-              <Link
-                href="/longevity"
-                className="group inline-flex h-12 items-center rounded-none border-b-2 border-[var(--color-border)] px-8 text-step-0 font-medium text-[var(--color-text)] transition-all duration-300 hover:border-[var(--color-text)]"
-              >
-                {t('ctaSecondary')}
-              </Link>
             </motion.div>
           </motion.div>
 
