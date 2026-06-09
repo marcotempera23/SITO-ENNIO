@@ -82,6 +82,13 @@ const MACRO_AREAS = [
         body: 'Dal laboratorio al paziente: percorsi accelerati dalla scoperta alla clinica.',
         href: '/science',
     },
+    {
+        id: 'longevity',
+        image: '/images/areas/longevity.png',
+        title: 'Longevity',
+        body: "Ricerca traslazionale focalizzata sullo sviluppo di diverse strategie per la prevenzione e l'estensione della longevità in salute.",
+        href: '/science',
+    },
 ];
 
 export function ScienzaTeaser() {
@@ -94,7 +101,7 @@ export function ScienzaTeaser() {
                     <div>
                         <p className="font-mono text-step--1 uppercase tracking-[0.2em] text-[var(--color-accent)] mb-3">Ricerca Scientifica</p>
                         <h2 id="scienza-heading" className="font-display text-step-4 font-light text-[var(--color-text)] leading-tight">
-                            Le quattro aree di ricerca
+                            Le cinque aree di ricerca
                         </h2>
                     </div>
                     <Link
@@ -106,47 +113,59 @@ export function ScienzaTeaser() {
                     </Link>
                 </div>
 
-                {/* 4 macro-area banners */}
-                <div className="grid sm:grid-cols-2 gap-0 border border-[var(--color-border)]">
+                {/* 5 macro-area cards in balanced grid */}
+                <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-6">
                     {MACRO_AREAS.map((area, i) => (
                         <motion.div
                             key={area.id}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, amount: 0.2 }}
+                            viewport={{ once: true, amount: 0.1 }}
                             transition={{ duration: 0.6, delay: i * 0.1, ease: EASE }}
+                            className={cn(
+                                "col-span-1",
+                                i === 4 ? "md:col-span-6 lg:col-span-3" :
+                                i === 3 ? "md:col-span-3 lg:col-span-3" :
+                                "md:col-span-3 lg:col-span-2"
+                            )}
                         >
                             <Link
                                 href={area.href}
-                                className={cn(
-                                    "group block relative p-8 md:p-10 overflow-hidden bg-[var(--color-surface)] transition-colors duration-300 hover:bg-[var(--color-surface-2)]",
-                                    (i === 0 || i === 1) && "border-b border-[var(--color-border)]",
-                                    (i % 2 === 0) && "sm:border-r border-[var(--color-border)]"
-                                )}
+                                className="group block relative p-8 md:p-10 h-full rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-all duration-500 hover:border-[var(--color-accent)]/30 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between min-h-[280px]"
                             >
-                                {/* Bottom accent line */}
-                                <div
-                                    aria-hidden="true"
-                                    className="absolute bottom-0 left-0 h-[2px] w-full bg-[var(--color-accent)] origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
-                                />
-                                <div className="relative w-16 h-16 mb-5 overflow-hidden rounded-lg border border-white/10 shadow-md">
+                                {/* Background Image - visible and scaled on hover */}
+                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 dark:group-hover:opacity-15 transition-opacity duration-500 pointer-events-none">
                                     <Image
                                         src={area.image}
                                         alt={area.title}
                                         fill
-                                        sizes="64px"
-                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-out"
                                     />
+                                    {/* Soft overlay to blend image */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface)] via-transparent to-[var(--color-surface)]" />
                                 </div>
-                                <h3 className="font-display text-step-1 font-light text-[var(--color-text)] leading-snug mb-2">
-                                    {area.title}
-                                </h3>
-                                <p className="text-step--1 leading-relaxed text-[var(--color-text-muted)]">
-                                    {area.body}
-                                </p>
-                                <span className="mt-4 inline-block text-step--1 font-mono text-[var(--color-accent)] transition-transform duration-300 group-hover:translate-x-1">
-                                    Approfondisci →
-                                </span>
+
+                                {/* Content */}
+                                <div className="relative z-10 flex-grow">
+                                    <h3 className="font-display text-step-1 font-light text-[var(--color-text)] leading-snug mb-3">
+                                        {area.title}
+                                    </h3>
+                                    <p className="text-step--1 leading-relaxed text-[var(--color-text-muted)] group-hover:text-[var(--color-text)] transition-colors duration-300">
+                                        {area.body}
+                                    </p>
+                                </div>
+
+                                <div className="relative z-10 mt-6 flex items-center gap-1 text-step--1 font-mono text-[var(--color-accent)] transition-all duration-300 group-hover:gap-2">
+                                    <span>Approfondisci</span>
+                                    <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                                </div>
+
+                                {/* Bottom accent line */}
+                                <div
+                                    aria-hidden="true"
+                                    className="absolute bottom-0 left-0 h-[2.5px] w-full bg-[var(--color-accent)] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+                                />
                             </Link>
                         </motion.div>
                     ))}
