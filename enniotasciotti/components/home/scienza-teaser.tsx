@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
@@ -37,53 +38,28 @@ const JOURNALS = [
 const MACRO_AREAS = [
     {
         id: 'drug-delivery',
-        icon: (
-            <svg viewBox="0 0 40 40" fill="none" className="h-8 w-8" aria-hidden="true">
-                <circle cx="20" cy="20" r="10" stroke="currentColor" strokeWidth="1.5" />
-                <circle cx="20" cy="20" r="4" fill="currentColor" />
-                <path d="M20 4v6M20 30v6M4 20h6M30 20h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                <circle cx="20" cy="20" r="16" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
-            </svg>
-        ),
+        image: '/images/areas/drug-delivery.png',
         title: 'Drug Delivery',
         body: 'Nanovettori biomimetici per la somministrazione mirata di farmaci antitumorali.',
         href: '/science',
     },
     {
         id: 'medicina-rigenerativa',
-        icon: (
-            <svg viewBox="0 0 40 40" fill="none" className="h-8 w-8" aria-hidden="true">
-                <path d="M20 6c-2 4-8 6-8 12a8 8 0 0016 0c0-6-6-8-8-12z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-                <path d="M14 22c0 3.3 2.7 6 6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                <path d="M20 28v6M17 34h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-        ),
+        image: '/images/areas/regenerative-medicine.png',
         title: 'Medicina Rigenerativa',
-        body: 'Scaffold biomimetici e ingegneria tissutale per la rigenerazione ossea e cartilaginea.',
+        body: 'Scaffold biomimetici e ingegneria tessutale per la rigenerazione ossea e cartilaginea.',
         href: '/science',
     },
     {
         id: 'cellule-immunitarie',
-        icon: (
-            <svg viewBox="0 0 40 40" fill="none" className="h-8 w-8" aria-hidden="true">
-                <circle cx="20" cy="20" r="7" stroke="currentColor" strokeWidth="1.5" />
-                <path d="M20 4c0 4-4 6-4 10M20 4c0 4 4 6 4 10M20 36c0-4-4-6-4-10M20 36c0-4 4-6 4-10M4 20c4 0 6-4 10-4M4 20c4 0 6 4 10 4M36 20c-4 0-6-4-10-4M36 20c-4 0-6 4-10 4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-            </svg>
-        ),
+        image: '/images/areas/stem-cells.png',
         title: 'Biologia Cellule Immunitarie e Staminali',
         body: 'Studio della risposta immunitaria e delle cellule staminali per terapie di nuova generazione.',
         href: '/science',
     },
     {
         id: 'ricerca-traslazionale',
-        icon: (
-            <svg viewBox="0 0 40 40" fill="none" className="h-8 w-8" aria-hidden="true">
-                <path d="M6 34L20 8l14 26" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-                <path d="M11 26h18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                <circle cx="20" cy="8" r="2" fill="currentColor" />
-                <path d="M28 14l6-6M28 14h5M28 14v5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-            </svg>
-        ),
+        image: '/images/areas/translational-research.png',
         title: 'Ricerca Traslazionale',
         body: 'Dal laboratorio al paziente: percorsi accelerati dalla scoperta alla clinica.',
         href: '/science',
@@ -96,11 +72,11 @@ export function ScienzaTeaser() {
             <div className="mx-auto max-w-7xl px-6">
 
                 {/* Header */}
-                <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-16">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-16">
                     <div>
                         <p className="font-mono text-step--1 uppercase tracking-[0.2em] text-[var(--color-accent)] mb-3">Ricerca Scientifica</p>
-                        <h2 id="scienza-heading" className="font-display text-step-4 font-light text-[var(--color-text)]">
-                            Le quattro aree<br />di ricerca
+                        <h2 id="scienza-heading" className="font-display text-step-4 font-light text-[var(--color-text)] leading-tight">
+                            Le quattro aree di ricerca
                         </h2>
                     </div>
                     <Link
@@ -124,18 +100,26 @@ export function ScienzaTeaser() {
                         >
                             <Link
                                 href={area.href}
-                        className={`group block relative p-8 md:p-10 overflow-hidden transition-colors duration-500 hover:bg-[var(--color-surface-2)] ${i === 0 || i === 1 ? 'border-b border-[var(--color-border)]' : ''
-                                    } ${i % 2 === 0 ? 'sm:border-r border-[var(--color-border)]' : ''}`}
+                                className={cn(
+                                    "group block relative p-8 md:p-10 overflow-hidden bg-[var(--color-surface)] transition-colors duration-300 hover:bg-[var(--color-surface-2)]",
+                                    (i === 0 || i === 1) && "border-b border-[var(--color-border)]",
+                                    (i % 2 === 0) && "sm:border-r border-[var(--color-border)]"
+                                )}
                             >
                                 {/* Bottom accent line */}
-                                <motion.div
+                                <div
                                     aria-hidden="true"
-                                    className="absolute bottom-0 left-0 h-[2px] w-full bg-[var(--color-accent)] origin-left"
-                                    initial={{ scaleX: 0 }}
-                                    whileHover={{ scaleX: 1 }}
-                                    transition={{ duration: 0.3 }}
+                                    className="absolute bottom-0 left-0 h-[2px] w-full bg-[var(--color-accent)] origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
                                 />
-                                <div className="text-[var(--color-accent)] mb-4">{area.icon}</div>
+                                <div className="relative w-16 h-16 mb-5 overflow-hidden rounded-lg border border-white/10 shadow-md">
+                                    <Image
+                                        src={area.image}
+                                        alt={area.title}
+                                        fill
+                                        sizes="64px"
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    />
+                                </div>
                                 <h3 className="font-display text-step-1 font-light text-[var(--color-text)] leading-snug mb-2">
                                     {area.title}
                                 </h3>
