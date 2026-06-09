@@ -71,12 +71,6 @@ export default async function SciencePage({ params }: PageProps) {
               >
                 {/* Area header */}
                 <div className="flex items-start gap-6 mb-8">
-                  <span
-                    className="font-mono text-[4rem] leading-none font-light text-[var(--color-accent)] opacity-20 select-none"
-                    aria-hidden="true"
-                  >
-                    {area.number}
-                  </span>
                   <div>
                     <h3
                       id={`${area.id}-heading`}
@@ -91,54 +85,52 @@ export default async function SciencePage({ params }: PageProps) {
                 </div>
 
                 {/* Description */}
-                <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)] max-w-4xl mb-12 pl-0 md:pl-[calc(4rem+1.5rem)]">
-                  {area.body}
-                </p>
+                {area.body && (
+                  <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)] max-w-4xl mb-12">
+                    {area.body}
+                  </p>
+                )}
 
                 {/* Publications */}
-                <div className="pl-0 md:pl-[calc(4rem+1.5rem)]">
-                  <h4 className="font-mono text-step--1 text-[var(--color-text)] uppercase tracking-widest mb-6 pb-3 border-b border-[var(--color-border)]">
-                    {t('macroAreasPubTitle')}
-                  </h4>
-                  <ol className="space-y-0 divide-y divide-[var(--color-border)]">
-                    {area.publications.map((pub) => (
-                      <li
-                        key={pub.rank}
-                        className="py-4 grid grid-cols-[2rem_1fr_auto] gap-x-4 items-start group"
-                      >
-                        {/* Rank */}
-                        <span className="font-mono text-step--2 text-[var(--color-accent)] pt-0.5 tabular-nums">
-                          {String(pub.rank).padStart(2, '0')}
-                        </span>
+                {area.publications && area.publications.length > 0 && (
+                  <div>
+                    <h4 className="font-mono text-step--1 text-[var(--color-text)] uppercase tracking-widest mb-6 pb-3 border-b border-[var(--color-border)]">
+                      {t('macroAreasPubTitle')}
+                    </h4>
+                    <ol className="space-y-0 divide-y divide-[var(--color-border)]">
+                      {area.publications.map((pub) => (
+                        <li
+                          key={pub.rank}
+                          className="py-4 grid grid-cols-[1fr_auto] gap-x-4 items-start group"
+                        >
+                          {/* Content */}
+                          <div className="min-w-0">
+                            <p className="text-step--1 font-medium text-[var(--color-text)] leading-snug">
+                              {pub.title}
+                            </p>
+                            <p className="mt-1 text-step--2 text-[var(--color-text-muted)]">
+                              <span className="font-medium text-[var(--color-text)]">{pub.journal}</span>
+                              {' '}·{' '}
+                              {pub.year}
+                              {' '}·{' '}
+                              {pub.authors}
+                            </p>
+                          </div>
 
-                        {/* Content */}
-                        <div className="min-w-0">
-                          <p className="text-step--1 font-medium text-[var(--color-text)] leading-snug">
-                            {pub.title}
-                          </p>
-                          <p className="mt-1 text-step--2 text-[var(--color-text-muted)]">
-                            <span className="font-medium text-[var(--color-text)]">{pub.journal}</span>
-                            {' '}·{' '}
-                            {pub.year}
-                            {' '}·{' '}
-                            {pub.authors}
-                          </p>
-
-                        </div>
-
-                        {/* Citations badge */}
-                        <div className="flex flex-col items-end gap-0.5 pt-0.5 shrink-0">
-                          <span className="font-mono text-step-0 font-semibold text-[var(--color-text)] tabular-nums">
-                            {pub.citations.toLocaleString()}
-                          </span>
-                          <span className="font-mono text-step--2 text-[var(--color-text-muted)] whitespace-nowrap">
-                            {t('citations')}
-                          </span>
-                        </div>
-                      </li>
-                    ))}
-                  </ol>
-                </div>
+                          {/* Citations badge */}
+                          <div className="flex flex-col items-end gap-0.5 pt-0.5 shrink-0">
+                            <span className="font-mono text-step-0 font-semibold text-[var(--color-text)] tabular-nums">
+                              {pub.citations.toLocaleString()}
+                            </span>
+                            <span className="font-mono text-step--2 text-[var(--color-text-muted)] whitespace-nowrap">
+                              {t('citations')}
+                            </span>
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
               </section>
             ))}
           </div>
