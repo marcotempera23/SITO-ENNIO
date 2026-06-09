@@ -41,13 +41,13 @@ export function ImpreseConsulenzeTeaser() {
             <div className="mx-auto max-w-7xl px-6">
 
                 {/* Header */}
-                <div className="flex items-end justify-between gap-6 mb-12">
+                <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-8">
                     <div>
                         <p className="font-mono text-step--1 uppercase tracking-[0.2em] text-[var(--color-accent)] mb-3">
                             Imprese &amp; Consulenze
                         </p>
-                        <h2 id="imprese-heading" className="font-display text-step-4 font-light text-[var(--color-text)]">
-                            Partner &amp; collaborazioni<br />di riferimento
+                        <h2 id="imprese-heading" className="font-display text-step-4 font-light text-[var(--color-text)] leading-tight">
+                            Partnership
                         </h2>
                     </div>
                     <a
@@ -57,6 +57,13 @@ export function ImpreseConsulenzeTeaser() {
                         Tutte le consulenze
                         <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                     </a>
+                </div>
+
+                {/* Subtitle Description */}
+                <div className="max-w-3xl mb-12">
+                    <p className="text-step-0 font-light leading-relaxed text-[var(--color-text-muted)]">
+                        Direttore Scientifico (R&D) e membro del Consiglio di Amministrazione di diverse società biotecnologiche, responsabile del programma industriale DARPA &ldquo;Fracture Putty&rdquo; ($15M). Inventore e detentore di 12 brevetti internazionali su nano e biomateriali.
+                    </p>
                 </div>
 
                 {/* ── Infinite logo marquee ── */}
