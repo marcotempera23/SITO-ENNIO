@@ -33,6 +33,24 @@ const JOURNALS = [
         href: 'https://pubs.acs.org/journal/ancac3',
         bg: '#FFFFFF',
     },
+    {
+        name: 'Nanomaterials',
+        src: '/images/journals/nanomaterials.png',
+        href: 'https://www.mdpi.com/journal/nanomaterials',
+        bg: '#FFFFFF',
+    },
+    {
+        name: 'npj Breast Cancer',
+        src: '/images/journals/npj-breast-cancer.png',
+        href: 'https://www.nature.com/npjbcancer/',
+        bg: '#FFFFFF',
+    },
+    {
+        name: 'Journal of Nanomedicine & Nanotechnology',
+        src: '/images/journals/nanomedicine-nanotechnology.png',
+        href: 'https://www.omicsonline.org/open-access/nanomedicine-nanotechnology.php',
+        bg: '#FFFFFF',
+    },
 ];
 
 const MACRO_AREAS = [
@@ -135,38 +153,46 @@ export function ScienzaTeaser() {
                 </div>
 
                 {/* Cover Stories — horizontal scroll gallery */}
-                <div className="mt-16">
+                <div className="mt-16 overflow-hidden">
                     <p className="font-mono text-step--1 uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-6">
                         Pubblicato su
                     </p>
-                    <div className="journal-scroll-wrap relative">
-                        <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
-                        {JOURNALS.map((j) => (
-                            <a
-                                key={j.name}
-                                href={j.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group snap-start shrink-0 relative flex items-center justify-center w-52 h-28 border border-[var(--color-border)] bg-white overflow-hidden transition-all duration-300 hover:border-[var(--color-accent)] hover:shadow-lg"
-                                style={{ backgroundColor: j.bg }}
-                                aria-label={j.name}
-                            >
-                                <Image
-                                    src={j.src}
-                                    alt={j.name}
-                                    fill
-                                    className="object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-400"
-                                    sizes="208px"
-                                />
-                            </a>
-                        ))}
-                        {/* Add more placeholder */}
-                        <a
-                            href="/science"
-                            className="snap-start shrink-0 flex items-center justify-center w-52 h-28 border border-dashed border-[var(--color-border)] text-step--1 font-mono text-[var(--color-text-muted)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors duration-300"
-                        >
-                            200+ articoli →
-                        </a>
+                    <div className="journal-scroll-wrap relative w-full overflow-hidden">
+                        <div className="flex w-max gap-6 animate-marquee-journals py-2">
+                            {[
+                                ...JOURNALS.map(j => ({ ...j, isPlaceholder: false })),
+                                { name: '200+ articoli', href: '/science', isPlaceholder: true, src: '', bg: '' },
+                                ...JOURNALS.map(j => ({ ...j, isPlaceholder: false })),
+                                { name: '200+ articoli', href: '/science', isPlaceholder: true, src: '', bg: '' }
+                            ].map((j, idx) => (
+                                j.isPlaceholder ? (
+                                    <Link
+                                        key={`placeholder-${idx}`}
+                                        href={j.href || ''}
+                                        className="snap-start shrink-0 flex items-center justify-center w-52 h-28 border border-dashed border-[var(--color-border)] text-step--1 font-mono text-[var(--color-text-muted)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] bg-[var(--color-surface)] transition-colors duration-300"
+                                    >
+                                        200+ articoli →
+                                    </Link>
+                                ) : (
+                                    <a
+                                        key={`${j.name}-${idx}`}
+                                        href={j.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group snap-start shrink-0 relative flex items-center justify-center w-52 h-28 border border-[var(--color-border)] bg-white overflow-hidden transition-all duration-300 hover:border-[var(--color-accent)] hover:shadow-lg"
+                                        style={{ backgroundColor: 'bg' in j ? j.bg : undefined }}
+                                        aria-label={j.name}
+                                    >
+                                        <Image
+                                            src={j.src || ''}
+                                            alt={j.name || ''}
+                                            fill
+                                            className="object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-400"
+                                            sizes="208px"
+                                        />
+                                    </a>
+                                )
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -178,6 +204,19 @@ export function ScienzaTeaser() {
         .journal-scroll-wrap {
           -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
           mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+        }
+        @keyframes marquee-journals {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-50%); }
+        }
+        .animate-marquee-journals {
+          animation: marquee-journals 45s linear infinite;
+        }
+        .journal-scroll-wrap:hover .animate-marquee-journals {
+          animation-play-state: paused;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animate-marquee-journals { animation: none; }
         }
       `}</style>
         </section>
