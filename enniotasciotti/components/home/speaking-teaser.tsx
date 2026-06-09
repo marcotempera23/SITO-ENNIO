@@ -24,7 +24,7 @@ const MEDIA_CATEGORIES = [
         cat: 'Conferenze',
         items: [
             { logo: 'TEDx', color: '#E62B1E', show: 'TEDxCNR — Oltre il conosciuto', years: '2016' },
-            { logo: 'TEDx', color: '#E62B1E', show: 'TEDxLago di Fogliano', years: '' },
+            { logo: 'TEDx', color: '#E62B1E', show: 'TEDxLago di Fogliano', years: '2023' },
         ],
     },
 ];
