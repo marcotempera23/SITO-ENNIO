@@ -339,7 +339,6 @@ export function LongevityClient() {
           <h3 className="font-display text-step-1 font-light text-[var(--color-text)] border-b border-[var(--color-border)] pb-3">
             {t('papersTitle')}
           </h3>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Paper 1: Nature Materials (PMC4538992) */}
             <a
@@ -387,6 +386,56 @@ export function LongevityClient() {
                 </h4>
                 <p className="text-step--1 text-[var(--color-text-muted)] font-light mt-2 leading-relaxed">
                   {t('paper3Desc')}
+                </p>
+              </div>
+            </a>
+
+            {/* Paper 3: Journal of Xenobiotics (PMC13010698) */}
+            <a
+              href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13010698/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-6 border border-[var(--color-border)] bg-[var(--color-surface)] hover:bg-[var(--color-surface-2)] hover:border-[var(--color-accent)]/30 hover:-translate-y-1 hover:shadow-lg rounded-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex justify-between items-start gap-4">
+                  <span className="font-mono text-step--2 text-[var(--color-accent)] uppercase tracking-wider">
+                    Journal of Xenobiotics, 2026
+                  </span>
+                  <span className="text-step--2 text-[var(--color-text-muted)] group-hover:translate-x-1 transition-transform">
+                    →
+                  </span>
+                </div>
+                <h4 className="font-display text-step-0 font-medium text-[var(--color-text)] group-hover:text-[var(--color-accent)] transition-colors mt-2">
+                  {t('paper5Title')}
+                </h4>
+                <p className="text-step--1 text-[var(--color-text-muted)] font-light mt-2 leading-relaxed">
+                  {t('paper5Desc')}
+                </p>
+              </div>
+            </a>
+
+            {/* Paper 4: Mechanisms of Ageing and Development (S0047637426000394) */}
+            <a
+              href="https://www.sciencedirect.com/science/article/pii/S0047637426000394?via%3Dihub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-6 border border-[var(--color-border)] bg-[var(--color-surface)] hover:bg-[var(--color-surface-2)] hover:border-[var(--color-accent)]/30 hover:-translate-y-1 hover:shadow-lg rounded-xl transition-all duration-300 flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex justify-between items-start gap-4">
+                  <span className="font-mono text-step--2 text-[var(--color-accent)] uppercase tracking-wider">
+                    Mechanisms of Ageing and Development, 2026
+                  </span>
+                  <span className="text-step--2 text-[var(--color-text-muted)] group-hover:translate-x-1 transition-transform">
+                    →
+                  </span>
+                </div>
+                <h4 className="font-display text-step-0 font-medium text-[var(--color-text)] group-hover:text-[var(--color-accent)] transition-colors mt-2">
+                  {t('paper6Title')}
+                </h4>
+                <p className="text-step--1 text-[var(--color-text-muted)] font-light mt-2 leading-relaxed">
+                  {t('paper6Desc')}
                 </p>
               </div>
             </a>
