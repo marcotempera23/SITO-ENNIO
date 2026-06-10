@@ -36,12 +36,19 @@ const getLogoPath = (orgName: string) => {
   if (normalized.includes('aboca')) return '/images/partners/aboca.png';
   if (normalized.includes('ferrero')) return '/images/partners/ferrero.png';
   
-  // New logos we just added
+  // New logos batch 1
   if (normalized.includes('longevity')) return '/images/partners/longevity-community.png';
   if (normalized.includes('cube labs')) return '/images/partners/cube-labs.png';
   if (normalized.includes('cluster scienze della vita')) return '/images/partners/cluster-fvg.png';
   if (normalized.includes('corden')) return '/images/partners/corden-pharma.png';
   if (normalized.includes('sclavo')) return '/images/partners/sclavo.png';
+
+  // New logos batch 2
+  if (normalized.includes('inpeco')) return '/images/partners/inpeco.png';
+  if (normalized.includes('protiviti')) return '/images/partners/protiviti.png';
+  if (normalized.includes('coris')) return '/images/partners/coris.png';
+  if (normalized.includes('g-factor')) return '/images/partners/g-factor.png';
+  if (normalized.includes('comonext')) return '/images/partners/comonext.png';
   
   return null;
 };
