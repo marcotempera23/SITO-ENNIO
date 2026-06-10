@@ -62,7 +62,12 @@ const getLogoPath = (orgName: string) => {
   if (normalized.includes('utopia')) return '/images/partners/utopia.png';
   if (normalized.includes('sofinnova')) return '/images/partners/sofinnova.png';
   if (normalized.includes('cascade')) return '/images/partners/cascade.png';
-  if (normalized.includes('texas a&m') || normalized.includes('texas medical')) return '/images/partners/texas-am.png';
+  if (normalized.includes('texas a&m')) return '/images/partners/texas-am.png';
+
+  // New logos batch 5
+  if (normalized.includes('texas medical') || normalized.includes('tmc')) return '/images/partners/tmc.png';
+  if (normalized.includes('president')) return '/images/partners/presidential.png';
+  if (normalized.includes('ministero')) return '/images/partners/ministero-salute.png';
   
   return null;
 };
