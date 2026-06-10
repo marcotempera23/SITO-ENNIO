@@ -56,6 +56,13 @@ const getLogoPath = (orgName: string) => {
   if (normalized.includes('technoscience')) return '/images/partners/technoscience.png';
   if (normalized.includes('panakes')) return '/images/partners/panakes.png';
   if (normalized.includes('principia')) return '/images/partners/principia.png';
+
+  // New logos batch 4
+  if (normalized.includes('auroratt') || normalized.includes('aurora tt') || normalized.includes('aurora-tt')) return '/images/partners/auroratt.png';
+  if (normalized.includes('utopia')) return '/images/partners/utopia.png';
+  if (normalized.includes('sofinnova')) return '/images/partners/sofinnova.png';
+  if (normalized.includes('cascade')) return '/images/partners/cascade.png';
+  if (normalized.includes('texas a&m') || normalized.includes('texas medical')) return '/images/partners/texas-am.png';
   
   return null;
 };
