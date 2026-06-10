@@ -49,6 +49,13 @@ const getLogoPath = (orgName: string) => {
   if (normalized.includes('coris')) return '/images/partners/coris.png';
   if (normalized.includes('g-factor')) return '/images/partners/g-factor.png';
   if (normalized.includes('comonext')) return '/images/partners/comonext.png';
+
+  // New logos batch 3
+  if (normalized.includes('thd')) return '/images/partners/thd.png';
+  if (normalized.includes('eos')) return '/images/partners/eos.png';
+  if (normalized.includes('technoscience')) return '/images/partners/technoscience.png';
+  if (normalized.includes('panakes')) return '/images/partners/panakes.png';
+  if (normalized.includes('principia')) return '/images/partners/principia.png';
   
   return null;
 };
