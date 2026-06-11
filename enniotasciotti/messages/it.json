@@ -641,13 +641,14 @@
     "citations": "citazioni",
     "macroAreasTitle": "Le 5 Macro-Aree di Ricerca",
     "macroAreasPubTitle": "Le 10 pubblicazioni più citate",
+    "macroAreasPubTitleLongevity": "Le 10 pubblicazioni chiave del settore",
     "macroAreas": [
       {
         "id": "drugDelivery",
         "number": "01",
         "title": "Drug Delivery",
         "subtitle": "Nanomedicina e Trasporto Mirato di Farmaci",
-        "body": "La ricerca del Prof. Tasciotti ha esplorato in modo estensivo l'utilizzo di micro, nano e biomateriali per il rilascio dei farmaci. Integrando la nanotecnologia con la biologia cellulare, ha sviluppato strumenti medici che operano in armonia con le leggi naturali, concentrandosi sulla progettazione di piattaforme impiantabili e iniettabili per superare le barriere biologiche, mirare all'infiammazione, somministrare farmaci per il trattamento dei tumori e modulare le risposte immunitarie. La creazione del 'Multi Stage Vector', pubblicato come cover story su Nature Nanotechnology nel 2008, ha segnato l'inizio dei nanosistemi per la chemioterapia mirata ed è stata riconosciuta come una delle 'Five big ideas for nanotechnology' da Nature Medicine nel 2009. Il Prof. Tasciotti ha inoltre introdotto l'uso dei principi della biomimetica per ingegnerizzare sistemi bioispirati in grado di eludere la clearance reticolo-endoteliale, colpire i vasi infiammati e migliorare l'accumulo terapeutico nel citoplasma cellulare. Tra i contributi di maggior rilievo figurano il Leuko-Like Vector, i nanoneedles porosi e le nanovescicole simil-esosomi.",
+        "body": "La ricerca del Prof. Tasciotti ha fatto da pioniere nello sviluppo di sistemi di rilascio di farmaci basati su micro, nano e biomateriali, progettati per superare le barriere biologiche e raggiungere un targeting terapeutico preciso. Integrando la nanotecnologia con la biologia cellulare e vascolare, ha introdotto piattaforme di rilascio multistadio e biomimetiche capaci di mirare a tessuti infiammati, tumori e cellule immunitarie eludendo la clearance reticolo-endoteliale. La creazione del Multi-Stage Vector (Nature Nanotechnology, 2008) ha stabilito un nuovo paradigma nella chemioterapia mirata e ha avviato il campo dei sistemi di rilascio multistadio, portando ad ampi studi successivi e alla traduzione clinica in corso. I contributi successivi includono vettori biomimetici leucocitari, nanoneedles porosi e vescicole ispirate agli esosomi, che complessivamente hanno fatto progredire il rilascio intracellulare, il trasporto endoteliale e la nanomedicina immuno-consapevole. Gli sforzi attuali si concentrano su sistemi di rilascio universali per le malattie guidate dall'infiammazione.",
         "publications": [
           {
             "rank": 1,
@@ -674,7 +675,7 @@
             "title": "The impact of nanoparticle protein corona on cytotoxicity, immunotoxicity and target drug delivery.",
             "authors": "C. Corbo et al.",
             "citations": 810,
-            "doi": "10.1038/nnano.2013.253"
+            "doi": "10.2217/nnm.15.188"
           },
           {
             "rank": 4,
@@ -683,7 +684,7 @@
             "title": "Toward nanotechnology-enabled approaches against the COVID-19 pandemic.",
             "authors": "C. Weiss et al.",
             "citations": 663,
-            "doi": ""
+            "doi": "10.1021/acsnano.0c03697"
           },
           {
             "rank": 5,
@@ -692,7 +693,7 @@
             "title": "Biodegradable silicon nanoneedles delivering nucleic acids intracellularly induce localized in vivo neovascularization.",
             "authors": "C. Chiappini et al.",
             "citations": 503,
-            "doi": ""
+            "doi": "10.1038/nmat4249"
           },
           {
             "rank": 6,
@@ -710,7 +711,7 @@
             "title": "Cell membrane coating integrity affects the internalization mechanism of biomimetic nanoparticles.",
             "authors": "L. Liu et al.",
             "citations": 452,
-            "doi": "10.1038/s41467-021-25972-2"
+            "doi": "10.1038/s41467-021-26052-x"
           },
           {
             "rank": 8,
@@ -719,7 +720,7 @@
             "title": "Enabling individualized therapy through nanotechnology.",
             "authors": "J.H. Sakamoto et al.",
             "citations": 316,
-            "doi": ""
+            "doi": "10.1016/j.phrs.2009.12.011"
           },
           {
             "rank": 9,
@@ -728,7 +729,7 @@
             "title": "Bio-inspired engineering of cell-and virus-like nanoparticles for drug delivery.",
             "authors": "A. Parodi et al.",
             "citations": 298,
-            "doi": ""
+            "doi": "10.1016/j.biomaterials.2017.09.020"
           },
           {
             "rank": 10,
@@ -744,9 +745,9 @@
       {
         "id": "regenerative",
         "number": "02",
-        "title": "Medicina Rigenerativa",
+        "title": "Medicina Rigenerativa e Ingegneria dei Tessuti",
         "subtitle": "Ingegneria dei Tessuti e Scaffold Biomimetici",
-        "body": "Il Prof. Tasciotti ha contribuito alla comprensione del potenziale di guarigione intrinseco del corpo umano, massimizzandolo tramite l'ingegnerizzazione di scaffold biomimetici capaci di suscitare risposte cellulari e tissutali mirate. Questi materiali sono realizzati per emulare la naturale risposta dei tessuti durante i processi di guarigione fisiologica. Le sue indagini hanno dimostrato che le cellule immunitarie e staminali mostrano risposte distinte ai materiali impiantati in base alla loro composizione, struttura e caratteristiche superficiali. Il suo lavoro nell'ingegneria dei tessuti ha portato allo sviluppo di scaffold e membrane che imitano il tessuto nativo su scala nano e micro, conferendo ai costrutti sintetici le proprietà funzionali dei tessuti naturali. Il focus primario in questo ambito risiede nell'avanzamento dei biomateriali traslazionali per l'ingegneria muscolo-scheletrica, mimando la matrice extracellulare di tessuti multipli per facilitare la rigenerazione di tessuti compositi.",
+        "body": "Il Prof. Tasciotti ha contribuito alla medicina rigenerativa attraverso la progettazione di scaffold biomimetici che ricapitolano le caratteristiche strutturali, meccaniche e biochimiche dei tessuti nativi. Il suo lavoro ha dimostrato che le risposte delle cellule immunitarie e staminali ai materiali impiantati sono fortemente dettate dalla composizione, dall'architettura e dalle proprietà superficiali del materiale. Ciò ha portato allo sviluppo di scaffold nano e micro-strutturati che istruiscono i processi di riparazione endogeni piuttosto che affidarsi alla manipolazione cellulare ex vivo. Uno dei focus principali della sua ricerca traslazionale è la rigenerazione del tessuto muscolo-scheletrico, dove ha fatto progredire biomateriali compositi in grado di mimare le matrici extracellulari di cartilagine, osso, tendini e legamenti per consentire la rigenerazione coordinata di sistemi complessi e multi-tissutali.",
         "publications": [
           {
             "rank": 1,
@@ -755,7 +756,7 @@
             "title": "Evaluation of the osteoinductive potential of a bio-inspired scaffold mimicking the osteogenic niche for bone augmentation.",
             "authors": "S. Minardi et al.",
             "citations": 208,
-            "doi": ""
+            "doi": "10.1016/j.biomaterials.2015.05.011"
           },
           {
             "rank": 2,
@@ -764,7 +765,7 @@
             "title": "Chondroitin sulfate immobilized on a biomimetic scaffold modulates inflammation while driving chondrogenesis.",
             "authors": "B. Corradetti et al.",
             "citations": 107,
-            "doi": ""
+            "doi": "10.5966/sctm.2015-0233"
           },
           {
             "rank": 3,
@@ -773,7 +774,7 @@
             "title": "Mesoporous silicon‐PLGA composite microspheres for the double controlled release of biomolecules for orthopedic tissue engineering.",
             "authors": "D. Fan et al.",
             "citations": 105,
-            "doi": ""
+            "doi": "10.1002/adfm.201290010"
           },
           {
             "rank": 4,
@@ -782,7 +783,7 @@
             "title": "Electrospun anti-inflammatory patch loaded with essential oils for wound healing.",
             "authors": "S. Garcia-Salinas et al.",
             "citations": 100,
-            "doi": ""
+            "doi": "10.1016/j.ijpharm.2020.119067"
           },
           {
             "rank": 5,
@@ -791,7 +792,7 @@
             "title": "Investigating the mechanobiology of cancer cell–ECM interaction through collagen-based 3D scaffolds.",
             "authors": "C. Liverani et al.",
             "citations": 80,
-            "doi": ""
+            "doi": "10.1007/s12195-017-0483-x"
           },
           {
             "rank": 6,
@@ -800,7 +801,7 @@
             "title": "Biomimetic collagen/elastin meshes for ventral hernia repair in a rat model.",
             "authors": "S. Minardi et al.",
             "citations": 75,
-            "doi": ""
+            "doi": "https://doi.org/10.1016/j.actbio.2016.11.032"
           },
           {
             "rank": 7,
@@ -809,7 +810,7 @@
             "title": "Nanocomposite hydrogels as platform for cells growth, proliferation, and chemotaxis.",
             "authors": "F. Fiorini et al.",
             "citations": 73,
-            "doi": ""
+            "doi": "https://doi.org/10.1002/smll.201601017"
           },
           {
             "rank": 8,
@@ -818,7 +819,7 @@
             "title": "Biomimetic hydroxyapatite/collagen composite drives bone niche recapitulation in a rabbit orthotopic model.",
             "authors": "S. Minardi et al.",
             "citations": 58,
-            "doi": ""
+            "doi": "https://doi.org/10.1016/j.mtbio.2019.100005"
           },
           {
             "rank": 9,
@@ -827,7 +828,7 @@
             "title": "PLGA-Mesoporous Silicon Microspheres for the in Vivo Controlled Temporospatial Delivery of Proteins.",
             "authors": "S. Minardi et al.",
             "citations": 56,
-            "doi": ""
+            "doi": "https://doi.org/10.1021/acsami.5b03464"
           },
           {
             "rank": 10,
@@ -836,7 +837,7 @@
             "title": "Multiscale patterning of a biomimetic scaffold integrated with composite microspheres.",
             "authors": "S. Minardi et al.",
             "citations": 53,
-            "doi": ""
+            "doi": "https://doi.org/10.1002/smll.201401211"
           }
         ]
       },
@@ -845,7 +846,7 @@
         "number": "03",
         "title": "Biologia delle Cellule Immunitarie e Staminali",
         "subtitle": "Immunomodulazione",
-        "body": "I contributi in quest'area si concentrano sulla risposta delle cellule staminali e immunitarie ai biomateriali. La ricerca ha dimostrato la fattibilità di influenzare il destino cellulare direttamente all'interno del corpo, eliminando la necessità di espansione o manipolazione ex vivo. Il team diretto dal Prof. Tasciotti è stato tra i primi a sviluppare tecnologie che sfruttano l'attività delle cellule immunitarie come 'primi soccorritori' in seguito a una lesione, con l'obiettivo di reclutare cellule staminali e facilitare la neoangiogenesi. Decifrando la cascata di eventi infiammatori innescata dal sistema immunitario, le ricerche hanno mostrato che l'attivazione dei macrofagi M1 può portare a disfunzioni e fibrosi, mentre il passaggio al fenotipo M2 è associato a una guarigione accelerata dei tessuti, in grado di prevenire la formazione di cicatrici. Per migliorare la biocompatibilità degli impianti, sono stati sviluppati molteplici biomateriali 'immuno-istruttivi' capaci di modulare la risposta immunitaria.",
+        "body": "La sua ricerca ha aiutato a definire come le cellule immunitarie e staminali interagiscono con i biomateriali in vivo, stabilendo l'immunomodulazione come determinante centrale degli esiti rigenerativi. È stato dimostrato che i biomateriali possono influenzare direttamente il destino cellulare e la rigenerazione dei tessuti modellando il microambiente infiammatorio locale, eliminando la necessità di trapianti cellulari o bioreattori. In particolare, ha chiarito il ruolo della polarizzazione dei macrofagi, dimostrando che le risposte a dominanza M1 guidano la fibrosi e il fallimento dell'impianto, mentre le risposte orientate verso M2 promuovono l'angiogenesi e la riparazione funzionale dei tessuti. Queste scoperte hanno permesso lo sviluppo di biomateriali immuno-istruttivi che guidano attivamente le risposte dell'ospite per migliorare la guarigione e l'integrazione dell'impianto.",
         "publications": [
           {
             "rank": 1,
@@ -854,7 +855,7 @@
             "title": "Rapamycin-loaded biomimetic nanoparticles reverse vascular inflammation.",
             "authors": "C. Boada et al.",
             "citations": 195,
-            "doi": "10.1016/j.jconrel.2019.06.012"
+            "doi": "10.1161/CIRCRESAHA.119.315185"
           },
           {
             "rank": 2,
@@ -863,7 +864,7 @@
             "title": "Biomimetic tissue engineering: tuning the immune and inflammatory response to implantable biomaterials.",
             "authors": "F. Taraballi et al.",
             "citations": 155,
-            "doi": ""
+            "doi": "10.1002/adhm.201800490"
           },
           {
             "rank": 3,
@@ -872,7 +873,7 @@
             "title": "Cell membrane-based biomimetic nanoparticles and the immune system: immunomodulatory interactions to therapeutic applications.",
             "authors": "M. Sushnitha et al.",
             "citations": 137,
-            "doi": ""
+            "doi": "10.3389/fbioe.2020.00627"
           },
           {
             "rank": 4,
@@ -881,7 +882,7 @@
             "title": "Hyaluronic acid coatings as a simple and efficient approach to improve MSC homing toward the site of inflammation.",
             "authors": "B. Corradetti et al.",
             "citations": 103,
-            "doi": ""
+            "doi": "https://doi.org/10.1038/s41598-017-08687-3"
           },
           {
             "rank": 5,
@@ -899,7 +900,7 @@
             "title": "Engineered biomimetic nanovesicles show intrinsic anti-inflammatory properties for the treatment of inflammatory bowel diseases.",
             "authors": "C. Corbo et al.",
             "citations": 92,
-            "doi": ""
+            "doi": "https://doi.org/10.1039/C7NR04734G"
           },
           {
             "rank": 7,
@@ -908,7 +909,7 @@
             "title": "IL-4 release from a biomimetic scaffold for the temporally controlled modulation of macrophage response.",
             "authors": "S. Minardi et al.",
             "citations": 80,
-            "doi": ""
+            "doi": "https://doi.org/10.1007/s10439-016-1580-z"
           },
           {
             "rank": 8,
@@ -917,7 +918,7 @@
             "title": "Macrophage-derived nanovesicles exert intrinsic anti-inflammatory properties and prolong survival in sepsis through a direct interaction with macrophages.",
             "authors": "R. Molinaro et al.",
             "citations": 67,
-            "doi": ""
+            "doi": "https://doi.org/10.1039/c9nr04253a"
           },
           {
             "rank": 9,
@@ -926,7 +927,7 @@
             "title": "Enhanced osteogenic potential of mesenchymal stem cells from cortical bone: a comparative analysis.",
             "authors": "J.S. Fernandez-Moure et al.",
             "citations": 66,
-            "doi": ""
+            "doi": "https://doi.org/10.1186/s13287-015-0193-z"
           },
           {
             "rank": 10,
@@ -935,16 +936,16 @@
             "title": "Cell source determines the immunological impact of biomimetic nanoparticles.",
             "authors": "M. Evangelopoulos et al.",
             "citations": 65,
-            "doi": ""
+            "doi": "https://doi.org/10.1016/j.biomaterials.2015.11.054"
           }
         ]
       },
       {
         "id": "translational",
         "number": "04",
-        "title": "Ricerca Traslazionale",
+        "title": "Ricerca Traslazionale e Applicazioni Cliniche",
         "subtitle": "Applicazioni Cliniche e Diagnostica",
-        "body": "Espandendo l'uso degli approcci biomimetici verso le sfide cliniche irrisolte, il Prof. Tasciotti ha avviato un programma focalizzato sull'utilizzo del plasma ricco di piastrine (PRP) come biomateriale in medicina rigenerativa. Le indagini hanno rivelato che questo derivato ematico migliora la neovascolarizzazione precoce e la deposizione dei tessuti, modulando al contempo le risposte immunitarie e mitigando la degradazione delle matrici biologiche. Sono state esplorate matrici rigenerative innovative, tra cui il tessuto polmonare riadattato che, a seguito di un processo di decellularizzazione, offre segnali biochimici e architettonici alle cellule native. Inoltre, ha ricoperto un ruolo centrale nel progresso di nuove tecniche di imaging, come l'elastografia a ultrasuoni, per elucidare i meccanismi progressivi coinvolti nella guarigione in vivo dei tessuti duri e molli.",
+        "body": "La sua ricerca traslazionale applica i principi biomimetici ai bisogni clinici insoddisfatti in chirurgia, diagnostica e riparazione dei tessuti. Ha avviato e guidato studi che stabiliscono il plasma ricco di piastrine come biomateriale rigenerativo con funzioni angiogeniche, immunomodulatorie e di preservazione della matrice. Ha inoltre contribuito allo sviluppo di matrici rigenerative avanzate derivate da tessuti decellularizzati, inclusi scaffold a base polmonare, che forniscono segnali architettonici e biochimici nativi per migliorare la cellularizzazione e la vascolarizzazione. Parallelamente, ha fatto progredire approcci di imaging non invasivi, come l'elastografia a ultrasuoni, per monitorare le dinamiche di guarigione dei tessuti duri e molli, supportando il processo decisionale clinico e la valutazione degli esiti.",
         "publications": [
           {
             "rank": 1,
@@ -953,7 +954,7 @@
             "title": "Loss of p53 drives neuron reprogramming in head and neck cancer.",
             "authors": "M. Amit et al.",
             "citations": 472,
-            "doi": ""
+            "doi": "10.1038/s41586-020-1996-3"
           },
           {
             "rank": 2,
@@ -962,7 +963,7 @@
             "title": "Adult and umbilical cord blood-derived platelet-rich plasma for mesenchymal stem cell proliferation, chemotaxis, and cryo-preservation.",
             "authors": "M.B. Murphy et al.",
             "citations": 228,
-            "doi": ""
+            "doi": "10.1016/j.biomaterials.2012.04.007"
           },
           {
             "rank": 3,
@@ -971,7 +972,7 @@
             "title": "Biomimetic nanoparticles with enhanced affinity towards activated endothelium as versatile tools for theranostic drug delivery.",
             "authors": "J.O. Martinez et al.",
             "citations": 123,
-            "doi": ""
+            "doi": "10.7150/thno.22078"
           },
           {
             "rank": 4,
@@ -980,7 +981,7 @@
             "title": "Platelet-rich plasma: a biomimetic approach to enhancement of surgical wound healing.",
             "authors": "J.S. Fernandez-Moure et al.",
             "citations": 113,
-            "doi": ""
+            "doi": "10.1016/j.jss.2016.08.063"
           },
           {
             "rank": 5,
@@ -989,7 +990,7 @@
             "title": "A biomimetic 3D model of hypoxia-driven cancer progression.",
             "authors": "C. Liverani et al.",
             "citations": 104,
-            "doi": ""
+            "doi": "https://doi.org/10.1038/s41598-019-48701-4"
           },
           {
             "rank": 6,
@@ -998,7 +999,7 @@
             "title": "Nanodevices in diagnostics.",
             "authors": "Y. Hu et al.",
             "citations": 103,
-            "doi": ""
+            "doi": "https://doi.org/10.1002/wnan.82"
           },
           {
             "rank": 7,
@@ -1007,7 +1008,7 @@
             "title": "Non-invasive imaging of Young's modulus and Poisson's ratio in cancers in vivo.",
             "authors": "M.T. Islam et al.",
             "citations": 102,
-            "doi": ""
+            "doi": "https://doi.org/10.1038/s41598-020-64162-6"
           },
           {
             "rank": 8,
@@ -1016,7 +1017,7 @@
             "title": "Mesoporous silica chips for selective enrichment and stabilization of low molecular weight proteome.",
             "authors": "A. Bouamrani et al.",
             "citations": 89,
-            "doi": ""
+            "doi": "https://doi.org/10.1002/pmic.200900346"
           },
           {
             "rank": 9,
@@ -1025,7 +1026,7 @@
             "title": "In Vivo Imaging Shows Abnormal Function of Vascular Endothelial Growth Factor-Induced Vasculature.",
             "authors": "S. Zacchigna et al.",
             "citations": 86,
-            "doi": ""
+            "doi": "https://doi.org/10.1089/hum.2006.162"
           },
           {
             "rank": 10,
@@ -1034,17 +1035,108 @@
             "title": "Near-infrared imaging method for the in vivo assessment of the biodistribution of nanoporous silicon particles.",
             "authors": "E. Tasciotti et al.",
             "citations": 74,
-            "doi": ""
+            "doi": "10.2310/7290.2011.00011s1"
           }
         ]
       },
       {
         "id": "longevity",
         "number": "",
-        "title": "Longevity",
+        "title": "Longevità e Invecchiamento Sano",
         "subtitle": "Prevenzione e Medicina della Longevità in salute",
-        "body": "",
-        "publications": []
+        "body": "La ricerca del Prof. Tasciotti nel campo della longevità e dell'invecchiamento sano affronta l'invecchiamento come un processo multifattoriale biologico e dipendente dallo stile di vita, che determina la salute funzionale nel corso della vita. Al centro di questo lavoro vi è la convinzione che la qualità della vita e la resilienza, piuttosto che il semplice prolungamento della durata della vita, debbano essere gli obiettivi centrali della ricerca sull'invecchiamento e delle strategie di salute pubblica. In qualità di Direttore dello Human Longevity Program presso l'IRCCS San Raffaele, guida una ricerca multidisciplinare che indaga gli aspetti molecolari, cellulari e ambientali dell'invecchiamento, con l'obiettivo di identificare meccanismi biologici e interventi praticabili per preservare la funzione dei tessuti, la resilienza degli organi e la vitalità cognitiva. Questo programma integra medicina rigenerativa, nanotecnologia, scoperta di biomarcatori e scienza degli stili di vita per affrontare il declino legato all'età in un quadro rilevante a livello traslazionale.",
+        "publications": [
+          {
+            "rank": 1,
+            "journal": "Advanced Science",
+            "year": 2021,
+            "title": "Humanized Biomimetic Nanovesicles for Neuron Targeting.",
+            "authors": "A. Zinger et al.",
+            "citations": 39,
+            "doi": "10.1002/advs.202101437"
+          },
+          {
+            "rank": 2,
+            "journal": "Genes",
+            "year": 2021,
+            "title": "Unraveling the Balance between Genes, Microbes, Lifestyle and the Environment to Improve Healthy Reproduction.",
+            "authors": "V. D'Argenio et al.",
+            "citations": 21,
+            "doi": "10.3390/genes12040605"
+          },
+          {
+            "rank": 3,
+            "journal": "Frontiers in Immunology",
+            "year": 2024,
+            "title": "Navigating the nano-bio immune interface: advancements and challenges in CNS nanotherapeutics.",
+            "authors": "C. Moulton et al.",
+            "citations": 9,
+            "doi": "10.3389/fimmu.2024.1447567"
+          },
+          {
+            "rank": 4,
+            "journal": "Nanomaterials",
+            "year": 2025,
+            "title": "Nano- and Microplastics in the Brain: An Emerging Threat to Neural Health.",
+            "authors": "A. Baroni et al.",
+            "citations": 30,
+            "doi": "10.3390/nano15171361"
+          },
+          {
+            "rank": 5,
+            "journal": "Journal of Xenobiotics",
+            "year": 2026,
+            "title": "Micro- and Nanoplastics Exposure Across the Lifespan: One Health Implications for Aging and Longevity.",
+            "authors": "C. Moulton et al.",
+            "citations": 2,
+            "doi": "10.3390/jox16020052"
+          },
+          {
+            "rank": 6,
+            "journal": "Pharmacological Research",
+            "year": 2026,
+            "title": "Therapeutic use of cannabinoids in age-related pain: Current evidence and clinical perspectives.",
+            "authors": "S. Pulone et al.",
+            "citations": 1,
+            "doi": "10.1016/j.phrs.2026.108130"
+          },
+          {
+            "rank": 7,
+            "journal": "Mechanisms of Ageing and Development",
+            "year": 2026,
+            "title": "The need to increase support for healthy ageing and longevity research in the EU by establishing a Coordination and Support Programme on Healthy Ageing and Longevity.",
+            "authors": "",
+            "citations": 0,
+            "doi": "10.1016/j.mad.2026.112187"
+          },
+          {
+            "rank": 8,
+            "journal": "Healthy Ageing and Longevity (Springer)",
+            "year": 2026,
+            "title": "The Role of Longevity Medicine in Reforming Primary Healthcare.",
+            "authors": "N. Invidia et al.",
+            "citations": 0,
+            "doi": "https://doi.org/10.1007/978-3-032-20006-8_4"
+          },
+          {
+            "rank": 9,
+            "journal": "Molecular Brain",
+            "year": 2019,
+            "title": "Helix-A peptide prevents gp120-mediated neuronal loss.",
+            "authors": "V. Avdoshina et al.",
+            "citations": 8,
+            "doi": "https://doi.org/10.1186/s13041-019-0482-z"
+          },
+          {
+            "rank": 10,
+            "journal": "Journal of Nanomedicine",
+            "year": 2017,
+            "title": "Mesoporous silica nanoparticles trigger mitophagy in endothelial cells and perturb neuronal network activity in a size- and time-dependent manner.",
+            "authors": "E. Cazzaniga et al.",
+            "citations": 67,
+            "doi": "https://doi.org/10.2147/ijn.s127663"
+          }
+        ]
       }
     ],
     "publications": {

@@ -4,6 +4,12 @@ import { SectionHeading } from '@/components/shared/section-heading';
 import { KpiCounter } from '@/components/shared/kpi-counter';
 import { buildMetadata } from '@/lib/seo';
 
+function doiToUrl(doi: string): string {
+  if (!doi) return '';
+  if (doi.startsWith('http')) return doi;
+  return `https://doi.org/${doi}`;
+}
+
 interface Publication {
   rank: number;
   journal: string;
@@ -95,43 +101,73 @@ export default async function SciencePage({ params }: PageProps) {
                 {area.publications && area.publications.length > 0 && (
                   <div>
                     <h4 className="font-mono text-step--1 text-[var(--color-text)] uppercase tracking-widest mb-6 pb-3 border-b border-[var(--color-border)]">
-                      {t('macroAreasPubTitle')}
+                      {area.id === 'longevity' ? t('macroAreasPubTitleLongevity') : t('macroAreasPubTitle')}
                     </h4>
                     <ol className="space-y-0 divide-y divide-[var(--color-border)]">
-                      {area.publications.map((pub) => (
-                        <li
-                          key={pub.rank}
-                          className="py-4 grid grid-cols-[1fr_auto] gap-x-4 items-start group"
-                        >
-                          {/* Content */}
-                          <div className="min-w-0">
-                            <p className="text-step--1 font-medium text-[var(--color-text)] leading-snug">
-                              {pub.title}
-                            </p>
-                            <p className="mt-1 text-step--2 text-[var(--color-text-muted)]">
-                              <span className="font-medium text-[var(--color-text)]">{pub.journal}</span>
-                              {' '}·{' '}
-                              {pub.year}
-                              {' '}·{' '}
-                              {pub.authors}
-                            </p>
-                          </div>
+                      {area.publications.map((pub) => {
+                        const url = doiToUrl(pub.doi);
+                        const Inner = (
+                          <>
+                            {/* Content */}
+                            <div className="min-w-0">
+                              <p className="text-step--1 font-medium text-[var(--color-text)] leading-snug group-hover:text-[var(--color-accent)] transition-colors duration-200">
+                                {pub.title}
+                              </p>
+                              <p className="mt-1 text-step--2 text-[var(--color-text-muted)]">
+                                <span className="font-medium text-[var(--color-text)]">{pub.journal}</span>
+                                {' '}·{' '}
+                                {pub.year}
+                                {' '}·{' '}
+                                {pub.authors}
+                              </p>
+                            </div>
 
-                          {/* Citations badge */}
-                          <div className="flex flex-col items-end gap-0.5 pt-0.5 shrink-0">
-                            <span className="font-mono text-step-0 font-semibold text-[var(--color-text)] tabular-nums">
-                              {pub.citations.toLocaleString()}
-                            </span>
-                            <span className="font-mono text-step--2 text-[var(--color-text-muted)] whitespace-nowrap">
-                              {t('citations')}
-                            </span>
-                          </div>
-                        </li>
-                      ))}
+                            {/* Citations badge */}
+                            <div className="flex flex-col items-end gap-0.5 pt-0.5 shrink-0">
+                              {pub.citations > 0 && (
+                                <>
+                                  <span className="font-mono text-step-0 font-semibold text-[var(--color-text)] tabular-nums">
+                                    {pub.citations.toLocaleString()}
+                                  </span>
+                                  <span className="font-mono text-step--2 text-[var(--color-text-muted)] whitespace-nowrap">
+                                    {t('citations')}
+                                  </span>
+                                </>
+                              )}
+                              {url && (
+                                <span className="font-mono text-step--2 text-[var(--color-accent)] opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap mt-1">
+                                  ↗ DOI
+                                </span>
+                              )}
+                            </div>
+                          </>
+                        );
+
+                        return url ? (
+                          <li key={pub.rank}>
+                            <a
+                              href={url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="py-4 grid grid-cols-[1fr_auto] gap-x-4 items-start group cursor-pointer block"
+                            >
+                              {Inner}
+                            </a>
+                          </li>
+                        ) : (
+                          <li
+                            key={pub.rank}
+                            className="py-4 grid grid-cols-[1fr_auto] gap-x-4 items-start group"
+                          >
+                            {Inner}
+                          </li>
+                        );
+                      })}
                     </ol>
                   </div>
                 )}
               </section>
+
             ))}
           </div>
         </div>

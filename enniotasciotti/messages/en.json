@@ -641,6 +641,7 @@
     "citations": "citations",
     "macroAreasTitle": "5 Research Areas",
     "macroAreasPubTitle": "Top 10 most cited publications",
+    "macroAreasPubTitleLongevity": "Top 10 key publications in the field",
     "macroAreas": [
       {
         "id": "drugDelivery",
