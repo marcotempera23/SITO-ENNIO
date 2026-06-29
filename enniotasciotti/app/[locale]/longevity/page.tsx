@@ -17,7 +17,7 @@ export default async function LongevityPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'longevity' });
 
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-20 sm:pt-28 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl px-6">
         <LongevityClient />
       </div>

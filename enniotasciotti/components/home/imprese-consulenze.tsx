@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { DragMarquee } from '@/components/ui/drag-marquee';
 
 const EASE = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number];
 
@@ -66,44 +67,45 @@ export function ImpreseConsulenzeTeaser() {
                     </p>
                 </div>
 
-                {/* ── Infinite logo marquee ── */}
-                <div className="imprese-marquee-outer relative w-full overflow-hidden">
-                    <div className="imprese-marquee-track flex w-max gap-6 py-2">
-                        {ITEMS.map((co, i) => (
-                            <a
-                                key={i}
-                                href={co.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={co.name}
-                                className="group shrink-0 relative flex items-center justify-center w-52 h-28 border border-[var(--color-border)] bg-white overflow-hidden transition-all duration-300 hover:border-[var(--color-accent)] hover:shadow-lg"
-                                style={{ '--brand-color': co.color } as React.CSSProperties}
-                            >
-                                {co.image ? (
-                                    <Image
-                                        src={co.image}
-                                        alt={co.name}
-                                        fill
-                                        className="object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-400"
-                                        sizes="208px"
-                                    />
-                                ) : (
-                                    <span
-                                        className="imprese-name font-sans transition-all duration-500 text-[var(--color-text-muted)]"
-                                        style={{
-                                            fontFamily: co.font === 'serif' ? 'var(--font-display)' : 'var(--font-sans)',
-                                            fontWeight: co.weight,
-                                            letterSpacing: co.letter ?? '0',
-                                            fontSize: 'clamp(1rem, 1.4vw, 1.3rem)',
-                                        }}
-                                    >
-                                        {co.name}
-                                    </span>
-                                )}
-                            </a>
-                        ))}
-                    </div>
-                </div>
+                {/* ── Infinite logo marquee with drag/swipe ── */}
+                <DragMarquee
+                    duration={45}
+                    className="[mask-image:linear-gradient(to_right,transparent_0%,black_6%,black_94%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_6%,black_94%,transparent_100%)]"
+                >
+                    {ITEMS.map((co, i) => (
+                        <a
+                            key={i}
+                            href={co.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={co.name}
+                            className="group shrink-0 relative flex items-center justify-center w-40 sm:w-52 h-24 sm:h-28 border border-[var(--color-border)] bg-white overflow-hidden transition-all duration-300 hover:border-[var(--color-accent)] hover:shadow-lg"
+                            style={{ '--brand-color': co.color } as React.CSSProperties}
+                        >
+                            {co.image ? (
+                                <Image
+                                    src={co.image}
+                                    alt={co.name}
+                                    fill
+                                    className="object-contain p-4 grayscale dark:invert dark:opacity-70 group-hover:grayscale-0 dark:group-hover:invert-0 dark:group-hover:opacity-100 transition-all duration-400"
+                                    sizes="(max-width: 640px) 160px, 208px"
+                                />
+                            ) : (
+                                <span
+                                    className="imprese-name font-sans transition-all duration-500 text-[var(--color-text-muted)]"
+                                    style={{
+                                        fontFamily: co.font === 'serif' ? 'var(--font-display)' : 'var(--font-sans)',
+                                        fontWeight: co.weight,
+                                        letterSpacing: co.letter ?? '0',
+                                        fontSize: 'clamp(1rem, 1.4vw, 1.3rem)',
+                                    }}
+                                >
+                                    {co.name}
+                                </span>
+                            )}
+                        </a>
+                    ))}
+                </DragMarquee>
 
                 {/* Mobile CTA */}
                 <div className="mt-6 sm:hidden text-right">
@@ -118,26 +120,8 @@ export function ImpreseConsulenzeTeaser() {
             </div>
 
             <style>{`
-        @keyframes imprese-scroll {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        .imprese-marquee-track {
-          animation: imprese-scroll 45s linear infinite;
-          will-change: transform;
-        }
-        .imprese-marquee-outer:hover .imprese-marquee-track {
-          animation-play-state: paused;
-        }
         .group:hover .imprese-name {
           color: var(--brand-color) !important;
-        }
-        .imprese-marquee-outer {
-          -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-          mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
-        }
-        @media (prefers-reduced-motion: reduce) {
-          .imprese-marquee-track { animation: none; }
         }
       `}</style>
         </motion.section>

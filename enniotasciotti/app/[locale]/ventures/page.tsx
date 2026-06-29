@@ -26,7 +26,7 @@ export default async function VenturesPage({ params }: PageProps) {
   const roles = t.raw('roles') as VentureRole[];
 
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-20 sm:pt-28 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow={t('eyebrow')}
@@ -60,7 +60,8 @@ export default async function VenturesPage({ params }: PageProps) {
           <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-10">
             {t('detailTitle')}
           </h2>
-          <div className="space-y-0 divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-lg overflow-hidden">
+          <div className="overflow-x-auto -mx-6 px-6 sm:mx-0 sm:px-0">
+            <div className="min-w-[580px] space-y-0 divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-lg overflow-hidden">
             {roles.map((item, i) => (
               <div key={i} className="grid md:grid-cols-[10rem_16rem_1fr] bg-[var(--color-surface)]">
                 <div className="px-6 py-4 border-b md:border-b-0 md:border-r border-[var(--color-border)] flex items-start pt-5">
@@ -75,11 +76,12 @@ export default async function VenturesPage({ params }: PageProps) {
                 </div>
               </div>
             ))}
+            </div>
           </div>
         </section>
 
         {/* CTA */}
-        <div className="mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <div className="mt-16 sm:mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-6 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <p className="font-display text-step-2 font-light text-[var(--color-text)]">
               {t('cta.title')}

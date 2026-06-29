@@ -35,7 +35,7 @@ export default async function PublicationsPage({ params }: PageProps) {
   const rest = publications.filter((p) => !p.highlight);
 
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-20 sm:pt-28 pb-16 sm:pb-24">
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading
           eyebrow={t('eyebrow')}

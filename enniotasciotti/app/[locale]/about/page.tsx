@@ -17,7 +17,7 @@ export default async function AboutPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-20 sm:pt-28 pb-16 sm:pb-24">
       <div className="mx-auto max-w-4xl px-6">
         <SectionHeading
           eyebrow={t('eyebrow')}

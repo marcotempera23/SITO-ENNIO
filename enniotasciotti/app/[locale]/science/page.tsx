@@ -45,7 +45,7 @@ export default async function SciencePage({ params }: PageProps) {
   const macroAreas = t.raw('macroAreas') as MacroArea[];
 
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-20 sm:pt-28 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow={t('eyebrow')}
@@ -54,7 +54,7 @@ export default async function SciencePage({ params }: PageProps) {
         />
 
         {/* KPI row */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-[var(--color-border)] py-12">
+        <div className="mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 border-y border-[var(--color-border)] py-8 sm:py-12">
           <KpiCounter value={200} suffix="+" label={t('kpi.papers')} />
           <KpiCounter value={13000} suffix="+" label={t('kpi.citations')} />
           <KpiCounter value={63} label={t('kpi.hIndex')} />

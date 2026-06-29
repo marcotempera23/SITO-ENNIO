@@ -18,7 +18,7 @@ export default async function ContactPage({ params }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'contact' });
 
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-20 sm:pt-28 pb-16 sm:pb-24">
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading
           eyebrow={t('eyebrow')}

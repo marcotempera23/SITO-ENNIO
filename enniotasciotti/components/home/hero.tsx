@@ -42,12 +42,12 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl w-full px-6 pt-28 pb-16 md:pb-0">
+      <div className="relative z-10 mx-auto max-w-7xl w-full px-6 pt-24 sm:pt-28 pb-12 md:pb-0">
         <div className="grid md:grid-cols-[1fr_420px] lg:grid-cols-[1fr_520px] items-center gap-0">
 
           {/* ── Text column ── */}
           <motion.div
-            className="md:pr-16 lg:pr-24"
+            className="md:pr-16 lg:pr-24 text-center md:text-left"
             variants={container}
             initial="hidden"
             animate="show"
@@ -80,10 +80,10 @@ export function Hero() {
               {t('subheadline')}
             </motion.p>
 
-            <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-4">
+            <motion.div variants={fadeUp} className="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
               <Link
                 href="/science"
-                className="group inline-flex h-12 items-center rounded-none border-b-2 border-[var(--color-accent)] bg-[var(--color-accent)] px-8 text-step-0 font-medium text-white transition-all duration-300 hover:bg-transparent hover:text-[var(--color-accent)]"
+                className="group inline-flex h-12 items-center rounded-none border-b-2 border-[var(--color-accent)] bg-[var(--color-accent)] px-8 text-step-0 font-medium text-white transition-all duration-300 hover:bg-transparent hover:text-[var(--color-accent)] w-full sm:w-auto justify-center"
               >
                 {t('ctaPrimary')}
                 <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -132,7 +132,7 @@ export function Hero() {
       {/* Scroll indicator */}
       <motion.div
         aria-hidden="true"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="hidden sm:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4, duration: 0.6 }}

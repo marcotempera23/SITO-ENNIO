@@ -80,7 +80,7 @@ export default async function ConsultancyPage({ params }: PageProps) {
   const roles = t.raw('roles') as ConsultingRole[];
 
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-20 sm:pt-28 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow={t('eyebrow')}
@@ -128,7 +128,8 @@ export default async function ConsultancyPage({ params }: PageProps) {
           <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-10">
             {t('detailTitle')}
           </h2>
-          <div className="space-y-0 divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-lg overflow-hidden">
+          <div className="overflow-x-auto -mx-6 px-6 sm:mx-0 sm:px-0">
+            <div className="min-w-[640px] space-y-0 divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-lg overflow-hidden">
             {roles.map((item, i) => {
               const logoPath = getLogoPath(item.org);
               return (
@@ -165,6 +166,7 @@ export default async function ConsultancyPage({ params }: PageProps) {
                 </div>
               );
             })}
+            </div>
           </div>
         </section>
 

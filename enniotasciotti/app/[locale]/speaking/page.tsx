@@ -30,7 +30,7 @@ export default async function SpeakingPage({ params }: PageProps) {
   const events = t.raw('events') as SpeakingEvent[];
 
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-20 sm:pt-28 pb-16 sm:pb-24">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow={t('eyebrow')}
@@ -53,7 +53,8 @@ export default async function SpeakingPage({ params }: PageProps) {
           <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-10">
             {t('detailTitle')}
           </h2>
-          <div className="space-y-0 divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-lg overflow-hidden">
+          <div className="overflow-x-auto -mx-6 px-6 sm:mx-0 sm:px-0">
+            <div className="min-w-[560px] space-y-0 divide-y divide-[var(--color-border)] border border-[var(--color-border)] rounded-lg overflow-hidden">
             {events.map((item, i) => (
               <div key={i} className="grid md:grid-cols-[10rem_1fr_1fr] bg-[var(--color-surface)]">
                 <div className="px-5 py-4 border-b md:border-b-0 md:border-r border-[var(--color-border)] flex items-start pt-5">
@@ -68,13 +69,14 @@ export default async function SpeakingPage({ params }: PageProps) {
                 </div>
               </div>
             ))}
+            </div>
           </div>
         </section>
 
         {/* Booking CTA */}
         <section
           aria-labelledby="booking-heading"
-          className="mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-10 max-w-2xl"
+          className="mt-16 sm:mt-24 border border-[var(--color-border)] rounded-xl bg-[var(--color-surface)] p-6 sm:p-10 max-w-2xl"
         >
           <h2
             id="booking-heading"
