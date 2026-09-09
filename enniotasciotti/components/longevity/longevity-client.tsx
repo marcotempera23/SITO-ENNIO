@@ -28,7 +28,7 @@ export function LongevityClient() {
           </p>
           <div className="space-y-4 text-step-0 text-[var(--color-text-muted)] leading-relaxed font-light text-left max-w-3xl mx-auto">
             <p>{t('introText1')}</p>
-            <p>{t('introText2')}</p>
+            {t('introText2') && <p>{t('introText2')}</p>}
           </div>
         </div>
 

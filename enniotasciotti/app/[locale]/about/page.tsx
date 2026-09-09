@@ -36,11 +36,15 @@ export default async function AboutPage({ params }: PageProps) {
               {t('bio.title')}
             </h2>
             <div className="space-y-4">
-              {[0, 1, 2].map((i) => (
-                <p key={i} className="text-step-0 leading-relaxed text-[var(--color-text-muted)]">
-                  {t(`bio.p${i + 1}`)}
-                </p>
-              ))}
+              {[0, 1, 2].map((i) => {
+                const text = t(`bio.p${i + 1}`);
+                if (!text) return null;
+                return (
+                  <p key={i} className="text-step-0 leading-relaxed text-[var(--color-text-muted)]">
+                    {text}
+                  </p>
+                );
+              })}
             </div>
           </section>
 

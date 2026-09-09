@@ -24,9 +24,7 @@ export default async function SpeakingPage({ params }: PageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'speaking' });
 
-  const outreach = t.raw('outreach') as {
-    divulgazione: { title: string; body: string };
-  };
+  const outreach = t.raw('outreach') as Record<string, { title: string; body: string }>;
   const events = t.raw('events') as SpeakingEvent[];
 
   return (
@@ -38,14 +36,18 @@ export default async function SpeakingPage({ params }: PageProps) {
           subtitle={t('subtitle')}
         />
 
-        {/* Science Communication Intro */}
-        <section className="mt-20 border-t border-[var(--color-border)] pt-16">
-          <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-6">
-            {outreach.divulgazione.title}
-          </h2>
-          <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)] max-w-4xl">
-            {outreach.divulgazione.body}
-          </p>
+        {/* Science Communication & Outreach Sections */}
+        <section className="mt-20 border-t border-[var(--color-border)] pt-16 space-y-12">
+          {Object.entries(outreach).map(([key, section]) => (
+            <div key={key}>
+              <h2 className="font-display text-step-3 font-light text-[var(--color-text)] mb-6">
+                {section.title}
+              </h2>
+              <p className="text-step-0 leading-relaxed text-[var(--color-text-muted)] max-w-4xl">
+                {section.body}
+              </p>
+            </div>
+          ))}
         </section>
 
         {/* Detailed Speaking Events Timeline */}

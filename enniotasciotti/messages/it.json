@@ -17,7 +17,7 @@
     "hero": {
       "eyebrow": "Nanomedicina · Longevità · Venture Building",
       "headline": "Trasformo la biologia in impresa. La scienza in salute.",
-      "subheadline": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
+      "subheadline": "L'innovazione nell'ecosistema globale delle Life Sciences richiede una sintesi profonda tra ingegneria dei materiali, biologia molecolare, farmacologia e dinamiche di mercato. L'obiettivo centrale è trasformare scoperte scientifiche complesse in soluzioni cliniche e industriali concrete.",
       "ctaPrimary": "Leggi la mia ricerca",
       "ctaSecondary": "Esplora la longevità"
     },
@@ -38,17 +38,17 @@
       "science": {
         "label": "Scienza",
         "kpi": "200+ pubblicazioni",
-        "desc": "Ricerca di frontiera in nanomedicina, materiali biomimetici e medicina della longevità — pubblicata su Nature Materials, Nature Nanotechnology e oltre 200 riviste peer-reviewed."
+        "desc": "Dallo sviluppo di nanovettori biomimetici agli scaffold per la rigenerazione tissutale: un approccio di ricerca rigorosamente traslazionale, concepito per colmare i bisogni clinici insoddisfatti trasferendo l'innovazione dal banco di laboratorio al paziente."
       },
       "ventures": {
         "label": "Imprese",
         "kpi": "4 ruoli da founder",
-        "desc": "Dal laboratorio al mercato: ho fondato e guidato iniziative biomedicali e biotech, collaborando come consulente scientifico con Roche, Novartis, Gilead e altri leader globali."
+        "desc": "La conversione della proprietà intellettuale in iniziative industriali. Il ruolo vitale delle startup deep-tech e del trasferimento tecnologico per trasformare le intuizioni scientifiche in tecnologie accessibili e scalabili sul mercato globale."
       },
       "longevity": {
         "label": "Longevità",
         "kpi": "H-index 63",
-        "desc": "Fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele di Roma: ricerca traslazionale per estendere la salute, non solo la vita.",
+        "desc": "Una prospettiva proattiva sull'invecchiamento basata sui principi della Medicina 4P. Interventi strutturati su nutrizione, movimento ed equilibrio neuro-emotivo per preservare la resilienza cellulare e ottimizzare l'estensione della vita in salute.",
         "title": "Medicina della longevità",
         "body": "Costruire modelli clinici e scientifici per estendere la salute attraverso prevenzione, diagnostica di precisione e medicina dei sistemi."
       }
@@ -126,9 +126,9 @@
     "metaDesc": "Professore ordinario all'Università Telematica San Raffaele Roma e fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Una carriera tra Pisa, Houston e Roma.",
     "bio": {
       "title": "Biografia",
-      "p1": "Nato a Latina il 20 agosto 1977, Ennio Tasciotti è uno scienziato e pioniere a livello internazionale nel campo della medicina biomimetica, delle nanotecnologie e della medicina rigenerativa.",
-      "p2": "Dopo essersi formato presso istituzioni d'eccellenza in Italia, ha trascorso 15 anni negli Stati Uniti scalando i vertici della ricerca biomedica presso lo Houston Methodist Hospital (Texas), dove ha fondato e diretto centri di ricerca d'avanguardia.",
-      "p3": "Attualmente dirige lo Human Longevity Program dell'IRCCS San Raffaele di Roma, unendo biologia molecolare, ingegneria e medicina per lo sviluppo di nuove terapie traslazionali e protocolli per l'invecchiamento sano."
+      "p1": "L'unione di un ineguagliabile rigore accademico con una visione fortemente orientata allo sviluppo industriale definisce la carriera del Prof. Ennio Tasciotti. Il suo percorso, radicato nell'eccellenza formativa italiana presso la Scuola Normale Superiore di Pisa, si è consolidato negli Stati Uniti attraverso la direzione di dipartimenti e la fondazione di centri di ricerca d'avanguardia presso lo Houston Methodist Hospital.",
+      "p2": "La leadership scientifica ed esecutiva esercitata in tali contesti ha permesso la creazione e la gestione di ecosistemi multidisciplinari, supportati da significativi investimenti istituzionali e governativi finalizzati allo sviluppo della medicina personalizzata, della nanotecnologia e delle terapie rigenerative avanzate. Rientrato in Italia per dirigere lo Human Longevity Program all'IRCCS San Raffaele e assumere il ruolo di Professore Ordinario, l'impatto globale della sua visione continua a essere riconosciuto dai più prestigiosi ranking accademici internazionali e da onorificenze scientifiche di primissimo livello, consolidando il suo ruolo di pioniere nelle Life Sciences.",
+      "p3": ""
     },
     "education": {
       "title": "Formazione",
@@ -575,7 +575,7 @@
         }
       ]
     },
-    "bioIntro": "Nato a Latina il 20 agosto 1977, Ennio Tasciotti è uno scienziato e pioniere a livello internazionale nel campo della medicina biomimetica, delle nanotecnologie e della medicina rigenerativa.",
+    "bioIntro": "L'unione di un ineguagliabile rigore accademico con una visione fortemente orientata allo sviluppo industriale definisce la carriera del Prof. Ennio Tasciotti. Il suo percorso, radicato nell'eccellenza formativa italiana presso la Scuola Normale Superiore di Pisa, si è consolidato negli Stati Uniti attraverso la direzione di dipartimenti e la fondazione di centri di ricerca d'avanguardia presso lo Houston Methodist Hospital.",
     "downloadCV": "Scarica il Curriculum Vitae (PDF)",
     "numbers": {
       "title": "In numeri",
@@ -600,7 +600,7 @@
     },
     "metaTitle": "Ricerca — Prof. Ennio Tasciotti",
     "metaDesc": "Nanomedicina, materiali biomimetici, medicina della longevità: tre aree di ricerca, 200+ pubblicazioni, 15 brevetti internazionali.",
-    "heroManifesto": "La mia ricerca ha unito ingegneria, biologia e medicina per superare le barriere biologiche nei tumori, nelle malattie infiammatorie e nei processi rigenerativi.",
+    "heroManifesto": "L'intero ecosistema scientifico guidato da Ennio Tasciotti risponde a un rigoroso imperativo traslazionale: applicare i principi della biomimetica per risolvere le sfide cliniche più complesse, minimizzando i tempi di transizione dalla fase di laboratorio all'applicazione sul paziente.",
     "areas": {
       "title": "Aree di ricerca",
       "nano": {
@@ -639,7 +639,7 @@
       "title": "Scoperte scientifiche"
     },
     "citations": "citazioni",
-    "macroAreasTitle": "Le 5 Macro-Aree di Ricerca",
+    "macroAreasTitle": "4 Aree di Ricerca",
     "macroAreasPubTitle": "Le 10 pubblicazioni più citate",
     "macroAreasPubTitleLongevity": "Le 10 pubblicazioni chiave del settore",
     "macroAreas": [
@@ -648,7 +648,7 @@
         "number": "01",
         "title": "Drug Delivery",
         "subtitle": "Nanomedicina e Trasporto Mirato di Farmaci",
-        "body": "La ricerca del Prof. Tasciotti ha fatto da pioniere nello sviluppo di sistemi di rilascio di farmaci basati su micro, nano e biomateriali, progettati per superare le barriere biologiche e raggiungere un targeting terapeutico preciso. Integrando la nanotecnologia con la biologia cellulare e vascolare, ha introdotto piattaforme di rilascio multistadio e biomimetiche capaci di mirare a tessuti infiammati, tumori e cellule immunitarie eludendo la clearance reticolo-endoteliale. La creazione del Multi-Stage Vector (Nature Nanotechnology, 2008) ha stabilito un nuovo paradigma nella chemioterapia mirata e ha avviato il campo dei sistemi di rilascio multistadio, portando ad ampi studi successivi e alla traduzione clinica in corso. I contributi successivi includono vettori biomimetici leucocitari, nanoneedles porosi e vescicole ispirate agli esosomi, che complessivamente hanno fatto progredire il rilascio intracellulare, il trasporto endoteliale e la nanomedicina immuno-consapevole. Gli sforzi attuali si concentrano su sistemi di rilascio universali per le malattie guidate dall'infiammazione.",
+        "body": "Lo sviluppo di piattaforme proprietarie ha permesso di superare le principali barriere biologiche, operando un de-risking delle terapie oncologiche, infiammatorie e neurologiche. L'innovazione introdotta dal Multi-Stage Vector (MSV) ha definito nuovi orizzonti per i sistemi a rilascio controllato. Successivamente, la creazione dei Leukosomes (vettori biomimetici rivestiti da membrane leucocitarie) ha permesso di eludere il sistema immunitario, favorendo l'accumulo attivo nei siti patologici. Le evoluzioni più recenti comprendono vettori derivati da membrane neuronali (Neurosomi e Astrosomi), concepiti per veicolare terapie avanzate direttamente nel Sistema Nervoso Centrale.",
         "publications": [
           {
             "rank": 1,
@@ -747,7 +747,7 @@
         "number": "02",
         "title": "Medicina Rigenerativa e Ingegneria dei Tessuti",
         "subtitle": "Ingegneria dei Tessuti e Scaffold Biomimetici",
-        "body": "Il Prof. Tasciotti ha contribuito alla medicina rigenerativa attraverso la progettazione di scaffold biomimetici che ricapitolano le caratteristiche strutturali, meccaniche e biochimiche dei tessuti nativi. Il suo lavoro ha dimostrato che le risposte delle cellule immunitarie e staminali ai materiali impiantati sono fortemente dettate dalla composizione, dall'architettura e dalle proprietà superficiali del materiale. Ciò ha portato allo sviluppo di scaffold nano e micro-strutturati che istruiscono i processi di riparazione endogeni piuttosto che affidarsi alla manipolazione cellulare ex vivo. Uno dei focus principali della sua ricerca traslazionale è la rigenerazione del tessuto muscolo-scheletrico, dove ha fatto progredire biomateriali compositi in grado di mimare le matrici extracellulari di cartilagine, osso, tendini e legamenti per consentire la rigenerazione coordinata di sistemi complessi e multi-tissutali.",
+        "body": "Allontanandosi dalle tradizionali protesi inerti, la ricerca ha guidato lo sviluppo di scaffold 3D biomimetici capaci di intercettare le necessità non soddisfatte nei settori ortopedico, traumatologico e cardiologico. L'ingegnerizzazione di matrici polimeriche arricchite con particelle porose di silicio agisce come un supporto biologico intelligente, concepito per istruire i processi di rigenerazione endogena in difetti tissutali critici, con l'obiettivo di migliorare radicalmente gli esiti chirurgici e riabilitativi.",
         "publications": [
           {
             "rank": 1,
@@ -846,7 +846,7 @@
         "number": "03",
         "title": "Biologia delle Cellule Immunitarie e Staminali",
         "subtitle": "Immunomodulazione",
-        "body": "La sua ricerca ha aiutato a definire come le cellule immunitarie e staminali interagiscono con i biomateriali in vivo, stabilendo l'immunomodulazione come determinante centrale degli esiti rigenerativi. È stato dimostrato che i biomateriali possono influenzare direttamente il destino cellulare e la rigenerazione dei tessuti modellando il microambiente infiammatorio locale, eliminando la necessità di trapianti cellulari o bioreattori. In particolare, ha chiarito il ruolo della polarizzazione dei macrofagi, dimostrando che le risposte a dominanza M1 guidano la fibrosi e il fallimento dell'impianto, mentre le risposte orientate verso M2 promuovono l'angiogenesi e la riparazione funzionale dei tessuti. Queste scoperte hanno permesso lo sviluppo di biomateriali immuno-istruttivi che guidano attivamente le risposte dell'ospite per migliorare la guarigione e l'integrazione dell'impianto.",
+        "body": "L'interazione sinergica tra biomateriali e sistema immunitario rappresenta un asset fondamentale per la risoluzione delle infiammazioni sistemiche. Gli studi hanno dimostrato che i materiali possono essere ingegnerizzati per orchestrare il comportamento cellulare in vivo. In particolare, modulando la polarizzazione dei macrofagi dal fenotipo pro-infiammatorio a quello pro-rigenerativo, è possibile promuovere una potente angiogenesi tissutale e prevenire attivamente il fallimento dei dispositivi medici impiantabili.",
         "publications": [
           {
             "rank": 1,
@@ -941,11 +941,11 @@
         ]
       },
       {
-        "id": "translational",
+        "id": "longevityPipeline",
         "number": "04",
-        "title": "Ricerca Traslazionale e Applicazioni Cliniche",
-        "subtitle": "Applicazioni Cliniche e Diagnostica",
-        "body": "La sua ricerca traslazionale applica i principi biomimetici ai bisogni clinici insoddisfatti in chirurgia, diagnostica e riparazione dei tessuti. Ha avviato e guidato studi che stabiliscono il plasma ricco di piastrine come biomateriale rigenerativo con funzioni angiogeniche, immunomodulatorie e di preservazione della matrice. Ha inoltre contribuito allo sviluppo di matrici rigenerative avanzate derivate da tessuti decellularizzati, inclusi scaffold a base polmonare, che forniscono segnali architettonici e biochimici nativi per migliorare la cellularizzazione e la vascolarizzazione. Parallelamente, ha fatto progredire approcci di imaging non invasivi, come l'elastografia a ultrasuoni, per monitorare le dinamiche di guarigione dei tessuti duri e molli, supportando il processo decisionale clinico e la valutazione degli esiti.",
+        "title": "Longevità e Healthspan Engineering",
+        "subtitle": "Medicina 4P",
+        "body": "Per affrontare il divario globale tra aspettativa di vita e salute funzionale, la ricerca integra il paradigma della Medicina 4P (Predittiva, Preventiva, Personalizzata, Partecipativa). Questa pipeline mira a mitigare il peso clinico ed economico legato ai fattori modificabili dello stile di vita, con un'enfasi sul contrasto della neurodegenerazione indotta da inflammaging e stress ambientali. In questo ambito si inseriscono le direzioni scientifiche volte all'impiego di nanoterapeutici per la prevenzione e il trattamento del declino cognitivo.",
         "publications": [
           {
             "rank": 1,
@@ -958,183 +958,84 @@
           },
           {
             "rank": 2,
-            "journal": "Biomaterials",
-            "year": 2012,
-            "title": "Adult and umbilical cord blood-derived platelet-rich plasma for mesenchymal stem cell proliferation, chemotaxis, and cryo-preservation.",
-            "authors": "M.B. Murphy et al.",
-            "citations": 228,
-            "doi": "10.1016/j.biomaterials.2012.04.007"
+            "journal": "Journal of Nanomedicine",
+            "year": 2017,
+            "title": "Mesoporous silica nanoparticles trigger mitophagy in endothelial cells and perturb neuronal network activity.",
+            "authors": "",
+            "citations": 0,
+            "doi": "10.2147/ijn.s127663"
           },
           {
             "rank": 3,
-            "journal": "Theranostics",
-            "year": 2018,
-            "title": "Biomimetic nanoparticles with enhanced affinity towards activated endothelium as versatile tools for theranostic drug delivery.",
-            "authors": "J.O. Martinez et al.",
-            "citations": 123,
-            "doi": "10.7150/thno.22078"
-          },
-          {
-            "rank": 4,
-            "journal": "Journal of Surgical Research",
-            "year": 2017,
-            "title": "Platelet-rich plasma: a biomimetic approach to enhancement of surgical wound healing.",
-            "authors": "J.S. Fernandez-Moure et al.",
-            "citations": 113,
-            "doi": "10.1016/j.jss.2016.08.063"
-          },
-          {
-            "rank": 5,
-            "journal": "Scientific Reports",
-            "year": 2019,
-            "title": "A biomimetic 3D model of hypoxia-driven cancer progression.",
-            "authors": "C. Liverani et al.",
-            "citations": 104,
-            "doi": "https://doi.org/10.1038/s41598-019-48701-4"
-          },
-          {
-            "rank": 6,
-            "journal": "Wiley Interdisciplinary Reviews",
-            "year": 2011,
-            "title": "Nanodevices in diagnostics.",
-            "authors": "Y. Hu et al.",
-            "citations": 103,
-            "doi": "https://doi.org/10.1002/wnan.82"
-          },
-          {
-            "rank": 7,
-            "journal": "Scientific Reports",
-            "year": 2020,
-            "title": "Non-invasive imaging of Young's modulus and Poisson's ratio in cancers in vivo.",
-            "authors": "M.T. Islam et al.",
-            "citations": 102,
-            "doi": "https://doi.org/10.1038/s41598-020-64162-6"
-          },
-          {
-            "rank": 8,
-            "journal": "Proteomics",
-            "year": 2010,
-            "title": "Mesoporous silica chips for selective enrichment and stabilization of low molecular weight proteome.",
-            "authors": "A. Bouamrani et al.",
-            "citations": 89,
-            "doi": "https://doi.org/10.1002/pmic.200900346"
-          },
-          {
-            "rank": 9,
-            "journal": "Human Gene Therapy",
-            "year": 2007,
-            "title": "In Vivo Imaging Shows Abnormal Function of Vascular Endothelial Growth Factor-Induced Vasculature.",
-            "authors": "S. Zacchigna et al.",
-            "citations": 86,
-            "doi": "https://doi.org/10.1089/hum.2006.162"
-          },
-          {
-            "rank": 10,
-            "journal": "Molecular Imaging",
-            "year": 2011,
-            "title": "Near-infrared imaging method for the in vivo assessment of the biodistribution of nanoporous silicon particles.",
-            "authors": "E. Tasciotti et al.",
-            "citations": 74,
-            "doi": "10.2310/7290.2011.00011s1"
-          }
-        ]
-      },
-      {
-        "id": "longevity",
-        "number": "",
-        "title": "Longevità e Invecchiamento Sano",
-        "subtitle": "Prevenzione e Medicina della Longevità in salute",
-        "body": "La ricerca del Prof. Tasciotti nel campo della longevità e dell'invecchiamento sano affronta l'invecchiamento come un processo multifattoriale biologico e dipendente dallo stile di vita, che determina la salute funzionale nel corso della vita. Al centro di questo lavoro vi è la convinzione che la qualità della vita e la resilienza, piuttosto che il semplice prolungamento della durata della vita, debbano essere gli obiettivi centrali della ricerca sull'invecchiamento e delle strategie di salute pubblica. In qualità di Direttore dello Human Longevity Program presso l'IRCCS San Raffaele, guida una ricerca multidisciplinare che indaga gli aspetti molecolari, cellulari e ambientali dell'invecchiamento, con l'obiettivo di identificare meccanismi biologici e interventi praticabili per preservare la funzione dei tessuti, la resilienza degli organi e la vitalità cognitiva. Questo programma integra medicina rigenerativa, nanotecnologia, scoperta di biomarcatori e scienza degli stili di vita per affrontare il declino legato all'età in un quadro rilevante a livello traslazionale.",
-        "publications": [
-          {
-            "rank": 1,
             "journal": "Advanced Science",
             "year": 2021,
             "title": "Humanized Biomimetic Nanovesicles for Neuron Targeting.",
-            "authors": "A. Zinger et al.",
-            "citations": 39,
+            "authors": "",
+            "citations": 0,
             "doi": "10.1002/advs.202101437"
-          },
-          {
-            "rank": 2,
-            "journal": "Genes",
-            "year": 2021,
-            "title": "Unraveling the Balance between Genes, Microbes, Lifestyle and the Environment to Improve Healthy Reproduction.",
-            "authors": "V. D'Argenio et al.",
-            "citations": 21,
-            "doi": "10.3390/genes12040605"
-          },
-          {
-            "rank": 3,
-            "journal": "Frontiers in Immunology",
-            "year": 2024,
-            "title": "Navigating the nano-bio immune interface: advancements and challenges in CNS nanotherapeutics.",
-            "authors": "C. Moulton et al.",
-            "citations": 9,
-            "doi": "10.3389/fimmu.2024.1447567"
           },
           {
             "rank": 4,
             "journal": "Nanomaterials",
             "year": 2025,
             "title": "Nano- and Microplastics in the Brain: An Emerging Threat to Neural Health.",
-            "authors": "A. Baroni et al.",
-            "citations": 30,
+            "authors": "",
+            "citations": 0,
             "doi": "10.3390/nano15171361"
           },
           {
             "rank": 5,
-            "journal": "Journal of Xenobiotics",
-            "year": 2026,
-            "title": "Micro- and Nanoplastics Exposure Across the Lifespan: One Health Implications for Aging and Longevity.",
-            "authors": "C. Moulton et al.",
-            "citations": 2,
-            "doi": "10.3390/jox16020052"
+            "journal": "Genes",
+            "year": 2021,
+            "title": "Unraveling the Balance between Genes, Microbes, Lifestyle and the Environment to Improve Healthy Reproduction.",
+            "authors": "",
+            "citations": 0,
+            "doi": "10.3390/genes12040605"
           },
           {
             "rank": 6,
-            "journal": "Pharmacological Research",
-            "year": 2026,
-            "title": "Therapeutic use of cannabinoids in age-related pain: Current evidence and clinical perspectives.",
-            "authors": "S. Pulone et al.",
-            "citations": 1,
-            "doi": "10.1016/j.phrs.2026.108130"
+            "journal": "Frontiers in Immunology",
+            "year": 2024,
+            "title": "Navigating the nano-bio immune interface: advancements and challenges in CNS nanotherapeutics.",
+            "authors": "",
+            "citations": 0,
+            "doi": "10.3389/fimmu.2024.1447567"
           },
           {
             "rank": 7,
-            "journal": "Mechanisms of Ageing and Development",
-            "year": 2026,
-            "title": "The need to increase support for healthy ageing and longevity research in the EU by establishing a Coordination and Support Programme on Healthy Ageing and Longevity.",
-            "authors": "",
-            "citations": 0,
-            "doi": "10.1016/j.mad.2026.112187"
-          },
-          {
-            "rank": 8,
-            "journal": "Healthy Ageing and Longevity (Springer)",
-            "year": 2026,
-            "title": "The Role of Longevity Medicine in Reforming Primary Healthcare.",
-            "authors": "N. Invidia et al.",
-            "citations": 0,
-            "doi": "https://doi.org/10.1007/978-3-032-20006-8_4"
-          },
-          {
-            "rank": 9,
             "journal": "Molecular Brain",
             "year": 2019,
             "title": "Helix-A peptide prevents gp120-mediated neuronal loss.",
-            "authors": "V. Avdoshina et al.",
-            "citations": 8,
-            "doi": "https://doi.org/10.1186/s13041-019-0482-z"
+            "authors": "",
+            "citations": 0,
+            "doi": "10.1186/s13041-019-0482-z"
+          },
+          {
+            "rank": 8,
+            "journal": "Journal of Xenobiotics",
+            "year": 2026,
+            "title": "Micro- and Nanoplastics Exposure Across the Lifespan: One Health Implications for Aging and Longevity.",
+            "authors": "",
+            "citations": 0,
+            "doi": "10.3390/jox16020052"
+          },
+          {
+            "rank": 9,
+            "journal": "Pharmacological Research",
+            "year": 2026,
+            "title": "Therapeutic use of cannabinoids in age-related pain: Current evidence and clinical perspectives.",
+            "authors": "",
+            "citations": 0,
+            "doi": "10.1016/j.phrs.2026.108130"
           },
           {
             "rank": 10,
-            "journal": "Journal of Nanomedicine",
-            "year": 2017,
-            "title": "Mesoporous silica nanoparticles trigger mitophagy in endothelial cells and perturb neuronal network activity in a size- and time-dependent manner.",
-            "authors": "E. Cazzaniga et al.",
-            "citations": 67,
-            "doi": "https://doi.org/10.2147/ijn.s127663"
+            "journal": "Mechanisms of Ageing and Development",
+            "year": 2026,
+            "title": "The need to increase support for healthy ageing and longevity research in the EU.",
+            "authors": "",
+            "citations": 0,
+            "doi": "10.1016/j.mad.2026.112187"
           }
         ]
       }
@@ -1188,9 +1089,9 @@
     "visitWebsite": "Visita il sito",
     "vision": {
       "title": "Visione Imprenditoriale e Trasferimento Tecnologico",
-      "body1": "Il Prof. Ennio Tasciotti unisce un rigoroso background accademico a una comprovata visione imprenditoriale, traducendo osservazioni biologiche complesse in soluzioni ingegneristiche scalabili. Le sue ricerche traslazionali hanno una diretta applicabilità clinica, supportata da 12 brevetti internazionali su nanomateriali e biomateriali.",
-      "body2": "Tra i progetti industriali di maggior rilievo spicca il programma 'Fracture Putty', finanziato dalla DARPA (Defense Advanced Research Projects Agency) con molteplici grant per un totale di circa 15 milioni di dollari, dedicato allo sviluppo di scaffold bionanotecnologici per la rigenerazione ossea traumatica.",
-      "body3": "Inoltre, ha promosso un'iniziativa di 'democratizzazione della nanotecnologia', pubblicando apertamente protocolli standardizzati per la produzione di nanoparticelle biomimetiche tramite microfluidica, rendendoli accessibili ed economici per i laboratori di tutto il mondo."
+      "body1": "La capacità di trasferire il know-how dal laboratorio al mercato rappresenta il motore dell'innovazione tecnologica. La ricerca scientifica d'eccellenza, protetta da ampie famiglie di brevetti internazionali su nanomateriali e biomateriali, costituisce l'architettura fondante di numerose iniziative aziendali orientate a colmare il divario tra intuizione accademica ed efficacia clinica.",
+      "body2": "La visione abbraccia un forte impegno per la \"democratizzazione della nanotecnologia\", promuovendo la standardizzazione aperta di protocolli basati su microfluidica per consentire una produzione industriale (cGMP) globale, scalabile ed economicamente sostenibile.",
+      "body3": "A testimonianza di questa profonda vocazione imprenditoriale, il Prof. Tasciotti ricopre ruoli apicali e di direzione R&D in realtà deep-tech internazionali e startup altamente innovative."
     },
     "startupsTitle": "Creazione di Startup e Direzione R&D",
     "startupsIntro": "Attivo nell'ecosistema biotecnologico, siede nei consigli di amministrazione di diverse società in cui ricopre ruoli apicali per la direzione scientifica (R&D).",
@@ -1258,8 +1159,8 @@
     "subtitle": "Ingegnerizzare l'Healthspan per comprimere la morbilità e ottimizzare la salute funzionale.",
     "metaTitle": "Longevità — Prof. Ennio Tasciotti",
     "metaDesc": "Ingegnerizzare l'Healthspan per comprimere la morbilità e ottimizzare la salute funzionale con la medicina della longevità.",
-    "introText1": "Il panorama demografico globale sta subendo una mutazione strutturale irreversibile: le proiezioni epidemiologiche indicano che entro il 2100 la fascia over-65 triplicherà, arrivando a rappresentare il 24% della popolazione mondiale. Tuttavia, l'allungamento della vita cronologica ha generato un paradosso clinico. Esiste oggi un gap sistemico di 12,7 anni tra il lifespan (durata della vita totale) e l'healthspan (gli anni vissuti in piena salute funzionale, autonomia e indipendenza).",
-    "introText2": "Il carico economico e assistenziale di questa discrepanza grava pesantemente sui sistemi di welfare: l'80% di tutti i costi medici correnti è direttamente imputabile a soli quattro determinanti comportamentali e ambientali modificabili, definiti le \"4S\" (Sedentarietà, Scelte alimentari, Stress cronico, Stravizi). La moderna medicina della longevità non persegue la mera estensione temporale della vecchiaia, ma mira alla protezione e all'ottimizzazione della resilienza biologica cellulare e sistemica per allineare l'aspettativa di salute a quella di vita.",
+    "introText1": "L'estensione dell'aspettativa di vita cronologica ha generato un divario sistemico rispetto alla longevità vissuta in piena salute funzionale. La maggior parte dei costi sanitari globali è oggi riconducibile a determinanti comportamentali modificabili, spesso definiti dalle \"4S\" (Sedentarietà, Scelte alimentari, Stress cronico, Stravizi). Lo Human Longevity Program dell'IRCCS San Raffaele promuove l'applicazione della Medicina 4P (Predittiva, Preventiva, Personalizzata, Partecipativa) per trasformare l'invecchiamento in un processo proattivamente gestibile, ottimizzando la resilienza biologica a livello cellulare.",
+    "introText2": "",
     "stat1Val": "12,7 Anni",
     "stat1Lbl": "Il divario medio da azzerare tra aspettativa di vita cronologica e salute funzionale.",
     "stat2Val": "80%",
@@ -1270,18 +1171,18 @@
     "pillarsTitle": "I Pilastri della Longevità",
     "pillarsSubtitle": "Regoliamo i meccanismi molecolari e cellulari dell'invecchiamento attraverso tre leve sistemiche.",
     "pillar1Title": "Nutrire",
-    "pillar1Subtitle": "L'informazione epigenetica",
-    "pillar1Body": "I nutrienti non rappresentano un semplice calcolo calorico, ma agiscono come vettori di informazione biologica in grado di modulare direttamente l'espressione genica. Attraverso lo studio della biochimica alimentare e dell'asse intestino-cervello, ottimizziamo l'attività del microbiota per spegnere l'infiammazione silente (inflammaging) prima che provochi danni strutturali ai tessuti complessi.",
+    "pillar1Subtitle": "Epigenetica e Microbiota",
+    "pillar1Body": "Contrastare l'inflammaging (l'infiammazione sistemica silente) ottimizzando la biochimica alimentare. I nutrienti agiscono come vettori di informazione epigenetica, capaci di modulare l'espressione genica e proteggere il delicato asse intestino-cervello.",
     "pillar2Title": "Muovere",
-    "pillar2Subtitle": "La farmacologia del movimento",
-    "pillar2Body": "L'attività motoria somministrata in età adulta rappresenta un farmaco pleiotropico essenziale per il welfare e l'invecchiamento attivo. La contrazione muscolare risponde a precisi stimoli meccano-biologici e funziona come un vero organo endocrino, inducendo il rilascio sistemico di miochine (quali IL-6 e Irisina) in grado di riprogrammare il metabolismo cellulare e stimolare la biogenesi mitocondriale.",
+    "pillar2Subtitle": "La Farmacologia del Movimento",
+    "pillar2Body": "Attivare il muscolo non solo per la sua funzione biomeccanica, ma come vero e proprio organo endocrino. Il rilascio di miochine indotto dal movimento stimola la biogenesi mitocondriale e attiva il drenaggio linfatico delle tossine cellulari.",
     "pillar3Title": "Connettere",
-    "pillar3Subtitle": "L'equilibrio neuro-emotivo",
-    "pillar3Body": "Lo stress cronico altera l'asse HPA (ipotalamo-ipofisi-surrene) e i circuiti cerebrali, accelerando la senescenza cellulare e i processi infiammatori d'organo. I nostri protocolli intervengono sulla cascata infiammatoria e sulla polarizzazione delle cellule immunitarie: guidando lo switch dei macrofagi dal fenotipo pro-infiammatorio M1 (responsabile di fibrosi e declino) al fenotipo pro-rigenerativo M2, preserviamo la plasticità neuronale e acceleriamo la guarigione fisiologica.",
+    "pillar3Subtitle": "Neuro-resilienza e Plasticità",
+    "pillar3Body": "Lo stress cronico e l'isolamento sociale alterano profondamente l'asse ipotalamo-ipofisi-surrene, accelerando l'invecchiamento. L'introduzione di pratiche legate allo \"stress ormetico\" e la tutela delle relazioni interpersonali favoriscono la riparazione del DNA, supportando un invecchiamento cerebrale sano ed equilibrato.",
     "social2Text": "Il movimento e la nutrizione di precisione non sono semplici abitudini, sono farmacologia biologica integrata. Attraverso lo studio della polarizzazione macrofagica (lo switch cellulare da M1 a M2) e il controllo delle miochine tissutali, la nostra ricerca dimostra che è possibile riprogrammare l'invecchiamento direttamente in vivo. I Pilastri della Longevità spiegati attraverso l'evidenza di laboratorio.",
     "evidenceTitle": "Dalla Validazione Accademica alla Clinica Traslazionale",
     "evidenceSubtitle": "Le pietre miliari e i protocolli del Prof. Ennio Tasciotti nel targeting della senescenza e dell'inflammaging.",
-    "evidenceBio": "Stabilmente inserito nel Top 1% globale dei ricercatori più influenti al mondo secondo lo scientific ranking della Stanford University e Direttore dello Human Longevity Program presso l'IRCCS San Raffaele di Roma, il Prof. Ennio Tasciotti coordina lo sviluppo di soluzioni nanotecnologiche e biomateriali applicati alla salute. Nel 2026, ha aperto il XXXVIII Congresso Nazionale della Federazione Medico Sportiva Italiana (FMSI) presentando la Lettura Magistrale d'apertura dedicata interamente all'ingegnerizzazione dell'Healthspan.",
+    "evidenceBio": "Le soluzioni per il targeting della senescenza cellulare e il contrasto alle neurodegenerazioni (come l'Alzheimer) rappresentano la frontiera clinica più avanzata. Attraverso lo sviluppo di nanoterapeutici antinfiammatori e la modulazione dell'ambiente immunitario, la ricerca mira a tutelare l'integrità del cervello, riconosciuto come l'elemento centrale per garantire non solo la durata, ma soprattutto la qualità e il significato dell'intera esistenza umana.",
     "papersTitle": "Le Pubblicazioni Scientifiche Cardine sulla Longevità",
     "paper1Title": "Synthetic nanoparticles functionalized with biomimetic leukocyte membranes possess cell-like functions",
     "paper1Desc": "Studio miliare sull'ingegnerizzazione di vescicole proteo-lipidiche artificiali (Leuko-Like Vector) che replicano le membrane dei leucociti per eludere la clearance immunitaria e mirare selettivamente ai tessuti infiammati (Oltre 1.276 citazioni).",
@@ -1322,7 +1223,15 @@
     "outreach": {
       "divulgazione": {
         "title": "Divulgazione Scientifica",
-        "body": "Il Prof. Tasciotti integra la ricerca d'eccellenza con un'intensa attività di comunicazione pubblica, promuovendo il passaggio da una medicina reattiva a una proattiva. Da conferenze verticali su invecchiamento e intelligenza artificiale, fino a incontri sul trasferimento tecnologico e sulle startup, la sua presenza scenica è sempre richiesta."
+        "body": "La rigorosa ricerca scientifica trova la sua massima espressione quando è resa accessibile. L'attività di divulgazione del Prof. Tasciotti promuove un cambio di paradigma: il passaggio da una medicina reattiva, orientata al sintomo, a una scienza della salute olistica, proattiva e biomimetica. Attraverso l'uso di narrazioni chiare e metafore d'impatto, le complesse dinamiche legate alle nanotecnologie, all'invecchiamento e allo sviluppo di dispositivi medici diventano concetti comprensibili per la società intera."
+      },
+      "tedx": {
+        "title": "I grandi palchi TEDx (Vision & Innovation)",
+        "body": "La partecipazione a numerosi eventi TEDx di respiro internazionale ha contribuito a definire la visione tecnologica e i trend di mercato per l'innovazione medica, affrontando temi cruciali: dalla comunicazione intercellulare dei nanovettori biomimetici all'etica dell'innovazione tecnologica, fino alle strategie pratiche per vivere attivamente l'invecchiamento biologico."
+      },
+      "tv": {
+        "title": "Presenza Televisiva Istituzionale e Mainstream",
+        "body": "L'autorevolezza accademica si è consolidata attraverso la collaborazione stabile con format mediatici d'eccellenza. Dai documentari d'avanguardia su nanotecnologia e materiali bio-ibridi a fianco di Piero Angela su Rai 1 (Superquark), all'esplorazione delle frontiere della medicina traslazionale in inchieste giornalistiche di prima serata (Presa Diretta su Rai 3). La presenza si estende a reti nazionali e canali all-news internazionali, offrendo una guida essenziale nel dibattito pubblico su come combattere l'inflammaging, gestire i delicati passaggi metabolici come la menopausa (Real Time) e comprendere l'impatto critico degli stili di vita sull'età biologica."
       }
     },
     "detailTitle": "Dettaglio Eventi e Partecipazioni",
@@ -1735,19 +1644,19 @@
   "consultancy": {
     "title": "Consulenza",
     "eyebrow": "Advisory & Consulenza",
-    "subtitle": "Consulente strategico e valutatore scientifico per multinazionali, fondi d'investimento ed ecosistemi d'innovazione.",
+    "subtitle": "L'integrazione tra competenza scientifica traslazionale e visione di mercato offre un supporto strategico essenziale sia per i leader dell'industria biomedica sia per i fondi di investimento. Attraverso rigorose attività di due diligence, viene garantito il de-risking tecnologico necessario a ottimizzare lo sviluppo di nuove terapie avanzate e dispositivi medici.",
     "areas": {
       "corporate_pharma": {
         "title": "Consulenza Strategica e Corporate Pharma",
-        "body": "L'esperienza del Prof. Tasciotti nella scienza applicata e nella nanomedicina è ricercata dai leader mondiali dell'industria biomedica e farmaceutica. Dal 2021 opera come Consulente Corporate per lo sviluppo scientifico e strategico di innumerevoli realtà internazionali."
+        "body": "L'esperienza esecutiva si traduce in consulenza per l'innovazione scientifica e la riorganizzazione delle pipeline di rinomate multinazionali, tra cui: Roche Pharma, Novartis, Gilead, Bayer, Nestlè, AlfaSigma, Corden Pharma, Named, Aboca, Sclavo Diagnostics, Inpeco, Ferrero, Protiviti e CORIS Veneto."
       },
       "investment_funds": {
         "title": "Advisor per Fondi di Investimento",
-        "body": "La competenza nella traslazione clinica delle tecnologie gli consente di valutare accuratamente l'ecosistema dell'innovazione per i capitali di rischio. Ha ricoperto il ruolo di Consulente e Due Diligence Advisor per primari fondi istituzionali internazionali, fornendo analisi tecniche e strategiche."
+        "body": "In veste di valutatore indipendente per la fattibilità tecnologica e di mercato, la consulenza si estende a primari fondi istituzionali europei e internazionali, fornendo analisi tecniche e di brevettabilità per entità quali: Panakes, Principia, AuroraTT, Utopia, Sofinnova, Cascade Global-UK e Alchimia Investments."
       },
       "innovation_ecosystems": {
         "title": "Guida Scientifica per Ecosistemi di Innovazione",
-        "body": "Il Prof. Tasciotti svolge un ruolo chiave come Scientific Advisor presso poli tecnologici, parchi scientifici e incubatori d'impresa, promuovendo il trasferimento tecnologico e servendo in numerosi comitati di prestigio internazionali e governativi."
+        "body": "Il ruolo di catalizzatore del trasferimento tecnologico si concretizza in incarichi di Scientific Advisor presso poli tecnologici e venture builder quotati: Cube Labs Venture Builder, Cluster Lifesciences (FVG), G-Factor, ComoNext, Technoscience Park, AREA Science Park, THD ed EOS Consulting."
       }
     },
     "detailTitle": "Dettaglio Incarichi di Consulenza",
@@ -2077,7 +1986,7 @@
   },
   "seo": {
     "homeTitle": "Prof. Ennio Tasciotti — Scienziato, Imprenditore, Esperto di Longevità",
-    "homeDescription": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% Stanford, 200+ pubblicazioni, 15 brevetti.",
+    "homeDescription": "Ennio Tasciotti, PhD | International Scientific Executive | Translational Medicine Leader | MedTech Innovator | Strategic Advisor | AI & Digital Health | Longevity Medicine Pioneer",
     "aboutTitle": "Chi sono — Prof. Ennio Tasciotti",
     "aboutDescription": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele.",
     "scienceTitle": "Ricerca — Prof. Ennio Tasciotti",

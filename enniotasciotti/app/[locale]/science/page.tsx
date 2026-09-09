@@ -101,7 +101,7 @@ export default async function SciencePage({ params }: PageProps) {
                 {area.publications && area.publications.length > 0 && (
                   <div>
                     <h4 className="font-mono text-step--1 text-[var(--color-text)] uppercase tracking-widest mb-6 pb-3 border-b border-[var(--color-border)]">
-                      {area.id === 'longevity' ? t('macroAreasPubTitleLongevity') : t('macroAreasPubTitle')}
+                      {area.id === 'longevityPipeline' ? t('macroAreasPubTitleLongevity') : t('macroAreasPubTitle')}
                     </h4>
                     <ol className="space-y-0 divide-y divide-[var(--color-border)]">
                       {area.publications.map((pub) => {
