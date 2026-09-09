@@ -105,13 +105,22 @@ export function ScienzaTeaser() {
                             Le cinque aree di ricerca
                         </h2>
                     </div>
-                    <Link
-                        href="/science"
-                        className="group shrink-0 inline-flex items-center gap-2 px-6 h-11 border border-[var(--color-accent)] text-step--1 font-medium text-[var(--color-accent)] transition-all duration-300 hover:bg-[var(--color-accent)] hover:text-white"
-                    >
-                        Leggi di più sulla mia ricerca
-                        <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </Link>
+                    <div className="flex flex-wrap items-center gap-3">
+                        <Link
+                            href="/science"
+                            className="group shrink-0 inline-flex items-center gap-2 px-6 h-11 border border-[var(--color-accent)] text-step--1 font-medium text-[var(--color-accent)] transition-all duration-300 hover:bg-[var(--color-accent)] hover:text-white"
+                        >
+                            Leggi di più sulla mia ricerca
+                            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="group shrink-0 inline-flex items-center gap-2 px-6 h-11 border border-[var(--color-border)] bg-[var(--color-surface)] text-step--1 font-medium text-[var(--color-text)] transition-all duration-300 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5"
+                        >
+                            Contattami
+                            <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </Link>
+                    </div>
                 </div>
 
                 {/* 5 macro-area cards in balanced grid */}
