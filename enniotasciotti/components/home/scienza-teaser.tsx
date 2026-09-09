@@ -59,40 +59,39 @@ const MACRO_AREAS = [
         id: 'drug-delivery',
         image: '/images/areas/drug-delivery.png',
         title: 'Drug Delivery',
-        body: 'Nanovettori biomimetici per la somministrazione mirata di farmaci antitumorali.',
-        href: '/science',
+        subtitle: 'Piattaforme di Trasporto Mirato',
+        body: 'Superamento delle barriere biologiche e de-risking delle terapie oncologiche, infiammatorie e neurologiche con vettori biomimetici.',
+        href: '/science#drugDelivery',
     },
     {
         id: 'medicina-rigenerativa',
         image: '/images/areas/regenerative-medicine.png',
         title: 'Medicina Rigenerativa',
-        body: 'Scaffold biomimetici e ingegneria tessutale per la rigenerazione ossea e cartilaginea.',
-        href: '/science',
+        subtitle: 'BioNanoScaffolds',
+        body: 'Sviluppo di scaffold 3D biomimetici e matrici polimeriche con particelle di silicio per guidare la rigenerazione tissutale.',
+        href: '/science#regenerative',
     },
     {
-        id: 'cellule-immunitarie',
+        id: 'immunomodulazione',
         image: '/images/areas/stem-cells.png',
-        title: 'Biologia Cellule Immunitarie e Staminali',
-        body: 'Studio della risposta immunitaria e delle cellule staminali per terapie di nuova generazione.',
-        href: '/science',
-    },
-    {
-        id: 'ricerca-traslazionale',
-        image: '/images/areas/translational-research.png',
-        title: 'Ricerca Traslazionale',
-        body: 'Dal laboratorio al paziente: percorsi accelerati dalla scoperta alla clinica.',
-        href: '/science',
+        title: 'Immunomodulazione',
+        subtitle: 'Targeting Infiammazione e Fibrosi',
+        body: 'Interazione sinergica tra biomateriali e sistema immunitario, polarizzando i macrofagi verso un fenotipo pro-rigenerativo.',
+        href: '/science#immunology',
     },
     {
         id: 'longevity',
         image: '/images/areas/longevity.png',
-        title: 'Longevity',
-        body: "Ricerca traslazionale focalizzata sullo sviluppo di diverse strategie per la prevenzione e l'estensione della longevità in salute.",
-        href: '/science',
+        title: 'Longevità & Healthspan',
+        subtitle: 'Medicina 4P',
+        body: 'Paradigma della Medicina 4P per contrastare la neurodegenerazione indotta da inflammaging e preservare le funzioni cognitive.',
+        href: '/science#longevityPipeline',
     },
 ];
 
 export function ScienzaTeaser() {
+    const t = useTranslations('home.scienzaTeaser');
+
     return (
         <section aria-labelledby="scienza-heading" className="py-16 sm:py-24 bg-[var(--color-surface)]">
             <div className="mx-auto max-w-7xl px-6">
@@ -100,9 +99,9 @@ export function ScienzaTeaser() {
                 {/* Header */}
                 <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-16">
                     <div>
-                        <p className="font-mono text-step--1 uppercase tracking-[0.2em] text-[var(--color-accent)] mb-3">Ricerca Scientifica</p>
+                        <p className="font-mono text-step--1 uppercase tracking-[0.2em] text-[var(--color-accent)] mb-3">{t('eyebrow')}</p>
                         <h2 id="scienza-heading" className="font-display text-step-4 font-light text-[var(--color-text)] leading-tight">
-                            Le cinque aree di ricerca
+                            {t('title')}
                         </h2>
                     </div>
                     <div className="flex flex-wrap items-center gap-3">
@@ -110,21 +109,21 @@ export function ScienzaTeaser() {
                             href="/science"
                             className="group shrink-0 inline-flex items-center gap-2 px-6 h-11 border border-[var(--color-accent)] text-step--1 font-medium text-[var(--color-accent)] transition-all duration-300 hover:bg-[var(--color-accent)] hover:text-white"
                         >
-                            Leggi di più sulla mia ricerca
+                            {t('cta')}
                             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </Link>
                         <Link
                             href="/contact"
                             className="group shrink-0 inline-flex items-center gap-2 px-6 h-11 border border-[var(--color-border)] bg-[var(--color-surface)] text-step--1 font-medium text-[var(--color-text)] transition-all duration-300 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent)]/5"
                         >
-                            Contattami
+                            {t('contactCta')}
                             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </Link>
                     </div>
                 </div>
 
-                {/* 5 macro-area cards in balanced grid */}
-                <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-6">
+                {/* 4 macro-area cards in 4-col grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {MACRO_AREAS.map((area, i) => (
                         <motion.div
                             key={area.id}
@@ -132,12 +131,7 @@ export function ScienzaTeaser() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.1 }}
                             transition={{ duration: 0.6, delay: i * 0.1, ease: EASE }}
-                className={cn(
-                                "col-span-1",
-                                i === 4 ? "md:col-span-6 lg:col-span-3" :
-                                i === 3 ? "md:col-span-3 lg:col-span-3" :
-                                "md:col-span-3 lg:col-span-2"
-                            )}
+                            className="col-span-1"
                         >
                             <Link
                                 href={area.href}

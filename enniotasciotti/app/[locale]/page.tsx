@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { Hero } from '@/components/home/hero';
 import { CredentialsStrip } from '@/components/home/credentials-strip';
+import { LeadershipPortfolio } from '@/components/home/leadership-portfolio';
 import { ChiSonoTeaser } from '@/components/home/chi-sono-teaser';
 import { ScienzaTeaser } from '@/components/home/scienza-teaser';
 import { ImpreseConsulenzeTeaser } from '@/components/home/imprese-consulenze';
@@ -27,6 +28,7 @@ export default function HomePage() {
     <>
       <Hero />
       <CredentialsStrip />
+      <LeadershipPortfolio />
       <ChiSonoTeaser />
       <ScienzaTeaser />
       <ImpreseConsulenzeTeaser />

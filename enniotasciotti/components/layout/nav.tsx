@@ -51,10 +51,17 @@ export function Nav() {
           scrolled ? 'shadow-sm' : 'shadow-none'
         )}
       >
+        {/* Global Tagline Strip */}
+        <div className="border-b border-[var(--color-border)]/40 bg-[var(--color-surface)]/80 py-1 px-4 text-center overflow-hidden hidden md:block">
+          <p className="font-mono text-[11px] tracking-wider text-[var(--color-text-muted)] truncate max-w-7xl mx-auto">
+            {t('tagline')}
+          </p>
+        </div>
+
         <nav
           role="navigation"
           aria-label="Main navigation"
-          className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
+          className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5"
         >
           {/* Logo */}
           <Link

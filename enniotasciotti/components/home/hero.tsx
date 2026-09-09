@@ -75,10 +75,19 @@ export function Hero() {
 
             <motion.p
               variants={fadeUp}
-              className="mt-8 text-step-0 leading-[1.75] max-w-md text-[var(--color-text-muted)]"
+              className="mt-8 text-step-0 leading-[1.75] max-w-lg text-[var(--color-text-muted)]"
             >
               {t('subheadline')}
             </motion.p>
+
+            {t.raw('subheadline2') ? (
+              <motion.p
+                variants={fadeUp}
+                className="mt-4 text-step--1 leading-[1.75] max-w-lg text-[var(--color-text-muted)]"
+              >
+                {t('subheadline2')}
+              </motion.p>
+            ) : null}
 
             <motion.div variants={fadeUp} className="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
               <Link
