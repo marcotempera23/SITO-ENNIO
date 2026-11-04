@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect, useCallback, type ReactNode } from 'react';
+import { useRef, useEffect, useCallback, useId, type ReactNode } from 'react';
 
 interface DragMarqueeProps {
   children: ReactNode;
@@ -20,7 +20,8 @@ interface DragMarqueeProps {
  */
 export function DragMarquee({ children, duration = 45, className = '', gap = 'gap-6' }: DragMarqueeProps) {
   const trackRef = useRef<HTMLDivElement>(null);
-  const animNameRef = useRef(`dm-${Math.random().toString(36).slice(2, 7)}`);
+  const id = useId().replace(/[^a-zA-Z0-9_-]/g, '');
+  const animName = `dm-${id}`;
   const drag = useRef({ active: false, startX: 0, startOffset: 0 });
 
   /** Read the current animated translateX in pixels via computed style */
@@ -44,13 +45,12 @@ export function DragMarquee({ children, duration = 45, className = '', gap = 'ga
     const progress = norm / -halfW;          // 0…1
     const delay = -(progress * duration);    // negative = start partway through
 
-    const animName = animNameRef.current;
     track.style.animation = 'none';
     // Force reflow to flush the "none" before restarting
     void track.offsetWidth;
     track.style.transform = '';
     track.style.animation = `${animName} ${duration}s linear ${delay}s infinite`;
-  }, [duration]);
+  }, [duration, animName]);
 
   /* ── Drag: mouse ── */
   const onMouseDown = useCallback((e: MouseEvent) => {
@@ -111,8 +111,6 @@ export function DragMarquee({ children, duration = 45, className = '', gap = 'ga
     const track = trackRef.current;
     if (!track) return;
 
-    const animName = animNameRef.current;
-
     // Inject keyframe into the document once
     const styleId = `style-${animName}`;
     if (!document.getElementById(styleId)) {
@@ -149,7 +147,7 @@ export function DragMarquee({ children, duration = 45, className = '', gap = 'ga
       track.removeEventListener('touchmove', onTouchMove);
       track.removeEventListener('touchend', onTouchEnd);
     };
-  }, [duration, onMouseDown, onMouseMove, onMouseUp, onTouchStart, onTouchMove, onTouchEnd]);
+  }, [duration, animName, onMouseDown, onMouseMove, onMouseUp, onTouchStart, onTouchMove, onTouchEnd]);
 
   return (
     <div className={`overflow-hidden select-none ${className}`}>

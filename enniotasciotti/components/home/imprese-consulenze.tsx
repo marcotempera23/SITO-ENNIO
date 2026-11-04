@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { Link } from '@/i18n/navigation';
 import { DragMarquee } from '@/components/ui/drag-marquee';
 
 const EASE = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number];
@@ -51,13 +52,13 @@ export function ImpreseConsulenzeTeaser() {
                             Partnership
                         </h2>
                     </div>
-                    <a
+                    <Link
                         href="/consultancy"
                         className="group shrink-0 hidden sm:inline-flex items-center gap-2 text-step--1 font-mono text-[var(--color-accent)] hover:underline"
                     >
                         Tutte le consulenze
                         <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Subtitle Description */}
@@ -109,13 +110,13 @@ export function ImpreseConsulenzeTeaser() {
 
                 {/* Mobile CTA */}
                 <div className="mt-6 sm:hidden text-right">
-                    <a
+                    <Link
                         href="/consultancy"
                         className="group inline-flex items-center gap-2 text-step--1 font-mono text-[var(--color-accent)] hover:underline"
                     >
                         Tutte le consulenze
                         <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
 

@@ -1,23 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 
 const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
-/* Rotating ticker items */
-const TICKER = [
-    'Direttore — Human Longevity Program',
-    'Nanomedicina & Drug Delivery',
-    'Medicina Rigenerativa',
-    'Biologia delle Cellule Staminali',
-    'Ricerca Traslazionale',
-];
-
 export function ChiSonoTeaser() {
-    const t = useTranslations('home.hero');
 
     return (
         <section
