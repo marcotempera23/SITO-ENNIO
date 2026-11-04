@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
-import { cn } from '@/lib/utils';
 import { DragMarquee } from '@/components/ui/drag-marquee';
 
 const EASE = [0.22, 1, 0.36, 1] as [number, number, number, number];

@@ -20,8 +20,8 @@ interface DragMarqueeProps {
  */
 export function DragMarquee({ children, duration = 45, className = '', gap = 'gap-6' }: DragMarqueeProps) {
   const trackRef = useRef<HTMLDivElement>(null);
-  const id = useId().replace(/[^a-zA-Z0-9_-]/g, '');
-  const animName = `dm-${id}`;
+  const rawId = useId();
+  const animName = `dm-${rawId.replace(/[^a-zA-Z0-9_-]/g, '')}`;
   const drag = useRef({ active: false, startX: 0, startOffset: 0 });
 
   /** Read the current animated translateX in pixels via computed style */

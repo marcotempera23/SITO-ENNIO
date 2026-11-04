@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 
@@ -40,7 +39,6 @@ const TALKS = [
 ];
 
 export function SpeakingTeaser() {
-    const t = useTranslations('home.tedx');
     const [activeVideo, setActiveVideo] = useState<string | null>(null);
     const [videoIdx, setVideoIdx] = useState(0);
 

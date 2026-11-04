@@ -42,7 +42,7 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl w-full px-6 pt-24 sm:pt-28 pb-12 md:pb-0">
+      <div className="relative z-10 mx-auto max-w-7xl w-full px-6 pt-20 sm:pt-28 pb-14 sm:pb-20 md:pb-16">
 
         {/* ── Mobile portrait — elegant cropped photo above text ── */}
         <motion.div
@@ -121,7 +121,7 @@ export function Hero() {
               </motion.p>
             ) : null}
 
-            <motion.div variants={fadeUp} className="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
+            <motion.div variants={fadeUp} className="mt-14 sm:mt-16 md:mt-20 mb-4 sm:mb-8 md:mb-10 flex flex-wrap justify-center md:justify-start gap-4">
               <Link
                 href="/science"
                 className="group inline-flex h-12 items-center rounded-none border-b-2 border-[var(--color-accent)] bg-[var(--color-accent)] px-8 text-step-0 font-medium text-white transition-all duration-300 hover:bg-transparent hover:text-[var(--color-accent)] w-full sm:w-auto justify-center"
