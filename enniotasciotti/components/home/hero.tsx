@@ -43,6 +43,38 @@ export function Hero() {
       />
 
       <div className="relative z-10 mx-auto max-w-7xl w-full px-6 pt-24 sm:pt-28 pb-12 md:pb-0">
+
+        {/* ── Mobile portrait — elegant cropped photo above text ── */}
+        <motion.div
+          className="md:hidden relative mb-10 mx-auto max-w-xs"
+          initial={{ opacity: 0, scale: 1.04 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.1, delay: 0.1, ease: EASE }}
+        >
+          {/* Accent rectangle behind portrait */}
+          <motion.div
+            aria-hidden="true"
+            className="absolute -bottom-3 -right-3 w-full h-full bg-[var(--color-surface-2)]"
+            initial={{ scaleY: 0 }}
+            animate={{ scaleY: 1 }}
+            style={{ originY: 1 }}
+            transition={{ duration: 0.9, delay: 0.2, ease: EASE }}
+          />
+          <div className="relative z-10">
+            <picture>
+              <source srcSet="/images/portrait-dark.jpg" media="(prefers-color-scheme: dark)" />
+              <Image
+                src="/images/portrait-light.jpg"
+                alt="Prof. Ennio Tasciotti"
+                width={320}
+                height={420}
+                priority
+                className="w-full h-auto max-h-[50svh] object-cover object-top"
+              />
+            </picture>
+          </div>
+        </motion.div>
+
         <div className="grid md:grid-cols-[1fr_420px] lg:grid-cols-[1fr_520px] items-center gap-0">
 
           {/* ── Text column ── */}
@@ -69,13 +101,13 @@ export function Hero() {
 
             <motion.div
               variants={fadeUp}
-              className="mt-1 h-[2px] w-16 bg-[var(--color-accent)]"
+              className="mt-1 h-[2px] w-16 bg-[var(--color-accent)] mx-auto md:mx-0"
               aria-hidden="true"
             />
 
             <motion.p
               variants={fadeUp}
-              className="mt-8 text-step-0 leading-[1.75] max-w-lg text-[var(--color-text-muted)]"
+              className="mt-8 text-step-0 leading-[1.75] max-w-lg text-[var(--color-text-muted)] mx-auto md:mx-0"
             >
               {t('subheadline')}
             </motion.p>
@@ -83,7 +115,7 @@ export function Hero() {
             {t.raw('subheadline2') ? (
               <motion.p
                 variants={fadeUp}
-                className="mt-4 text-step--1 leading-[1.75] max-w-lg text-[var(--color-text-muted)]"
+                className="mt-4 text-step--1 leading-[1.75] max-w-lg text-[var(--color-text-muted)] mx-auto md:mx-0"
               >
                 {t('subheadline2')}
               </motion.p>
@@ -107,7 +139,7 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* ── Portrait column ── */}
+          {/* ── Portrait column — Desktop only ── */}
           <motion.div
             variants={fadeIn}
             initial="hidden"

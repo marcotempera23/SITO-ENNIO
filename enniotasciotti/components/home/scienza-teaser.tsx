@@ -135,10 +135,10 @@ export function ScienzaTeaser() {
                         >
                             <Link
                                 href={area.href}
-                                className="group block relative p-6 md:p-10 h-full rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-all duration-500 hover:border-[var(--color-accent)]/30 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between min-h-[220px] sm:min-h-[280px]"
+                                className="scienza-card group block relative p-6 md:p-10 h-full rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-all duration-500 hover:border-[var(--color-accent)]/30 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between min-h-[220px] sm:min-h-[280px]"
                             >
-                                {/* Background Image - visible and scaled on hover */}
-                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 dark:group-hover:opacity-15 transition-opacity duration-500 pointer-events-none">
+                                {/* Background Image — visible on hover (desktop) or always subtle on mobile */}
+                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 dark:group-hover:opacity-15 scienza-card-bg transition-opacity duration-500 pointer-events-none">
                                     <Image
                                         src={area.image}
                                         alt={area.title}
@@ -168,7 +168,7 @@ export function ScienzaTeaser() {
                                 {/* Bottom accent line */}
                                 <div
                                     aria-hidden="true"
-                                    className="absolute bottom-0 left-0 h-[2.5px] w-full bg-[var(--color-accent)] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+                                    className="scienza-accent-line absolute bottom-0 left-0 h-[2.5px] w-full bg-[var(--color-accent)] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
                                 />
                             </Link>
                         </motion.div>
@@ -220,6 +220,21 @@ export function ScienzaTeaser() {
                     </DragMarquee>
                 </div>
             </div>
+
+            {/* Mobile: show background images and accent line for touch devices */}
+            <style>{`
+                @media (hover: none) and (pointer: coarse) {
+                    .scienza-card-bg {
+                        opacity: 0.07 !important;
+                    }
+                    .scienza-accent-line {
+                        transform: scaleX(1) !important;
+                    }
+                    .scienza-card {
+                        border-color: color-mix(in srgb, var(--color-accent) 20%, var(--color-border)) !important;
+                    }
+                }
+            `}</style>
         </section>
     );
 }

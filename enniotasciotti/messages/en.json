@@ -11,13 +11,13 @@
     "tagline": "Ennio Tasciotti, PhD | International Scientific Executive | Translational Medicine Leader | MedTech Innovator | Strategic Advisor | AI & Digital Health | Longevity Medicine Pioneer"
   },
   "home": {
-    "heroHeadline": "I turn biology into ventures. And science into health.",
+    "heroHeadline": "I turn science into ventures. And biology into health.",
     "heroSubtitle": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. Top 1% of the world's most influential scientists (Stanford, 2023).",
     "heroCta1": "Work with me",
     "heroCta2": "Read my research",
     "hero": {
       "eyebrow": "Nanomedicine · Longevity · Venture Building",
-      "headline": "I turn biology into ventures. And science into health.",
+      "headline": "I turn science into ventures. And biology into health.",
       "subheadline": "Innovation within the global Life Sciences ecosystem requires a profound synthesis of materials engineering, molecular biology, pharmacology, and market dynamics. The primary objective is to transform complex scientific discoveries into concrete clinical and industrial solutions.",
       "ctaPrimary": "Read my research",
       "ctaSecondary": "Get in touch",
@@ -126,42 +126,42 @@
       "items": [
         {
           "id": "about",
-          "title": "Executive Profile (About Me)",
+          "title": "Executive Profile",
           "desc": "An academic and executive journey developed within international centers of excellence, focused on leading complex research ecosystems and attracting strategic investments for medical innovation.",
           "cta": "Discover the journey",
           "href": "/about"
         },
         {
           "id": "science",
-          "title": "R&D Pipelines (Science)",
+          "title": "R&D Pipelines",
           "desc": "From the development of biomimetic nanovectors to scaffolds for tissue regeneration: a rigorously translational research approach, designed to address unmet clinical needs by transferring innovation from the laboratory bench to the patient.",
           "cta": "Explore the research areas",
           "href": "/science"
         },
         {
           "id": "ventures",
-          "title": "Venture Creation & Tech Transfer (Business)",
+          "title": "Venture Creation & Tech Transfer",
           "desc": "The conversion of intellectual property into industrial initiatives. The vital role of deep-tech startups and technology transfer in transforming scientific insights into accessible and scalable technologies on the global market.",
           "cta": "Discover corporate ventures",
           "href": "/ventures"
         },
         {
           "id": "consultancy",
-          "title": "Corporate Strategy & VC Advisory (Consulting)",
+          "title": "Corporate Strategy & VC Advisory",
           "desc": "Strategic support and technological feasibility analysis for the global pharmaceutical industry and Venture Capital funds. Activities aimed at optimizing development pipelines and de-risking biomedical innovation.",
           "cta": "Learn more about advisory services",
           "href": "/consultancy"
         },
         {
           "id": "longevity",
-          "title": "Healthspan Engineering (Longevity)",
+          "title": "Healthspan Engineering",
           "desc": "A proactive perspective on aging based on the principles of 4P Medicine. Structured interventions involving nutrition, movement, and neuro-emotional equilibrium to preserve cellular resilience and optimize functional healthspan.",
           "cta": "Explore the Longevity Program",
           "href": "/longevity"
         },
         {
           "id": "speaking",
-          "title": "Scientific Advocacy (Speaking)",
+          "title": "Scientific Advocacy",
           "desc": "The translation of biomedical complexity into clear and impactful narratives. Outreach activities aimed at connecting institutions, investors, and the general public with the crucial themes of health and biomimetic science.",
           "cta": "Watch the talks and media appearances",
           "href": "/speaking"

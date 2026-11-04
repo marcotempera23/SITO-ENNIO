@@ -11,13 +11,13 @@
     "tagline": "Ennio Tasciotti, PhD | International Scientific Executive | Translational Medicine Leader | MedTech Innovator | Strategic Advisor | AI & Digital Health | Longevity Medicine Pioneer"
   },
   "home": {
-    "heroHeadline": "Trasformo la biologia in impresa. La scienza in salute.",
+    "heroHeadline": "Trasformo la scienza in impresa. La biologia in salute.",
     "heroSubtitle": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% degli scienziati più influenti al mondo (Stanford, 2023).",
     "heroCta1": "Lavora con me",
     "heroCta2": "Leggi la mia ricerca",
     "hero": {
       "eyebrow": "Nanomedicina · Longevità · Venture Building",
-      "headline": "Trasformo la biologia in impresa. La scienza in salute.",
+      "headline": "Trasformo la scienza in impresa. La biologia in salute.",
       "subheadline": "L'innovazione nell'ecosistema globale delle Life Sciences richiede una sintesi profonda tra ingegneria dei materiali, biologia molecolare, farmacologia e dinamiche di mercato. L'obiettivo centrale è trasformare scoperte scientifiche complesse in soluzioni cliniche e industriali concrete.",
       "ctaPrimary": "Leggi la mia ricerca",
       "ctaSecondary": "Contattami",
@@ -126,42 +126,42 @@
       "items": [
         {
           "id": "about",
-          "title": "Executive Profile (Chi Sono)",
+          "title": "Executive Profile",
           "desc": "Un percorso accademico e direzionale sviluppato all'interno di centri di eccellenza internazionali, focalizzato sulla guida di ecosistemi di ricerca complessi e sull'attrazione di investimenti strategici per l'innovazione medica.",
           "cta": "Scopri il percorso",
           "href": "/about"
         },
         {
           "id": "science",
-          "title": "R&D Pipelines (Scienza)",
+          "title": "R&D Pipelines",
           "desc": "Dallo sviluppo di nanovettori biomimetici agli scaffold per la rigenerazione tissutale: un approccio di ricerca rigorosamente traslazionale, concepito per colmare i bisogni clinici insoddisfatti trasferendo l'innovazione dal banco di laboratorio al paziente.",
           "cta": "Esplora le macro-aree di ricerca",
           "href": "/science"
         },
         {
           "id": "ventures",
-          "title": "Venture Creation & Tech Transfer (Imprese)",
+          "title": "Venture Creation & Tech Transfer",
           "desc": "La conversione della proprietà intellettuale in iniziative industriali. Il ruolo vitale delle startup deep-tech e del trasferimento tecnologico per trasformare le intuizioni scientifiche in tecnologie accessibili e scalabili sul mercato globale.",
           "cta": "Scopri le iniziative aziendali",
           "href": "/ventures"
         },
         {
           "id": "consultancy",
-          "title": "Corporate Strategy & VC Advisory (Consulenza)",
+          "title": "Corporate Strategy & VC Advisory",
           "desc": "Supporto strategico e analisi di fattibilità tecnologica per l'industria farmaceutica globale e i fondi di Venture Capital. Un'attività mirata all'ottimizzazione delle pipeline di sviluppo e al de-risking dell'innovazione biomedica.",
           "cta": "Approfondisci le attività di advisory",
           "href": "/consultancy"
         },
         {
           "id": "longevity",
-          "title": "Healthspan Engineering (Longevità)",
+          "title": "Healthspan Engineering",
           "desc": "Una prospettiva proattiva sull'invecchiamento basata sui principi della Medicina 4P. Interventi strutturati su nutrizione, movimento ed equilibrio neuro-emotivo per preservare la resilienza cellulare e ottimizzare l'estensione della vita in salute.",
           "cta": "Esplora il Programma Longevità",
           "href": "/longevity"
         },
         {
           "id": "speaking",
-          "title": "Scientific Advocacy (Speaking)",
+          "title": "Scientific Advocacy",
           "desc": "La traduzione della complessità biomedica in narrazioni chiare e d'impatto. Un'attività di divulgazione mirata ad avvicinare istituzioni, investitori e grande pubblico ai temi cruciali della salute e della scienza biomimetica.",
           "cta": "Guarda gli interventi e le pubblicazioni",
           "href": "/speaking"

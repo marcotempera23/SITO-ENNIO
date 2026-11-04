@@ -40,7 +40,7 @@ export function LeadershipPortfolio() {
             >
               <Link
                 href={item.href}
-                className="group relative flex flex-col justify-between h-full p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-all duration-400 hover:border-[var(--color-accent)]/50 hover:-translate-y-1 hover:shadow-xl"
+                className="group relative flex flex-col justify-between h-full p-8 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] overflow-hidden transition-all duration-400 hover:border-[var(--color-accent)]/50 hover:-translate-y-1 hover:shadow-xl active:border-[var(--color-accent)]/50 active:shadow-lg"
               >
                 {/* Subtle top indicator */}
                 <div className="flex items-center justify-between gap-4 mb-5">
@@ -68,16 +68,35 @@ export function LeadershipPortfolio() {
                   <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </div>
 
-                {/* Accent highlight line */}
+                {/* Accent highlight line — visible on hover (desktop) and always visible on mobile via in-view */}
                 <div
                   aria-hidden="true"
-                  className="absolute bottom-0 left-0 h-[2px] w-full bg-[var(--color-accent)] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100"
+                  className="absolute bottom-0 left-0 h-[2px] w-full bg-[var(--color-accent)] origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100 portfolio-accent-line"
                 />
               </Link>
             </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Mobile: trigger accent line and card highlight on scroll (viewport intersection) */}
+      <style>{`
+        @media (hover: none) and (pointer: coarse) {
+          .group:active .portfolio-accent-line,
+          .group:focus-within .portfolio-accent-line {
+            transform: scaleX(1);
+          }
+          .group {
+            border-color: color-mix(in srgb, var(--color-accent) 30%, transparent) !important;
+          }
+          .group h3 {
+            color: var(--color-accent) !important;
+          }
+          .group .font-mono.text-step--2:last-child {
+            opacity: 1;
+          }
+        }
+      `}</style>
     </section>
   );
 }

@@ -213,4 +213,13 @@
   @media (prefers-reduced-motion: reduce) {
     .animate-play-pulse { animation: none; }
   }
+
+  /* ── Mobile / touch-device enhancements ── */
+  /* On touch devices, show journal logos in color (no hover to reveal them) */
+  @media (hover: none) and (pointer: coarse) {
+    /* Journals marquee: show logos in color on touch */
+    .grayscale {
+      filter: grayscale(0) !important;
+    }
+  }
 }

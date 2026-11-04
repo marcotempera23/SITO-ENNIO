@@ -123,6 +123,15 @@ export function ImpreseConsulenzeTeaser() {
         .group:hover .imprese-name {
           color: var(--brand-color) !important;
         }
+        @media (hover: none) and (pointer: coarse) {
+          .imprese-name {
+            color: var(--brand-color) !important;
+          }
+          .group img {
+            filter: grayscale(0) !important;
+            opacity: 1 !important;
+          }
+        }
       `}</style>
         </motion.section>
     );

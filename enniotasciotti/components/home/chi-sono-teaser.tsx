@@ -22,7 +22,7 @@ export function ChiSonoTeaser() {
     return (
         <section
             aria-labelledby="chisono-heading"
-            className="relative overflow-hidden min-h-[80svh] flex flex-col justify-end"
+            className="relative overflow-hidden min-h-[60svh] sm:min-h-[80svh] flex flex-col justify-end"
         >
             {/* Background photo */}
             <div className="absolute inset-0 z-0">
