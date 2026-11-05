@@ -1,15 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
-import { LocaleSwitcher } from './locale-switcher';
-import { ThemeToggle } from './theme-toggle';
-import { Menu, X } from 'lucide-react';
-import { cn } from '@/lib/utils';
-
-const EASE = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number];
+import { useEffect, useRef, useState } from 'react';
+import { useLocale, useTranslations } from 'next-intl';
+import { gsap } from 'gsap';
+import { Link, usePathname, useRouter } from '@/i18n/navigation';
+import { Mark } from '@/components/hlp/experience';
+import { HLP_URL } from '@/lib/links';
 
 const NAV_LINKS = [
   { key: 'about', href: '/about' },
@@ -22,174 +18,94 @@ const NAV_LINKS = [
 
 export function Nav() {
   const t = useTranslations('nav');
+  const h = useTranslations('hx');
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const other = locale === 'it' ? 'en' : 'it';
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Close mobile menu on escape
+  // menu per telefono: la pagina sotto non scorre, Esc lo chiude
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setMenuOpen(false);
-    };
+    document.body.classList.toggle('menu-open', open);
+    if (open && menuRef.current && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      gsap.fromTo(menuRef.current.querySelectorAll('.mmenu-links a, .mmenu-foot'), { y: 28, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.7, stagger: 0.05, ease: 'power3.out', delay: 0.1, overwrite: true });
+    }
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
+  }, [open]);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 981px)');
+    const onChange = (e: MediaQueryListEvent) => { if (e.matches) setOpen(false); };
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
   }, []);
+
+  const isCurrent = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+  const switchLang = () => router.replace(pathname, { locale: other });
 
   return (
     <>
-      <header
-        role="banner"
-        className={cn(
-          'fixed top-0 left-0 right-0 z-50 border-b border-[var(--color-border)]',
-          'bg-[var(--color-surface)]/95 backdrop-blur-[16px]',
-          'transition-shadow duration-500',
-          scrolled ? 'shadow-sm' : 'shadow-none'
-        )}
-      >
-        {/* Global Tagline Strip */}
-        <div className="border-b border-[var(--color-border)]/40 bg-[var(--color-surface)]/80 py-1 px-4 text-center overflow-hidden hidden md:block">
-          <p className="font-mono text-[11px] tracking-wider text-[var(--color-text-muted)] truncate max-w-7xl mx-auto">
-            {t('tagline')}
-          </p>
-        </div>
-
-        <nav
-          role="navigation"
-          aria-label="Main navigation"
-          className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5"
-        >
-          {/* Logo */}
-          <Link
-            href="/"
-            className="font-display text-step-1 font-light tracking-tight text-[var(--color-text)]"
-            aria-label="Ennio Tasciotti — Home"
-          >
-            Ennio Tasciotti
-          </Link>
-
-          {/* Desktop nav */}
-          <ul
-            className="hidden lg:flex items-center gap-6"
-            role="list"
-          >
-            {NAV_LINKS.map(({ key, href }) => (
-              <li key={key}>
-                <Link
-                  href={href}
-                  className="text-step--1 duration-300 transition-colors text-[var(--color-text-muted)] hover:text-[var(--color-accent)]"
-                >
-                  {t(key)}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          {/* Desktop controls */}
-          <div className="hidden lg:flex items-center gap-2">
-            <LocaleSwitcher />
-            <ThemeToggle />
-            <Link
-              href="/contact"
-              className="ml-2 inline-flex h-9 items-center rounded-md px-4 text-step--1 font-medium transition-colors bg-[var(--color-accent)] text-white"
-            >
-              {t('contact')}
-            </Link>
-          </div>
-
-          {/* Mobile hamburger */}
-          <button
-            className="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-md text-[var(--color-text)]"
-            onClick={() => setMenuOpen(true)}
-            aria-label="Open navigation menu"
-            aria-controls="mobile-menu"
-          >
-            <Menu size={22} aria-hidden="true" />
-          </button>
+      <header className={`nav${scrolled ? ' scrolled' : ''}`}>
+        <Link className="brand" href="/" aria-label={h('home')}>
+          <Mark />
+          <span>Ennio <em>Tasciotti</em> <small>PhD</small></span>
+        </Link>
+        <nav className="nav-links" aria-label={h('sections')}>
+          {NAV_LINKS.map(({ key, href }) => (
+            <Link key={key} href={href} aria-current={isCurrent(href) ? 'page' : undefined}>{t(key)}</Link>
+          ))}
         </nav>
+        <div className="nav-actions">
+          <button type="button" className="nav-lang" onClick={switchLang} aria-label={h('langLabel')} lang={other}>
+            {other.toUpperCase()}
+          </button>
+          <Link className="btn btn-primary btn-sm nav-desk nav-contact" href="/contact">{t('contact')}</Link>
+          <button
+            type="button"
+            className="nav-toggle"
+            aria-label={open ? h('menuClose') : h('menuOpen')}
+            aria-expanded={open}
+            aria-controls="mmenu"
+            onClick={() => setOpen((o) => !o)}
+          >
+            <span /><span />
+          </button>
+        </div>
       </header>
 
-      {/* Mobile full-screen menu — animated */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            id="mobile-menu"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Navigation menu"
-            className="fixed inset-0 z-[100] flex flex-col bg-[var(--color-bg)]"
-            initial={{ x: '100%', opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: '100%', opacity: 0 }}
-            transition={{ duration: 0.45, ease: EASE }}
-          >
-            <div className="flex items-center justify-between px-6 py-4">
-              <Link
-                href="/"
-                onClick={() => setMenuOpen(false)}
-                className="font-display text-step-1 font-light text-[var(--color-text)]"
-              >
-                Ennio Tasciotti
-              </Link>
-              <button
-                onClick={() => setMenuOpen(false)}
-                aria-label="Close navigation menu"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-md text-[var(--color-text)] transition-transform duration-300 hover:rotate-90"
-              >
-                <X size={22} aria-hidden="true" />
-              </button>
-            </div>
-
-            <nav className="flex flex-1 flex-col justify-center px-8">
-              <ul className="space-y-1" role="list">
-                {NAV_LINKS.map(({ key, href }, i) => (
-                  <motion.li
-                    key={key}
-                    initial={{ opacity: 0, x: 24 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.1 + i * 0.06, ease: EASE }}
-                  >
-                    <Link
-                      href={href}
-                      onClick={() => setMenuOpen(false)}
-                      className="block py-3 text-step-3 font-display font-light leading-tight transition-colors duration-300 text-[var(--color-text)] min-h-[48px] hover:text-[var(--color-accent)] hover:translate-x-1"
-                    >
-                      {t(key)}
-                    </Link>
-                  </motion.li>
-                ))}
-                <motion.li
-                  initial={{ opacity: 0, x: 24 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: 0.1 + NAV_LINKS.length * 0.06, ease: EASE }}
-                >
-                  <Link
-                    href="/contact"
-                    onClick={() => setMenuOpen(false)}
-                    className="block py-3 text-step-3 font-display font-light leading-tight text-[var(--color-accent)] min-h-[48px] transition-opacity duration-300 hover:opacity-70"
-                  >
-                    {t('contact')}
-                  </Link>
-                </motion.li>
-              </ul>
-            </nav>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.35, duration: 0.4 }}
-              className="flex items-center gap-4 px-8 py-6 border-t border-[var(--color-border)]"
-            >
-              <LocaleSwitcher />
-              <ThemeToggle />
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Menu per telefono: sta fuori dalla barra perché la barra, con backdrop-filter,
+          diventerebbe il contenitore degli elementi fissi e il menu resterebbe schiacciato */}
+      <div className={`mmenu${open ? ' open' : ''}`} id="mmenu" ref={menuRef} aria-hidden={!open}>
+        <nav className="mmenu-links" aria-label={h('sections')}>
+          {NAV_LINKS.map(({ key, href }, i) => (
+            <Link key={key} href={href} onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
+              <span>{String(i + 1).padStart(2, '0')}</span>{t(key)}
+            </Link>
+          ))}
+          <Link href="/contact" onClick={() => setOpen(false)} tabIndex={open ? 0 : -1}>
+            <span>{String(NAV_LINKS.length + 1).padStart(2, '0')}</span>{t('contact')}
+          </Link>
+        </nav>
+        <div className="mmenu-foot">
+          <a className="btn btn-primary btn-lg" href={HLP_URL} target="_blank" rel="noopener" tabIndex={open ? 0 : -1}>
+            {h('hlpName')} <span className="arrow" aria-hidden="true">↗</span>
+          </a>
+          <p>Prof. Ennio Tasciotti · {h('hlpSub').split(' · ')[0]}</p>
+        </div>
+      </div>
     </>
   );
 }

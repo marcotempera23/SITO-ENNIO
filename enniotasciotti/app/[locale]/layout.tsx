@@ -6,13 +6,13 @@ import { routing } from '@/i18n/routing';
 import { Nav } from '@/components/layout/nav';
 import { Footer } from '@/components/layout/footer';
 import { CookieConsent } from '@/components/shared/cookie-consent';
-import { ScientificWireframeBackground } from '@/components/shared/scientific-wireframe-background';
+import { Experience } from '@/components/hlp/experience';
 
 const fraunces = Fraunces({
   subsets: ['latin'],
   weight: 'variable',
   style: ['normal', 'italic'],
-  variable: '--font-display',
+  variable: '--font-fraunces',
   display: 'swap',
   axes: ['opsz'],
 });
@@ -20,14 +20,14 @@ const fraunces = Fraunces({
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
-  variable: '--font-sans',
+  variable: '--font-inter',
   display: 'swap',
 });
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  variable: '--font-mono',
+  variable: '--font-jetbrains-mono',
   display: 'swap',
 });
 
@@ -62,9 +62,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   const messages = await getMessages({ locale });
 
   return (
-    <div className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} relative isolate min-h-screen overflow-x-clip bg-[var(--color-bg)] text-[var(--color-text)]`}>
-      <ScientificWireframeBackground />
+    <div className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} site relative isolate min-h-screen overflow-x-clip font-sans bg-[var(--color-bg)] text-[var(--color-text)]`}>
       <NextIntlClientProvider messages={messages} locale={locale}>
+        <Experience label="Ennio Tasciotti" />
         {/* Skip link for keyboard / AT users */}
         <a
           href="#main-content"

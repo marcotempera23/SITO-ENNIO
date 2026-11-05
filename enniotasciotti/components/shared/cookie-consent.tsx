@@ -37,24 +37,24 @@ export function CookieConsent() {
       role="dialog"
       aria-modal="false"
       aria-label={t('ariaLabel')}
-      className="fixed bottom-0 left-0 right-0 z-50 border-t border-[var(--color-border)] bg-[var(--color-surface)] px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4"
+      className="cookie-bar"
     >
-      <p className="text-step--1 flex-1 leading-relaxed text-[var(--color-text-muted)]">
+      <p className="cookie-text">
         {t('body')}{' '}
-        <Link href="/cookies" className="text-[var(--color-accent)] underline">
+        <Link href="/cookies" className="eyebrow-link">
           {t('learnMore')}
         </Link>
       </p>
-      <div className="flex gap-3 shrink-0">
+      <div className="cookie-actions">
         <button
           onClick={decline}
-          className="h-10 px-5 text-step--1 rounded-md border border-[var(--color-border)] text-[var(--color-text-muted)] transition-colors hover:bg-[var(--color-surface-2)]"
+          className="btn btn-ghost btn-sm"
         >
           {t('decline')}
         </button>
         <button
           onClick={accept}
-          className="h-10 px-5 text-step--1 rounded-md bg-[var(--color-accent)] font-medium text-white transition-colors"
+          className="btn btn-primary btn-sm"
         >
           {t('accept')}
         </button>

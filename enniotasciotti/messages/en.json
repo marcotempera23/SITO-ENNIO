@@ -2092,5 +2092,180 @@
   },
   "header": {
     "tagline": "Ennio Tasciotti, PhD | International Scientific Executive | Translational Medicine Leader | MedTech Innovator | Strategic Advisor | AI & Digital Health | Longevity Medicine Pioneer"
+  },
+  "hx": {
+    "loader": "Ennio Tasciotti",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "sections": "Sections",
+    "home": "Ennio Tasciotti, home page",
+    "langLabel": "Switch to Italian",
+    "hlpName": "Human Longevity Program",
+    "hlpSub": "IRCCS San Raffaele · the program website",
+    "hero": {
+      "eyebrowRest": " · Nanomedicine · Longevity",
+      "line1": "I turn science into ventures.",
+      "line2": "And biology into health.",
+      "ctaPrimary": "Research areas",
+      "ctaSecondary": "Get in touch",
+      "meta": [
+        [
+          "200",
+          "+",
+          "scientific publications"
+        ],
+        [
+          "13000",
+          "+",
+          "citations"
+        ],
+        [
+          "63",
+          "",
+          "h-index"
+        ],
+        [
+          "15",
+          "",
+          "patents"
+        ]
+      ],
+      "chips": [
+        "Nanomedicine",
+        "Regenerative medicine",
+        "Immunomodulation",
+        "Longevity medicine"
+      ],
+      "scroll": "Scroll",
+      "scrollLabel": "Scroll to the next section"
+    },
+    "manifesto": {
+      "eyebrow": "The idea",
+      "cite": "TEDxCNR Rome, 2016"
+    },
+    "story": {
+      "eyebrow": "Scientific research",
+      "title": "Four research areas.",
+      "lead": "From the nanoparticle to the patient: a rigorously translational approach, designed to address unmet clinical needs by transferring innovation from the laboratory bench to the patient.",
+      "center": [
+        "From the cell",
+        "to the patient"
+      ],
+      "more": "Read more",
+      "steps": [
+        {
+          "key": "trasportare",
+          "href": "/science#drugDelivery",
+          "label": "Drug delivery",
+          "verb": "Deliver",
+          "title": "Targeted delivery platforms",
+          "body": "Overcoming biological barriers and de-risking oncological, inflammatory and neurological therapies with biomimetic carriers.",
+          "points": [
+            "Leukosome: a biomimetic vesicle that uses leukocyte membrane proteins to navigate inflammation and deliver drugs with precision.",
+            "Multistage Vector: a multistage nanocarrier that overcomes biological barriers sequentially, from circulation to diseased tissue."
+          ]
+        },
+        {
+          "key": "rigenerare",
+          "href": "/science#regenerative",
+          "label": "Regenerative medicine",
+          "verb": "Regenerate",
+          "title": "BioNanoScaffolds",
+          "body": "Development of biomimetic 3D scaffolds and polymeric matrices with silicon particles to guide tissue regeneration.",
+          "points": [
+            "Biomimetic scaffolds and extracellular matrices that guide tissue repair through immune-aware regeneration.",
+            "Lead of the DARPA “Fracture Putty” industrial program ($15M)."
+          ]
+        },
+        {
+          "key": "modulare",
+          "href": "/science#immunology",
+          "label": "Immunomodulation",
+          "verb": "Modulate",
+          "title": "Targeting inflammation and fibrosis",
+          "body": "Synergy between biomaterials and the immune system, polarizing macrophages toward a pro-regenerative phenotype.",
+          "points": []
+        },
+        {
+          "key": "preservare",
+          "href": "/science#longevityPipeline",
+          "label": "Longevity & healthspan",
+          "verb": "Preserve",
+          "title": "4P Medicine",
+          "body": "The 4P Medicine paradigm to counter inflammaging-driven neurodegeneration and preserve cognitive function.",
+          "points": [
+            "Structured interventions on nutrition, movement and neuro-emotional balance to preserve cellular resilience.",
+            "Founder and director of the Human Longevity Program at IRCCS San Raffaele."
+          ]
+        }
+      ]
+    },
+    "about": {
+      "eyebrow": "About",
+      "title1": "Scientist. Entrepreneur.",
+      "title2": "Innovator.",
+      "body": "Internationally renowned professor and researcher, a pioneer of nanomedicine and longevity medicine. With 200+ publications and 13,000+ citations, he turns science into real-world impact.",
+      "facts": [
+        [
+          "Top 1%",
+          "most influential scientists worldwide (Stanford, 2023)"
+        ],
+        [
+          "63",
+          "h-index"
+        ],
+        [
+          "4",
+          "founder roles"
+        ],
+        [
+          "52+",
+          "events, talks and appearances"
+        ]
+      ],
+      "tags": [
+        "Nanomedicine",
+        "Longevity",
+        "TEDx speaker"
+      ],
+      "cta": "Read the full biography",
+      "photoAlt": "Prof. Ennio Tasciotti"
+    },
+    "hlp": {
+      "eyebrow": "At IRCCS San Raffaele",
+      "text": "He founded and directs the Human Longevity Program: a multidisciplinary research program studying the molecular, cellular and environmental basis of aging, to live longer and healthier lives.",
+      "cardSub": "Biology of aging and translational medicine · visit the program website",
+      "cardLabel": "Open the Human Longevity Program website (opens in a new tab)"
+    },
+    "partners": {
+      "eyebrow": "Ventures & consultancy",
+      "title": "From research to industry.",
+      "body": "Chief Scientific Officer (R&D) and board member of several biotechnology companies, lead of the DARPA “Fracture Putty” industrial program ($15M). Inventor and holder of 12 international patents on nano- and biomaterials.",
+      "journals": "Published in",
+      "companies": "Partnerships",
+      "cta": "All consultancy work"
+    },
+    "speaking": {
+      "eyebrow": "Speaking & media",
+      "title": "Talks, conferences and media appearances.",
+      "tv": "Television",
+      "conf": "Conferences",
+      "video": "Video talk",
+      "cta": "All events (52+)",
+      "watch": "Watch the talk"
+    },
+    "final": {
+      "title1": "Science that becomes",
+      "title2": "health.",
+      "lead": "Scientific collaborations, advisory, talks and media: get in touch.",
+      "cta": "Get in touch"
+    },
+    "footer": {
+      "desc": "Scientist, entrepreneur and longevity medicine pioneer. Nanomedicine, regenerative medicine and venture building.",
+      "site": "Site",
+      "resources": "Resources",
+      "profiles": "Scholarly profiles",
+      "quote": "“To beat cancer, you have to think like a cell.”"
+    }
   }
 }

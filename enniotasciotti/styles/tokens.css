@@ -3,16 +3,16 @@
    ============================================================ */
 
 :root {
-  /* Palette — Light */
-  --color-bg:           #F7F4EE;
-  --color-surface:      #FFFFFF;
-  --color-surface-2:    #EFEAE0;
-  --color-text:         #0E1620;
-  --color-text-muted:   #4B5563;
-  --color-border:       #D9D2C1;
-  --color-accent:       #0A6FB2;
-  --color-accent-2:     #B68C28;
-  --color-quote:        #6B5B3E;
+  /* Palette — stessa del sito dello Human Longevity Program (solo scura) */
+  --color-bg:           #04090c;
+  --color-surface:      #071015;
+  --color-surface-2:    #0b1820;
+  --color-text:         #e8ede9;
+  --color-text-muted:   #9db0a8;
+  --color-border:       rgba(232, 237, 233, 0.12);
+  --color-accent:       #8fd8ff;
+  --color-accent-2:     #e9dfc9;
+  --color-quote:        #c4ecff;
 
   /* Typography */
   --font-display: "Fraunces", "GT Sectra", Georgia, serif;
@@ -41,14 +41,3 @@
   --dur-slow:  560ms;
 }
 
-[data-theme="dark"] {
-  --color-bg:           #0A0F18;
-  --color-surface:      #111824;
-  --color-surface-2:    #182231;
-  --color-text:         #ECECEC;
-  --color-text-muted:   #9AA3B2;
-  --color-border:       #1F2A3A;
-  --color-accent:       #FBBF24;
-  --color-accent-2:     #FACC15;
-  --color-quote:        #C9C2A9;
-}
