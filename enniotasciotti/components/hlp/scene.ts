@@ -11,10 +11,10 @@ import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 // mentre si scorre, si ricompone nelle cinque immagini del programma:
 //
 //   0  nanoparticella biomimetica (apertura)
-//   1  corpo umano                (Misurare)
-//   2  doppia elica               (Capire)
-//   3  reticolo di calcolo        (Integrare)
-//   4  vasi e nanoparticelle      (Intervenire)
+//   1  gemello digitale           (longevità)
+//   2  Multistage Vector         (drug delivery)
+//   3  scaffold di fibre          (medicina rigenerativa)
+//   4  globo del percorso        (Pisa · Houston · Pechino · Roma)
 //
 // Ogni particella conosce la propria posizione in tutte e cinque le forme;
 // lo shader le mescola con i pesi `state.w1..w4` (GSAP li interpola) e durante
@@ -124,115 +124,125 @@ function shapeCell(n) {
   return out;
 }
 
-function shapeHelix(n) {
+// ── Forme proprie del sito del Prof. Tasciotti ───────────────────────────
+// 2  Multistage Vector: particella discoidale di silicio poroso che rilascia
+//    nanoparticelle dai pori (la piattaforma di drug delivery)
+function shapeMSV(n) {
   const out = new Float32Array(n * 3);
-  const turns = 2.6, rad = 0.4, rungs = 34;
-  for (let i = 0; i < n; i++) {
-    const r = Math.random();
-    let x, y, z;
-    if (r < 0.58) {                                // i due filamenti
-      const u = Math.random();
-      const a = u * turns * Math.PI * 2 + (r < 0.29 ? 0 : Math.PI);
-      y = u * 2 - 1;
-      const j = 0.03;
-      x = Math.cos(a) * rad + rnd(-j, j); z = Math.sin(a) * rad + rnd(-j, j); y += rnd(-j, j);
-    } else if (r < 0.9) {                          // coppie di basi
-      const k = Math.floor(Math.random() * rungs);
-      const u = (k + 0.5) / rungs;
-      const a = u * turns * Math.PI * 2;
-      const t = Math.random();
-      y = u * 2 - 1 + rnd(-0.006, 0.006);
-      x = Math.cos(a) * rad * (1 - 2 * t); z = Math.sin(a) * rad * (1 - 2 * t);
-    } else {                                       // nucleotidi liberi
-      const a = Math.random() * Math.PI * 2;
-      const k = rnd(0.55, 0.95);
-      x = Math.cos(a) * k; z = Math.sin(a) * k; y = rnd(-1.05, 1.05);
-    }
-    out.set([x, y, z], i * 3);
+  const R = 0.9, H = 0.18, pore = 0.062, step = 0.17;
+  // pori a nido d'ape sulla faccia superiore
+  const pores = [];
+  for (let i = -8; i <= 8; i++) for (let j = -8; j <= 8; j++) {
+    const x = i * step + (j % 2 ? step / 2 : 0), z = j * step * 0.866;
+    if (Math.hypot(x, z) < R - 0.08) pores.push([x, z]);
   }
-  return out;
-}
-
-function shapeLattice(n) {
-  const out = new Float32Array(n * 3);
-  const g = 5, side = 1.3, step = side / (g - 1);
-  const node = (i, j, k) => [-side / 2 + i * step, -side / 2 + j * step, -side / 2 + k * step];
-  for (let p = 0; p < n; p++) {
-    const r = Math.random();
-    const i = Math.floor(Math.random() * g), j = Math.floor(Math.random() * g), k = Math.floor(Math.random() * g);
-    let [x, y, z] = node(i, j, k);
-    if (r < 0.36) {                                // nodi
-      const s = 0.028;
-      x += rnd(-s, s); y += rnd(-s, s); z += rnd(-s, s);
-    } else if (r < 0.94) {                         // connessioni lungo gli assi
-      const axis = Math.floor(Math.random() * 3);
-      const t = Math.random() * step;
-      if (axis === 0 && i < g - 1) x += t;
-      else if (axis === 1 && j < g - 1) y += t;
-      else if (axis === 2 && k < g - 1) z += t;
-      else { x += rnd(-0.01, 0.01); }
-    } else {                                       // scintille
-      x = rnd(-0.9, 0.9); y = rnd(-0.9, 0.9); z = rnd(-0.9, 0.9);
-    }
-    out.set([x, y, z], p * 3);
-  }
-  // un quarto di giro: il cubo si presenta di spigolo, più tridimensionale
-  const m = new THREE.Matrix4().makeRotationFromEuler(new THREE.Euler(0.5, 0.75, 0));
-  const v = new THREE.Vector3();
-  for (let p = 0; p < n; p++) {
-    v.fromArray(out, p * 3).applyMatrix4(m);
-    v.toArray(out, p * 3);
-  }
-  return out;
-}
-
-function shapeVessels(n) {
-  // albero vascolare: un tronco che si ramifica, con nanoparticelle all'interno
-  const segs = [];
-  function grow(a, dir, len, r, depth) {
-    const b = a.clone().addScaledVector(dir, len);
-    segs.push({ a, b, r, len });
-    if (depth === 0) return;
-    const axis = new THREE.Vector3().crossVectors(dir, dirRandom()).normalize();
-    for (const s of [-1, 1]) {
-      const d = dir.clone().applyAxisAngle(axis, s * rnd(0.35, 0.65)).applyAxisAngle(dir, rnd(-0.6, 0.6)).normalize();
-      grow(b, d, len * rnd(0.68, 0.82), r * 0.7, depth - 1);
-    }
-  }
-  grow(new THREE.Vector3(0, -1.1, 0), new THREE.Vector3(0, 1, 0), 0.62, 0.085, 4);
-  const weights = segs.map((s) => s.len * s.r);
-  const total = weights.reduce((a, b) => a + b, 0);
-  const pick = () => {
-    let x = Math.random() * total;
-    for (let i = 0; i < segs.length; i++) if ((x -= weights[i]) <= 0) return segs[i];
-    return segs[segs.length - 1];
-  };
-  const particles = Array.from({ length: 90 }, () => {
-    const s = segs[Math.floor(Math.random() * segs.length)];
-    return s.a.clone().lerp(s.b, Math.random());
+  // nanoparticelle: alcune ancora nei pori, altre in uscita lungo spirali
+  const nps = Array.from({ length: 90 }, (_, i) => {
+    const [px, pz] = pores[Math.floor(Math.random() * pores.length)];
+    if (i < 36) return new THREE.Vector3(px, H / 2 - 0.02, pz);
+    const t = Math.random();
+    const a = Math.atan2(pz, px) + t * 1.6;
+    const d = Math.hypot(px, pz) * (1 + t * 0.9) + t * 0.15;
+    return new THREE.Vector3(Math.cos(a) * d, H / 2 + 0.08 + t * 0.95, Math.sin(a) * d);
   });
-  const out = new Float32Array(n * 3);
-  const v = new THREE.Vector3(), axis = new THREE.Vector3(), ortho = new THREE.Vector3();
-  for (let i = 0; i < n; i++) {
-    if (Math.random() < 0.74) {                    // pareti dei vasi
-      const s = pick();
-      axis.subVectors(s.b, s.a).normalize();
-      ortho.crossVectors(axis, Math.abs(axis.y) < 0.9 ? THREE.Object3D.DEFAULT_UP : new THREE.Vector3(1, 0, 0)).normalize();
-      v.copy(s.a).lerp(s.b, Math.random());
-      ortho.applyAxisAngle(axis, Math.random() * Math.PI * 2);
-      v.addScaledVector(ortho, s.r * rnd(0.92, 1.05));
-    } else {                                       // nanoparticelle in circolo
-      const c = particles[Math.floor(Math.random() * particles.length)];
-      v.copy(dirRandom()).multiplyScalar(0.028).add(c);
+  const v = new THREE.Vector3();
+  for (let k = 0; k < n; k++) {
+    const r = Math.random();
+    if (r < 0.42) {                                  // bordi dei pori: la faccia è un nido d'ape
+      const [px, pz] = pores[Math.floor(Math.random() * pores.length)];
+      const a = Math.random() * Math.PI * 2, d = pore * rnd(0.96, 1.04);
+      v.set(px + Math.cos(a) * d, H / 2 + rnd(-0.004, 0.004), pz + Math.sin(a) * d);
+    } else if (r < 0.52) {                           // interno dei pori, più in profondità
+      const [px, pz] = pores[Math.floor(Math.random() * pores.length)];
+      const a = Math.random() * Math.PI * 2;
+      v.set(px + Math.cos(a) * pore * 0.9, H / 2 - rnd(0.02, H * 0.8), pz + Math.sin(a) * pore * 0.9);
+    } else if (r < 0.62) {                           // bordo esterno del disco
+      const a = Math.random() * Math.PI * 2;
+      v.set(Math.cos(a) * R, rnd(-H / 2, H / 2), Math.sin(a) * R);
+    } else if (r < 0.7) {                            // fondo emisferico, rado
+      const a = Math.random() * Math.PI * 2, d = R * Math.sqrt(Math.random());
+      v.set(Math.cos(a) * d, -H / 2 - 0.2 * Math.sqrt(Math.max(0, 1 - (d / R) ** 2)), Math.sin(a) * d);
+    } else {                                         // nanoparticelle (piccoli ammassi luminosi)
+      v.copy(nps[Math.floor(Math.random() * nps.length)]).add(dirRandom().multiplyScalar(0.034 * Math.cbrt(Math.random())));
     }
-    v.toArray(out, i * 3);
+    v.toArray(out, k * 3);
   }
-  // normalizza: altezza 2, centrato
-  const box = new THREE.Box3().setFromArray(out);
-  const size = box.getSize(new THREE.Vector3()), ctr = box.getCenter(new THREE.Vector3());
-  const s = 2 / Math.max(size.y, size.x * 1.1);
-  for (let i = 0; i < n * 3; i += 3) {
-    out[i] = (out[i] - ctr.x) * s; out[i + 1] = (out[i + 1] - ctr.y) * s; out[i + 2] = (out[i + 2] - ctr.z) * s;
+  // inclinato verso chi guarda, così si vede il nido d'ape
+  const m = new THREE.Matrix4().makeRotationFromEuler(new THREE.Euler(0.78, 0, 0.2));
+  for (let k = 0; k < n; k++) { v.fromArray(out, k * 3).applyMatrix4(m); v.y -= 0.15; v.toArray(out, k * 3); }
+  return out;
+}
+
+// 3  Scaffold rigenerativo: un fascio di fibre intrecciate a nodo, con cellule aderenti
+function shapeScaffold(n) {
+  const out = new Float32Array(n * 3);
+  const P = 2, Q = 3, S = 0.29, fibers = 22;
+  const knot = (t, o = new THREE.Vector3()) => {
+    const r = Math.cos(Q * t) + 2;
+    return o.set(r * Math.cos(P * t) * S, r * Math.sin(P * t) * S, -Math.sin(Q * t) * S * 1.4);
+  };
+  const p0 = new THREE.Vector3(), p1 = new THREE.Vector3(), T = new THREE.Vector3(), N = new THREE.Vector3(), B = new THREE.Vector3();
+  const fiberPhase = Array.from({ length: fibers }, () => [Math.random() * Math.PI * 2, rnd(0.025, 0.075)]);
+  for (let k = 0; k < n; k++) {
+    const t = Math.random() * Math.PI * 2;
+    knot(t, p0); knot(t + 0.001, p1);
+    T.subVectors(p1, p0).normalize();
+    N.crossVectors(T, Math.abs(T.z) < 0.9 ? new THREE.Vector3(0, 0, 1) : new THREE.Vector3(1, 0, 0)).normalize();
+    B.crossVectors(T, N);
+    let x, y, z;
+    if (Math.random() < 0.86) {                       // fibre che si avvolgono
+      const [ph, rad] = fiberPhase[Math.floor(Math.random() * fibers)];
+      const a = ph + t * 7;
+      const j = 0.006;
+      x = p0.x + (N.x * Math.cos(a) + B.x * Math.sin(a)) * rad + rnd(-j, j);
+      y = p0.y + (N.y * Math.cos(a) + B.y * Math.sin(a)) * rad + rnd(-j, j);
+      z = p0.z + (N.z * Math.cos(a) + B.z * Math.sin(a)) * rad + rnd(-j, j);
+    } else {                                           // cellule che colonizzano lo scaffold
+      const c = dirRandom().multiplyScalar(0.035 * Math.cbrt(Math.random()));
+      const a = Math.random() * Math.PI * 2;
+      x = p0.x + (N.x * Math.cos(a) + B.x * Math.sin(a)) * 0.1 + c.x;
+      y = p0.y + (N.y * Math.cos(a) + B.y * Math.sin(a)) * 0.1 + c.y;
+      z = p0.z + (N.z * Math.cos(a) + B.z * Math.sin(a)) * 0.1 + c.z;
+    }
+    out.set([x, y, z], k * 3);
+  }
+  return out;
+}
+
+// 4  Il globo del percorso: Pisa, Houston, Pechino, Roma, collegate da archi
+export const CITIES = { pisa: [43.72, 10.4], houston: [29.76, -95.37], pechino: [39.9, 116.4], roma: [41.9, 12.5] };
+function shapeGlobe(n) {
+  const out = new Float32Array(n * 3);
+  const R = 0.86;
+  const ll = (lat, lon, r = R, o = new THREE.Vector3()) => {
+    const la = THREE.MathUtils.degToRad(lat), lo = THREE.MathUtils.degToRad(lon);
+    return o.set(Math.cos(la) * Math.sin(lo) * r, Math.sin(la) * r, Math.cos(la) * Math.cos(lo) * r);
+  };
+  const city = Object.values(CITIES).map(([la, lo]) => ll(la, lo));
+  const routes = [[0, 1], [1, 2], [1, 3], [0, 3], [3, 2]];
+  const golden = Math.PI * (3 - Math.sqrt(5));
+  const nDots = Math.floor(n * 0.42);
+  const v = new THREE.Vector3();
+  for (let k = 0; k < n; k++) {
+    const r = Math.random();
+    if (k < nDots) {                                  // superficie punteggiata
+      const yy = 1 - (k / (nDots - 1)) * 2, rr = Math.sqrt(1 - yy * yy), t = golden * k;
+      v.set(Math.cos(t) * rr * R, yy * R, Math.sin(t) * rr * R);
+    } else if (r < 0.3) {                             // meridiani e paralleli
+      if (Math.random() < 0.5) ll(Math.floor(Math.random() * 7) * 30 - 90 + 15, rnd(-180, 180), R, v);
+      else ll(rnd(-88, 88), Math.floor(Math.random() * 12) * 30, R, v);
+    } else if (r < 0.8) {                             // archi tra le città
+      const [a, b] = routes[Math.floor(Math.random() * routes.length)];
+      const t = Math.random();
+      const dist = city[a].distanceTo(city[b]);
+      v.copy(city[a]).lerp(city[b], t).normalize().multiplyScalar(R + Math.sin(Math.PI * t) * dist * 0.28);
+    } else if (r < 0.94) {                            // città
+      v.copy(city[Math.floor(Math.random() * city.length)]).add(dirRandom().multiplyScalar(0.035 * Math.cbrt(Math.random())));
+    } else {                                          // anello orbitale
+      const a = Math.random() * Math.PI * 2, d = rnd(1.08, 1.14);
+      v.set(Math.cos(a) * d, rnd(-0.01, 0.01), Math.sin(a) * d).applyAxisAngle(new THREE.Vector3(1, 0, 0), 0.32);
+    }
+    v.toArray(out, k * 3);
   }
   return out;
 }
@@ -276,8 +286,9 @@ export function createScene({ canvas, mobile = false, reduced = false, onProgres
     sx: 0,             // spostamento laterale della figura (frazione della larghezza)
     spin: 1,           // velocità di rotazione
     halo: 1,           // anelli attorno alla nanoparticella
+    rot: 0,            // rotazione aggiuntiva (il globo segue il percorso)
   };
-  const colors = { a: new THREE.Color("#8fd8ff"), b: new THREE.Color("#7ce0bf") };
+  const colors = { a: new THREE.Color("#8fd8ff"), b: new THREE.Color("#e9c98f") };
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: !mobile, powerPreference: "high-performance" });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, mobile ? 1.5 : 1.75));
@@ -308,7 +319,7 @@ export function createScene({ canvas, mobile = false, reduced = false, onProgres
     }
     const g = new THREE.BufferGeometry();
     g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-    const p = new THREE.Points(g, new THREE.PointsMaterial({ color: 0x8fd8ff, size: 0.02, transparent: true, opacity: 0.3, depthWrite: false, blending: THREE.AdditiveBlending }));
+    const p = new THREE.Points(g, new THREE.PointsMaterial({ color: 0xe9dfc9, size: 0.02, transparent: true, opacity: 0.3, depthWrite: false, blending: THREE.AdditiveBlending }));
     scene.add(p);
     return p;
   })();
@@ -337,9 +348,9 @@ export function createScene({ canvas, mobile = false, reduced = false, onProgres
   }
   geo.setAttribute("position", new THREE.BufferAttribute(s0, 3));
   geo.setAttribute("aS1", new THREE.BufferAttribute(s0.slice(), 3));   // il corpo arriva col modello
-  geo.setAttribute("aS2", new THREE.BufferAttribute(shapeHelix(n), 3));
-  geo.setAttribute("aS3", new THREE.BufferAttribute(shapeLattice(n), 3));
-  geo.setAttribute("aS4", new THREE.BufferAttribute(shapeVessels(n), 3));
+  geo.setAttribute("aS2", new THREE.BufferAttribute(shapeMSV(n), 3));
+  geo.setAttribute("aS3", new THREE.BufferAttribute(shapeScaffold(n), 3));
+  geo.setAttribute("aS4", new THREE.BufferAttribute(shapeGlobe(n), 3));
   geo.setAttribute("aFrom", new THREE.BufferAttribute(from, 3));
   geo.setAttribute("aRand", new THREE.BufferAttribute(rand, 3));
 
@@ -408,7 +419,7 @@ export function createScene({ canvas, mobile = false, reduced = false, onProgres
     u.uTime.value = t;
 
     if (!reduced) angle += dt * 0.14 * state.spin;
-    root.rotation.y = angle;
+    root.rotation.y = angle + state.rot;
     root.rotation.x = Math.sin(t * 0.15) * 0.06;
 
     const w0 = Math.max(0, 1 - state.w1 - state.w2 - state.w3 - state.w4);

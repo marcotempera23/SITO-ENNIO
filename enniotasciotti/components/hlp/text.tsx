@@ -28,3 +28,18 @@ export function Scrub({ text, as: Tag = 'h2', className, id }: { text: string; a
     </Tag>
   );
 }
+
+// Frase le cui parole emergono dalla sfocatura mentre si scorre
+export function Blur({ text, as: Tag = 'h2', className, id }: { text: string; as?: 'h2' | 'p' | 'blockquote'; className?: string; id?: string }) {
+  const words = text.trim().split(/\s+/);
+  return (
+    <Tag id={id} className={className} data-blur aria-label={text}>
+      {words.map((w, i) => (
+        <span key={i} aria-hidden="true">
+          <span className="w">{w}</span>
+          {i < words.length - 1 ? ' ' : ''}
+        </span>
+      ))}
+    </Tag>
+  );
+}

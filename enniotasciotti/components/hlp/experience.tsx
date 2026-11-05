@@ -41,16 +41,18 @@ type World = {
 
 const narrow = () => typeof window !== 'undefined' && window.matchMedia('(max-width: 880px)').matches;
 
-// forme: 0 nanoparticella, 1 corpo, 2 doppia elica, 3 reticolo (scaffold), 4 vasi
+// forme: 0 nanoparticella, 1 gemello digitale, 2 Multistage Vector, 3 scaffold di fibre, 4 globo
+const SIDE = () => (narrow() ? { ty: 0, sx: 0 } : { ty: 0, sx: 0.2 });
 const SCENES: Record<string, () => SceneDef> = {
-  hero: () => ({ shape: 0, colors: ['#8fd8ff', '#e9dfc9'], dist: narrow() ? 1.0 : 1.02, ty: narrow() ? -0.42 : 0, sx: narrow() ? 0 : 0.18, halo: 1, spin: 1 }),
-  manifesto: () => ({ shape: 0, colors: ['#8fd8ff', '#7ce0bf'], dist: narrow() ? 0.62 : 0.55, ty: 0, sx: 0, halo: 0, spin: 0.6 }),
-  trasportare: () => ({ shape: 4, colors: ['#f2a28f', '#8fd8ff'], dist: narrow() ? 1.05 : 0.98, ty: narrow() ? -0.38 : 0, sx: narrow() ? 0 : 0.17, halo: 0, spin: 0.9 }),
-  rigenerare: () => ({ shape: 3, colors: ['#e9dfc9', '#7ce0bf'], dist: narrow() ? 1.05 : 1.0, ty: narrow() ? -0.38 : 0, sx: narrow() ? 0 : 0.17, halo: 0, spin: 0.8 }),
-  modulare: () => ({ shape: 2, colors: ['#7ce0bf', '#8fd8ff'], dist: narrow() ? 1.05 : 0.95, ty: narrow() ? -0.38 : 0, sx: narrow() ? 0 : 0.17, halo: 0, spin: 1.6 }),
-  preservare: () => ({ shape: 1, colors: ['#8fd8ff', '#e9dfc9'], dist: narrow() ? 1.0 : 1.04, ty: narrow() ? -0.38 : 0, sx: narrow() ? 0 : 0.17, halo: 0, spin: 1 }),
+  hero: () => ({ shape: 0, colors: ['#e9c98f', '#8fd8ff'], dist: narrow() ? 1.25 : 1.1, ty: narrow() ? -0.5 : 0, sx: narrow() ? 0 : 0.2, halo: 1, spin: 0.7 }),
+  quote: () => ({ shape: 0, colors: ['#8fd8ff', '#e9dfc9'], dist: narrow() ? 0.62 : 0.52, ty: 0, sx: 0, halo: 0, spin: 0.4 }),
+  globe: () => ({ shape: 4, colors: ['#8fd8ff', '#e9c98f'], dist: narrow() ? 1.2 : 1.0, ty: narrow() ? -0.5 : 0.05, sx: 0, halo: 0, spin: 0.15 }),
+  msv: () => ({ shape: 2, colors: ['#c4ecff', '#f2a28f'], dist: narrow() ? 1.05 : 0.95, ...SIDE(), halo: 0, spin: 0.55 }),
+  scaffold: () => ({ shape: 3, colors: ['#e9dfc9', '#7ce0bf'], dist: narrow() ? 1.05 : 0.98, ...SIDE(), halo: 0, spin: 0.6 }),
+  immune: () => ({ shape: 0, colors: ['#f2a28f', '#e9c98f'], dist: narrow() ? 1.05 : 1.0, ...SIDE(), halo: 0, spin: 1.3 }),
+  twin: () => ({ shape: 1, colors: ['#8fd8ff', '#e9c98f'], dist: narrow() ? 1.05 : 1.02, ...SIDE(), halo: 0, spin: 0.9 }),
   // pagine interne: la nanoparticella resta sullo sfondo, a lato del titolo
-  page: () => ({ shape: 0, colors: ['#8fd8ff', '#e9dfc9'], dist: narrow() ? 1.35 : 1.15, ty: narrow() ? -0.55 : 0, sx: narrow() ? 0 : 0.24, halo: 1, spin: 0.8 }),
+  page: () => ({ shape: 0, colors: ['#8fd8ff', '#e9c98f'], dist: narrow() ? 1.35 : 1.15, ty: narrow() ? -0.55 : 0, sx: narrow() ? 0 : 0.24, halo: 1, spin: 0.6 }),
 };
 
 // stato condiviso tra i cambi di pagina (la scena si crea una volta sola)
@@ -173,18 +175,51 @@ export function Experience({ label }: { label: string }) {
           if ($$('.hx-word').length) tl.from('.hx-word', { yPercent: 115, opacity: 0, duration: 1.3, stagger: 0.09, ease: 'power4.out' }, firstVisit ? 0.4 : 0.1);
           if ($$('.hero-in').length) tl.from('.hero-in', { y: 26, opacity: 0, duration: 1.1, stagger: 0.12 }, firstVisit ? 1.0 : 0.4);
           if (firstVisit) tl.from('.nav', { y: -30, opacity: 0, duration: 1 }, 1.2);
+          if ($$('.hero-photo').length) {
+            tl.fromTo('.hero-photo .et-arch', { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.6, ease: 'power4.inOut' }, firstVisit ? 0.5 : 0.1)
+              .from('.hero-photo .et-arch img', { scale: 1.35, duration: 2.2, ease: 'power3.out' }, firstVisit ? 0.5 : 0.1)
+              .from('.hero-photo .et-orbit', { opacity: 0, scale: 0.7, duration: 1.4 }, firstVisit ? 1.4 : 0.6)
+              .from('.hero-photo .et-badge', { y: 30, opacity: 0, duration: 1 }, firstVisit ? 1.8 : 0.8);
+          }
           if ($$('.hud-chip').length) tl.to('.hud-chip', { opacity: 1, duration: 0.9, stagger: 0.3 }, firstVisit ? 3.0 : 1.2);
         }
 
         // l'apertura sfuma salendo
         const hero = document.querySelector('.hx-hero');
         if (hero && !reduced) {
+          gsap.to('.hx-hero .hero-photo', { y: -140, opacity: 0.2, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
           gsap.to(['.hx-hero .hero-copy', '.hx-hero .hud', '.hx-hero .scroll-cue'], {
             opacity: 0, y: -80, ease: 'none',
             scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom 35%', scrub: true },
           });
         }
         if (hero) ScrollTrigger.create({ trigger: hero, start: 'top top', end: 'bottom center', onEnterBack: () => go(first) });
+
+        // percorso: le tappe scorrono in orizzontale mentre il globo gira
+        const journey = document.querySelector<HTMLElement>('.hx-journey');
+        const track = journey?.querySelector<HTMLElement>('.journey-track');
+        if (journey && track) {
+          const stops = Array.from(track.querySelectorAll<HTMLElement>('.stop'));
+          const dots = Array.from(journey.querySelectorAll<HTMLElement>('.journey-dots i'));
+          const bar = journey.querySelector<HTMLElement>('.journey-bar i');
+          const distance = () => Math.max(0, track.scrollWidth - window.innerWidth);
+          const rot0 = world?.state.rot ?? 0;
+          gsap.to(track, {
+            x: () => -distance(), ease: 'none',
+            scrollTrigger: {
+              trigger: journey, start: 'top top', end: () => `+=${distance() + window.innerHeight * 0.4}`,
+              pin: true, scrub: 0.8, invalidateOnRefresh: true, anticipatePin: 1,
+              onEnter: () => go('globe'), onEnterBack: () => go('globe'),
+              onUpdate: (self) => {
+                if (world && !reduced) world.state.rot = rot0 - self.progress * Math.PI * 1.1;
+                const k = Math.min(stops.length - 1, Math.round(self.progress * (stops.length - 1)));
+                stops.forEach((st, i) => st.classList.toggle('on', i === k));
+                dots.forEach((d, i) => d.classList.toggle('on', i <= k));
+                if (bar) bar.style.transform = `scaleX(${self.progress})`;
+              },
+            },
+          });
+        }
 
         // forme per sezione
         for (const el of $$('[data-scene]')) {
@@ -201,6 +236,27 @@ export function Experience({ label }: { label: string }) {
           if (reduced) { gsap.set(words, { opacity: 1 }); continue; }
           gsap.to(words, { opacity: 1, stagger: 0.08, ease: 'none', scrollTrigger: { trigger: el, start: 'top 82%', end: 'bottom 62%', scrub: 0.6 } });
         }
+
+        // parole che emergono dalla sfocatura
+        for (const el of $$('[data-blur]')) {
+          const words = Array.from(el.querySelectorAll('.w'));
+          if (reduced) { gsap.set(words, { opacity: 1, filter: 'none' }); continue; }
+          gsap.fromTo(words, { opacity: 0.08, filter: 'blur(14px)', yPercent: 30 }, {
+            opacity: 1, filter: 'blur(0px)', yPercent: 0, stagger: 0.1, ease: 'none',
+            scrollTrigger: { trigger: el, start: 'top 85%', end: 'bottom 55%', scrub: 0.8 },
+          });
+        }
+
+        // aree di ricerca: schede che si impilano, la precedente arretra
+        const cards = $$('.stack-card');
+        cards.forEach((card, i) => {
+          const next = cards[i + 1];
+          if (!next || reduced || narrow()) return;
+          gsap.to(card, {
+            scale: 0.9, opacity: 0.35, filter: 'blur(2px)', ease: 'none',
+            scrollTrigger: { trigger: next, start: 'top 85%', end: 'top 20%', scrub: true },
+          });
+        });
 
         // passi del racconto e nodi del ciclo
         const nodes = $$('.cy-node');

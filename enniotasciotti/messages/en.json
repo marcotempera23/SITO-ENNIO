@@ -114,7 +114,7 @@
       "hindex": "H-index 63",
       "publications": "200+ publications",
       "citations": "Citations",
-      "patents": "15 patents",
+      "patents": "Several patents",
       "hIndex": "H-index",
       "ventures": "Founder roles",
       "tedx": "TEDx Speaker"
@@ -649,7 +649,7 @@
   "science": {
     "title": "Science",
     "eyebrow": "Research",
-    "subtitle": "Nanomedicine, biomimetic materials and longevity medicine — three research areas, 200+ publications, 15 international patents.",
+    "subtitle": "Nanomedicine, biomimetic materials and longevity medicine — three research areas, 200+ publications, several international patents.",
     "viewPublications": "View all publications",
     "kpi": {
       "papers": "Peer-reviewed articles",
@@ -658,7 +658,7 @@
       "patents": "International patents"
     },
     "metaTitle": "Research — Prof. Ennio Tasciotti",
-    "metaDesc": "Nanomedicine, biomimetic materials, longevity medicine: three research areas, 200+ publications, 15 international patents.",
+    "metaDesc": "Nanomedicine, biomimetic materials, longevity medicine: three research areas, 200+ publications, several international patents.",
     "heroManifesto": "The entire scientific ecosystem led by Ennio Tasciotti responds to a rigorous translational imperative: applying the principles of biomimicry to resolve the most complex clinical challenges, minimizing the transition time from the laboratory to patient application.",
     "areas": {
       "title": "Research areas",
@@ -2049,7 +2049,7 @@
     "aboutTitle": "About — Prof. Ennio Tasciotti",
     "aboutDescription": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele.",
     "scienceTitle": "Research — Prof. Ennio Tasciotti",
-    "scienceDescription": "Nanomedicine, biomimetic materials, longevity medicine: 200+ publications, 15 patents.",
+    "scienceDescription": "Nanomedicine, biomimetic materials, longevity medicine: 200+ publications, several patents.",
     "publicationsTitle": "Publications — Prof. Ennio Tasciotti",
     "publicationsDescription": "Over 200 peer-reviewed articles in nanomedicine, biomaterials and longevity.",
     "venturesTitle": "Ventures — Prof. Ennio Tasciotti",
@@ -2070,7 +2070,7 @@
     "cookiesDescription": "Cookie usage statement for enniotasciotti.com.",
     "home": {
       "title": "Prof. Ennio Tasciotti — Scientist, Entrepreneur, Longevity Expert",
-      "desc": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. Top 1% Stanford, 200+ publications, 15 patents."
+      "desc": "Full Professor at San Raffaele University, Rome, and founder and director of the Human Longevity Program at IRCCS San Raffaele. Top 1% Stanford, 200+ publications, several patents."
     },
     "siteName": "enniotasciotti.com"
   },
@@ -2104,9 +2104,11 @@
     "hlpSub": "IRCCS San Raffaele · the program website",
     "hero": {
       "eyebrowRest": " · Nanomedicine · Longevity",
-      "line1": "I turn science into ventures.",
-      "line2": "And biology into health.",
-      "ctaPrimary": "Research areas",
+      "prof": "Prof.",
+      "name1": "Ennio",
+      "name2": "Tasciotti",
+      "tagline": "I turn science into ventures. And biology into health.",
+      "ctaPrimary": "The journey",
       "ctaSecondary": "Get in touch",
       "meta": [
         [
@@ -2123,82 +2125,23 @@
           "63",
           "",
           "h-index"
-        ],
-        [
-          "15",
-          "",
-          "patents"
         ]
       ],
-      "chips": [
-        "Nanomedicine",
-        "Regenerative medicine",
-        "Immunomodulation",
-        "Longevity medicine"
+      "top": [
+        "Top 1%",
+        "most influential scientists · Stanford 2023"
       ],
+      "badge": [
+        "Director",
+        "Human Longevity Program · IRCCS San Raffaele"
+      ],
+      "photoAlt": "Prof. Ennio Tasciotti",
       "scroll": "Scroll",
       "scrollLabel": "Scroll to the next section"
     },
     "manifesto": {
       "eyebrow": "The idea",
       "cite": "TEDxCNR Rome, 2016"
-    },
-    "story": {
-      "eyebrow": "Scientific research",
-      "title": "Four research areas.",
-      "lead": "From the nanoparticle to the patient: a rigorously translational approach, designed to address unmet clinical needs by transferring innovation from the laboratory bench to the patient.",
-      "center": [
-        "From the cell",
-        "to the patient"
-      ],
-      "more": "Read more",
-      "steps": [
-        {
-          "key": "trasportare",
-          "href": "/science#drugDelivery",
-          "label": "Drug delivery",
-          "verb": "Deliver",
-          "title": "Targeted delivery platforms",
-          "body": "Overcoming biological barriers and de-risking oncological, inflammatory and neurological therapies with biomimetic carriers.",
-          "points": [
-            "Leukosome: a biomimetic vesicle that uses leukocyte membrane proteins to navigate inflammation and deliver drugs with precision.",
-            "Multistage Vector: a multistage nanocarrier that overcomes biological barriers sequentially, from circulation to diseased tissue."
-          ]
-        },
-        {
-          "key": "rigenerare",
-          "href": "/science#regenerative",
-          "label": "Regenerative medicine",
-          "verb": "Regenerate",
-          "title": "BioNanoScaffolds",
-          "body": "Development of biomimetic 3D scaffolds and polymeric matrices with silicon particles to guide tissue regeneration.",
-          "points": [
-            "Biomimetic scaffolds and extracellular matrices that guide tissue repair through immune-aware regeneration.",
-            "Lead of the DARPA “Fracture Putty” industrial program ($15M)."
-          ]
-        },
-        {
-          "key": "modulare",
-          "href": "/science#immunology",
-          "label": "Immunomodulation",
-          "verb": "Modulate",
-          "title": "Targeting inflammation and fibrosis",
-          "body": "Synergy between biomaterials and the immune system, polarizing macrophages toward a pro-regenerative phenotype.",
-          "points": []
-        },
-        {
-          "key": "preservare",
-          "href": "/science#longevityPipeline",
-          "label": "Longevity & healthspan",
-          "verb": "Preserve",
-          "title": "4P Medicine",
-          "body": "The 4P Medicine paradigm to counter inflammaging-driven neurodegeneration and preserve cognitive function.",
-          "points": [
-            "Structured interventions on nutrition, movement and neuro-emotional balance to preserve cellular resilience.",
-            "Founder and director of the Human Longevity Program at IRCCS San Raffaele."
-          ]
-        }
-      ]
     },
     "about": {
       "eyebrow": "About",
@@ -2207,12 +2150,8 @@
       "body": "Internationally renowned professor and researcher, a pioneer of nanomedicine and longevity medicine. With 200+ publications and 13,000+ citations, he turns science into real-world impact.",
       "facts": [
         [
-          "Top 1%",
-          "most influential scientists worldwide (Stanford, 2023)"
-        ],
-        [
-          "63",
-          "h-index"
+          "200+",
+          "papers in international journals"
         ],
         [
           "4",
@@ -2221,15 +2160,19 @@
         [
           "52+",
           "events, talks and appearances"
+        ],
+        [
+          "Several",
+          "international patents"
         ]
       ],
       "tags": [
+        "HLP Director",
         "Nanomedicine",
-        "Longevity",
         "TEDx speaker"
       ],
       "cta": "Read the full biography",
-      "photoAlt": "Prof. Ennio Tasciotti"
+      "photoAlt": "Prof. Ennio Tasciotti, director of the Human Longevity Program at IRCCS San Raffaele"
     },
     "hlp": {
       "eyebrow": "At IRCCS San Raffaele",
@@ -2240,7 +2183,7 @@
     "partners": {
       "eyebrow": "Ventures & consultancy",
       "title": "From research to industry.",
-      "body": "Chief Scientific Officer (R&D) and board member of several biotechnology companies, lead of the DARPA “Fracture Putty” industrial program ($15M). Inventor and holder of 12 international patents on nano- and biomaterials.",
+      "body": "Chief Scientific Officer (R&D) and board member of several biotechnology companies, lead of the DARPA “Fracture Putty” industrial program ($15M). Inventor and holder of several international patents on nano- and biomaterials.",
       "journals": "Published in",
       "companies": "Partnerships",
       "cta": "All consultancy work"
@@ -2266,6 +2209,100 @@
       "resources": "Resources",
       "profiles": "Scholarly profiles",
       "quote": "“To beat cancer, you have to think like a cell.”"
+    },
+    "journey": {
+      "eyebrow": "The journey",
+      "title": "From Pisa to Houston, and back to Rome.",
+      "lead": "A career across Italy, the United States and China: from molecular biology to nanomedicine, to longevity medicine.",
+      "hint": "Scroll to travel",
+      "stops": [
+        {
+          "year": "2000–2005",
+          "city": "Pisa",
+          "role": "Degree and PhD in Molecular Biology, summa cum laude",
+          "place": "Scuola Normale Superiore · Università di Pisa · ICGEB"
+        },
+        {
+          "year": "2010",
+          "city": "Houston",
+          "role": "Chairman of the Department of Nanomedicine",
+          "place": "Houston Methodist Research Institute"
+        },
+        {
+          "year": "2013–2016",
+          "city": "Beijing",
+          "role": "Visiting Professor of Materials Science",
+          "place": "Chinese Academy of Sciences"
+        },
+        {
+          "year": "2018",
+          "city": "Houston",
+          "role": "Full Professor of Regenerative Medicine",
+          "place": "Houston Methodist Hospital"
+        },
+        {
+          "year": "2023",
+          "city": "Rome",
+          "role": "Full Professor of Applied Medical Sciences and Technologies",
+          "place": "San Raffaele University"
+        },
+        {
+          "year": "Today",
+          "city": "Rome",
+          "role": "Founder and director of the Human Longevity Program",
+          "place": "IRCCS San Raffaele",
+          "hlp": true
+        }
+      ]
+    },
+    "research": {
+      "eyebrow": "Scientific research",
+      "title": "Four ideas, from the lab to the patient.",
+      "lead": "From the nanoparticle to the patient: a rigorously translational approach, designed to address unmet clinical needs by transferring innovation from the laboratory bench to the patient.",
+      "more": "Read more",
+      "cards": [
+        {
+          "key": "msv",
+          "href": "/science#drugDelivery",
+          "title": "Drug delivery",
+          "sub": "Targeted delivery platforms",
+          "body": "Overcoming biological barriers and de-risking oncological, inflammatory and neurological therapies with biomimetic carriers.",
+          "points": [
+            "Leukosome: a biomimetic vesicle that uses leukocyte membrane proteins to navigate inflammation and deliver drugs with precision.",
+            "Multistage Vector: a multistage nanocarrier that overcomes biological barriers sequentially, from circulation to diseased tissue."
+          ]
+        },
+        {
+          "key": "scaffold",
+          "href": "/science#regenerative",
+          "title": "Regenerative medicine",
+          "sub": "BioNanoScaffolds",
+          "body": "Development of biomimetic 3D scaffolds and polymeric matrices with silicon particles to guide tissue regeneration.",
+          "points": [
+            "Biomimetic scaffolds and extracellular matrices that guide tissue repair through immune-aware regeneration.",
+            "Lead of the DARPA “Fracture Putty” industrial program ($15M)."
+          ]
+        },
+        {
+          "key": "immune",
+          "href": "/science#immunology",
+          "title": "Immunomodulation",
+          "sub": "Targeting inflammation and fibrosis",
+          "body": "Synergy between biomaterials and the immune system, polarizing macrophages toward a pro-regenerative phenotype.",
+          "points": []
+        },
+        {
+          "key": "twin",
+          "href": "/science#longevityPipeline",
+          "title": "Longevity & healthspan",
+          "sub": "4P Medicine",
+          "body": "The 4P Medicine paradigm to counter inflammaging-driven neurodegeneration and preserve cognitive function.",
+          "points": [
+            "Structured interventions on nutrition, movement and neuro-emotional balance to preserve cellular resilience.",
+            "Founder and director of the Human Longevity Program at IRCCS San Raffaele."
+          ]
+        }
+      ]
     }
   }
 }

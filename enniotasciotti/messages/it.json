@@ -114,7 +114,7 @@
       "hindex": "H-index 63",
       "publications": "200+ pubblicazioni",
       "citations": "Citazioni",
-      "patents": "15 brevetti",
+      "patents": "Svariati brevetti",
       "hIndex": "H-index",
       "ventures": "Ruoli da founder",
       "tedx": "TEDx Speaker"
@@ -649,7 +649,7 @@
   "science": {
     "title": "Scienza",
     "eyebrow": "Ricerca",
-    "subtitle": "Nanomedicina, materiali biomimetici e medicina della longevità — tre aree di ricerca, 200+ pubblicazioni, 15 brevetti internazionali.",
+    "subtitle": "Nanomedicina, materiali biomimetici e medicina della longevità — tre aree di ricerca, 200+ pubblicazioni, svariati brevetti internazionali.",
     "viewPublications": "Vedi tutte le pubblicazioni",
     "kpi": {
       "papers": "Articoli peer-reviewed",
@@ -658,7 +658,7 @@
       "patents": "Brevetti internazionali"
     },
     "metaTitle": "Ricerca — Prof. Ennio Tasciotti",
-    "metaDesc": "Nanomedicina, materiali biomimetici, medicina della longevità: tre aree di ricerca, 200+ pubblicazioni, 15 brevetti internazionali.",
+    "metaDesc": "Nanomedicina, materiali biomimetici, medicina della longevità: tre aree di ricerca, 200+ pubblicazioni, svariati brevetti internazionali.",
     "heroManifesto": "L'intero ecosistema scientifico guidato da Ennio Tasciotti risponde a un rigoroso imperativo traslazionale: applicare i principi della biomimetica per risolvere le sfide cliniche più complesse, minimizzando i tempi di transizione dalla fase di laboratorio all'applicazione sul paziente.",
     "areas": {
       "title": "Aree di ricerca",
@@ -2049,7 +2049,7 @@
     "aboutTitle": "Chi sono — Prof. Ennio Tasciotti",
     "aboutDescription": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele.",
     "scienceTitle": "Ricerca — Prof. Ennio Tasciotti",
-    "scienceDescription": "Nanomedicina, materiali biomimetici, medicina della longevità: 200+ pubblicazioni, 15 brevetti.",
+    "scienceDescription": "Nanomedicina, materiali biomimetici, medicina della longevità: 200+ pubblicazioni, svariati brevetti.",
     "publicationsTitle": "Pubblicazioni — Prof. Ennio Tasciotti",
     "publicationsDescription": "Oltre 200 articoli peer-reviewed in nanomedicina, biomateriali e longevità.",
     "venturesTitle": "Ventures — Prof. Ennio Tasciotti",
@@ -2070,7 +2070,7 @@
     "cookiesDescription": "Informativa sull'utilizzo dei cookie su enniotasciotti.com.",
     "home": {
       "title": "Prof. Ennio Tasciotti — Scienziato, Imprenditore, Esperto di Longevità",
-      "desc": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% Stanford, 200+ pubblicazioni, 15 brevetti."
+      "desc": "Professore ordinario all'Università Telematica San Raffaele Roma, fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele. Top 1% Stanford, 200+ pubblicazioni, svariati brevetti."
     },
     "siteName": "enniotasciotti.com"
   },
@@ -2104,9 +2104,11 @@
     "hlpSub": "IRCCS San Raffaele · il sito del programma",
     "hero": {
       "eyebrowRest": " · Nanomedicina · Longevità",
-      "line1": "Trasformo la scienza in impresa.",
-      "line2": "La biologia in salute.",
-      "ctaPrimary": "Le aree di ricerca",
+      "prof": "Prof.",
+      "name1": "Ennio",
+      "name2": "Tasciotti",
+      "tagline": "Trasformo la scienza in impresa. La biologia in salute.",
+      "ctaPrimary": "Il percorso",
       "ctaSecondary": "Contattami",
       "meta": [
         [
@@ -2123,82 +2125,23 @@
           "63",
           "",
           "h-index"
-        ],
-        [
-          "15",
-          "",
-          "brevetti"
         ]
       ],
-      "chips": [
-        "Nanomedicina",
-        "Medicina rigenerativa",
-        "Immunomodulazione",
-        "Medicina della longevità"
+      "top": [
+        "Top 1%",
+        "scienziati più influenti al mondo · Stanford 2023"
       ],
+      "badge": [
+        "Direttore",
+        "Human Longevity Program · IRCCS San Raffaele"
+      ],
+      "photoAlt": "Il Prof. Ennio Tasciotti",
       "scroll": "Scorri",
       "scrollLabel": "Scorri alla sezione successiva"
     },
     "manifesto": {
       "eyebrow": "Il pensiero",
       "cite": "TEDxCNR Roma, 2016"
-    },
-    "story": {
-      "eyebrow": "Ricerca scientifica",
-      "title": "Le quattro aree di ricerca.",
-      "lead": "Dalla nanoparticella al paziente: un approccio rigorosamente traslazionale, concepito per colmare i bisogni clinici insoddisfatti trasferendo l'innovazione dal banco di laboratorio al paziente.",
-      "center": [
-        "Dalla cellula",
-        "al paziente"
-      ],
-      "more": "Approfondisci",
-      "steps": [
-        {
-          "key": "trasportare",
-          "href": "/science#drugDelivery",
-          "label": "Drug Delivery",
-          "verb": "Trasportare",
-          "title": "Piattaforme di trasporto mirato",
-          "body": "Superamento delle barriere biologiche e de-risking delle terapie oncologiche, infiammatorie e neurologiche con vettori biomimetici.",
-          "points": [
-            "Leukosoma: una vescicola biomimetica che usa proteine di membrana dei leucociti per navigare l'infiammazione e consegnare farmaci con precisione.",
-            "Multistage Vector: un nanovettore multistadio che supera in sequenza le barriere biologiche, dalla circolazione al tessuto malato."
-          ]
-        },
-        {
-          "key": "rigenerare",
-          "href": "/science#regenerative",
-          "label": "Medicina rigenerativa",
-          "verb": "Rigenerare",
-          "title": "BioNanoScaffolds",
-          "body": "Sviluppo di scaffold 3D biomimetici e matrici polimeriche con particelle di silicio per guidare la rigenerazione tissutale.",
-          "points": [
-            "Scaffold biomimetici e matrici extracellulari che guidano la riparazione dei tessuti con una rigenerazione attenta alla risposta immunitaria.",
-            "Responsabile del programma industriale DARPA “Fracture Putty” ($15M)."
-          ]
-        },
-        {
-          "key": "modulare",
-          "href": "/science#immunology",
-          "label": "Immunomodulazione",
-          "verb": "Modulare",
-          "title": "Targeting di infiammazione e fibrosi",
-          "body": "Interazione sinergica tra biomateriali e sistema immunitario, polarizzando i macrofagi verso un fenotipo pro-rigenerativo.",
-          "points": []
-        },
-        {
-          "key": "preservare",
-          "href": "/science#longevityPipeline",
-          "label": "Longevità & healthspan",
-          "verb": "Preservare",
-          "title": "Medicina 4P",
-          "body": "Paradigma della Medicina 4P per contrastare la neurodegenerazione indotta da inflammaging e preservare le funzioni cognitive.",
-          "points": [
-            "Interventi strutturati su nutrizione, movimento ed equilibrio neuro-emotivo per preservare la resilienza cellulare.",
-            "Fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele."
-          ]
-        }
-      ]
     },
     "about": {
       "eyebrow": "Chi sono",
@@ -2207,12 +2150,8 @@
       "body": "Professore e ricercatore di fama internazionale, pioniere della nanomedicina e della medicina della longevità. Con 200+ pubblicazioni e 13.000+ citazioni, traduce la scienza in impatto reale.",
       "facts": [
         [
-          "Top 1%",
-          "scienziati più influenti al mondo (Stanford, 2023)"
-        ],
-        [
-          "63",
-          "h-index"
+          "200+",
+          "pubblicazioni su riviste internazionali"
         ],
         [
           "4",
@@ -2221,15 +2160,19 @@
         [
           "52+",
           "eventi, talk e apparizioni"
+        ],
+        [
+          "Svariati",
+          "brevetti internazionali"
         ]
       ],
       "tags": [
+        "Direttore HLP",
         "Nanomedicina",
-        "Longevità",
         "TEDx speaker"
       ],
       "cta": "Scopri la biografia completa",
-      "photoAlt": "Il Prof. Ennio Tasciotti"
+      "photoAlt": "Il Prof. Ennio Tasciotti, direttore dello Human Longevity Program all'IRCCS San Raffaele"
     },
     "hlp": {
       "eyebrow": "All'IRCCS San Raffaele",
@@ -2240,7 +2183,7 @@
     "partners": {
       "eyebrow": "Imprese & consulenze",
       "title": "Dalla ricerca all'industria.",
-      "body": "Direttore Scientifico (R&D) e membro del Consiglio di Amministrazione di diverse società biotecnologiche, responsabile del programma industriale DARPA “Fracture Putty” ($15M). Inventore e detentore di 12 brevetti internazionali su nano e biomateriali.",
+      "body": "Direttore Scientifico (R&D) e membro del Consiglio di Amministrazione di diverse società biotecnologiche, responsabile del programma industriale DARPA “Fracture Putty” ($15M). Inventore e detentore di svariati brevetti internazionali su nano e biomateriali.",
       "journals": "Pubblicato su",
       "companies": "Partnership",
       "cta": "Tutte le consulenze"
@@ -2266,6 +2209,100 @@
       "resources": "Risorse",
       "profiles": "Profili scientifici",
       "quote": "“Per vincere il cancro bisogna pensare come una cellula.”"
+    },
+    "journey": {
+      "eyebrow": "Il percorso",
+      "title": "Da Pisa a Houston, ritorno a Roma.",
+      "lead": "Una carriera tra Italia, Stati Uniti e Cina: dalla biologia molecolare alla nanomedicina, fino alla medicina della longevità.",
+      "hint": "Scorri per viaggiare",
+      "stops": [
+        {
+          "year": "2000–2005",
+          "city": "Pisa",
+          "role": "Laurea e Dottorato in Biologia Molecolare, summa cum laude",
+          "place": "Scuola Normale Superiore · Università di Pisa · ICGEB"
+        },
+        {
+          "year": "2010",
+          "city": "Houston",
+          "role": "Chairman del Dipartimento di Nanomedicina",
+          "place": "Houston Methodist Research Institute"
+        },
+        {
+          "year": "2013–2016",
+          "city": "Pechino",
+          "role": "Visiting Professor di Scienze dei Materiali",
+          "place": "Accademia Cinese delle Scienze"
+        },
+        {
+          "year": "2018",
+          "city": "Houston",
+          "role": "Professore Ordinario di Medicina Rigenerativa",
+          "place": "Houston Methodist Hospital"
+        },
+        {
+          "year": "2023",
+          "city": "Roma",
+          "role": "Professore Ordinario di Scienze e Tecnologie Mediche Applicate",
+          "place": "Università San Raffaele"
+        },
+        {
+          "year": "Oggi",
+          "city": "Roma",
+          "role": "Fondatore e direttore dello Human Longevity Program",
+          "place": "IRCCS San Raffaele",
+          "hlp": true
+        }
+      ]
+    },
+    "research": {
+      "eyebrow": "Ricerca scientifica",
+      "title": "Quattro idee, dal laboratorio al paziente.",
+      "lead": "Dalla nanoparticella al paziente: un approccio rigorosamente traslazionale, concepito per colmare i bisogni clinici insoddisfatti trasferendo l'innovazione dal banco di laboratorio al paziente.",
+      "more": "Approfondisci",
+      "cards": [
+        {
+          "key": "msv",
+          "href": "/science#drugDelivery",
+          "title": "Drug Delivery",
+          "sub": "Piattaforme di trasporto mirato",
+          "body": "Superamento delle barriere biologiche e de-risking delle terapie oncologiche, infiammatorie e neurologiche con vettori biomimetici.",
+          "points": [
+            "Leukosoma: una vescicola biomimetica che usa proteine di membrana dei leucociti per navigare l'infiammazione e consegnare farmaci con precisione.",
+            "Multistage Vector: un nanovettore multistadio che supera in sequenza le barriere biologiche, dalla circolazione al tessuto malato."
+          ]
+        },
+        {
+          "key": "scaffold",
+          "href": "/science#regenerative",
+          "title": "Medicina rigenerativa",
+          "sub": "BioNanoScaffolds",
+          "body": "Sviluppo di scaffold 3D biomimetici e matrici polimeriche con particelle di silicio per guidare la rigenerazione tissutale.",
+          "points": [
+            "Scaffold biomimetici e matrici extracellulari che guidano la riparazione dei tessuti con una rigenerazione attenta alla risposta immunitaria.",
+            "Responsabile del programma industriale DARPA “Fracture Putty” ($15M)."
+          ]
+        },
+        {
+          "key": "immune",
+          "href": "/science#immunology",
+          "title": "Immunomodulazione",
+          "sub": "Targeting di infiammazione e fibrosi",
+          "body": "Interazione sinergica tra biomateriali e sistema immunitario, polarizzando i macrofagi verso un fenotipo pro-rigenerativo.",
+          "points": []
+        },
+        {
+          "key": "twin",
+          "href": "/science#longevityPipeline",
+          "title": "Longevità & healthspan",
+          "sub": "Medicina 4P",
+          "body": "Paradigma della Medicina 4P per contrastare la neurodegenerazione indotta da inflammaging e preservare le funzioni cognitive.",
+          "points": [
+            "Interventi strutturati su nutrizione, movimento ed equilibrio neuro-emotivo per preservare la resilienza cellulare.",
+            "Fondatore e direttore dello Human Longevity Program all'IRCCS San Raffaele."
+          ]
+        }
+      ]
     }
   }
 }

@@ -16,7 +16,7 @@ export function Footer() {
         <div>
           <Link className="brand" href="/" aria-label={h('home')}>
             <Mark />
-            <span>Ennio <em>Tasciotti</em> <small>PhD</small></span>
+            <span>Ennio <em>Tasciotti</em></span>
           </Link>
           <p className="muted" style={{ maxWidth: 380, margin: 0 }}>{h('footer.desc')}</p>
           <a className="footer-hlp" href={HLP_URL} target="_blank" rel="noopener" aria-label={h('hlp.cardLabel')}>

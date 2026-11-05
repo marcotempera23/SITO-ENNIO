@@ -181,7 +181,6 @@
   .story { position: relative; }
   .story-intro { max-width: 660px; padding: 14vh var(--gutter) 6vh; position: relative; }
   .story-intro .lead { text-shadow: 0 2px 24px rgba(4, 9, 12, 0.95); }
-  .hx-step { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; max-width: 640px; padding: 80px var(--gutter); }
   .step-num { font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--c, var(--ice)); margin-bottom: 18px; }
   .hx .step-verb { font-family: var(--serif); font-size: clamp(50px, 7vw, 100px); line-height: 0.95; letter-spacing: -0.045em; font-variation-settings: "opsz" 144; margin: 0 0 18px; background: linear-gradient(120deg, var(--text) 30%, var(--c, var(--ice)) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: 0.08em; }
   .hx .step-title { font-size: 17px; letter-spacing: 0.01em; color: var(--c, var(--ice)); margin-bottom: 22px; font-weight: 500; }
@@ -362,8 +361,6 @@
     .hero-meta { margin-top: 40px; }
     .manifesto { min-height: 100vh; }
     .manifesto .wrap { background: radial-gradient(closest-side, rgba(4, 9, 12, 0.7), transparent); }
-    .hx-step { justify-content: flex-end; max-width: none; padding: 58vh var(--gutter) 64px; background: linear-gradient(to bottom, transparent 40%, rgba(4, 9, 12, 0.88) 66%); }
-    .hx-step > * { position: relative; }
     .cycle-hud { display: none; }
     .portrait { min-height: 0; aspect-ratio: 4 / 4.6; }
     .hlp-card { grid-template-columns: auto 1fr; }
@@ -407,3 +404,140 @@ main [class*="bg-[var(--color-accent)]"]:is(a, button) * { color: inherit !impor
 main :is(h1, h2).font-display { letter-spacing: -0.025em; font-variation-settings: "opsz" 144; }
 /* occhielli delle pagine interne: Inter maiuscolo come nell'HLP, non monospazio */
 main :is(p, span).font-mono.uppercase { font-family: var(--sans) !important; letter-spacing: 0.2em; }
+/* pulsante del grafico nella pagina Longevità: pieno e ben leggibile */
+.bridge-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; background: var(--ice); color: #03121a; font: 600 13px/1 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; border: 0; cursor: pointer; box-shadow: 0 8px 26px -10px rgba(143, 216, 255, 0.8); transition: transform 0.3s var(--ease), background 0.3s; white-space: nowrap; }
+.bridge-btn:hover { transform: translateY(-2px); background: var(--ice-2); }
+
+/* ============================================================================
+   Impostazione propria del sito del Prof. Tasciotti (non copiata dall'HLP)
+   ============================================================================ */
+@layer components {
+  /* ── Apertura: nome grande e ritratto ad arco ───────────────────────── */
+  .et-hero { padding-top: 104px; padding-bottom: 72px; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+  .et-name { margin: 0 0 18px; font-family: var(--serif); font-weight: 400; font-size: clamp(64px, 8.4vw, 136px); line-height: 0.88; letter-spacing: -0.045em; font-variation-settings: "opsz" 144; }
+  .et-name .line { display: block; overflow: hidden; padding-bottom: 0.04em; }
+  .et-name .accent { font-style: italic; color: var(--ice); padding-left: 0.32em; }
+  .et-prof { display: block; font-size: 0.22em; letter-spacing: 0.02em; font-style: italic; color: var(--sand); margin-bottom: 0.25em; }
+  .et-tagline { font-family: var(--serif); font-style: italic; font-size: clamp(22px, 2.1vw, 30px); line-height: 1.25; color: var(--ice-2); margin: 0 0 18px; max-width: 560px; }
+  .et-hero .lead { font-size: clamp(16px, 1.25vw, 18px); color: var(--hx-muted); max-width: 520px; margin-bottom: 30px; }
+  .et-hero .hero-meta { margin-top: 36px; max-width: 640px; padding-top: 20px; }
+  .et-hero .hero-meta li { min-width: 74px; }
+  .et-hero .hero-meta li:last-child { max-width: 190px; }
+  .et-hero .hero-meta li:last-child b { color: var(--sand); }
+
+  .et-portrait { position: relative; z-index: 2; justify-self: center; margin: 0; width: min(430px, 100%); }
+  .et-arch { position: relative; aspect-ratio: 0.8; border-radius: 999px 999px 30px 30px; overflow: hidden; border: 1px solid rgba(143, 216, 255, 0.35); background: radial-gradient(100% 70% at 50% 0%, rgba(143, 216, 255, 0.25), rgba(4, 9, 12, 0.4)); box-shadow: 0 40px 120px -40px rgba(143, 216, 255, 0.45), inset 0 0 0 8px rgba(4, 9, 12, 0.35); }
+  .et-arch img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; filter: saturate(0.92) contrast(1.04); }
+  .et-arch::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(4, 9, 12, 0.78), transparent 38%), linear-gradient(120deg, rgba(143, 216, 255, 0.16), transparent 45%); mix-blend-mode: normal; }
+  .et-orbit { position: absolute; inset: -9% -16%; border-radius: 50%; border: 1px solid rgba(233, 201, 143, 0.28); transform: rotate(-16deg); pointer-events: none; animation: et-orbit 16s linear infinite; }
+  .et-orbit i { position: absolute; left: 50%; top: -5px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--sand); box-shadow: 0 0 18px var(--sand); }
+  @keyframes et-orbit { to { transform: rotate(344deg); } }
+  .et-badge { position: absolute; left: -18%; bottom: 9%; display: flex; align-items: center; gap: 12px; padding: 12px 18px 12px 12px; border-radius: 18px; background: rgba(6, 15, 20, 0.72); border: 1px solid var(--line-strong); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.8); animation: hx-float 7s ease-in-out infinite; }
+  .et-badge .hlp-mark { width: 38px; height: 38px; }
+  .et-badge small { display: block; font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ice-2); }
+  .et-badge b { display: block; font-weight: 500; font-size: 14px; white-space: nowrap; }
+
+  /* ── Il pensiero ────────────────────────────────────────────────────── */
+  .et-quote { position: relative; min-height: 115vh; display: flex; align-items: center; padding: 16vh 0; }
+  .et-quote-text { margin: 0; font-family: var(--serif); font-size: clamp(38px, 6vw, 92px); line-height: 1.02; letter-spacing: -0.035em; font-variation-settings: "opsz" 144; text-shadow: 0 4px 40px rgba(4, 9, 12, 0.9); }
+  .et-quote-text .w, .et-hlp-text .w { display: inline-block; will-change: filter, opacity, transform; }
+  .et-quote .manifesto-cite { margin-top: 34px; }
+
+  /* ── Il percorso, in orizzontale ────────────────────────────────────── */
+  .hx-journey { position: relative; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; gap: 44px; padding: 96px 0 40px; overflow: hidden; }
+  .journey-head { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: end; }
+  .journey-head h2 { margin: 0; font-size: clamp(34px, 4.6vw, 64px); }
+  .journey-lead { margin: 0; color: #cfdad5; font-size: 17.5px; text-shadow: 0 2px 20px rgba(4, 9, 12, 0.9); }
+  .journey-track { display: flex; gap: 22px; width: max-content; padding: 0 var(--gutter); margin: 0; list-style: none; will-change: transform; }
+  .stop { position: relative; flex: none; width: clamp(280px, 29vw, 400px); min-height: 290px; display: flex; flex-direction: column; padding: 30px 28px 26px; border-radius: 26px; background: rgba(6, 15, 20, 0.55); border: 1px solid var(--line); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); overflow: hidden; transition: border-color 0.5s var(--ease), background 0.5s, transform 0.6s var(--ease); }
+  .stop.on { border-color: rgba(143, 216, 255, 0.55); background: rgba(10, 26, 36, 0.72); transform: translateY(-10px); }
+  .stop-year { font-family: var(--serif); font-size: clamp(44px, 4.4vw, 64px); line-height: 1; letter-spacing: -0.03em; color: transparent; -webkit-text-stroke: 1px rgba(232, 237, 233, 0.45); transition: color 0.5s, -webkit-text-stroke-color 0.5s; }
+  .stop.on .stop-year { color: var(--ice); -webkit-text-stroke-color: transparent; }
+  .stop-city { display: inline-flex; align-items: center; gap: 10px; margin: 18px 0 14px; font-size: 12.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sand); }
+  .stop-city i { width: 8px; height: 8px; border-radius: 50%; background: var(--sand); box-shadow: 0 0 12px var(--sand); }
+  .stop-role { margin: 0 0 8px; font-size: 18px; line-height: 1.35; font-weight: 500; }
+  .stop-place { margin: 0 0 16px; font-size: 14.5px; color: var(--hx-muted); }
+  .stop .hx-link { margin-top: auto; }
+  .stop-n { position: absolute; right: 22px; bottom: 14px; font-family: var(--serif); font-size: 64px; line-height: 1; color: rgba(232, 237, 233, 0.05); pointer-events: none; }
+  .stop-hlp { border-color: rgba(233, 201, 143, 0.45); background: radial-gradient(120% 90% at 100% 0%, rgba(233, 201, 143, 0.14), transparent 60%), rgba(6, 15, 20, 0.6); }
+  .journey-foot { display: flex; align-items: center; gap: 22px; }
+  .journey-dots { display: flex; gap: 8px; }
+  .journey-dots i { width: 8px; height: 8px; border-radius: 50%; border: 1px solid var(--line-strong); transition: background 0.4s, border-color 0.4s, box-shadow 0.4s; }
+  .journey-dots i.on { background: var(--ice); border-color: var(--ice); box-shadow: 0 0 10px var(--ice); }
+  .journey-bar { flex: 1; height: 1px; background: var(--line-strong); overflow: hidden; }
+  .journey-bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--ice), var(--sand)); transform-origin: left; transform: scaleX(0); }
+  .journey-hint { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint); white-space: nowrap; }
+
+  /* ── Ricerca: schede che si impilano ────────────────────────────────── */
+  .et-research { position: relative; padding: 16vh 0 4vh; }
+  .et-research-head { max-width: 720px; margin-left: 0; margin-bottom: 8vh; }
+  .et-research-head .lead { text-shadow: 0 2px 24px rgba(4, 9, 12, 0.95); }
+  .stack { position: relative; padding-bottom: 14vh; }
+  .stack-card { position: sticky; top: calc(12vh + var(--i, 0) * 14px); width: min(580px, 100%); min-height: 66vh; margin-bottom: 22vh; padding: clamp(28px, 3.4vw, 44px); border-radius: 28px; background: rgba(6, 14, 19, 0.94); border: 1px solid var(--line-strong); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 40px 90px -40px rgba(0, 0, 0, 0.9); transform-origin: 50% 0; display: flex; flex-direction: column; }
+  .stack-card:last-child { margin-bottom: 0; }
+  .stack-card::after { content: ""; position: absolute; left: 0; top: 0; width: 140px; height: 2px; background: linear-gradient(90deg, var(--c), transparent); }
+  .stack-k { margin: 0 0 26px; font-size: 13px; letter-spacing: 0.18em; color: var(--faint); }
+  .stack-k span { color: var(--c); }
+  .hx .stack-title { margin: 0 0 10px; font-family: var(--serif); font-weight: 400; font-size: clamp(40px, 4.4vw, 64px); line-height: 1; letter-spacing: -0.03em; font-variation-settings: "opsz" 144; }
+  .stack-sub { margin: 0 0 22px; font-size: 16px; font-weight: 500; color: var(--c); }
+  .stack-body { margin: 0 0 22px; font-size: 17.5px; color: #cfdad5; }
+  .stack-card .step-points li::before { background: var(--c); box-shadow: 0 0 14px var(--c); }
+  .stack-card .hx-link { margin-top: auto; color: var(--c); }
+
+  /* ── Portfolio a indice ─────────────────────────────────────────────── */
+  .idx { border-top: 1px solid var(--line); }
+  .idx li { border-bottom: 1px solid var(--line); }
+  .idx a { position: relative; display: grid; grid-template-columns: 72px 1fr 56px; align-items: center; column-gap: 18px; padding: 28px 0; text-decoration: none; color: var(--text); overflow: hidden; }
+  .idx a::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(143, 216, 255, 0.08), transparent 70%); transform: scaleX(0); transform-origin: left; transition: transform 0.7s var(--ease); }
+  .idx a:hover::before, .idx a:focus-visible::before { transform: scaleX(1); }
+  .idx-n { position: relative; font-size: 13px; letter-spacing: 0.16em; color: var(--ice-2); }
+  .idx-t { position: relative; font-family: var(--serif); font-size: clamp(26px, 3.4vw, 46px); line-height: 1.08; letter-spacing: -0.02em; transition: transform 0.6s var(--ease), color 0.4s; }
+  .idx a:hover .idx-t { transform: translateX(14px); color: var(--ice); }
+  .idx-go { position: relative; justify-self: end; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line-strong); transition: background 0.4s, color 0.4s, transform 0.5s var(--ease), border-color 0.4s; }
+  .idx a:hover .idx-go { background: var(--ice); border-color: var(--ice); color: #03121a; transform: rotate(-45deg); }
+  .idx-d { position: relative; grid-column: 2 / 3; display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.6s var(--ease); }
+  .idx-d > span { overflow: hidden; color: var(--hx-muted); font-size: 16px; line-height: 1.55; max-width: 760px; }
+  .idx-d em { display: block; margin-top: 10px; font-style: normal; font-size: 14px; color: var(--ice-2); }
+  .idx a:hover .idx-d, .idx a:focus-visible .idx-d { grid-template-rows: 1fr; }
+  .idx a:hover .idx-d > span { padding-top: 14px; }
+  @media (hover: none) { .idx-d { grid-template-rows: 1fr; } .idx-d > span { padding-top: 10px; } }
+
+  /* ── Chi sono e HLP ─────────────────────────────────────────────────── */
+  .et-office { min-height: 0; align-self: center; width: 100%; height: auto; aspect-ratio: 1 / 1.05; }
+  .et-office img { object-position: 50% 30%; }
+  .hlp-orbit { position: relative; width: 110px; height: 110px; margin: 0 auto 26px; display: grid; place-items: center; }
+  .hlp-orbit::before, .hlp-orbit::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1px dashed rgba(143, 216, 255, 0.35); animation: spin-et 22s linear infinite; }
+  .hlp-orbit::after { inset: -18px; border-style: solid; border-color: rgba(233, 201, 143, 0.18); animation-duration: 34s; animation-direction: reverse; }
+  .hlp-orbit .hlp-mark { width: 62px; height: 62px; }
+  @keyframes spin-et { to { transform: rotate(360deg); } }
+  .et-hlp-text { margin: 0; font-family: var(--serif); font-size: clamp(28px, 3.6vw, 50px); line-height: 1.14; letter-spacing: -0.022em; font-variation-settings: "opsz" 144; }
+
+  @media (max-width: 880px) {
+    .et-hero { grid-template-columns: 1fr; align-items: start; padding-top: 92px; padding-bottom: 80px; gap: 34px; }
+    .et-portrait { order: -1; width: min(290px, 72vw); }
+    .et-badge { left: -14%; bottom: 6%; }
+    .et-badge b { font-size: 12.5px; }
+    .et-name .accent { padding-left: 0.2em; }
+    .et-hero .scroll-cue { display: none; } /* su telefono */
+    .journey-head { grid-template-columns: 1fr; gap: 14px; }
+    .hx-journey { gap: 30px; padding-top: 84px; }
+    .stop { width: 80vw; min-height: 0; padding: 24px 22px; }
+    .et-research { padding-top: 12vh; }
+    /* su telefono le schede sono più alte dello spazio libero: scorrono, e tra una e l'altra si vede la forma */
+    .stack-card { position: relative; top: auto; min-height: 0; margin-bottom: 62vh; padding: 24px 22px; background: rgba(6, 14, 19, 0.9); }
+    .stack { padding-top: 40vh; }
+    .hx .stack-title { font-size: 34px; }
+    .stack-body { font-size: 15.5px; margin-bottom: 16px; }
+    .stack-card .step-points li { font-size: 14.5px; }
+    .stack-k { margin-bottom: 14px; }
+    .idx a { grid-template-columns: 44px 1fr 40px; padding: 22px 0; }
+    .idx-go { width: 38px; height: 38px; }
+    .idx-d { grid-column: 1 / -1; }
+  }
+  @media (max-width: 560px) {
+    .et-name { font-size: clamp(58px, 17vw, 80px); }
+    .et-tagline { font-size: 21px; }
+    .journey-hint { display: none; }
+  }
+}
+@layer components { .et-hero .scroll-cue { display: none; } }

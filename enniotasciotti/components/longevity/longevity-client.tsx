@@ -62,15 +62,15 @@ export function LongevityClient() {
 
         {/* Right Column: Interactive Area Chart - now positioned below */}
         <div className="mt-16 max-w-3xl mx-auto flex flex-col items-center justify-center p-6 border border-[var(--color-border)] bg-[var(--color-surface)]/30 backdrop-blur-sm rounded-2xl">
-          <div className="w-full mb-6 flex justify-between items-center px-2">
+          <div className="w-full mb-6 flex flex-wrap gap-3 justify-between items-center px-2">
             <span className="font-mono text-step--2 text-[var(--color-text-muted)] uppercase tracking-wider">
               Lifespan vs Healthspan Visualizer
             </span>
             <button
               onClick={() => setBridgeGap(!bridgeGap)}
-              className="px-4 py-1.5 font-mono text-step--2 uppercase border border-[var(--color-accent)] text-[var(--color-accent)] hover:bg-[var(--color-accent)] hover:text-white transition-all duration-300 rounded-md"
+              className="bridge-btn"
             >
-              {bridgeGap ? 'Reset' : 'Bridge the Gap'}
+              {bridgeGap ? 'Reset' : 'Bridge the Gap'} <span aria-hidden="true">{bridgeGap ? '↺' : '→'}</span>
             </button>
           </div>
 

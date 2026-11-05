@@ -58,7 +58,11 @@ export default async function SciencePage({ params }: PageProps) {
           <KpiCounter value={200} suffix="+" label={t('kpi.papers')} />
           <KpiCounter value={13000} suffix="+" label={t('kpi.citations')} />
           <KpiCounter value={63} label={t('kpi.hIndex')} />
-          <KpiCounter value={15} label={t('kpi.patents')} />
+          {/* numero di brevetti non confermato: niente cifra */}
+          <div className="text-center">
+            <p className="font-mono text-step-4 font-bold text-[var(--color-accent)]">{locale === 'it' ? 'Svariati' : 'Several'}</p>
+            <p className="text-step--1 mt-1 text-[var(--color-text-muted)]">{t('kpi.patents')}</p>
+          </div>
         </div>
 
         {/* Macro research areas */}

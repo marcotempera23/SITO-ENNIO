@@ -61,7 +61,7 @@ export function Nav() {
       <header className={`nav${scrolled ? ' scrolled' : ''}`}>
         <Link className="brand" href="/" aria-label={h('home')}>
           <Mark />
-          <span>Ennio <em>Tasciotti</em> <small>PhD</small></span>
+          <span>Ennio <em>Tasciotti</em></span>
         </Link>
         <nav className="nav-links" aria-label={h('sections')}>
           {NAV_LINKS.map(({ key, href }) => (

@@ -5,7 +5,7 @@ import { HLP_URL } from '@/lib/links';
 import { COMPANIES, JOURNALS, MEDIA } from '@/lib/logos';
 import { Mark } from '@/components/hlp/experience';
 import { HlpMark } from '@/components/hlp/hlp-mark';
-import { Scrub, Words } from '@/components/hlp/text';
+import { Blur, Words } from '@/components/hlp/text';
 import { Newsletter, TalkVideo } from '@/components/hlp/home-client';
 
 interface PageProps {
@@ -18,23 +18,24 @@ export async function generateMetadata({ params }: PageProps) {
   return buildMetadata({ locale, title: t('homeTitle'), description: t('homeDescription') });
 }
 
-type Step = { key: string; href: string; label: string; verb: string; title: string; body: string; points: string[] };
+type Card = { key: string; href: string; title: string; sub: string; body: string; points: string[] };
+type Stop = { year: string; city: string; role: string; place: string; hlp?: boolean };
 type Portfolio = { id: string; title: string; desc: string; cta: string; href: string };
 
-const STEP_COLORS = ['#f2a28f', '#e9dfc9', '#7ce0bf', '#8fd8ff'];
-const CHIP_DOTS = ['hud-pulse', 'st st-sand', 'st st-mint', 'st st-coral'];
+const CARD_COLORS = ['#f2a28f', '#e9dfc9', '#e9c98f', '#8fd8ff'];
 
 export default async function HomePage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'hx' });
   const home = await getTranslations({ locale, namespace: 'home' });
-  const steps = t.raw('story.steps') as Step[];
   const meta = t.raw('hero.meta') as [string, string, string][];
-  const chips = t.raw('hero.chips') as string[];
+  const top = t.raw('hero.top') as [string, string];
+  const badge = t.raw('hero.badge') as [string, string];
+  const stops = t.raw('journey.stops') as Stop[];
+  const cards = t.raw('research.cards') as Card[];
   const facts = t.raw('about.facts') as [string, string][];
   const tags = t.raw('about.tags') as string[];
-  const center = t.raw('story.center') as string[];
   const portfolio = home.raw('leadershipPortfolio.items') as Portfolio[];
   const numLocale = locale === 'it' ? 'it-IT' : 'en-US';
 
@@ -51,8 +52,8 @@ export default async function HomePage({ params }: PageProps) {
 
   return (
     <div className="hx">
-      {/* ═══ APERTURA ═══ */}
-      <section className="hx-hero" id="top">
+      {/* ═══ APERTURA: lui, la sua foto, la nanoparticella che gli orbita dietro ═══ */}
+      <section className="hx-hero et-hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow hero-in">
             <span>
@@ -60,13 +61,15 @@ export default async function HomePage({ params }: PageProps) {
               <span className="eb-rest">{t('hero.eyebrowRest')}</span>
             </span>
           </p>
-          <h1 className="hx-title">
-            <span className="line"><Words text={t('hero.line1')} /></span>
-            <span className="line accent"><Words text={t('hero.line2')} /></span>
+          <h1 className="et-name">
+            <span className="et-prof hero-in">{t('hero.prof')}</span>
+            <span className="line"><Words text={t('hero.name1')} /></span>
+            <span className="line accent"><Words text={t('hero.name2')} /></span>
           </h1>
+          <p className="et-tagline hero-in">{t('hero.tagline')}</p>
           <p className="lead hero-in">{home('heroSubtitle')}</p>
           <div className="hero-cta hero-in">
-            <a className="btn btn-primary btn-lg" href="#ricerca">{t('hero.ctaPrimary')} <span className="arrow" aria-hidden="true">→</span></a>
+            <a className="btn btn-primary btn-lg" href="#percorso">{t('hero.ctaPrimary')} <span className="arrow" aria-hidden="true">→</span></a>
             <Link className="btn btn-ghost btn-lg" href="/contact">{t('hero.ctaSecondary')}</Link>
           </div>
           <ul className="hero-meta hero-in">
@@ -76,68 +79,85 @@ export default async function HomePage({ params }: PageProps) {
                 <span>{label}</span>
               </li>
             ))}
+            <li><b>{top[0]}</b><span>{top[1]}</span></li>
           </ul>
         </div>
-        <div className="hud" aria-hidden="true">
-          {chips.map((c, i) => (
-            <div key={c} className={`hud-chip hud-${'abcd'[i]}`}><span className={CHIP_DOTS[i]} />{c}</div>
-          ))}
-        </div>
+        <figure className="et-portrait hero-photo">
+          <div className="et-arch">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/portrait-dark.jpg" alt={t('hero.photoAlt')} fetchPriority="high" />
+          </div>
+          <span className="et-orbit" aria-hidden="true"><i /></span>
+          <figcaption className="et-badge">
+            <HlpMark />
+            <span><small>{badge[0]}</small><b>{badge[1]}</b></span>
+          </figcaption>
+        </figure>
         <a className="scroll-cue" href="#pensiero" aria-label={t('hero.scrollLabel')}>
           <span className="scroll-mouse"><span /></span>
           {t('hero.scroll')}
         </a>
       </section>
 
-      {/* ═══ MANIFESTO: la camera entra nella nanoparticella ═══ */}
-      <section className="manifesto" id="pensiero" data-scene="manifesto">
-        <div className="wrap narrow">
+      {/* ═══ IL PENSIERO: la camera entra nella cellula, le parole emergono dalla sfocatura ═══ */}
+      <section className="et-quote" id="pensiero" data-scene="quote">
+        <div className="wrap narrow center">
           <p className="eyebrow">{t('manifesto.eyebrow')}</p>
-          <span className="quote-mark" aria-hidden="true">“</span>
-          <Scrub as="blockquote" className="scrub-text" text={home('tedxQuote')} />
-          <span className="manifesto-cite">{t('manifesto.cite')}</span>
-          <p className="manifesto-sub" data-reveal>{home('hero.subheadline')}</p>
+          <Blur as="blockquote" className="et-quote-text" text={home('tedxQuote')} />
+          <span className="manifesto-cite">— {t('manifesto.cite')}</span>
         </div>
       </section>
 
-      {/* ═══ RICERCA: quattro aree, la materia cambia forma ═══ */}
-      <section className="story" id="ricerca" aria-labelledby="story-title">
-        <div className="story-intro" data-scene="trasportare">
-          <p className="eyebrow">{t('story.eyebrow')}</p>
-          <h2 id="story-title">{t('story.title')}</h2>
-          <p className="lead">{t('story.lead')}</p>
+      {/* ═══ IL PERCORSO: le tappe scorrono in orizzontale sopra il globo ═══ */}
+      <section className="hx-journey" id="percorso" aria-labelledby="journey-title">
+        <div className="journey-head wrap">
+          <div>
+            <p className="eyebrow">{t('journey.eyebrow')}</p>
+            <h2 id="journey-title">{t('journey.title')}</h2>
+          </div>
+          <p className="journey-lead">{t('journey.lead')}</p>
         </div>
-        <div className="hx-steps">
-          {steps.map((s, i) => (
-            <article key={s.key} className="hx-step" data-step={s.key} style={{ '--c': STEP_COLORS[i] } as React.CSSProperties} aria-labelledby={`step-${s.key}`}>
-              <p className="step-num">0{i + 1} · {s.label}</p>
-              <h3 className="step-verb" id={`step-${s.key}`}>{s.verb}</h3>
-              <p className="step-title">{s.title}</p>
-              <p className="step-body">{s.body}</p>
-              {s.points.length > 0 && (
-                <ul className="step-points">{s.points.map((p) => <li key={p}>{p}</li>)}</ul>
-              )}
-              <Link className="hx-link" href={s.href}>{t('story.more')} <span className="arrow" aria-hidden="true">→</span></Link>
+        <ol className="journey-track">
+          {stops.map((s, i) => (
+            <li key={`${s.year}-${s.city}`} className={`stop${s.hlp ? ' stop-hlp' : ''}`}>
+              <span className="stop-year">{s.year}</span>
+              <span className="stop-city"><i aria-hidden="true" />{s.city}</span>
+              <p className="stop-role">{s.role}</p>
+              <p className="stop-place">{s.place}</p>
+              {s.hlp && <a className="hx-link" href={HLP_URL} target="_blank" rel="noopener">{t('hlpName')} <span className="arrow" aria-hidden="true">↗</span></a>}
+              <span className="stop-n" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            </li>
+          ))}
+        </ol>
+        <div className="journey-foot wrap" aria-hidden="true">
+          <span className="journey-dots">{stops.map((s) => <i key={`${s.year}-${s.city}`} />)}</span>
+          <span className="journey-bar"><i /></span>
+          <span className="journey-hint">{t('journey.hint')} →</span>
+        </div>
+      </section>
+
+      {/* ═══ RICERCA: schede che si impilano, la materia cambia forma ═══ */}
+      <section className="et-research" id="ricerca" aria-labelledby="research-title">
+        <div className="wrap et-research-head">
+          <p className="eyebrow">{t('research.eyebrow')}</p>
+          <h2 id="research-title">{t('research.title')}</h2>
+          <p className="lead">{t('research.lead')}</p>
+        </div>
+        <div className="wrap stack">
+          {cards.map((c, i) => (
+            <article key={c.key} className="stack-card hx-step hx-card" data-step={c.key} style={{ '--c': CARD_COLORS[i], '--i': i } as React.CSSProperties} aria-labelledby={`card-${c.key}`}>
+              <p className="stack-k"><span>{String(i + 1).padStart(2, '0')}</span> / {String(cards.length).padStart(2, '0')}</p>
+              <h3 id={`card-${c.key}`} className="stack-title">{c.title}</h3>
+              <p className="stack-sub">{c.sub}</p>
+              <p className="stack-body">{c.body}</p>
+              {c.points.length > 0 && <ul className="step-points">{c.points.map((p) => <li key={p}>{p}</li>)}</ul>}
+              <Link className="hx-link" href={c.href}>{t('research.more')} <span className="arrow" aria-hidden="true">→</span></Link>
             </article>
           ))}
         </div>
       </section>
 
-      {/* il ciclo resta visibile mentre si attraversano le quattro aree */}
-      <div className="cycle-hud" aria-hidden="true">
-        <svg viewBox="0 0 200 200">
-          <circle className="cy-track" cx="100" cy="100" r="78" />
-          <circle className="cy-arc" id="cy-arc" cx="100" cy="100" r="78" pathLength={1} />
-          <g className="cy-node"><circle cx="100" cy="22" r="7" /><text x="100" y="8" textAnchor="middle">{steps[0].verb}</text></g>
-          <g className="cy-node"><circle cx="178" cy="100" r="7" /><text x="186" y="104" textAnchor="start">{steps[1].verb}</text></g>
-          <g className="cy-node"><circle cx="100" cy="178" r="7" /><text x="100" y="198" textAnchor="middle">{steps[2].verb}</text></g>
-          <g className="cy-node"><circle cx="22" cy="100" r="7" /><text x="14" y="104" textAnchor="end">{steps[3].verb}</text></g>
-          <text className="cy-center" x="100" y="96">{center[0]}</text>
-          <text className="cy-center" x="100" y="114">{center[1]}</text>
-        </svg>
-      </div>
-
-      {/* ═══ PORTFOLIO (da qui la scena sfuma) ═══ */}
+      {/* ═══ PORTFOLIO: indice a righe (da qui la scena sfuma) ═══ */}
       <section className="section" id="portfolio" data-stage-fade aria-labelledby="portfolio-title">
         <div className="wrap">
           <div className="section-head" data-reveal>
@@ -145,14 +165,14 @@ export default async function HomePage({ params }: PageProps) {
             <h2 id="portfolio-title">{home('leadershipPortfolio.title')}</h2>
             <p className="lead">{home('leadershipPortfolio.subtitle')}</p>
           </div>
-          <ol className="grid-num">
+          <ol className="idx">
             {portfolio.map((p, i) => (
               <li key={p.id} data-reveal>
                 <Link href={p.href}>
-                  <span className="ik">{String(i + 1).padStart(2, '0')}</span>
-                  <h3>{p.title}</h3>
-                  <p>{p.desc}</p>
-                  <span className="hx-link">{p.cta} <span className="arrow" aria-hidden="true">→</span></span>
+                  <span className="idx-n">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="idx-t">{p.title}</span>
+                  <span className="idx-go" aria-hidden="true">→</span>
+                  <span className="idx-d"><span>{p.desc}<em>{p.cta} →</em></span></span>
                 </Link>
               </li>
             ))}
@@ -163,9 +183,9 @@ export default async function HomePage({ params }: PageProps) {
       {/* ═══ CHI SONO ═══ */}
       <section className="section" id="chi-sono" aria-labelledby="about-title" style={{ paddingTop: 0 }}>
         <div className="wrap split-2 about-split">
-          <figure className="portrait" data-reveal style={{ margin: 0 }}>
+          <figure className="portrait et-office" data-reveal style={{ margin: 0 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/portrait-dark.jpg" alt={t('about.photoAlt')} loading="lazy" />
+            <img src="/images/ennio-tasciotti-direttore-hlp.webp" alt={t('about.photoAlt')} loading="lazy" />
             <figcaption>{tags.map((x) => <span key={x}>{x}</span>)}</figcaption>
           </figure>
           <div className="about-copy" data-reveal>
@@ -186,8 +206,9 @@ export default async function HomePage({ params }: PageProps) {
       <section className="section hlp-band" id="human-longevity-program" aria-labelledby="hlp-title">
         <div className="hx-glow" aria-hidden="true" />
         <div className="wrap narrow center">
+          <div className="hlp-orbit" aria-hidden="true"><HlpMark /></div>
           <p className="eyebrow">{t('hlp.eyebrow')}</p>
-          <Scrub id="hlp-title" className="scrub-text" text={t('hlp.text')} />
+          <Blur id="hlp-title" className="et-hlp-text" text={t('hlp.text')} />
           <a className="hlp-card" href={HLP_URL} target="_blank" rel="noopener" aria-label={t('hlp.cardLabel')} data-reveal>
             <HlpMark />
             <span><b>{t('hlpName')}</b><small>{t('hlp.cardSub')}</small></span>
